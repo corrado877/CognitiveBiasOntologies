@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntology.owl"
-     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntology.owl"
+<rdf:RDF xmlns="http://www.semanticweb.org/hwruser/ontologies/2024/1/CognitiveBiasOntology#"
+     xml:base="http://www.semanticweb.org/hwruser/ontologies/2024/1/CognitiveBiasOntology"
      xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntology.owl"
      xmlns:cco="http://purl.org/ontology/cco/cognitivecharacteristics.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -12,6 +12,7 @@
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/hwruser/ontologies/2024/1/CognitiveBiasOntology">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/hwruser/ontologies/2024/1/CognitiveBiasOntology_Ver.1.0"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/hwruser/ontologies/2024/Gambler&apos;s_Fallacy_Ontology"/>
         <terms:contributor>Dott. Stefano De Giorgis</terms:contributor>
         <terms:contributor>Prof. Aldo Gangemi</terms:contributor>
         <terms:created>February 2024</terms:created>
