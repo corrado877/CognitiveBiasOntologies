@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/hwruser/ontologies/2024/Gambler&apos;s_Fallacy_Ontology/"
      xml:base="http://www.semanticweb.org/hwruser/ontologies/2024/Gambler&apos;s_Fallacy_Ontology/"
+     xmlns:cbo="http://www.semanticweb.org/hwruser/ontologies/2024/1/CognitiveBiasOntology"
+     xmlns:gfo="http://www.semanticweb.org/hwruser/ontologies/2024/Gambler&apos;s_Fallacy_Ontology/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -13,12 +15,14 @@
         <terms:creator>Corrado Consiglio</terms:creator>
         <terms:description>The Gamblers&apos;Fallacy module of the Cognitive Bias Ontology</terms:description>
         <terms:title>Gambler&apos;s Fallacy Bias Ontology</terms:title>
+        <cpannotationschema:hasComponent rdf:resource="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:AffectedBy"/>
-        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:An_Ontology_Design_Pattern_for_Activity_Reasoning"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Parameter"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Provenance"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:RecurrentEventSeries"/>
+        <cpannotationschema:hasComponent rdf:resource="http://purl.org/ontology/cco/core#"/>
+        <cpannotationschema:hasComponent rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <cpannotationschema:scenarios>In a lottery, a person thinks that a certain number is more likely to be drawn next because it hasn&apos;t been drawn in a long time.</cpannotationschema:scenarios>
         <rdfs:comment xml:lang="en">The Gambler&apos;s Fallacy bias, also known as the Fallacy of the Maturity of Chances, is a cognitive bias that occurs when an individual believes that past events in a random or chance-based process can influence the likelihood of future events in the same process. It is a mistaken belief that, because a certain outcome has occurred frequently or infrequently in the past, the probability of that outcome occurring again in the future is somehow altered or &quot;due&quot; to happen.</rdfs:comment>
     </owl:Ontology>
