@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Gambler&apos;s%20Fallacy%20Ontology/Gamblers_Fallacy_Ontology.owl"
-     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Gambler&apos;s%20Fallacy%20Ontology/Gamblers_Fallacy_Ontology.owl"
+<rdf:RDF xmlns="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#"
+     xml:base="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl"
      xmlns:ap="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl"
      xmlns:fs="https://w3id.org/framester/data/framestercore/"
      xmlns:aff="https://w3id.org/affectedBy"
