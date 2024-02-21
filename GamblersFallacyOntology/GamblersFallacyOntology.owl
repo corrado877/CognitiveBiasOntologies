@@ -80,6 +80,75 @@
     <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios -->
 
     <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Activity -->
+
+    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Activity"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Event -->
+
+    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Event"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Outcome -->
+
+    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Outcome"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Person -->
+
+    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Person"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Probability -->
+
+    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Probability"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Sequence -->
+
+    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Sequence"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Activity"/>
+            <rdf:Description rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Event"/>
+            <rdf:Description rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Outcome"/>
+            <rdf:Description rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Person"/>
+            <rdf:Description rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Probability"/>
+            <rdf:Description rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Sequence"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
