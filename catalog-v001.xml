@@ -3,7 +3,7 @@
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/hwruser/ontologies/2024/Gambler's_Fallacy_Ontology" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/Gambler's%20Fallacy%20Ontology/Gamblers_Fallacy_Ontology.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/hwruser/ontologies/2024/Gambler's_Fallacy_Ontology" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/Gambler's%20Fallacy%20Ontology/Gamblers_Fallacy_Ontology.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1708516467942" name="http://www.semanticweb.org/hwruser/ontologies/2024/1/CognitiveBiasOntology" uri="CognitiveBiasOntology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1708516467942" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Gambler's%20Fallacy%20Ontology/Gamblers_Fallacy_Ontology.owl" uri="Gambler's%20Fallacy%20Ontology/Gamblers_Fallacy_Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1708516558189" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntology.owl" uri="CognitiveBiasOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1708516558189" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Gambler's%20Fallacy%20Ontology/Gamblers_Fallacy_Ontology.owl" uri="Gambler's%20Fallacy%20Ontology/Gamblers_Fallacy_Ontology.owl"/>
     </group>
 </catalog>
