@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/hwruser/ontologies/2024/1/CognitiveBiasOntology#"
-     xml:base="http://www.semanticweb.org/hwruser/ontologies/2024/1/CognitiveBiasOntology"
+<rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntology.owl"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntology.owl"
      xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntology.owl"
      xmlns:cco="http://purl.org/ontology/cco/cognitivecharacteristics.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
