@@ -16,6 +16,7 @@
      xmlns:prov="https://raw.githubusercontent.com/cogan-shimizu-wsu/ProvenanceOWL/master/EntityWithProvenanceOntologyPattern.owl"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:participation="http://ontologydesignpatterns.org/cp/owl/participation.owl"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-20T00:00:00</terms:created>
@@ -26,6 +27,7 @@
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:An_Ontology_Design_Pattern_for_Activity_Reasoning"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Parameter"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Participation"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Provenance"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:RecurrentEventSeries"/>
         <cpannotationschema:hasComponent rdf:resource="http://purl.org/ontology/cco/20100926/cognitivecharacteristics.html"/>
@@ -96,31 +98,56 @@
 
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#generatedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#generatedBy"/>
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#generatedBy">
+        <rdfs:domain rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Sequence"/>
+        <rdfs:range rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Activity"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasBelief -->
 
-    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasBelief"/>
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasBelief">
+        <rdfs:domain rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Sequence"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasBiasedOpinion -->
 
-    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasBiasedOpinion"/>
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasBiasedOpinion">
+        <rdfs:domain rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#FutureEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasInfluence -->
+
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasInfluence">
+        <owl:inverseOf rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#influencedBy"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasOutcome -->
 
-    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasOutcome"/>
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasOutcome">
+        <owl:inverseOf rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#isOutcomeOf"/>
+        <rdfs:domain rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Sequence"/>
+        <rdfs:range rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Outcome"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParameter -->
 
-    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParameter"/>
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParameter">
+        <owl:inverseOf rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#isParameterFor"/>
+        <rdfs:domain rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#FutureEvent"/>
+        <rdfs:range rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Probability"/>
+    </owl:ObjectProperty>
     
 
 
@@ -134,13 +161,32 @@
 
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParticipant -->
 
-    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParticipant"/>
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParticipant">
+        <owl:inverseOf rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#isParticipantIn"/>
+        <rdfs:domain rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Activity"/>
+        <rdfs:range rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Person"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#influencedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#influencedBy"/>
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#influencedBy">
+        <rdfs:domain rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Probability"/>
+        <rdfs:range rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Sequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#isOutcomeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#isOutcomeOf"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#isParameterFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#isParameterFor"/>
     
 
 
@@ -153,11 +199,9 @@
     
 
 
-    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#isProducedBy -->
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#isParticipantIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#isProducedBy">
-        <owl:inverseOf rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#produces"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#isParticipantIn"/>
     
 
 
@@ -173,7 +217,6 @@
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#subClassOf -->
 
     <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#subClassOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#FutureEvent"/>
         <rdfs:range rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Event"/>
     </owl:ObjectProperty>
@@ -193,7 +236,10 @@
 
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParameterDataValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParameterDataValue"/>
+    <owl:DatatypeProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParameterDataValue">
+        <rdfs:domain rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Probability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
