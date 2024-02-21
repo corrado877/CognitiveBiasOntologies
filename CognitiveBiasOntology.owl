@@ -10,7 +10,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/hwruser/ontologies/2024/1/CognitiveBiasOntology">
-        <owl:versionIRI rdf:resource="urn:absolute:CognitiveBiasOntology_Ver.1.0"/>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/hwruser/ontologies/2024/1/CognitiveBiasOntology_Ver.1.0"/>
         <terms:contributor>Dott. Stefano De Giorgis</terms:contributor>
         <terms:contributor>Prof. Aldo Gangemi</terms:contributor>
         <terms:created>February 2024</terms:created>
