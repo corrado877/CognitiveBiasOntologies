@@ -17,7 +17,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
-    <owl:Ontology rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology">
+    <owl:Ontology rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-20T00:00:00</terms:created>
         <terms:creator>Corrado Consiglio</terms:creator>
         <terms:description>The Gamblers&apos;Fallacy module of the Cognitive Bias Ontology</terms:description>
