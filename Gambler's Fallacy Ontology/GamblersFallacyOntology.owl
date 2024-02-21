@@ -5,7 +5,7 @@
      xmlns:fs="https://w3id.org/framester/data/framestercore/"
      xmlns:aff="https://w3id.org/affectedBy"
      xmlns:cco="http://purl.org/ontology/cco/cognitivecharacteristics.owl"
-     xmlns:gfo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Gambler&apos;s%20Fallacy%20Ontology/Gamblers_Fallacy_Ontology.owl"
+     xmlns:gfo="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:par="http://ontologydesignpatterns.org/cp/owl/parameter.owl"
      xmlns:pof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
