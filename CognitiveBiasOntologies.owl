@@ -12,7 +12,6 @@
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntologies.owl">
         <owl:versionIRI rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntology_Ver.1.0"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/hwruser/ontologies/2024/Gambler&apos;s_Fallacy_Ontology"/>
         <terms:contributor>Dott. Stefano De Giorgis</terms:contributor>
         <terms:contributor>Prof. Aldo Gangemi</terms:contributor>
         <terms:created>February 2024</terms:created>
