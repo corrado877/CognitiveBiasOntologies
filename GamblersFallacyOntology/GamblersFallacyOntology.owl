@@ -86,6 +86,94 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#generatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#generatedBy"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasBelief -->
+
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasBelief"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasBiasedOpinion -->
+
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasBiasedOpinion"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasOutcome -->
+
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasOutcome"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParameter"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParticipant"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#influencedBy"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#isPartOf"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#produces"/>
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#subClassOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#subClassOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParameterDataValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#hasParameterDataValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -96,7 +184,9 @@
 
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Activity -->
 
-    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Activity"/>
+    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Activity">
+        <rdfs:comment>This frame represent an activity with random or chance-based outcomes in which a person is involved in.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -106,27 +196,44 @@
     
 
 
+    <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#FutureEvent -->
+
+    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#FutureEvent">
+        <rdfs:subClassOf rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Event"/>
+        <rdfs:comment>This class represent an event that will happen in the next future.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Outcome -->
 
-    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Outcome"/>
+    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Outcome">
+        <rdfs:comment>This class represent the outcome of an event.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Person -->
 
-    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Person"/>
+    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Person">
+        <rdfs:comment>Any individual involved in an activity.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Probability -->
 
-    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Probability"/>
+    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Probability">
+        <rdfs:comment>This frame characterizes the likelihood that a Hypothetical_event will happen as a position on a scale of impossible to inevitable.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Sequence -->
 
-    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Sequence"/>
+    <owl:Class rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Sequence">
+        <rdfs:comment>This frame represent a sequence of temporally-ordered past events that have the same outcome</rdfs:comment>
+    </owl:Class>
     
 
 
