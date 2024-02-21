@@ -9,7 +9,6 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/hwruser/ontologies/2024/Gambler&apos;s_Fallacy_Ontology">
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/hwruser/ontologies/2024/Gambler&apos;s_Fallacy_Ontology_Ver.1.0"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-20T00:00:00</terms:created>
         <terms:creator>Corrado Consiglio</terms:creator>
         <terms:description>The Gamblers&apos;Fallacy module of the Cognitive Bias Ontology</terms:description>
