@@ -383,7 +383,7 @@
         <rdf:type rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#RandomOccurrence"/>
         <hasParameter rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#ProbabilityLevel"/>
         <isPartOf rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Lottery_Draw"/>
-        <produces rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Red_Number"/>
+        <produces rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Black_Number"/>
         <rdfs:comment>a number draw in a lottery is an event totally random where each number has the same probability of being extracted.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -405,7 +405,7 @@
     <owl:NamedIndividual rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#ProbabilityLevel">
         <rdf:type rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Probability"/>
         <influencedBy rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl#Past_Number_Draw_Series"/>
-        <hasParameterDataValue>High</hasParameterDataValue>
+        <hasParameterDataValue>Low</hasParameterDataValue>
         <rdfs:comment>The level of probability that the outcome of the next number draw will be red or black  can be higher or lower for the participant, depending on the outcomes of the previous number draws.</rdfs:comment>
     </owl:NamedIndividual>
     
