@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-22T15:19:10.303Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="XPRi0VXu8Tyygc_XndfS" version="23.1.5" type="device">
+<mxfile host="app.diagrams.net" modified="2024-02-24T12:56:33.813Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="4TrjtoSGNteycRaeRq5d" version="23.1.6" type="device">
   <diagram id="oU7lBioK2oj68UVmJGeL" name="Page-1">
-    <mxGraphModel dx="1877" dy="1738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1875" dy="1739" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -23,14 +23,14 @@
           <mxGeometry x="435.5" y="-13" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="TsAKVSYgy9pjKIJBanpu-3" value="&quot;Low&quot;^^xsd:string&#xa;&quot;High&quot;^^xsd:string" style="graphMlID=n6;shape=parallelogram;fillColor=#ccffcc;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="750" y="-24.5" width="150" height="64.5" as="geometry" />
+          <mxGeometry x="770" y="-25.25" width="150" height="64.5" as="geometry" />
         </mxCell>
         <mxCell id="DcR2EK71TW1_98MgDz5n-1" value="Prefixes" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="60" y="-260" width="730" height="210" as="geometry">
             <mxRectangle x="-550" y="110" width="100" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <UserObject label="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;aff&lt;/b&gt;:&amp;nbsp;https://w3id.org/affectedBy&lt;br&gt;&lt;b&gt;ap&lt;/b&gt;:http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl&amp;nbsp;&lt;br&gt;&lt;b&gt;cbo&lt;/b&gt;:http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl&lt;br&gt;&lt;b&gt;cco:&amp;nbsp;&lt;/b&gt;http://purl.org/ontology/cco/cognitivecharacteristics.owl&lt;br&gt;&lt;b&gt;fs&lt;/b&gt;:https://w3id.org/framester/data/framestercore/&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;foaf:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://xmlns.com/foaf/spec/index.rdf&lt;br&gt;&lt;b&gt;par&lt;/b&gt;:http://ontologydesignpatterns.org/cp/owl/parameter.owl&lt;br&gt;&lt;b&gt;participation&lt;/b&gt;:&amp;nbsp;http://ontologydesignpatterns.org/cp/owl/participation.owl&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;pof&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://www.ontologydesignpatterns.org/cp/owl/partof.owl#&lt;br&gt;&lt;/span&gt;&lt;b&gt;prov:&lt;/b&gt;https://raw.githubusercontent.com/cogan-shimizu-wsu/ProvenanceOWL/master/EntityWithProvenanceOntologyPattern.owl&lt;br&gt;&lt;b&gt;rdfs&lt;/b&gt;:http://www.w3.org/2000/01/rdf-schema#&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;xsd:&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://www.w3.org/2001/XMLSchema#&lt;/span&gt;" link="http://www.w3.org/2000/01/rdf-schema#" id="j3H0xUcFlWFZ-JWSaFpQ-1">
+        <UserObject label="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;aff&lt;/b&gt;:&amp;nbsp;https://w3id.org/affectedBy&lt;br&gt;&lt;b&gt;ap&lt;/b&gt;:http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl&amp;nbsp;&lt;br&gt;&lt;b&gt;cbo&lt;/b&gt;:https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl&lt;br&gt;&lt;b&gt;cco:&amp;nbsp;&lt;/b&gt;http://purl.org/ontology/cco/cognitivecharacteristics.owl&lt;br&gt;&lt;b&gt;fs&lt;/b&gt;:https://w3id.org/framester/data/framestercore/&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;foaf:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://xmlns.com/foaf/spec/index.rdf&lt;br&gt;&lt;b&gt;par&lt;/b&gt;:http://ontologydesignpatterns.org/cp/owl/parameter.owl&lt;br&gt;&lt;b&gt;participation&lt;/b&gt;:&amp;nbsp;http://ontologydesignpatterns.org/cp/owl/participation.owl&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;pof&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://www.ontologydesignpatterns.org/cp/owl/partof.owl#&lt;br&gt;&lt;/span&gt;&lt;b&gt;prov:&lt;/b&gt;https://raw.githubusercontent.com/cogan-shimizu-wsu/ProvenanceOWL/master/EntityWithProvenanceOntologyPattern.owl&lt;br&gt;&lt;b&gt;rdfs&lt;/b&gt;:http://www.w3.org/2000/01/rdf-schema#&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;xsd:&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://www.w3.org/2001/XMLSchema#&lt;/span&gt;" link="http://www.w3.org/2000/01/rdf-schema#" id="j3H0xUcFlWFZ-JWSaFpQ-1">
           <mxCell style="text;whiteSpace=wrap;html=1;" parent="DcR2EK71TW1_98MgDz5n-1" vertex="1">
             <mxGeometry x="9" y="22" width="690" height="180" as="geometry" />
           </mxCell>
@@ -66,7 +66,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="U0OhxdXSo77pCnsjrtBy-5" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="X6dG0_ZqyGWDh663tGR5-1" edge="1" target="rwo6sAAVRPEedmvHrdig-1">
+        <mxCell id="U0OhxdXSo77pCnsjrtBy-5" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="X6dG0_ZqyGWDh663tGR5-1" target="rwo6sAAVRPEedmvHrdig-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="520" y="430.08183758898736" as="sourcePoint" />
             <mxPoint x="480" y="410" as="targetPoint" />
@@ -165,30 +165,30 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rwo6sAAVRPEedmvHrdig-1" value="cbo:RandomOccurence&#xa;(Number Draw)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="rwo6sAAVRPEedmvHrdig-1" value="cbo:RandomOccurence&#xa;(Number Draw)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="260" y="370" width="145.48" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="rwo6sAAVRPEedmvHrdig-4" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rwo6sAAVRPEedmvHrdig-1" target="X6dG0_ZqyGWDh663tGR5-5">
+        <mxCell id="rwo6sAAVRPEedmvHrdig-4" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="rwo6sAAVRPEedmvHrdig-1" target="X6dG0_ZqyGWDh663tGR5-5" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="320" y="330.08183758898736" as="sourcePoint" />
             <mxPoint x="471" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rwo6sAAVRPEedmvHrdig-5" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;b&gt;rdfs&lt;/b&gt;:subClassOf&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="rwo6sAAVRPEedmvHrdig-4">
+        <mxCell id="rwo6sAAVRPEedmvHrdig-5" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;b&gt;rdfs&lt;/b&gt;:subClassOf&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" parent="rwo6sAAVRPEedmvHrdig-4" vertex="1" connectable="0">
           <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rwo6sAAVRPEedmvHrdig-6" value="cbo:ColorNumber&#xa;(red/black number)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="rwo6sAAVRPEedmvHrdig-6" value="cbo:ColorNumber&#xa;(red/black number)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="1.9700000000000006" y="110" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="rwo6sAAVRPEedmvHrdig-10" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.442;exitY=1.05;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="rwo6sAAVRPEedmvHrdig-6" target="9v7G8ajr_uuF-SMIUNUw-22">
+        <mxCell id="rwo6sAAVRPEedmvHrdig-10" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.442;exitY=1.05;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="rwo6sAAVRPEedmvHrdig-6" target="9v7G8ajr_uuF-SMIUNUw-22" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="320" y="330.08183758898736" as="sourcePoint" />
             <mxPoint x="471" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rwo6sAAVRPEedmvHrdig-11" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;b&gt;rdfs&lt;/b&gt;:subClassOf&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="rwo6sAAVRPEedmvHrdig-10">
+        <mxCell id="rwo6sAAVRPEedmvHrdig-11" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;b&gt;rdfs&lt;/b&gt;:subClassOf&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" parent="rwo6sAAVRPEedmvHrdig-10" vertex="1" connectable="0">
           <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>

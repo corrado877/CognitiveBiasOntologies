@@ -14,7 +14,7 @@
      xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
      xmlns:Pareidolia="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/PareidoliaOntology/PareidoliaBiasOntology.owl"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
-    <owl:Ontology rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/PareidoliaBiasOntology.owl">
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl">
         <terms:created>February 2024</terms:created>
         <terms:creator xml:lang="en">Corrado Consiglio</terms:creator>
         <terms:description>The Pareidolia Bias module of the Cognitive Bias Ontology</terms:description>
