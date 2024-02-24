@@ -1,13 +1,18 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/hwruser/ontologies/2024/1/untitled-ontology-80/"
-     xml:base="http://www.semanticweb.org/hwruser/ontologies/2024/1/untitled-ontology-80/"
+<rdf:RDF xmlns="http://www.corradoconsiglio.it/CognitiveBiasOntologies/PareidoliaBiasOntology.owl"
+     xml:base="http://www.corradoconsiglio.it/CognitiveBiasOntologies/PareidoliaBiasOntology.owl"
+     xmlns:fs="https://w3id.org/framester/data/framestercore/"
+     xmlns:dbo="https://dbpedia.org/page/Illusion"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:exob="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
+     xmlns:Pareidolia="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/PareidoliaOntology/PareidoliaBiasOntology.owl"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/PareidoliaBiasOntology.owl">
         <terms:created>February 2024</terms:created>
