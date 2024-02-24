@@ -92,7 +92,6 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#generatedBy -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#generatedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
     </owl:ObjectProperty>
@@ -102,7 +101,6 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasBelief -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasBelief">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence"/>
     </owl:ObjectProperty>
@@ -112,7 +110,6 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasBiasedOpinion -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasBiasedOpinion">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#RandomOccurrence"/>
     </owl:ObjectProperty>
@@ -122,7 +119,6 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasInfluence -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasInfluence">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#influencedBy"/>
     </owl:ObjectProperty>
     
@@ -131,7 +127,6 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasOutcome -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasOutcome">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isOutcomeOf"/>
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ColorNumber"/>
@@ -142,7 +137,6 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasParameter -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasParameter">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isParameterFor"/>
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#RandomOccurrence"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Probability"/>
@@ -153,7 +147,6 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasPart -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasPart">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isPartOf"/>
     </owl:ObjectProperty>
     
@@ -193,7 +186,6 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isPartOf -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isPartOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#RandomOccurrence"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
     </owl:ObjectProperty>
@@ -202,9 +194,7 @@
 
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isParticipantIn -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isParticipantIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isParticipantIn"/>
     
 
 
@@ -219,7 +209,6 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#produces -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#produces">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#RandomOccurrence"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome"/>
     </owl:ObjectProperty>
