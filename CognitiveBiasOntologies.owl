@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntologies.owl#"
      xml:base="http://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntologies.owl"
-     xmlns:cbo="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/CognitiveBiasOntologies.owl"
+     xmlns:cbo="http://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntologies.owl#"
      xmlns:cco="http://purl.org/ontology/cco/cognitivecharacteristics.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
