@@ -291,7 +291,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome">
-        <rdfs:comment>This class represent the outcome of an event.</rdfs:comment>
+        <rdfs:comment>This class represent the outcome of an event such as a RandomOccurence</rdfs:comment>
     </owl:Class>
     
 
