@@ -21,7 +21,6 @@
         <terms:creator>Marco La Morte</terms:creator>
         <terms:creator>Salvatore Di Marzo</terms:creator>
         <terms:description xml:lang="en">The Cognitive Bias Ontologies constitute a framework for categorizing and defining various cognitive biases that shape human thinking and decision-making. This project is the result of the 2023 Knowledge Representation and Extraction course held by professor Aldo Gangemi at the University of Bologna.</terms:description>
-        <terms:title>Cognitive Bias Ontology</terms:title>
         <owl:versionInfo>Ver. 1.0</owl:versionInfo>
     </owl:Ontology>
     
@@ -59,12 +58,6 @@
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
 </rdf:RDF>
 
 

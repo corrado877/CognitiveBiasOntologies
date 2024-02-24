@@ -5,9 +5,9 @@
     <uri id="Imports Wizard Entry" name="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/GamblersFallacyOntology/GamblersFallacyOntology.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/hwruser/ontologies/2024/Gambler's_Fallacy_Ontology" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/GamblersFallacyOntology/GamblersFallacyOntology.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1708633127875" name="http://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntologies.owl" uri="CognitiveBiasOntologies.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1708633127875" name="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl" uri="GamblersFallacyOntology/GamblersFallacyOntology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1708633127875" name="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy/" uri="Anecdotal_fallacy/Anecdotal_fallacy.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1708633127875" name="http://www.semanticweb.org/salva/ontologies/2024/1/clustering_illusion/" uri="Clustering_illusion/Clustering_illusion.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1708700757573" name="http://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntologies.owl" uri="CognitiveBiasOntologies.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1708700757573" name="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl" uri="GamblersFallacyOntology/GamblersFallacyOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1708700757573" name="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy/" uri="Anecdotal_fallacy/Anecdotal_fallacy.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1708700757573" name="http://www.semanticweb.org/salva/ontologies/2024/1/clustering_illusion/" uri="Clustering_illusion/Clustering_illusion.rdf"/>
     </group>
 </catalog>
