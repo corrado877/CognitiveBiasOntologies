@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntologies.owl#"
-     xml:base="http://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntologies.owl"
-     xmlns:cbo="http://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntologies.owl#"
+<rdf:RDF xmlns="https://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntologies.owl#"
+     xml:base="https://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntologies.owl"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#"
      xmlns:cco="http://purl.org/ontology/cco/cognitivecharacteristics.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
-    <owl:Ontology rdf:about="http://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntologies.owl">
+    <owl:Ontology rdf:about="https://www.corradoconsiglio.it/CognitiveBiasOntologies/CognitiveBiasOntologies.owl#">
         <owl:imports rdf:resource="http://www.corradoconsiglio.it/CognitiveBiasOntologies/GamblersFallacyOntology.owl"/>
         <terms:contributor>Dott. Stefano De Giorgis</terms:contributor>
         <terms:contributor>Prof. Aldo Gangemi</terms:contributor>
