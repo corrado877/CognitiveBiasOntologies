@@ -118,7 +118,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasBiasedOpinion">
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#RandomOccurrence"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence"/>
     </owl:ObjectProperty>
     
 
@@ -145,7 +145,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasParameter">
         <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isParameterFor"/>
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#RandomOccurrence"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Probability"/>
     </owl:ObjectProperty>
     
@@ -193,7 +193,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isPartOf -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isPartOf">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#RandomOccurrence"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
     </owl:ObjectProperty>
     
@@ -216,7 +216,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#produces -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#produces">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#RandomOccurrence"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome"/>
     </owl:ObjectProperty>
     
@@ -284,6 +284,20 @@
     
 
 
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence">
+        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#FutureEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome">
@@ -304,20 +318,6 @@
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Probability">
         <rdfs:comment>This frame characterizes the likelihood that a Hypothetical_event will happen as a position on a scale of impossible to inevitable.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#RandomOccurrence -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#RandomOccurrence">
-        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#FutureEvent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isPartOf"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -380,7 +380,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NumberDraw -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NumberDraw">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#RandomOccurrence"/>
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence"/>
         <hasParameter rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ProbabilityLevel"/>
         <isPartOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
         <produces rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number"/>
