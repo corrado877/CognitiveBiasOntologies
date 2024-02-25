@@ -1,21 +1,34 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/hwruser/ontologies/2024/1/untitled-ontology-126/"
-     xml:base="http://www.semanticweb.org/hwruser/ontologies/2024/1/untitled-ontology-126/"
+<rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl"
+     xmlns:ap="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl"
+     xmlns:fs="https://w3id.org/framester/data/framestercore/"
+     xmlns:aff="https://w3id.org/affectedBy"
+     xmlns:cco="http://purl.org/ontology/cco/core#"
+     xmlns:dbo="https://dbpedia.org/page/Success"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:par="http://ontologydesignpatterns.org/cp/owl/parameter.owl"
+     xmlns:pof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="https://raw.githubusercontent.com/cogan-shimizu-wsu/ProvenanceOWL/master/EntityWithProvenanceOntologyPattern.owl"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
-    <owl:Ontology>
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl">
         <terms:created>February 2024</terms:created>
         <terms:creator>Corrado Consiglio</terms:creator>
         <terms:description>The Hot Hand Fallacy module of the Cognitive Bias Ontology</terms:description>
         <terms:title>Hot Hand Fallacy Bias Ontology</terms:title>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:AffectedBy"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:An_Ontology_Design_Pattern_for_Activity_Reasoning"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Parameter"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Provenance"/>
         <cpannotationschema:hasComponent rdf:resource="http://purl.org/ontology/cco/20100926/cognitivecharacteristics.html"/>
+        <cpannotationschema:hasComponent rdf:resource="http://xmlns.com/foaf/spec/"/>
         <cpannotationschema:hasComponent rdf:resource="https://www.dbpedia.org/about/"/>
         <cpannotationschema:scenarios>Sports Betting: A sports bettor assumes that a team that has won several games in a row is more likely to win the next one, overlooking factors like team performance and matchups.</cpannotationschema:scenarios>
         <rdfs:comment xml:lang="en">The Hot Hand Fallacy Bias, also known as the Hot Hand Fallacy, is a cognitive bias that leads people to believe that a series of successful outcomes in a random or chance-based process is more likely to continue in the short term. In other words, individuals tend to think that if they or someone else has experienced a streak of wins or successes, they are more likely to keep winning or succeeding in the near future. This bias can be observed in various contexts, such as sports, gambling, or even everyday decision-making.</rdfs:comment>
