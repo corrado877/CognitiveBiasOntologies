@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/hwruser/ontologies/2024/1/untitled-ontology-137" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/HotHandFallacyOntology/HotHandFallacyOntology.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/PareidoliaOntology/PareidoliaBiasOntology.owl"/>
