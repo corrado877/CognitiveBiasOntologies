@@ -1,0 +1,420 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl"
+     xmlns:ap="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl"
+     xmlns:fs="https://w3id.org/framester/data/framestercore/"
+     xmlns:aff="https://w3id.org/affectedBy"
+     xmlns:cco="http://purl.org/ontology/cco/core#"
+     xmlns:dbo="https://dbpedia.org/page/Success"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:par="http://ontologydesignpatterns.org/cp/owl/parameter.owl"
+     xmlns:pof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="https://raw.githubusercontent.com/cogan-shimizu-wsu/ProvenanceOWL/master/EntityWithProvenanceOntologyPattern.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:participation="http://ontologydesignpatterns.org/cp/owl/participation.owl"
+     xmlns:HotHandFallacy="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/HotHandFallacyOntology/HotHandFallacyOntology.owl"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:HotHandFallacyOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#">
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl">
+        <terms:created>February 2024</terms:created>
+        <terms:creator>Corrado Consiglio</terms:creator>
+        <terms:description>The Hot Hand Fallacy module of the Cognitive Bias Ontology</terms:description>
+        <terms:title>Hot Hand Fallacy Bias Ontology</terms:title>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:AffectedBy"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:An_Ontology_Design_Pattern_for_Activity_Reasoning"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Parameter"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Participation"/>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Provenance"/>
+        <cpannotationschema:hasComponent rdf:resource="http://purl.org/ontology/cco/20100926/cognitivecharacteristics.html"/>
+        <cpannotationschema:hasComponent rdf:resource="http://xmlns.com/foaf/spec/"/>
+        <cpannotationschema:hasComponent rdf:resource="https://www.dbpedia.org/about/"/>
+        <cpannotationschema:scenarios>Sports Betting: A sports bettor assumes that a team that has won several games in a row is more likely to win the next one, overlooking factors like team performance and matchups.</cpannotationschema:scenarios>
+        <rdfs:comment xml:lang="en">The Hot Hand Fallacy Bias, also known as the Hot Hand Fallacy, is a cognitive bias that leads people to believe that a series of successful outcomes in a random or chance-based process is more likely to continue in the short term. In other words, individuals tend to think that if they or someone else has experienced a streak of wins or successes, they are more likely to keep winning or succeeding in the near future. This bias can be observed in various contexts, such as sports, gambling, or even everyday decision-making.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#generatedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#generatedBy">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasBelief -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasBelief">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasBiasedOpinion -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasBiasedOpinion">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasInfluence -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasInfluence">
+        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#influencedBy"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Probability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasOutcomeEffect -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasOutcomeEffect">
+        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isOutcomeEffectOf"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Success"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasParameter">
+        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isParameterFor"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Probability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasPart">
+        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isPartOf"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasParticipant">
+        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isParticipantIn"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#influencedBy"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isOutcomeEffectOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isOutcomeEffectOf"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isParameterFor -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isParameterFor"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isPartOf"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isParticipantIn -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isParticipantIn"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isProducedEffectBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isProducedEffectBy">
+        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#producesOutcomeEffect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#producesOutcomeEffect -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#producesOutcomeEffect">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Success"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasParameterDataValue -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasParameterDataValue">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Probability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Event -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Event"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Probability -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Probability"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#generatedBy"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#FutureEvent -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#FutureEvent">
+        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence">
+        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#FutureEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Success -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Success"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Footbal_Team_Match_Bet -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Footbal_Team_Match_Bet">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence"/>
+        <HotHandFallacyOntology:hasParameter rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel"/>
+        <HotHandFallacyOntology:isPartOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets"/>
+        <HotHandFallacyOntology:producesOutcomeEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet"/>
+        <rdfs:comment>A class for the next chance-based occurence such as a Footbal Team Match Bet where the probability level is not completely random and can be influenced by different external elements</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Footbal_Team_Match_Bet_Series -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Footbal_Team_Match_Bet_Series">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence"/>
+        <HotHandFallacyOntology:generatedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets"/>
+        <HotHandFallacyOntology:hasOutcomeEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet"/>
+        <rdfs:comment>a sequence of past bets that have the same outcome effect</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Probability"/>
+        <HotHandFallacyOntology:influencedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Footbal_Team_Match_Bet_Series"/>
+        <HotHandFallacyOntology:hasParameterDataValue>High</HotHandFallacyOntology:hasParameterDataValue>
+        <rdfs:comment>The probability level that an event such a chance-based occurence can have in the next future a specific outcome effect.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+        <rdfs:comment>A frame representing an Acitvity such as a Sport Bets in which is involved an Agent</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
+        <HotHandFallacyOntology:hasBelief rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Footbal_Team_Match_Bet_Series"/>
+        <HotHandFallacyOntology:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Footbal_Team_Match_Bet"/>
+        <HotHandFallacyOntology:isParticipantIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets"/>
+        <rdfs:comment>A sport Bettor who is participatin in an Activity such as Sport Bets</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Success"/>
+        <rdfs:comment>A class for representing the outcome effect of events such as a Football Team Match Bet</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Event"/>
+            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
+            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Probability"/>
+            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence"/>
+            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Success"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
