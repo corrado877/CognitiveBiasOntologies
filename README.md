@@ -13,7 +13,7 @@ Next, a dedicated ontology was developed for each bias following what is defined
 
 
 [^1]:[Blanco, F. (2017). Cognitive Bias. In: Vonk, J., Shackelford, T. (eds) Encyclopedia of Animal Cognition and Behavior](https://link.springer.com/referenceworkentry/10.1007/978-3-319-47829-6_1244-1)
-[^2]:Presutti, Valentina, Enrico Daga, Aldo Gangemi and Eva Blomqvist. “eXtreme Design with Content Ontology Design Patterns.” WOP (2009).
+[^2]:[Presutti, Valentina, Enrico Daga, Aldo Gangemi and Eva Blomqvist. “eXtreme Design with Content Ontology Design Patterns.” WOP (2009)](https://ceur-ws.org/Vol-516/pap21.pdf).
 
 Cognitive Bias Ontologies repository
 Here are contained some Cognitive Bias Ontologies:
