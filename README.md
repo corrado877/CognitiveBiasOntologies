@@ -15,6 +15,13 @@ Next, a dedicated ontology was developed for each bias following what is defined
 + [Naïve cynicism](https://en.wikipedia.org/wiki/Na%C3%AFve_cynicism)
 + [Naïve realism](https://en.wikipedia.org/wiki/Na%C3%AFve_realism_(psychology))
 
+This cluster of bias is also known as the "bias of noticing flaws in others more easily than in ourselves." This bias reflects a tendency in human cognition where individuals are often more adept at recognizing and pointing out flaws, mistakes, or shortcomings in others while being less able to recognize the same flaws within themselves.
+
+There are a few psychological and cognitive factors that contribute to this bias:
+1. **Self-Enhancement Bias**: People generally have a desire to maintain a positive self-image. This can lead to a tendency to downplay or overlook one's own flaws and mistakes while being more critical of others.
+2. **Confirmation Bias**: We tend to seek out information that confirms our existing beliefs or biases. When evaluating others, we may be more inclined to look for evidence that supports our perception of their flaws.
+3. **Attribution Theory**: When it comes to explaining behavior, individuals often attribute their own actions to external factors while attributing the behavior of others to internal characteristics. This means that when we make mistakes, we may attribute them to situational factors beyond our control, but when others make mistakes, we attribute them to personal flaws or shortcomings.
+4. **Selective Attention and Perception**: Our attention is limited, and we tend to focus on information that is most salient or relevant to us. When evaluating others, we may be more attuned to their behavior and actions, making their flaws more noticeable to us. However, when it comes to evaluating ourselves, we may overlook or rationalize our own flaws because they are not as salient or threatening to our self-image.
 
 ### We tend to find stories and patterns even when looking at sparse data ###
 + [Confabulation](https://en.wikipedia.org/wiki/Confabulation)
@@ -30,6 +37,9 @@ Next, a dedicated ontology was developed for each bias following what is defined
 + [Illusory correlation](https://en.wikipedia.org/wiki/Illusory_correlation)
 + [Pareidolia](https://en.wikipedia.org/wiki/Pareidolia)
 + [Anthropomorphism](https://en.wikipedia.org/wiki/Anthropomorphism#Psychology)
+
+
+
 
 The full documentation about the development of the Cognitive Bias Ontology project can be found [here].
 
