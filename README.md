@@ -31,6 +31,7 @@ Next, a dedicated ontology was developed for each bias following what is defined
 + [Pareidolia](https://en.wikipedia.org/wiki/Pareidolia)
 + [Anthropomorphism](https://en.wikipedia.org/wiki/Anthropomorphism#Psychology)
 
+The full documentation about the development of the Cognitive Bias Ontology project can be found [here].
 
 The Cognitive Bias Ontology project is the final result of the 2023 Knowledge Representation and Extraction course held by professor Aldo Gangemi at the University of Bologna.
 
