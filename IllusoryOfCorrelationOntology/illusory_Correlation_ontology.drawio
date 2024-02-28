@@ -1,13 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2024-02-27T14:07:03.071Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="_E7eDOo1my0T5jExCkKx" version="23.1.7" type="device">
+<mxfile host="app.diagrams.net" modified="2024-02-28T15:23:08.135Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="tUVKJ8g5PclFcbrFGAhe" version="23.1.7" type="device">
   <diagram id="TT8WWTOxTNUSlIMXdxdx" name="Page-1">
-    <mxGraphModel dx="1847" dy="1715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1841" dy="1715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="SKrHwn_6_twiPewyShYr-1" value="foaf: Person&#xa;(Baseball player)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="630" y="128" width="94.97" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="68QGnL6lObhzxrOEoNof-1" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="SKrHwn_6_twiPewyShYr-1" edge="1" target="RSyCqdyMON4DzPg3mdLE-1">
+        <mxCell id="68QGnL6lObhzxrOEoNof-1" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="SKrHwn_6_twiPewyShYr-1" target="RSyCqdyMON4DzPg3mdLE-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="500" y="100" as="sourcePoint" />
             <mxPoint x="430" y="160" as="targetPoint" />
@@ -21,7 +21,7 @@
         <mxCell id="RSyCqdyMON4DzPg3mdLE-1" value="fs:BecomingAware&#xa;(TrendPerception)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="280" y="123" width="150" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="4798ugVQR6CEGWnT5jVD-1" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="RSyCqdyMON4DzPg3mdLE-1" edge="1" target="cGCSp1flGnfeDs-r0S0j-1">
+        <mxCell id="4798ugVQR6CEGWnT5jVD-1" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="RSyCqdyMON4DzPg3mdLE-1" target="cGCSp1flGnfeDs-r0S0j-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="90" y="120" as="sourcePoint" />
             <mxPoint x="-10" y="148" as="targetPoint" />
@@ -177,7 +177,7 @@
           <mxGeometry x="540" y="-160" width="320" height="120" as="geometry" />
         </mxCell>
         <mxCell id="NmjNTOWCWf52FdYZ6F1o-2" value="&lt;ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;ActivitySpecification&lt;/li&gt;&lt;li&gt;Affected By&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Cognitive Characteristic Ontology&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Experience and Observation&lt;/li&gt;&lt;li&gt;PartOf&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="NmjNTOWCWf52FdYZ6F1o-1" vertex="1">
-          <mxGeometry x="-10" y="-10" width="270" height="142" as="geometry" />
+          <mxGeometry x="-10" width="270" height="142" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
