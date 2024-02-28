@@ -17,7 +17,19 @@ Next, a dedicated ontology was developed for each bias following what is defined
 
 
 ### We tend to find stories and patterns even when looking at sparse data ###
-
++ [Confabulation](https://en.wikipedia.org/wiki/Confabulation)
++ [Clustering illusion](https://en.wikipedia.org/wiki/Clustering_illusion)
++ [Insensitivity to sample size](https://en.wikipedia.org/wiki/Insensitivity_to_sample_size)
++ [Neglect of probability](https://en.wikipedia.org/wiki/Neglect_of_probability)
++ [Anecdotal fallacy](https://en.wikipedia.org/wiki/Anecdotal_evidence)
++ [Illusion of validity](https://en.wikipedia.org/wiki/Illusion_of_validity)
++ [Masked–man fallacy](https://en.wikipedia.org/wiki/Masked-man_fallacy)
++ [Recency illusion](https://en.wikipedia.org/wiki/Recency_illusion)
++ [Gambler's fallacy](https://en.wikipedia.org/wiki/Gambler's_fallacy)
++ [Hot–hand fallacy](https://en.wikipedia.org/wiki/Hot_hand)
++ [Illusory correlation](https://en.wikipedia.org/wiki/Illusory_correlation)
++ [Pareidolia](https://en.wikipedia.org/wiki/Pareidolia)
++ [Anthropomorphism](https://en.wikipedia.org/wiki/Anthropomorphism#Psychology)
 
 
 The Cognitive Bias Ontology project is the final result of the 2023 Knowledge Representation and Extraction course held by professor Aldo Gangemi at the University of Bologna.
