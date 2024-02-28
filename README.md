@@ -11,9 +11,9 @@ For the study and understanding of each bias, the 	**Cognitive Bias Codex Wheel*
 Next, a dedicated ontology was developed for each bias following what is defined by "the eXtreme Design approach"[^2]. The Cognitive Bias Codex Wheel is composed of 20 clusters of bias and each of them describes a specific category in which the biases act. For the development of the project, our group focused on the analysis and modeling of two of these bias clusters described as follows:
 
 ### We notice flaws in others more easily than we notice flaws in ourselves ###
-+ Bias blind spot
-+ Naïve cynicism
-+ Naïve realism
++ [Bias blind spot](https://en.wikipedia.org/wiki/Bias_blind_spot)
++ [Naïve cynicism](https://en.wikipedia.org/wiki/Na%C3%AFve_cynicism)
++ [Naïve realism](https://en.wikipedia.org/wiki/Na%C3%AFve_realism_(psychology)
 
 
 ### We tend to find stories and patterns even when looking at sparse data ###
