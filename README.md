@@ -13,14 +13,14 @@ Next, a dedicated ontology was developed for each bias following what is defined
 ### We notice flaws in others more easily than we notice flaws in ourselves ###
 + [Bias blind spot](https://en.wikipedia.org/wiki/Bias_blind_spot)
 + [Naïve cynicism](https://en.wikipedia.org/wiki/Na%C3%AFve_cynicism)
-+ [Naïve realism](https://en.wikipedia.org/wiki/Na%C3%AFve_realism_(psychology)
++ [Naïve realism](https://en.wikipedia.org/wiki/Na%C3%AFve_realism_(psychology))
 
 
 ### We tend to find stories and patterns even when looking at sparse data ###
 
 
 
-This project is the result of the 2023 Knowledge Representation and Extraction course held by professor Aldo Gangemi at the University of Bologna.
+The Cognitive Bias Ontology project is the final result of the 2023 Knowledge Representation and Extraction course held by professor Aldo Gangemi at the University of Bologna.
 
 [^1]:[Blanco, F. (2017). Cognitive Bias. In: Vonk, J., Shackelford, T. (eds) Encyclopedia of Animal Cognition and Behavior](https://link.springer.com/referenceworkentry/10.1007/978-3-319-47829-6_1244-1)
 [^2]:[Presutti, Valentina, Enrico Daga, Aldo Gangemi and Eva Blomqvist. “eXtreme Design with Content Ontology Design Patterns.” WOP (2009)](https://ceur-ws.org/Vol-516/pap21.pdf).
