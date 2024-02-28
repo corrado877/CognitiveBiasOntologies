@@ -38,13 +38,23 @@ There are a few psychological and cognitive factors that contribute to this bias
 + [Pareidolia](https://en.wikipedia.org/wiki/Pareidolia)
 + [Anthropomorphism](https://en.wikipedia.org/wiki/Anthropomorphism#Psychology)
 
+This cluster bias refers to the tendency to find patterns and stories in sparse or random data is known as "apophenia." Apophenia refers to the human inclination to perceive meaningful connections or patterns in unrelated or random information. This cognitive bias can lead individuals to see trends, correlations, or meaningful narratives even when they may not actually exist. Several factors contribute to apophenia:
 
+1. **Pattern Recognition**: Human brains are naturally wired to recognize patterns and make sense of the environment. This evolutionary trait has been crucial for survival. However, it can lead to seeing patterns even when they are not present.
 
+2. **Cognitive Schemas**: Our brains operate based on pre-existing mental frameworks or schemas. These schemas influence how we interpret information and can predispose us to perceive connections or patterns that align with our existing beliefs or expectations.
+
+3. **Need for Meaning**: Humans have a strong psychological need for meaning and coherence. When faced with ambiguous or uncertain information, we tend to impose meaning on it to create a more understandable and predictable world.
+
+4. **Confirmation Bias**: Once we form a belief or see a pattern, we may be inclined to seek out information that confirms our interpretation while ignoring or downplaying contradictory evidence.
+
+5. **Narrative Instinct**: Humans are natural storytellers, and our brains often construct narratives to make sense of events. This storytelling instinct can contribute to the creation of patterns or connections, even in the absence of substantial evidence.
 
 The full documentation about the development of the Cognitive Bias Ontology project can be found [here].
 
 The Cognitive Bias Ontology project is the final result of the 2023 Knowledge Representation and Extraction course held by professor Aldo Gangemi at the University of Bologna.
 
+**References**:
 [^1]:[Blanco, F. (2017). Cognitive Bias. In: Vonk, J., Shackelford, T. (eds) Encyclopedia of Animal Cognition and Behavior](https://link.springer.com/referenceworkentry/10.1007/978-3-319-47829-6_1244-1)
 [^2]:[Presutti, Valentina, Enrico Daga, Aldo Gangemi and Eva Blomqvist. “eXtreme Design with Content Ontology Design Patterns.” WOP (2009)](https://ceur-ws.org/Vol-516/pap21.pdf).
 
