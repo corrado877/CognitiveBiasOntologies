@@ -1,6 +1,6 @@
 # The Cognitive Bias Ontology
 
-The Cognitive Bias Ontology is a project that aims to create a comprehensive collection of all the cognitive biases peculiar to human beings. Cognitive bias refers to a systematic (that is, nonrandom and, thus, predictable) deviation from rationality in judgment or decision-making[^1] [Blanco, F. (2017). Cognitive Bias. In: Vonk, J., Shackelford, T. (eds) Encyclopedia of Animal Cognition and Behavior] (https://link.springer.com/referenceworkentry/10.1007/978-3-319-47829-6_1244-1). 
+The Cognitive Bias Ontology is a project that aims to create a comprehensive collection of all the cognitive biases peculiar to human beings. Cognitive bias refers to a systematic (that is, nonrandom and, thus, predictable) deviation from rationality in judgment or decision-making[^1]. 
 
 In other words, Cognitive bias is a tendency to act in an irrational way due to our limited ability to process information objectively; it is not always negative, but it can cloud our judgment and affect how clearly we perceive situations, people, or potential risks. 
 
