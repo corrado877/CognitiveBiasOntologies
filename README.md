@@ -8,7 +8,9 @@ For the study and understanding of each bias, the 	**Cognitive Bias Codex Wheel*
 
 ![The cognitive bias codex, courtesy of John Manoogian III](https://upload.wikimedia.org/wikipedia/commons/6/65/Cognitive_bias_codex_en.svg "©John Manoogian III")
 
-Next, a dedicated ontology was developed for each bias following what is defined by "the extreme design approach"[^2].
+Next, a dedicated ontology was developed for each bias following what is defined by "the eXtreme Design approach"[^2]. The Cognitive Bias Codex Wheel is composed of 20 clusters of bias and each of them describes a specific category in which the biases act. For the development of the project, our group focused on the analysis and modeling of two of these bias clusters described as follows:
+
+
 
 
 
