@@ -10,17 +10,19 @@ For the study and understanding of each bias, the 	**Cognitive Bias Codex Wheel*
 
 Next, a dedicated ontology was developed for each bias following what is defined by "the eXtreme Design approach"[^2]. The Cognitive Bias Codex Wheel is composed of 20 clusters of bias and each of them describes a specific category in which the biases act. For the development of the project, our group focused on the analysis and modeling of two of these bias clusters described as follows:
 
+### We notice flaws in others more easily than we notice flaws in ourselves ###
++ Bias blind spot
++ Naïve cynicism
++ Naïve realism
+
+
+### We tend to find stories and patterns even when looking at sparse data ###
 
 
 
+This project is the result of the 2023 Knowledge Representation and Extraction course held by professor Aldo Gangemi at the University of Bologna.
 
 [^1]:[Blanco, F. (2017). Cognitive Bias. In: Vonk, J., Shackelford, T. (eds) Encyclopedia of Animal Cognition and Behavior](https://link.springer.com/referenceworkentry/10.1007/978-3-319-47829-6_1244-1)
 [^2]:[Presutti, Valentina, Enrico Daga, Aldo Gangemi and Eva Blomqvist. “eXtreme Design with Content Ontology Design Patterns.” WOP (2009)](https://ceur-ws.org/Vol-516/pap21.pdf).
 
-Cognitive Bias Ontologies repository
-Here are contained some Cognitive Bias Ontologies:
 
-Gambler's Fallacy Ontology;
-Hot Hand Fallacy Ontology;
-Illusory Correlation;
-Pareidolia;
