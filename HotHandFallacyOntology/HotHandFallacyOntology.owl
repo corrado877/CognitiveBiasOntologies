@@ -112,6 +112,7 @@
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasBelief">
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence"/>
+        <rdfs:comment>An uncertain relation for competence representation. That means beliefs, persuasions or opinions, which can also be misconceptions. A Person who believes that a sequence of past events with the same outcome can change the probability of the outcome of the same event in the future</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -121,6 +122,7 @@
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasBiasedOpinion">
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence"/>
+        <rdfs:comment>a property connecting a Person who has a biased opinion about the possible outcome of an Event such as a Random or Chance-based Occurrence</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -141,6 +143,7 @@
         <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isOutcomeEffectOf"/>
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Success"/>
+        <rdfs:comment>A property linking a series of events which Outcome brings to the same effect</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -183,7 +186,9 @@
 
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isOutcomeEffectOf -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isOutcomeEffectOf"/>
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isOutcomeEffectOf">
+        <rdfs:comment>inverse property of HasOutcomeEffect</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
@@ -209,6 +214,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isProducedEffectBy">
         <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#producesOutcomeEffect"/>
+        <rdfs:comment>inverse property of producesOutcomeEffect</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -218,6 +224,7 @@
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#producesOutcomeEffect">
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Success"/>
+        <rdfs:comment>a property linking an event which Outcome will produce an effect</rdfs:comment>
     </owl:ObjectProperty>
     
 
