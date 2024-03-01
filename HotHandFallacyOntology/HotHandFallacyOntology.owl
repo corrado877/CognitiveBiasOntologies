@@ -18,8 +18,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:participation="http://ontologydesignpatterns.org/cp/owl/participation.owl"
      xmlns:HotHandFallacy="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/HotHandFallacyOntology/HotHandFallacyOntology.owl"
-     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
-     xmlns:HotHandFallacyOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#">
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#>
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl">
         <terms:created>February 2024</terms:created>
         <terms:creator>Corrado Consiglio</terms:creator>
