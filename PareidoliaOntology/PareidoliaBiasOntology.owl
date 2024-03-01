@@ -12,7 +12,6 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
-     xmlns:Pareidolia="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/PareidoliaOntology/PareidoliaBiasOntology.owl"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
      xmlns:PareidoliaBiasOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl">

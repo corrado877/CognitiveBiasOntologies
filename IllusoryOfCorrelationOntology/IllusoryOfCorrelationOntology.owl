@@ -13,7 +13,6 @@
      xmlns:partof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
      xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
-     xmlns:IllusoryCorrelation="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl"
      xmlns:IllusoryOfCorrelationOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl">
         <terms:created>February 2024</terms:created>
