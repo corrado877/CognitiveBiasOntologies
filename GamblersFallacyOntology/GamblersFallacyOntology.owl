@@ -15,9 +15,9 @@
      xmlns:parameter="&quot;http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"
      xmlns:affectedBy="https://w3id.org/affectedBy"
      xmlns:participation="http://ontologydesignpatterns.org/cp/owl/participation.owl"
-     xmlns:GamblersFallacy="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/GamblersFallacyOntology/GamblersFallacyOntology.owl"
      xmlns:activitypattern="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl"
-     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:GamblersFallacyOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-20T00:00:00</terms:created>
         <terms:creator>Corrado Consiglio</terms:creator>
