@@ -264,7 +264,7 @@
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
         <rdfs:comment>The Person class represents people. Something is a Person if it is a person. We don&apos;t nitpic about whether they&apos;re alive, dead, real, or imaginary. The Person class is a sub-class of the Agent class, since all people are considered &apos;agents&apos; in FOAF.</rdfs:comment>
-        <rdfs:comment>Person</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
     </owl:Class>
     
 
