@@ -14,8 +14,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:partof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
-     xmlns:parameter="http://ontologydesignpatterns.org/cp/owl/parameter.owl"
-     xmlns:parameter2="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"
+     xmlns:parameter="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"
      xmlns:participation="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
      xmlns:activitypattern="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
@@ -394,7 +393,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NumberDraw">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence"/>
-        <parameter2:hasParameter rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ProbabilityLevel"/>
+        <parameter:hasParameter rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ProbabilityLevel"/>
         <partof:isPartOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
         <dbo:produces rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number"/>
         <rdfs:comment>a number draw in a lottery is an event totally random where each number has the same probability of being extracted.</rdfs:comment>
@@ -418,7 +417,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ProbabilityLevel">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
         <aff:influencedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series"/>
-        <parameter2:hasParameterDataValue>Low</parameter2:hasParameterDataValue>
+        <parameter:hasParameterDataValue>Low</parameter:hasParameterDataValue>
         <rdfs:comment>The level of probability that the outcome of the next number draw will be red or black  can be higher or lower for the participant, depending on the outcomes of the previous number draws.</rdfs:comment>
     </owl:NamedIndividual>
     
