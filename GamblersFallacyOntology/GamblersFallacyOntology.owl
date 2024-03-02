@@ -264,6 +264,7 @@
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
         <rdfs:comment>The Person class represents people. Something is a Person if it is a person. We don&apos;t nitpic about whether they&apos;re alive, dead, real, or imaginary. The Person class is a sub-class of the Agent class, since all people are considered &apos;agents&apos; in FOAF.</rdfs:comment>
+        <rdfs:comment>Person</rdfs:comment>
     </owl:Class>
     
 
@@ -308,7 +309,7 @@
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome">
         <rdfs:comment>This class represent the outcome of an event such as a RandomOccurence</rdfs:comment>
-        <rdfs:label></rdfs:label>
+        <rdfs:label>Outcome</rdfs:label>
     </owl:Class>
     
 
