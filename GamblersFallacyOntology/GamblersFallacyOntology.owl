@@ -399,6 +399,7 @@
         <parameter:hasParameter rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ProbabilityLevel"/>
         <partof:isPartOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
         <dbo:produces rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number"/>
+        <dbo:produces rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number"/>
         <rdfs:comment>a number draw in a lottery is an event totally random where each number has the same probability of being extracted.</rdfs:comment>
         <rdfs:label>Number Draw</rdfs:label>
     </owl:NamedIndividual>
