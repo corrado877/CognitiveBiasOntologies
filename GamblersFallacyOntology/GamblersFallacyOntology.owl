@@ -364,6 +364,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ColorNumber"/>
         <rdfs:comment>The outcome of the next number draw or past number draws. Black numbers and red numbers have the same probability of being extracted.</rdfs:comment>
+        <rdfs:label>Black Number</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -373,6 +374,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
         <rdfs:comment>an activity where numbers are of two different colours (black and red) and where only one number is extracted for each draw.</rdfs:comment>
+        <rdfs:label>Lottery Draw</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -385,6 +387,7 @@
         <participation:isParticipantIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
         <hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NumberDraw"/>
         <rdfs:comment>An human being that participates to a lottery draw.</rdfs:comment>
+        <rdfs:label>Lottery Participant</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -397,6 +400,7 @@
         <partof:isPartOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
         <dbo:produces rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number"/>
         <rdfs:comment>a number draw in a lottery is an event totally random where each number has the same probability of being extracted.</rdfs:comment>
+        <rdfs:label>Number Draw</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -408,6 +412,7 @@
         <prov:wasGeneratedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
         <hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number"/>
         <rdfs:comment>An ordered sequence of past number draws that has the same outcome (black) will influence the judgment of the participant about the probability of the outcome in the next number draw.</rdfs:comment>
+        <rdfs:label>Past Number Draw Series</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -419,6 +424,7 @@
         <aff:influencedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series"/>
         <parameter:hasParameterDataValue>Low</parameter:hasParameterDataValue>
         <rdfs:comment>The level of probability that the outcome of the next number draw will be red or black  can be higher or lower for the participant, depending on the outcomes of the previous number draws.</rdfs:comment>
+        <rdfs:label>Probability Level</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -428,6 +434,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ColorNumber"/>
         <rdfs:comment>The outcome of the next number draw or past number draws. Black numbers and red numbers have the same probability of being extracted</rdfs:comment>
+        <rdfs:label>Red Number</rdfs:label>
     </owl:NamedIndividual>
     
 
