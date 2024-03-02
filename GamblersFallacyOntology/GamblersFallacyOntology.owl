@@ -262,6 +262,7 @@
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity">
         <rdfs:comment>This frame represent an activity with random or chance-based outcomes in which a person is involved in.</rdfs:comment>
+        <rdfs:label>Activity</rdfs:label>
     </owl:Class>
     
 
