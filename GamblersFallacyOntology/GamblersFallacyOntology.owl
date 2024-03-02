@@ -100,7 +100,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#generatedBy">
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
     </owl:ObjectProperty>
     
 
@@ -166,7 +166,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasParticipant">
         <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isParticipantIn"/>
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
     </owl:ObjectProperty>
     
@@ -199,7 +199,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isPartOf">
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
     </owl:ObjectProperty>
     
 
@@ -258,15 +258,6 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity">
-        <rdfs:comment>This frame represent an activity with random or chance-based outcomes in which a person is involved in.</rdfs:comment>
-        <rdfs:label>Activity</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ColorNumber -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ColorNumber">
@@ -275,19 +266,12 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Event -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Event">
-        <rdfs:comment>This class represent an event that will happen in the next future and it is characterized by randomness.</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#FutureEvent -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#FutureEvent">
-        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Event"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <rdfs:comment>This class represent an event that will happen in the next future.</rdfs:comment>
+        <rdfs:label>FutureEvent</rdfs:label>
     </owl:Class>
     
 
@@ -299,9 +283,11 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isPartOf"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This class represent an event that will happen in the next future and it is characterized by randomness.</rdfs:comment>
+        <rdfs:label>NextRandomOccurence</rdfs:label>
     </owl:Class>
     
 
@@ -336,10 +322,28 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#generatedBy"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>This frame represent a sequence of temporally-ordered past events that have the same outcome</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Activity -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
+        <rdfs:comment>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame. In this case the frame represents an activity with random or chance-based outcomes in which a person is involved in.</rdfs:comment>
+        <rdfs:label>Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event">
+        <rdfs:comment>An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries. INI The party will take place on Sunday in the all-you-can-eat buffet.</rdfs:comment>
+        <rdfs:label>Event</rdfs:label>
     </owl:Class>
     
 
@@ -367,7 +371,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
         <rdfs:comment>an activity where numbers are of two different colours (black and red) and where only one number is extracted for each draw.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -439,12 +443,12 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
-            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Event"/>
             <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome"/>
             <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
             <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Probability"/>
             <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Sequence"/>
+            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
