@@ -8,12 +8,13 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prov1="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#prov:"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:partof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
      xmlns:parameter="http://ontologydesignpatterns.org/cp/owl/parameter.owl"
      xmlns:affectedBy="https://w3id.org/affectedBy"
-     xmlns:provenance="https://raw.githubusercontent.com/cogan-shimizu-wsu/ProvenanceOWL/master/EntityWithProvenanceOntologyPattern.owl"
      xmlns:participation="http://ontologydesignpatterns.org/cp/owl/participation.owl"
      xmlns:activitypattern="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
@@ -93,15 +94,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#generatedBy -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#generatedBy">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
-    </owl:ObjectProperty>
     
 
 
@@ -227,6 +219,15 @@
     
 
 
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#prov:wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#prov:wasGeneratedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -343,7 +344,7 @@
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#generatedBy"/>
+                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#prov:wasGeneratedBy"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -410,8 +411,8 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
-        <generatedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
         <hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number"/>
+        <prov1:wasGeneratedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
         <rdfs:comment>An ordered sequence of past number draws that has the same outcome (black) will influence the judgment of the participant about the probability of the outcome in the next number draw.</rdfs:comment>
     </owl:NamedIndividual>
     
