@@ -276,7 +276,9 @@
 
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Event -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Event"/>
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Event">
+        <rdfs:comment>This class represent an event that will happen in the next future and it is characterized by randomness.</rdfs:comment>
+    </owl:Class>
     
 
 
