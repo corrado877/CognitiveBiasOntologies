@@ -1,23 +1,23 @@
-<mxfile host="app.diagrams.net" modified="2024-03-03T12:03:12.594Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="5G5MEXlR54AEdaTNDDVe" version="24.0.0" type="device">
+<mxfile host="app.diagrams.net" modified="2024-03-03T13:10:35.710Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="eiu_cW0Glfq6tXSLxFgq" version="24.0.0" type="device">
   <diagram id="oU7lBioK2oj68UVmJGeL" name="Page-1">
     <mxGraphModel dx="1877" dy="1738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="X6dG0_ZqyGWDh663tGR5-1" value="foaf: Person&#xa;(Participant)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="804.01" y="340" width="81.97" height="40" as="geometry" />
+        <mxCell id="X6dG0_ZqyGWDh663tGR5-1" value="fs:Player&#xa;(Lottery_Player)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="804.01" y="340" width="125.99" height="40" as="geometry" />
         </mxCell>
         <mxCell id="X6dG0_ZqyGWDh663tGR5-2" value="fs:Event" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="-100" y="360" width="81.96822102864604" height="44" as="geometry" />
+          <mxGeometry x="-130" y="360" width="81.96822102864604" height="44" as="geometry" />
         </mxCell>
         <mxCell id="X6dG0_ZqyGWDh663tGR5-3" value="fs:Sequence&#xa; (Number Draw Series)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="454.52" y="103" width="131" height="54" as="geometry" />
         </mxCell>
         <mxCell id="X6dG0_ZqyGWDh663tGR5-5" value="cbo:FutureEvent" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="-10" y="500" width="110.99" height="50" as="geometry" />
+          <mxGeometry x="-18.03" y="510" width="110.99" height="50" as="geometry" />
         </mxCell>
         <mxCell id="X6dG0_ZqyGWDh663tGR5-6" value="fs:Activity&#xa;(Lottery Draw)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="479.03999999999996" y="270" width="81.96822102864604" height="44" as="geometry" />
+          <mxGeometry x="470" y="270" width="91.01" height="44" as="geometry" />
         </mxCell>
         <mxCell id="SumdyEbCF_zN64hNGDhB-3" value="fs:Probability" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="460.02" y="-13" width="120" height="40" as="geometry" />
@@ -30,7 +30,7 @@
             <mxRectangle x="-550" y="110" width="100" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <UserObject label="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;aff&lt;/b&gt;:&amp;nbsp;https://w3id.org/affectedBy#&lt;br&gt;&lt;b&gt;activitypattern&lt;/b&gt;:http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#&lt;div&gt;&lt;b&gt;dbo&lt;/b&gt;:https://dbpedia.org/ontology/&lt;br&gt;&lt;b&gt;cbo&lt;/b&gt;:https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#&lt;br&gt;&lt;b&gt;cco:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;text-align: justify; background-color: initial;&quot;&gt;http://purl.org/ontology/cco/core#&lt;/span&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;b&gt;fs&lt;/b&gt;:https://w3id.org/framester/data/framestercore&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;foaf:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://xmlns.com/foaf/0.1/&lt;br&gt;&lt;b&gt;parameter&lt;/b&gt;:http://ontologydesignpatterns.org/cp/owl/parameter.owl#&lt;br&gt;&lt;b&gt;participation&lt;/b&gt;:&amp;nbsp;http://ontologydesignpatterns.org/cp/owl/participation.owl#&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;partof&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://www.ontologydesignpatterns.org/cp/owl/partof.owl#&lt;br&gt;&lt;/span&gt;&lt;b&gt;prov:&lt;/b&gt;http://www.w3.org/ns/prov#&lt;br&gt;&lt;b&gt;rdfs&lt;/b&gt;:http://www.w3.org/2000/01/rdf-schema#&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;xsd:&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://www.w3.org/2001/XMLSchema#&lt;/span&gt;&lt;/div&gt;" link="http://www.w3.org/2000/01/rdf-schema#" id="j3H0xUcFlWFZ-JWSaFpQ-1">
+        <UserObject label="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;aff&lt;/b&gt;:&amp;nbsp;https://w3id.org/affectedBy#&lt;br&gt;&lt;b&gt;activitypattern&lt;/b&gt;:http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#&lt;div&gt;&lt;b&gt;dbr&lt;/b&gt;:https://dbpedia.org/ontology/&lt;br&gt;&lt;b&gt;cbo&lt;/b&gt;:https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#&lt;br&gt;&lt;b&gt;cco:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;text-align: justify; background-color: initial;&quot;&gt;http://purl.org/ontology/cco/core#&lt;/span&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;b&gt;fs&lt;/b&gt;:https://w3id.org/framester/data/framestercore/&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;foaf:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://xmlns.com/foaf/0.1/&lt;br&gt;&lt;b&gt;parameter&lt;/b&gt;:http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#&lt;br&gt;&lt;b&gt;participation&lt;/b&gt;:&amp;nbsp;http://www.ontologydesignpatterns.org/cp/owl/participation.owl#&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;partof&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://www.ontologydesignpatterns.org/cp/owl/partof.owl#&lt;br&gt;&lt;/span&gt;&lt;b&gt;prov:&lt;/b&gt;http://www.w3.org/ns/prov#&lt;br&gt;&lt;b&gt;rdfs&lt;/b&gt;:http://www.w3.org/2000/01/rdf-schema#&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;xsd:&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://www.w3.org/2001/XMLSchema#&lt;/span&gt;&lt;/div&gt;" link="http://www.w3.org/2000/01/rdf-schema#" id="j3H0xUcFlWFZ-JWSaFpQ-1">
           <mxCell style="text;whiteSpace=wrap;html=1;" parent="DcR2EK71TW1_98MgDz5n-1" vertex="1">
             <mxGeometry x="9" y="22" width="761" height="180" as="geometry" />
           </mxCell>
@@ -189,6 +189,20 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="rwo6sAAVRPEedmvHrdig-11" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;b&gt;rdfs&lt;/b&gt;:subClassOf&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" parent="rwo6sAAVRPEedmvHrdig-10" vertex="1" connectable="0">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dHggUo9AAh6jhbyCJ_rB-1" value="fs:People" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="940" y="200" width="81.96822102864604" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="dHggUo9AAh6jhbyCJ_rB-3" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="X6dG0_ZqyGWDh663tGR5-1" target="dHggUo9AAh6jhbyCJ_rB-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="280.08183758898736" as="sourcePoint" />
+            <mxPoint x="1151" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dHggUo9AAh6jhbyCJ_rB-4" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;b&gt;rdfs&lt;/b&gt;:subClassOf&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="dHggUo9AAh6jhbyCJ_rB-3">
           <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
