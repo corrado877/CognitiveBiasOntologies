@@ -17,3 +17,4 @@ PREFIX cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpanno
 
 
 
+https://w3id.org/framester/data/framestercore/Sequence
