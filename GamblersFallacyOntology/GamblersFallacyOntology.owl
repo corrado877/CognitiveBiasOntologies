@@ -260,16 +260,6 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ColorNumber -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ColorNumber">
-        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome"/>
-        <rdfs:comment>A class representing a type of Outcome such as Colored Numbers</rdfs:comment>
-        <rdfs:label>ColorNumber</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#FutureEvent -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#FutureEvent">
@@ -306,6 +296,16 @@
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:comment>This class represent the outcome of an event such as a RandomOccurence</rdfs:comment>
         <rdfs:label>Outcome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#OutcomeColorNumber -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#OutcomeColorNumber">
+        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome"/>
+        <rdfs:comment>A class representing a type of Outcome such as Colored Numbers</rdfs:comment>
+        <rdfs:label>ColorNumber</rdfs:label>
     </owl:Class>
     
 
@@ -386,7 +386,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ColorNumber"/>
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#OutcomeColorNumber"/>
         <rdfs:comment>The outcome of the next number draw or past number draws. Black numbers and red numbers have the same probability of being extracted.</rdfs:comment>
         <rdfs:label>Black Number</rdfs:label>
     </owl:NamedIndividual>
@@ -457,7 +457,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Red_Number">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ColorNumber"/>
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#OutcomeColorNumber"/>
         <rdfs:comment>The outcome of the next number draw or past number draws. Black numbers and red numbers have the same probability of being extracted</rdfs:comment>
         <rdfs:label>Red Number</rdfs:label>
     </owl:NamedIndividual>
