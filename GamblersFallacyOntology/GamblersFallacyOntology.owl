@@ -355,7 +355,6 @@
     <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Player.n.1">
         <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:comment>A class for a player involved in a game such as a Lottery Draw</rdfs:comment>
-        <rdfs:label>Player</rdfs:label>
     </owl:Class>
     
 
@@ -398,7 +397,7 @@
         <cco:belief rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series"/>
         <participation:isParticipantIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
         <hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NumberDraw"/>
-        <rdfs:comment>An human being that participates as a player in a lottery draw.</rdfs:comment>
+        <rdfs:comment>An human being that participates as a player to a lottery draw.</rdfs:comment>
         <rdfs:label>Lottery Player</rdfs:label>
     </owl:NamedIndividual>
     
