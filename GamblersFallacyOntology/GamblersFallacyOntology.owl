@@ -100,7 +100,7 @@
     <!-- http://purl.org/ontology/cco/core#belief -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/cco/core#belief">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestersyn/Player.n.1"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:comment>An uncertain relation for competence representation. That means beliefs, persuasions or opinions, which can also be misconceptions. A Person who believes that a sequence of past events with the same outcome can change the probability of the outcome of the same event in the future</rdfs:comment>
     </owl:ObjectProperty>
@@ -111,7 +111,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameter">
         <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#isParameterFor"/>
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
     </owl:ObjectProperty>
     
@@ -135,7 +135,7 @@
     <!-- http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestersyn/Player.n.1"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
     </owl:ObjectProperty>
     
@@ -152,7 +152,7 @@
     <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
     </owl:ObjectProperty>
     
@@ -171,7 +171,7 @@
 
     <owl:ObjectProperty rdf:about="https://dbpedia.org/ontology/produces">
         <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isProducedBy"/>
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome"/>
     </owl:ObjectProperty>
     
@@ -180,8 +180,8 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasBiasedOpinion -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasBiasedOpinion">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestersyn/Player.n.1"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <rdfs:comment>a property connecting a Person who has a biased opinion about the possible outcome of an Event such as a Random or Chance-based Occurrence</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -200,7 +200,7 @@
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasOutcome">
         <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isOutcomeOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ColorNumber"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome"/>
         <rdfs:comment>A property linking series of events to the same Outcome</rdfs:comment>
     </owl:ObjectProperty>
     
