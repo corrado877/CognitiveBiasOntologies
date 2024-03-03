@@ -437,6 +437,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Success"/>
         <rdfs:comment>An individual representing the outcome effect of events such as a Football Team Match Bet</rdfs:comment>
+        <rdfs:label>Winning Bet</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
