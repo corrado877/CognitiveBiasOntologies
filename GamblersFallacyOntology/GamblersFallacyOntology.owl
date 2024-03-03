@@ -299,6 +299,11 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:comment>This class represent the outcome of an event such as a RandomOccurence</rdfs:comment>
         <rdfs:label>Outcome</rdfs:label>
     </owl:Class>
@@ -308,6 +313,9 @@
     <!-- https://w3id.org/framester/data/framestercore/Activity -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:comment>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame. In this case the frame represents an activity with random or chance-based outcomes in which a person is involved in.</rdfs:comment>
         <rdfs:label>Activity</rdfs:label>
     </owl:Class>
@@ -317,6 +325,9 @@
     <!-- https://w3id.org/framester/data/framestercore/Event -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:comment>An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries. INI The party will take place on Sunday in the all-you-can-eat buffet.</rdfs:comment>
         <rdfs:label>Event</rdfs:label>
     </owl:Class>
@@ -326,6 +337,8 @@
     <!-- https://w3id.org/framester/data/framestercore/People -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:comment>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming baby yesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</rdfs:comment>
         <rdfs:label>People</rdfs:label>
     </owl:Class>
