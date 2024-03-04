@@ -316,7 +316,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
         <term:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation"/>
-        <rdfs:comment>An individual representing the activity in which which the cognitive process of becoming aware takes place.</rdfs:comment>
+        <rdfs:comment>An individual representing the activity in which the cognitive process of becoming aware takes place.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -325,6 +325,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Player">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Player.n.1"/>
+        <rdfs:comment>an individual representing the person involved in the Illusory Correlation Bias.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -344,6 +345,7 @@
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
         <term:inActivity rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match"/>
         <IllusoryOfCorrelationOntology:isPerceivedAs rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern"/>
+        <rdfs:comment>An individual representing The cognitive process of becoming aware of something</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -364,7 +366,7 @@
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <partof:hasPart rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories"/>
         <partof:hasPart rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks"/>
-        <rdfs:comment>An individual representing the trend recognized by an human agent, in this case the existence of a pattern where two elements often appear together.</rdfs:comment>
+        <rdfs:comment>An individual representing the type of trend recognized by an human agent, in this case the existence of a pattern where two elements often appear together.</rdfs:comment>
     </owl:NamedIndividual>
     
 
