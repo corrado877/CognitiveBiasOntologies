@@ -100,7 +100,7 @@
     <!-- http://purl.org/ontology/cco/core#belief -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/cco/core#belief">
-        <rdfs:domain rdf:resource="http://etna.istc.cnr.it/framesterpage/data/framestercore/People"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
     </owl:ObjectProperty>
     
@@ -129,7 +129,7 @@
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant">
         <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
-        <rdfs:range rdf:resource="http://etna.istc.cnr.it/framesterpage/data/framestercore/People"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
     </owl:ObjectProperty>
     
 
@@ -168,7 +168,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasBiasedOpinion -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasBiasedOpinion">
-        <rdfs:domain rdf:resource="http://etna.istc.cnr.it/framesterpage/data/framestercore/People"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <rdfs:comment>a property connecting a Person who has a biased opinion about the possible outcome of an Event such as a Random or Chance-based Occurrence</rdfs:comment>
     </owl:ObjectProperty>
@@ -262,35 +262,12 @@
     
 
 
-    <!-- http://etna.istc.cnr.it/framesterpage/data/framestercore/People -->
-
-    <owl:Class rdf:about="http://etna.istc.cnr.it/framesterpage/data/framestercore/People">
-        <owl:disjointWith rdf:resource="https://dbpedia.org/page/Success"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
-        <rdfs:comment>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming baby yesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</rdfs:comment>
-        <rdfs:label>People</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://etna.istc.cnr.it/framesterpage/data/framestersyn/Player.n.1 -->
-
-    <owl:Class rdf:about="http://etna.istc.cnr.it/framesterpage/data/framestersyn/Player.n.1">
-        <rdfs:subClassOf rdf:resource="http://etna.istc.cnr.it/framesterpage/data/framestercore/People"/>
-        <rdfs:comment>A class for a player involved in an Activity such as Sport Bets.</rdfs:comment>
-        <rdfs:label>Player</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://dbpedia.org/page/Success -->
 
     <owl:Class rdf:about="https://dbpedia.org/page/Success">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:comment>Success is the state or condition of meeting a defined range of expectations. It may be viewed as the opposite of failure. The criteria for success depend on context and may be relative to a particular observer or belief system. One person might consider a success what another person considers a failure, particularly in cases of direct competition or a zero-sum game. Similarly, the degree of success or failure in a situation may be differently viewed by distinct observers or participants, such that a situation that one considers to be a success, another might consider to be a failure, a qualified success or a neutral situation. For example, a film that is a commercial failure or even a box-office bomb can go on to receive a cult following, with the initial lack of commercial success even.</rdfs:comment>
@@ -323,6 +300,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:comment>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame</rdfs:comment>
@@ -334,10 +312,22 @@
     <!-- https://w3id.org/framester/data/framestercore/Event -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:comment>An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries. INI The party will take place on Sunday in the all-you-can-eat buffet.</rdfs:comment>
         <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/People -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <rdfs:comment>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming baby yesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</rdfs:comment>
+        <rdfs:label>People</rdfs:label>
     </owl:Class>
     
 
@@ -357,6 +347,16 @@
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence">
         <rdfs:comment>The words in this frame describe entities that occur in some temporally-ordered sequence. The entities thus have some sort of relation between them that might be described by the Relative_time frame. However, at this time, this frame has no Frame Relation with that frame (though this is still under discussion). Additionally, it should be noted that the words in this frame have a metaphorical link to the words in Shape. Describe in detail the sequence of steps taken during an emergency.</rdfs:comment>
         <rdfs:label>Sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestersyn/Player.n.1 -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Player.n.1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:comment>A class for a player involved in an Activity such as Sport Bets.</rdfs:comment>
+        <rdfs:label>Player</rdfs:label>
     </owl:Class>
     
 
@@ -423,7 +423,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor">
-        <rdf:type rdf:resource="http://etna.istc.cnr.it/framesterpage/data/framestersyn/Player.n.1"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Player.n.1"/>
         <cco:belief rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series"/>
         <HotHandFallacyOntology:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet"/>
         <rdfs:comment>A sport Bettor individual who is participating in an Activity such as Sport Bets</rdfs:comment>
