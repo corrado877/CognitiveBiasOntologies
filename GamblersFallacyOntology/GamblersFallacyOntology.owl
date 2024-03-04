@@ -316,7 +316,6 @@
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <terms:description>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame. In this case the frame represents an activity with random or chance-based outcomes in which a person is involved in.</terms:description>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
         <rdfs:label>Activity</rdfs:label>
     </owl:Class>
     
