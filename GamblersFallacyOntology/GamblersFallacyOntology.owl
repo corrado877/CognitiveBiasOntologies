@@ -356,6 +356,12 @@
     <!-- https://w3id.org/framester/data/framestercore/Sequence -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <terms:description>The words in this frame describe entities that occur in some temporally-ordered sequence. The entities thus have some sort of relation between them that might be described by the Relative_time frame. However, at this time, this frame has no Frame Relation with that frame (though this is still under discussion). Additionally, it should be noted that the words in this frame have a metaphorical link to the words in Shape. Describe in detail the sequence of steps taken during an emergency. In this case this frame represent a sequence of temporally-ordered past events that have the same outcome</terms:description>
         <rdfs:label>Sequence</rdfs:label>
     </owl:Class>

@@ -10,7 +10,6 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:term="http://modellingdh.github.io/ont/odp/term/"
-     xmlns:activ="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:partof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
@@ -88,54 +87,45 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#hasEffect -->
+    <!-- http://modellingdh.github.io/ont/odp/term/inActivity -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#hasEffect">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
-        <rdfs:range rdf:resource="https://dbpedia.org/page/Illusion"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#hasPart -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#hasPart">
-        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isPartOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#inActivity -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#inActivity">
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/inActivity">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
-        <rdfs:range rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#includes -->
+    <!-- http://modellingdh.github.io/ont/odp/term/includes -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#includes">
-        <rdfs:domain rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/includes">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isEngagedIn -->
+    <!-- http://modellingdh.github.io/ont/odp/term/isEngagedIn -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isEngagedIn">
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/isEngagedIn">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isPartOf -->
+    <!-- http://modellingdh.github.io/ont/odp/term/isReflectionOn -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isPartOf">
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/isReflectionOn">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://modellingdh.github.io/ont/odp/term/producedObservation -->
+
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/producedObservation">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -144,6 +134,41 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart">
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariableEntity1"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariableEntity2"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#hasEffect -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#hasEffect">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+        <rdfs:range rdf:resource="https://dbpedia.org/page/Illusion"/>
+        <rdfs:comment>a property linking a perceived correlation between the variables and the illusory effect that this produce.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -158,31 +183,6 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isReflectionOn -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isReflectionOn">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#producesObservation -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#producesObservation">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariableEntity1"/>
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariableEntity2"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -191,15 +191,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity -->
-
-    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity">
-        <terms:description>A class representing an activity affected by a certain cognitive process (engagement).</terms:description>
-        <rdfs:label>Activity</rdfs:label>
-    </owl:Class>
     
 
 
@@ -218,7 +209,7 @@
         <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isPartOf"/>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -235,7 +226,7 @@
         <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isPartOf"/>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -250,6 +241,15 @@
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables">
         <terms:description>A class representing all the possible variables or attributes that individuals mistakenly perceive to be correlated.</terms:description>
         <rdfs:label>Variables</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Activity -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
+        <terms:description>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame.  In this case is a class representing an activity affected by a certain cognitive process (Becoming Aware of something).</terms:description>
+        <rdfs:label>Activity</rdfs:label>
     </owl:Class>
     
 
@@ -314,8 +314,8 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match">
-        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
-        <IllusoryOfCorrelationOntology:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <term:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation"/>
         <rdfs:comment>An individual representing the activity in which which the cognitive process of becoming aware takes place.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -342,7 +342,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
-        <IllusoryOfCorrelationOntology:inActivity rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match"/>
+        <term:inActivity rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match"/>
         <IllusoryOfCorrelationOntology:isPerceivedAs rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern"/>
     </owl:NamedIndividual>
     
@@ -362,8 +362,8 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
-        <IllusoryOfCorrelationOntology:hasPart rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories"/>
-        <IllusoryOfCorrelationOntology:hasPart rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks"/>
+        <partof:hasPart rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories"/>
+        <partof:hasPart rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks"/>
         <rdfs:comment>An individual representing the trend recognized by an human agent, in this case the existence of a pattern where two elements often appear together.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -373,7 +373,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariableEntity2"/>
-        <IllusoryOfCorrelationOntology:producesObservation rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation"/>
+        <term:producedObservation rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation"/>
         <rdfs:comment>One of the variables that occur together as part of a pattern.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -383,7 +383,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariableEntity1"/>
-        <IllusoryOfCorrelationOntology:producesObservation rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation"/>
+        <term:producedObservation rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation"/>
         <rdfs:comment>One of the variables that occur together as part of a pattern.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -400,9 +400,9 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
             <rdf:Description rdf:about="https://dbpedia.org/page/Illusion"/>
             <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
+            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
             <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
             <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
             <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
