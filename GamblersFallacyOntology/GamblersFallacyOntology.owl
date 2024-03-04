@@ -367,7 +367,8 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Player.n.1">
         <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
-        <rdfs:comment>A class for a player involved in a game such as a Lottery Draw</rdfs:comment>
+        <rdfs:comment>A class for a player involved in an Activity such as a Lottery Draw.</rdfs:comment>
+        <rdfs:label>Player</rdfs:label>
     </owl:Class>
     
 
