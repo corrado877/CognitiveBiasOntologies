@@ -31,7 +31,6 @@
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Participation"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Provenance"/>
         <cpannotationschema:hasComponent rdf:resource="http://purl.org/ontology/cco/20100926/cognitivecharacteristics.html"/>
-        <cpannotationschema:hasComponent rdf:resource="http://xmlns.com/foaf/spec/"/>
         <cpannotationschema:hasComponent rdf:resource="https://www.dbpedia.org/about/"/>
         <cpannotationschema:scenarios>Sports Betting: A sports bettor assumes that a team that has won several games in a row is more likely to win the next one, overlooking factors like team performance and matchups.</cpannotationschema:scenarios>
         <rdfs:comment xml:lang="en">The Hot Hand Fallacy Bias, also known as the Hot Hand Fallacy, is a cognitive bias that leads people to believe that a series of successful outcomes in a random or chance-based process is more likely to continue in the short term. In other words, individuals tend to think that if they or someone else has experienced a streak of wins or successes, they are more likely to keep winning or succeeding in the near future. This bias can be observed in various contexts, such as sports, gambling, or even everyday decision-making.</rdfs:comment>
