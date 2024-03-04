@@ -281,6 +281,7 @@
     <owl:Class rdf:about="http://etna.istc.cnr.it/framesterpage/data/framestersyn/Player.n.1">
         <rdfs:subClassOf rdf:resource="http://etna.istc.cnr.it/framesterpage/data/framestercore/People"/>
         <rdfs:comment>A class for a player involved in an Activity such as Sport Bets.</rdfs:comment>
+        <rdfs:label>Player</rdfs:label>
     </owl:Class>
     
 
