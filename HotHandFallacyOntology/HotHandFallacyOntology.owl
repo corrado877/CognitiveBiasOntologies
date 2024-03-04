@@ -351,9 +351,9 @@
     
 
 
-    <!-- https://w3id.org/framester/data/framestersyn/Player.n.1 -->
+    <!-- https://w3id.org/framester/data/framestersyn/Bettor.n.1 -->
 
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Player.n.1">
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Bettor.n.1">
         <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:comment>A class for a player involved in an Activity such as Sport Bets.</rdfs:comment>
         <rdfs:label>Player</rdfs:label>
@@ -423,7 +423,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor">
-        <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Player.n.1"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Bettor.n.1"/>
         <cco:belief rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series"/>
         <HotHandFallacyOntology:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet"/>
         <rdfs:comment>A sport Bettor individual who is participating in an Activity such as Sport Bets</rdfs:comment>
