@@ -1,7 +1,7 @@
 PREFIX aff: <https://w3id.org/affectedBy#>
 PREFIX activitypattern:<http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#>
 PREFIX activ: <http://ontology.eil.utoronto.ca/icity/ActivitySpecification/>
-PREFIX dbo:<https://dbpedia.org/ontology/> si può usare per le proprietà tipo dbo:produces mentre dbr: <https://dbpedia.org/page/> si può usare per le classi tipo Illusion/Success, Person etc...
+PREFIX dbo:<https://dbpedia.org/ontology/> si può usare per le proprietà tipo dbo:produces mentre dbr: <https://dbpedia.org/resource/> si può usare per le classi tipo Illusion/Success, Person etc...
 PREFIX cbo:<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#>
 PREFIX cco: <http://purl.org/ontology/cco/core#>
 PREFIX exob sul grafico di drawio mentre è term su protegè :http://modellingdh.github.io/ont/odp/term/
