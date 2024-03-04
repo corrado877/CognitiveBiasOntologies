@@ -91,8 +91,8 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#hasEffect -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#hasEffect">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#CognitiveConnection"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Illusion"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+        <rdfs:range rdf:resource="https://dbpedia.org/page/Illusion"/>
     </owl:ObjectProperty>
     
 
@@ -101,7 +101,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#hasPart">
         <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isPartOf"/>
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Pattern"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
     </owl:ObjectProperty>
     
 
@@ -109,8 +109,8 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#inActivity -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#inActivity">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#BecomingAware"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+        <rdfs:range rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
     </owl:ObjectProperty>
     
 
@@ -118,8 +118,8 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#includes -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#includes">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#CognitiveConnection"/>
+        <rdfs:domain rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
     </owl:ObjectProperty>
     
 
@@ -127,8 +127,8 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isEngagedIn -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isEngagedIn">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#BecomingAware"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
     </owl:ObjectProperty>
     
 
@@ -151,8 +151,8 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isPerceivedAs -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isPerceivedAs">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#BecomingAware"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Pattern"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <rdfs:comment>a property that links the cognitive process of being aware of something like a trend in activity and what is perceived as part of the trend</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -161,8 +161,8 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isReflectionOn -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isReflectionOn">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#CognitiveConnection"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#BecomingAware"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
     </owl:ObjectProperty>
     
 
@@ -178,7 +178,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#CognitiveConnection"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
     </owl:ObjectProperty>
     
 
@@ -194,27 +194,21 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity -->
+    <!-- http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity">
+        <terms:description>A class representing an activity affected by a certain cognitive process (engagement).</terms:description>
+        <rdfs:label>Activity</rdfs:label>
+    </owl:Class>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person -->
+    <!-- https://dbpedia.org/page/Illusion -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#BecomingAware -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#BecomingAware"/>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#CognitiveConnection -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#CognitiveConnection"/>
+    <owl:Class rdf:about="https://dbpedia.org/page/Illusion">
+        <terms:description>An illusion is a distortion of the senses, which can reveal how the mind normally organizes and interprets sensory stimulation. Although illusions distort the human perception of reality, they are generally shared by most people. Illusions may occur with any of the human senses, but visual illusions (optical illusions) are the best-known and understood. The emphasis on visual illusions occurs because vision often dominates the other senses. For example, individuals watching a ventriloquist will perceive the voice is coming from the dummy since they are able to see the dummy mouth the words.</terms:description>
+        <rdfs:label>Illusion</rdfs:label>
+    </owl:Class>
     
 
 
@@ -225,10 +219,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isPartOf"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Pattern"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariableEntity2"/>
+        <terms:description>A class for one one of the two variables that are perceived as correlated.</terms:description>
+        <rdfs:label>Variable Entity 1</rdfs:label>
     </owl:Class>
     
 
@@ -240,28 +236,67 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#isPartOf"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Pattern"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <terms:description>A class for one one of the two variables that are perceived as correlated.</terms:description>
+        <rdfs:label>Variable Entity 2</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables">
+        <terms:description>A class representing all the possible variables or attributes that individuals mistakenly perceive to be correlated.</terms:description>
+        <rdfs:label>Variables</rdfs:label>
+    </owl:Class>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Illusion -->
+    <!-- https://w3id.org/framester/data/framestercore/BecomingAware -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Illusion"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware">
+        <terms:description>Words in this frame have to do with a Cognizer adding some Phenomenon to their model of the world. They are similar to Coming-to-believe words, except the latter generally involve reasoning from Evidence. The words in this frame take direct objects that denote entities in the world, and indicate awareness of those entities, without necessarily giving any information about the content of the Cognizer&apos;s belief or knowledge. These words also resemble perception words, since creatures often become aware of things by perceiving them. Later that night, they found the barely-alive victim inside the Red Hall estate flat. Almost immediately, the police discovered the wrought-iron crypt gate swinging open. In the bag on the tableI could vaguely discern two bottles of wine and several cartons of cakes and other goodies. People passing through recognize it from afar, by the clouds of coal dust darkening the air. General Grammatical Observations: Passive forms of the verbs in this frame can occur with extraposed clauses expressing Phenomenon: That year it was discovered that consumers preferred the older model. It is not always recognized how much work goes into a dinner party.</terms:description>
+        <rdfs:label>Becoming Aware</rdfs:label>
+    </owl:Class>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Pattern -->
+    <!-- https://w3id.org/framester/data/framestercore/CognitiveConnection -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Pattern"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection">
+        <terms:description>A concept, Concept_1, is related causally or collocationally to another concept, Concept_2, by means of some Evidence. They may be related only under certain Circumstances or from a certain Point_of_view. The two concepts may be expressed collectively as associated Concepts. Any cognizer is deprofiled.</terms:description>
+        <rdfs:label>Cognitive Connection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Pattern -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern">
+        <rdfs:comment>This frame describes the interrelation of a collection of Entities; they may be physical entities or shapes in a recognizable configuration, a pattern of events, or a relation among abstract entities. The pattern is not the individual Entities nor the set of Entities, but an abstraction of their interrelations, as a gestalt. The Cougers are playing in a Wing-T formation tonight. The auditors noticed a suspicious pattern of withdrawals from the maintenance account . The digits of irrational numbers do not repeat in any kind of pattern.</rdfs:comment>
+        <rdfs:label>Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/People -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
+        <terms:description>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming baby yesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</terms:description>
+        <rdfs:label>People</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestersyn/Player.n.1 -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Player.n.1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <terms:description>A class for a player such as a Baseball_Player engaged in a cognitive process during an Activity.</terms:description>
+        <rdfs:label>Player</rdfs:label>
+    </owl:Class>
     
 
 
@@ -276,21 +311,20 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#BaseballPlayer -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#BaseballPlayer">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
-        <rdfs:comment>The human agent involded in a cognitive process of awareness.</rdfs:comment>
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
+        <IllusoryOfCorrelationOntology:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation"/>
+        <rdfs:comment>An individual representing the activity in which which the cognitive process of becoming aware takes place.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Player -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
-        <IllusoryOfCorrelationOntology:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation"/>
-        <rdfs:comment>An individual representing the activity in which which the cognitive process of becoming aware takes place.</rdfs:comment>
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Player">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Player.n.1"/>
     </owl:NamedIndividual>
     
 
@@ -298,7 +332,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Illusion"/>
+        <rdf:type rdf:resource="https://dbpedia.org/page/Illusion"/>
         <rdfs:comment>An individual representing the conseguent illusory effect made by the correlation perceived between the variables.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -307,7 +341,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#BecomingAware"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
         <IllusoryOfCorrelationOntology:inActivity rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match"/>
         <IllusoryOfCorrelationOntology:isPerceivedAs rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern"/>
     </owl:NamedIndividual>
@@ -317,7 +351,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#CognitiveConnection"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
         <IllusoryOfCorrelationOntology:hasEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect"/>
         <rdfs:comment>An individual representing the possible correlation between the variables of the pattern detected.</rdfs:comment>
     </owl:NamedIndividual>
@@ -327,7 +361,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Pattern"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <IllusoryOfCorrelationOntology:hasPart rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Victories"/>
         <IllusoryOfCorrelationOntology:hasPart rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#pair_of_socks"/>
         <rdfs:comment>An individual representing the trend recognized by an human agent, in this case the existence of a pattern where two elements often appear together.</rdfs:comment>
@@ -366,13 +400,13 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Activity"/>
-            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Person"/>
-            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#BecomingAware"/>
-            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#CognitiveConnection"/>
+            <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
+            <rdf:Description rdf:about="https://dbpedia.org/page/Illusion"/>
             <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
-            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Illusion"/>
-            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Pattern"/>
+            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/People"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

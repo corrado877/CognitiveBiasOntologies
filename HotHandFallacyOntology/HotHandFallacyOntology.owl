@@ -127,7 +127,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant">
         <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <rdfs:domain rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
     </owl:ObjectProperty>
     
@@ -143,7 +143,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart">
         <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <rdfs:domain rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
     </owl:ObjectProperty>
     
@@ -159,7 +159,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <rdfs:range rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
     </owl:ObjectProperty>
     
 
@@ -261,10 +261,23 @@
     
 
 
+    <!-- http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity">
+        <owl:disjointWith rdf:resource="https://dbpedia.org/page/Success"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <rdfs:comment>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame</rdfs:comment>
+        <rdfs:label>Activity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://dbpedia.org/page/Success -->
 
     <owl:Class rdf:about="https://dbpedia.org/page/Success">
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
@@ -291,19 +304,6 @@
         <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#FutureEvent"/>
         <rdfs:comment>This class represent an event that will happen in the next future and it is characterized by chance-based probability.</rdfs:comment>
         <rdfs:label>Next Chance-Based Occurence</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestercore/Activity -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
-        <rdfs:comment>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame</rdfs:comment>
-        <rdfs:label>Activity</rdfs:label>
     </owl:Class>
     
 
@@ -410,7 +410,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets">
-        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
         <participation:hasParticipant rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor"/>
         <partof:hasPart rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet"/>
         <rdfs:comment>An individual representing an Acitvity such as Sport Bets in which is involved a player.</rdfs:comment>
