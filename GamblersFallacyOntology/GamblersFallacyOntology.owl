@@ -263,7 +263,7 @@
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#FutureEvent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
-        <rdfs:comment>This class represent an event that will happen in the next future.</rdfs:comment>
+        <terms:description>This class represent an event that will happen in the next future.</terms:description>
         <rdfs:label>FutureEvent</rdfs:label>
     </owl:Class>
     
@@ -279,7 +279,7 @@
                 <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>This class represent an event that will happen in the next future and it is characterized by randomness.</rdfs:comment>
+        <terms:description>This class represent an event that will happen in the next future and it is characterized by randomness.</terms:description>
         <rdfs:label>NextRandomOccurence</rdfs:label>
     </owl:Class>
     
@@ -293,7 +293,7 @@
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
-        <rdfs:comment>This class represent the outcome of an event such as a RandomOccurence</rdfs:comment>
+        <terms:description>This class represent the outcome of an event such as a RandomOccurence</terms:description>
         <rdfs:label>Outcome</rdfs:label>
     </owl:Class>
     
@@ -303,7 +303,7 @@
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#OutcomeColorNumber">
         <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome"/>
-        <rdfs:comment>A class representing a type of Outcome such as Colored Numbers</rdfs:comment>
+        <terms:description>A class representing a type of Outcome such as Colored Numbers</terms:description>
         <rdfs:label>ColorNumber</rdfs:label>
     </owl:Class>
     
@@ -315,7 +315,7 @@
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
-        <rdfs:comment>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame. In this case the frame represents an activity with random or chance-based outcomes in which a person is involved in.</rdfs:comment>
+        <terms:description>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame. In this case the frame represents an activity with random or chance-based outcomes in which a person is involved in.</terms:description>
         <rdfs:label>Activity</rdfs:label>
     </owl:Class>
     
@@ -327,7 +327,7 @@
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
-        <rdfs:comment>An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries. INI The party will take place on Sunday in the all-you-can-eat buffet.</rdfs:comment>
+        <terms:description>An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries. INI The party will take place on Sunday in the all-you-can-eat buffet.</terms:description>
         <rdfs:label>Event</rdfs:label>
     </owl:Class>
     
@@ -338,7 +338,7 @@
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
-        <rdfs:comment>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming baby yesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</rdfs:comment>
+        <terms:description>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming baby yesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</terms:description>
         <rdfs:label>People</rdfs:label>
     </owl:Class>
     
@@ -347,7 +347,7 @@
     <!-- https://w3id.org/framester/data/framestercore/Probability -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Probability">
-        <rdfs:comment>This frame characterizes the likelihood that a Hypothetical_event will happen as a position on a scale of impossible to inevitable. The likelihood can expressed as numerical Odds or a metaphorical representation of the Position on a scale. There&apos;s a 20 % chance that you&apos;ll succeed. The odds that he&apos;ll actually do it are one in a million.</rdfs:comment>
+        <terms:description>This frame characterizes the likelihood that a Hypothetical_event will happen as a position on a scale of impossible to inevitable. The likelihood can expressed as numerical Odds or a metaphorical representation of the Position on a scale. There&apos;s a 20 % chance that you&apos;ll succeed. The odds that he&apos;ll actually do it are one in a million.</terms:description>
         <rdfs:label>Probability</rdfs:label>
     </owl:Class>
     
@@ -356,7 +356,7 @@
     <!-- https://w3id.org/framester/data/framestercore/Sequence -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence">
-        <rdfs:comment>The words in this frame describe entities that occur in some temporally-ordered sequence. The entities thus have some sort of relation between them that might be described by the Relative_time frame. However, at this time, this frame has no Frame Relation with that frame (though this is still under discussion). Additionally, it should be noted that the words in this frame have a metaphorical link to the words in Shape. Describe in detail the sequence of steps taken during an emergency. In this case this frame represent a sequence of temporally-ordered past events that have the same outcome</rdfs:comment>
+        <terms:description>The words in this frame describe entities that occur in some temporally-ordered sequence. The entities thus have some sort of relation between them that might be described by the Relative_time frame. However, at this time, this frame has no Frame Relation with that frame (though this is still under discussion). Additionally, it should be noted that the words in this frame have a metaphorical link to the words in Shape. Describe in detail the sequence of steps taken during an emergency. In this case this frame represent a sequence of temporally-ordered past events that have the same outcome</terms:description>
         <rdfs:label>Sequence</rdfs:label>
     </owl:Class>
     
@@ -366,7 +366,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Player.n.1">
         <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
-        <rdfs:comment>A class for a player involved in an Activity such as a Lottery Draw.</rdfs:comment>
+        <terms:description>A class for a player involved in an Activity such as a Lottery Draw.</terms:description>
         <rdfs:label>Player</rdfs:label>
     </owl:Class>
     
