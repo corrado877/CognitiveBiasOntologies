@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion/"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion/"
+     xmlns:fs="https://w3id.org/framester/data/framestercore/"
+     xmlns:cbo="cbo:https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology"
+     xmlns:dbo="https://dbpedia.org/page/Illusion"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cbo2="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#cbo:"
+     xmlns:exob="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:exob1="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#exob:"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
+     xmlns:Clustering_illusion="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#"
+     xmlns:clustering_illusion="http://www.semanticweb.org/salva/ontologies/2024/1/clustering_illusion#">
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion">
+        <terms:created>27-02-2024</terms:created>
+        <terms:creator>Salvatore Di Marzo</terms:creator>
+        <terms:description>Clustering illusion part of the Cognitive Bias ontology</terms:description>
+        <terms:title>Clustering Illusion Ontology</terms:title>
+        <rdfs:comment>The clustering illusion is a cognitive bias that involves perceiving patterns or clusters in random or unrelated data. People tend to see patterns where none actually exist, and this can lead to incorrect interpretations of information. This bias arises from the human brain&apos;s natural inclination to seek order and make sense of the world, individuals may perceive random events or data points as part of a meaningful pattern or trend. This can occur when there is no actual correlation or connection between the observed elements. The clustering illusion can impact decision-making and judgments, as individuals may base their conclusions on perceived patterns that are not statistically significant or meaningful.</rdfs:comment>
+        <Clustering_illusion:hasComponent>http://ontology.eil.utoronto.ca/icity/ActivitySpecification</Clustering_illusion:hasComponent>
+        <Clustering_illusion:hasComponent>http://xmlns.com/foaf/0.1/</Clustering_illusion:hasComponent>
+        <Clustering_illusion:hasComponent>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml</Clustering_illusion:hasComponent>
+        <Clustering_illusion:hasComponent>https://w3id.org/framester/data/framestercore/</Clustering_illusion:hasComponent>
+        <Clustering_illusion:user_story>Sarah, a regular lottery who enjoys testing her luck with weekly ticket purchases. Over the past month, Sarah notices a curious pattern emerging in the winning numbers of the local lottery. She observes that the winning numbers often consist of consecutive digits, such as 12, 13, 14, or alternating pairs like 5 and 7.
+Excited by this apparent pattern, Sarah starts to develop a theory that the lottery draws are not entirely random. She begins meticulously analysing past winning numbers, searching for more evidence to support her hypothesis. With each new draw, Sarah eagerly checks the results, hoping to uncover additional patterns or trends.
+As the weeks pass, Sarah becomes increasingly convinced that she has cracked the code to winning the lottery. She starts sharing her findings with friends and family, boasting about her newfound strategy for picking winning numbers. Some of her acquaintances start to believe in Sarah&apos;s theory, intrigued by the apparent predictability of the lottery draws.
+Sarah decides to invest more money into buying lottery tickets, confident that her strategy will lead to big wins. However, despite her efforts, Sarah&apos;s luck doesn&apos;t seem to improve. She continues to match only a few numbers here and there, never coming close to hitting the jackpot.</Clustering_illusion:user_story>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#hasComponent -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#hasComponent"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#user_story -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#user_story"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#cbo:creates -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#cbo:creates">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Activity"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Illusion"/>
+        <rdfs:comment>a property connecting the illusory effect created by the Perception of Pattern</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#cbo:involves -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#cbo:involves">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Illusion"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#ExperiencerObj"/>
+        <rdfs:comment>a property that links the cognitive process of creating the perception of an experience and the experience to which it is linked to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#exob:inActivity -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#exob:inActivity">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Activity"/>
+        <rdfs:comment>what activity/ies are affecting or affected by a certain engagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#exob:isReflectionOn -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#exob:isReflectionOn">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Pattern"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Activity"/>
+        <rdfs:comment>Used to connect the subjective elements of an experience with the corresponding observation, which is extrapolated from the content being interacted with and in itself may not be including a critique.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#exob:producesObservation -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#exob:producesObservation">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#ExperiencerObj"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Pattern"/>
+        <rdfs:comment>This property can be used to denote that something is (even indirectly, not necessary through direct reflection) responsible for the existence of an observation.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Activity -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Activity">
+        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#ExperiencerObj"/>
+        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Illusion"/>
+        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Pattern"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#ExperiencerObj -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#ExperiencerObj">
+        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Illusion"/>
+        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Pattern"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Illusion -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Illusion">
+        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Pattern"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Pattern -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Pattern">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestersyn/Person -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Consecutive_digits -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Consecutive_digits">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#ExperiencerObj"/>
+        <exob1:producesObservation rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Pattern_lottery_numbers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Illusion_pattern -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Illusion_pattern">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Illusion"/>
+        <cbo2:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Consecutive_digits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Lottery -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Lottery">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Activity"/>
+        <cbo2:creates rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Illusion_pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Pattern_lottery_numbers -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Pattern_lottery_numbers">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Pattern"/>
+        <exob1:isReflectionOn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Lottery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Sarah -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#Sarah">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
