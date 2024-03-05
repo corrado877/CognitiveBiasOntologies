@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias/"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias/"
+     xmlns:fs="https://w3id.org/framester/data/framestercore/"
+     xmlns:aff="https://w3id.org/affectedBy"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:aff4="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#aff:"
+     xmlns:cbo1="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#cbo:"
+     xmlns:exob="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:exob3="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#exob:"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
+     xmlns:Neglect_of_probability_bias="http://www.semanticweb.org/salva/ontologies/2024/1/Neglect_of_probability_bias#"
+     xmlns:Neglect_of_probability_bias2="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#">
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias">
+        <terms:created>27/02/2024</terms:created>
+        <terms:creator>Salvatore Di Marzo</terms:creator>
+        <terms:description>Neglect of probability part of the Cognitive Bias Ontology</terms:description>
+        <terms:title>Neglect of Probability Ontology</terms:title>
+        <rdfs:comment>The neglect of probability bias is a type of cognitive bias that affects how we make decisions, particularly in situations with uncertainty. It boils down to this: a tendency to ignore the probabilities of different outcomes when making decisions, it happens because our brains are complex and sometimes take shortcuts. Considering probabilities takes effort, and sometimes we prioritize other factors like potential rewards or emotional impact. This bias can lead to poor decision-making, especially when dealing with risks and uncertainties. We might overlook likely negative outcomes or get overly fixated on unlikely but dramatic possibilities.</rdfs:comment>
+        <Neglect_of_probability_bias2:hascomponent>http://ontology.eil.utoronto.ca/icity/ActivitySpecification</Neglect_of_probability_bias2:hascomponent>
+        <Neglect_of_probability_bias2:hascomponent>http://xmlns.com/foaf/0.1/</Neglect_of_probability_bias2:hascomponent>
+        <Neglect_of_probability_bias2:hascomponent>https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology</Neglect_of_probability_bias2:hascomponent>
+        <Neglect_of_probability_bias2:hascomponent>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml</Neglect_of_probability_bias2:hascomponent>
+        <Neglect_of_probability_bias2:hascomponent>https://w3id.org/affectedBy</Neglect_of_probability_bias2:hascomponent>
+        <Neglect_of_probability_bias2:hascomponent>https://w3id.org/framester/data/framestercore/</Neglect_of_probability_bias2:hascomponent>
+        <Neglect_of_probability_bias2:user_story>The world whizzed by Amelia in a blur of emails, meetings, and looming deadlines. Each day felt like a sprint, with tasks piling up like dominoes ready to topple into chaos. But Amelia had a secret weapon - procrastination. While others fretted, she&apos;d glide through her mornings, savoring a leisurely coffee, lost in the latest meme video. &quot;There&apos;s plenty of time,&quot; she&apos;d reassure herself, &quot;the deadline is ages away.&quot;
+But deadlines, like mythical dragons, had a way of sneaking up unexpectedly. One morning, the notification popped up - her major presentation, the one she&apos;d been casually pushing off like a dusty book, was due tomorrow. Panic clawed at her throat. The Improbable Dragon, as she&apos;d named her tendency to underestimate the urgency of tasks, had finally caught her.
+Frantic typing filled the night, fuelled by cold pizza and desperation. The once manageable presentation morphed into a monster, swallowing her confidence and sleep. By morning, she was a hollow shell, her eyes bloodshot, her voice hoarse. The presentation stumbled, riddled with errors and apologies. The consequences, once improbable, materialized - a lost opportunity, a damaged reputation, and a mountain of work to fix the mess.</Neglect_of_probability_bias2:user_story>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#hascomponent -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#hascomponent"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#user_story -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#user_story"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#aff:influencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#aff:influencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Activity"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Ignore"/>
+        <rdfs:comment>A relation between qualities. A quality is influenced by another quality if the value of the latter affects the value of the former.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#cbo:decide -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#cbo:decide">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Thing"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Ignore"/>
+        <rdfs:comment>a property that links the cognitive process of deciding how to act after receiving information.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#cbo:have_knowledge -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#cbo:have_knowledge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Thing"/>
+        <rdfs:comment>a property that links the cognitive process of storing some information regarding a topic.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#exob:inActivity -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#exob:inActivity">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Assessing"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Activity"/>
+        <rdfs:comment>What activity/ies are affecting or affected by a certain engagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#exob:isEngaged -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#exob:isEngaged">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Assessing"/>
+        <rdfs:comment>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Activity -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Activity">
+        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Assessing"/>
+        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Ignore"/>
+        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Thing"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Assessing -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Assessing">
+        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Ignore"/>
+        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Thing"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Ignore -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Ignore">
+        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Thing"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Thing -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Thing">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestersyn/Person -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Amelia -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Amelia">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <cbo1:have_knowledge rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Deadline"/>
+        <exob3:isEngaged rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Task_management"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Deadline -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Deadline">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Thing"/>
+        <cbo1:decide rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Procrastinate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Job_presentation -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Job_presentation">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Activity"/>
+        <aff4:influencedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Procrastinate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Procrastinate -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Procrastinate">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Ignore"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Task_management -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Task_management">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Assessing"/>
+        <exob3:inActivity rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Job_presentation"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
