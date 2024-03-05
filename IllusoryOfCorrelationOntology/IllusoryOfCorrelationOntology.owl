@@ -3,6 +3,7 @@
      xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl"
      xmlns:fs="https://w3id.org/framester/data/framestercore"
      xmlns:cco="http://purl.org/ontology/cco/core#"
+     xmlns:dbo="https://dbpedia.org/ontology/"
      xmlns:dbr="https://dbpedia.org/resource/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -111,6 +112,14 @@
     <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/isEngagedIn">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://modellingdh.github.io/ont/odp/term/isReflectedUponIn -->
+
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/isReflectedUponIn">
+        <owl:inverseOf rdf:resource="http://modellingdh.github.io/ont/odp/term/isReflectionOn"/>
     </owl:ObjectProperty>
     
 
