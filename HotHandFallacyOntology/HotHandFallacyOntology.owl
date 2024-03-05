@@ -407,6 +407,7 @@
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
         <aff:influencedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series"/>
         <parameter:hasParameterDataValue>High</parameter:hasParameterDataValue>
+        <parameter:hasParameterDataValue>Low</parameter:hasParameterDataValue>
         <rdfs:comment>The probability level that an event such a chance-based occurence can have in the next future a specific outcome effect.</rdfs:comment>
         <rdfs:label>ProbabiltyLevel</rdfs:label>
     </owl:NamedIndividual>
