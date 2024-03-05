@@ -17,7 +17,7 @@
      xmlns:partof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
      xmlns:parameter="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"
      xmlns:participation="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
-     xmlns:activitypattern="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl"
+     xmlns:activitypattern="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
      xmlns:GamblersFallacyOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl">
