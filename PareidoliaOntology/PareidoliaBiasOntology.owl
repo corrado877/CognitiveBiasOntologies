@@ -19,8 +19,8 @@
         <terms:creator xml:lang="en">Corrado Consiglio</terms:creator>
         <terms:description>The Pareidolia Bias module of the Cognitive Bias Ontology</terms:description>
         <terms:title>The Pareidolias Bias Ontology</terms:title>
-        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:ActivitySpecification"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation"/>
+        <cpannotationschema:hasComponent rdf:resource="https://dbpedia.org/ontology/"/>
         <cpannotationschema:scenarios>Seeing Faces in Inanimate Objects: Perceiving faces in items like electrical sockets, rocks, or tree bark due to the arrangement of patterns or shapes.</cpannotationschema:scenarios>
         <rdfs:comment>Pareidolia bias is a psychological phenomenon in which individuals perceive familiar patterns, shapes, or meaningful images, such as faces or objects, where none actually exist. This tendency leads people to interpret ambiguous stimuli as something recognizable and significant, even when there is no intentional design or pattern present. Pareidolia bias can occur in various sensory modalities, including visual, auditory, and tactile, and it often influences how individuals interpret stimuli in their environment, such as seeing shapes in clouds or faces in inanimate objects. This bias reflects the brain&apos;s natural inclination to organize and make sense of sensory information, sometimes leading to the perception of patterns or meanings that are not objectively there.</rdfs:comment>
     </owl:Ontology>
@@ -210,7 +210,7 @@
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#VisualStimuli">
         <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
         <terms:description>A class for visual stimuli, namely anything that involves the use of sight.</terms:description>
-        <terms:description>Visual Stimuli</terms:description>
+        <rdfs:label>Visual Stimuli</rdfs:label>
     </owl:Class>
     
 
@@ -218,8 +218,8 @@
     <!-- https://w3id.org/framester/data/framestercore/Activity -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
+        <terms:description>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame.</terms:description>
         <rdfs:label>Activity</rdfs:label>
-        <rdfs:label>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame.</rdfs:label>
     </owl:Class>
     
 
