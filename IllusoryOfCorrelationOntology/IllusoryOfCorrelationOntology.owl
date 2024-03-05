@@ -8,6 +8,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:fsyn="https://w3id.org/framester/data/framestersyn/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:term="http://modellingdh.github.io/ont/odp/term/"
      xmlns:terms="http://purl.org/dc/terms/"

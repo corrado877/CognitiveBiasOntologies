@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-04T16:19:45.519Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="Lso6Rw65Vus8ve5AZjgx" version="24.0.1" type="device">
+<mxfile host="app.diagrams.net" modified="2024-03-05T11:41:40.741Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="kB0kgHm-it4spmN2zHJB" version="24.0.1" type="device">
   <diagram id="TT8WWTOxTNUSlIMXdxdx" name="Page-1">
-    <mxGraphModel dx="1877" dy="1738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1863" dy="1731" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -181,16 +181,16 @@
         <mxCell id="NmjNTOWCWf52FdYZ6F1o-2" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Dbpedia Ontology&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Experience and Observation&lt;/li&gt;&lt;li&gt;PartOf&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="NmjNTOWCWf52FdYZ6F1o-1" vertex="1">
           <mxGeometry x="-14" y="-19.5" width="270" height="141" as="geometry" />
         </mxCell>
-        <mxCell id="XRqINVUKroPxstG0D4da-1" value="fs:People" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="XRqINVUKroPxstG0D4da-1" value="fs:People" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="830" y="30" width="120" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="XRqINVUKroPxstG0D4da-2" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="XRqINVUKroPxstG0D4da-1">
+        <mxCell id="XRqINVUKroPxstG0D4da-2" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" target="XRqINVUKroPxstG0D4da-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="724.97" y="144.58183758898736" as="sourcePoint" />
             <mxPoint x="875.97" y="144.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XRqINVUKroPxstG0D4da-3" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;b&gt;rdfs&lt;/b&gt;:subClassOf&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="XRqINVUKroPxstG0D4da-2">
+        <mxCell id="XRqINVUKroPxstG0D4da-3" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;b&gt;rdfs&lt;/b&gt;:subClassOf&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" parent="XRqINVUKroPxstG0D4da-2" vertex="1" connectable="0">
           <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
