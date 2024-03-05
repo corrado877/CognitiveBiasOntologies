@@ -278,7 +278,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <PareidoliaBiasOntology:hasInfluence rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception"/>
-        <rdfs:comment>this frame represent the pattern recognize by the mind through the sensorial stimulus such as familiar shapes of faces or objects</rdfs:comment>
+        <terms:description>this individual represent the pattern recognized by the mind through the visual stimulus such as familiar shapes of faces or objects.</terms:description>
     </owl:NamedIndividual>
     
 
@@ -287,7 +287,16 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion">
         <rdf:type rdf:resource="https://dbpedia.org/page/Illusion"/>
-        <rdfs:comment>The actual illusion of seeing a face in a weather-beaten tree trunk cretated by own perception</rdfs:comment>
+        <terms:description>The actual illusion effect of seeing a face in a weather-beaten tree trunk cretated by own perception</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
+        <terms:description>An individual representing any kind of Random Stimulus</terms:description>
     </owl:NamedIndividual>
     
 
@@ -298,7 +307,7 @@
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
         <term:inActivity rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk"/>
         <PareidoliaBiasOntology:creates rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion"/>
-        <rdfs:comment>The perception experience in which is involed a person: it can be sensorial but not only.</rdfs:comment>
+        <terms:description>The perception experience in which is involed a person: it can be sensorial but not only.</terms:description>
     </owl:NamedIndividual>
     
 
@@ -308,7 +317,8 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
         <term:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape"/>
-        <rdfs:comment>the activity  (such a walk in a park) ih which a perception experience is involved.</rdfs:comment>
+        <PareidoliaBiasOntology:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus"/>
+        <terms:description>the activity  (such a walk in a park) ih which a perception experience is involved.</terms:description>
     </owl:NamedIndividual>
     
 
@@ -319,6 +329,7 @@
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Hiker.n.1"/>
         <term:isEngagedIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception"/>
         <PareidoliaBiasOntology:isBiasedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape"/>
+        <terms:description>an individual for a kind of person such as an hiker who goes for a walk in a park.</terms:description>
     </owl:NamedIndividual>
     
 
@@ -328,8 +339,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#weather-beaten_tree_trunk">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#VisualStimuli"/>
         <term:producedObservation rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape"/>
-        <rdfs:comment>AmbiguousStimuli: A superclass for any kind of Stimuli that lack clear or distinct features, leading to potential misinterpretation</rdfs:comment>
-        <rdfs:comment>VisualStimuli: A subclass for any random visual stimuli such as a weather-beaten tree trunk that can stimulatea process of association with familiar patterns.</rdfs:comment>
+        <terms:description>VisualStimuli: A subclass individual for any visual stimuli such as a weather-beaten tree trunk that can stimulatea process of association with familiar patterns.</terms:description>
     </owl:NamedIndividual>
     
 
