@@ -453,6 +453,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#ProbabilityLevel">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
         <aff:influencedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series"/>
+        <parameter:hasParameterDataValue>High</parameter:hasParameterDataValue>
         <parameter:hasParameterDataValue>Low</parameter:hasParameterDataValue>
         <rdfs:comment>The level of probability that the outcome of the next number draw will be red or black  can be higher or lower for the participant, depending on the outcomes of the previous number draws.</rdfs:comment>
         <rdfs:label>Probability Level</rdfs:label>
