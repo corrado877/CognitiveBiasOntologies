@@ -35,6 +35,7 @@
         <cpannotationschema:hasComponent rdf:resource="http://purl.org/ontology/cco/20100926/cognitivecharacteristics.html"/>
         <cpannotationschema:scenarios>In a lottery, a person thinks that a certain number is more likely to be drawn next because it hasn&apos;t been drawn in a long time.</cpannotationschema:scenarios>
         <rdfs:comment xml:lang="en">The Gambler&apos;s Fallacy bias, also known as the Fallacy of the Maturity of Chances, is a cognitive bias that occurs when an individual believes that past events in a random or chance-based process can influence the likelihood of future events in the same process. It is a mistaken belief that, because a certain outcome has occurred frequently or infrequently in the past, the probability of that outcome occurring again in the future is somehow altered or &quot;due&quot; to happen.</rdfs:comment>
+        <hasComponent rdf:resource="https://dbpedia.org/ontology/"/>
     </owl:Ontology>
     
 
@@ -83,6 +84,12 @@
     <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios -->
 
     <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasComponent -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasComponent"/>
     
 
 

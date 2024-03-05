@@ -21,10 +21,9 @@
         <terms:creator>Corrado Consiglio</terms:creator>
         <terms:description>The Illusory of Correlation module of the Cognitive Bias Ontology</terms:description>
         <terms:title>Illusory of Correlation Bias Ontology</terms:title>
-        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:ActivitySpecification"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation"/>
-        <cpannotationschema:hasComponent rdf:resource="http://purl.org/ontology/cco/20100926/cognitivecharacteristics.html"/>
+        <cpannotationschema:hasComponent rdf:resource="https://dbpedia.org/ontology/"/>
         <cpannotationschema:scenarios>Superstitions: A baseball player believes that wearing a specific pair of socks during a winning game brings good luck. However, the socks have no impact on the game&apos;s outcome, yet the player associates wearing them with success.</cpannotationschema:scenarios>
         <rdfs:comment xml:lang="en">Illusory correlation bias refers to the tendency of individuals to perceive a relationship between two variables even when no such relationship exists or when the relationship is much weaker than assumed. This bias often occurs when people incorrectly associate two events or characteristics because they occur together in a particular pattern or sequence, leading to the erroneous belief that there is a causal connection between them.</rdfs:comment>
     </owl:Ontology>

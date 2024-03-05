@@ -148,6 +148,7 @@
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#involves">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
+        <terms:description>a property connecting an entity such as Activity to any kind of thing that is involved during the execution of that Activity.</terms:description>
     </owl:ObjectProperty>
     
 
