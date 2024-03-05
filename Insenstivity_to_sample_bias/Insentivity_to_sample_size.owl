@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size">
+    <Prefix name="" IRI="http://www.semanticweb.org/salva/ontologies/2024/2/untitled-ontology-22/"/>
+    <Prefix name="fs" IRI="https://w3id.org/framester/data/framestercore/"/>
+    <Prefix name="aff" IRI="https://w3id.org/affectedBy"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="exob" IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal>27/02/2024</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal>Salvatore Di Marzo</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal>Insensitivity to sample size part of the Cognitive Bias Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal>Insensitivity to sample size bias ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Insensitivity to sample size bias is a cognitive bias where people misjudge the reliability of information based on the sample size. In simpler terms, we often fail to consider how much a small group represents the larger population. This can lead to drawing false conclusions and making poor decisions.
+People tend to treat small and large samples as equally representative, neglecting the increased accuracy of larger samples. We overgeneralize from small samples, applying their findings to the broader population without considering the margin of error.
+It&apos;s related to other biases like the clustering illusion, where we underestimate randomness in small samples.
+Our intuition struggles with the complex relationship between sample size and statistical uncertainty, we often lack the statistical training to analyse data critically and assess its generalizability, heuristics, which are mental shortcuts, can lead us to jump to conclusions without enough evidence.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hascomponent"/>
+        <Literal>I&apos;m excited for the upcoming release of &quot;Nova Odyssey,&quot; an RPG lauded by several popular streamers I follow. Their glowing reviews have me hyped, but I&apos;m worried about potentially overhyping the game based on a limited perspective. I don&apos;t want to be disappointed if the gameplay doesn&apos;t match my expectations or there are hidden issues not mentioned in the reviews. I want to avoid falling prey to insensitivity to sample size bias and make a well-rounded decision about &quot;Nova Odyssey.&quot; I need tools and information that help me consider diverse perspectives, analyse gameplay beyond streamer opinions, and understand the potential for bias in early reviews. On the Reviewer, I find a mix of professional reviews and player feedback, offering diverse perspectives beyond the streamer hype. While some praise the game&apos;s visuals and story, others point out bugs and repetitive gameplay mechanics. This balanced view helps me manage my expectations.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hascomponent"/>
+        <Literal>http://ontology.eil.utoronto.ca/icity/ActivitySpecification</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hascomponent"/>
+        <Literal>http://xmlns.com/foaf/0.1/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hascomponent"/>
+        <Literal>https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hascomponent"/>
+        <Literal>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hascomponent"/>
+        <Literal>https://w3id.org/affectedBy</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hascomponent"/>
+        <Literal>https://w3id.org/framester/data/framestercore/</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Assessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aff:influencedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cbo:have_knowledge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cbo:misjudged"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exob:inActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exob:isEngaged"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Game_bought"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Game_choice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Game_review"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Me"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hascomponent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#user_story"/>
+    </Declaration>
+    <DisjointClasses>
+        <Class IRI="#Assessing"/>
+        <Class IRI="#Decision"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Assessing"/>
+        <Class IRI="#Thing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Assessing"/>
+        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Decision"/>
+        <Class IRI="#Thing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Decision"/>
+        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Thing"/>
+        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Decision"/>
+        <NamedIndividual IRI="#Game_bought"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Assessing"/>
+        <NamedIndividual IRI="#Game_choice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Thing"/>
+        <NamedIndividual IRI="#Game_review"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+        <NamedIndividual IRI="#Me"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aff:influencedBy"/>
+        <NamedIndividual IRI="#Game_bought"/>
+        <NamedIndividual IRI="#Game_review"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#exob:inActivity"/>
+        <NamedIndividual IRI="#Game_choice"/>
+        <NamedIndividual IRI="#Game_bought"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cbo:misjudged"/>
+        <NamedIndividual IRI="#Game_review"/>
+        <NamedIndividual IRI="#Game_choice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cbo:have_knowledge"/>
+        <NamedIndividual IRI="#Me"/>
+        <NamedIndividual IRI="#Game_review"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#exob:isEngaged"/>
+        <NamedIndividual IRI="#Me"/>
+        <NamedIndividual IRI="#Game_choice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aff:influencedBy"/>
+        <Class IRI="#Decision"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cbo:have_knowledge"/>
+        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cbo:misjudged"/>
+        <Class IRI="#Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#exob:inActivity"/>
+        <Class IRI="#Assessing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#exob:isEngaged"/>
+        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aff:influencedBy"/>
+        <Class IRI="#Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cbo:have_knowledge"/>
+        <Class IRI="#Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cbo:misjudged"/>
+        <Class IRI="#Assessing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#exob:inActivity"/>
+        <Class IRI="#Decision"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#exob:isEngaged"/>
+        <Class IRI="#Assessing"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#aff:influencedBy</IRI>
+        <Literal>A relation between qualities. A quality is influenced by another quality if the value of the latter affects the value of the former.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cbo:have_knowledge</IRI>
+        <Literal>a property that links the cognitive process of storing some information regarding a topic.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cbo:misjudged</IRI>
+        <Literal>a property that links the cognitive process of misinterpreting information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#exob:inActivity</IRI>
+        <Literal>what activity/ies are affecting or affected by a certain engagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#exob:isEngaged</IRI>
+        <Literal>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
