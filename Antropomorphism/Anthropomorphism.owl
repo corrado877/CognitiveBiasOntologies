@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/Anthropomorphism"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/Anthropomorphism">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/2/untitled-ontology-23/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal>01/03/24</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal>Marco Lamorte</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal>The Anthropomorphism module of the cognitive bias ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal>Anthropomorphism ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Anthropomorphism is a cognitive bias where people attribute human characteristics, emotions, or intentions to non-human entities, objects, or animals. It is a form of personification where human traits are projected onto things that do not possess them.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Move</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#scenarios"/>
+        <Literal>A young child attributes human emotions and intentions to his beloved puppet, Mr. Whiskers, engaging in conversations and interpreting its expressions.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/resource/Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/resource/Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/resource/Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/move.owl#PhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-humanEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#isEngagedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#isReflectionOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#producesObservation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Child"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Child_percepion_experience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Joy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Puppet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sadness"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#scenarios"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/resource/Animal"/>
+        <Class IRI="#Non-humanEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/resource/Concept"/>
+        <Class IRI="#Non-humanEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/resource/Plant"/>
+        <Class IRI="#Non-humanEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/move.owl#PhysicalObject"/>
+        <Class IRI="#Non-humanEntity"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <NamedIndividual IRI="#Child"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <NamedIndividual IRI="#Child_percepion_experience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HumanFeature"/>
+        <NamedIndividual IRI="#Joy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/move.owl#PhysicalObject"/>
+        <NamedIndividual IRI="#Puppet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HumanFeature"/>
+        <NamedIndividual IRI="#Sadness"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involves"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#isEngagedIn"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#isReflectionOn"/>
+        <Class IRI="#HumanFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#producesObservation"/>
+        <Class IRI="#Non-humanEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involves"/>
+        <Class IRI="#Non-humanEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#isEngagedIn"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#isReflectionOn"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#producesObservation"/>
+        <Class IRI="#HumanFeature"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/resource/Animal</IRI>
+        <Literal>Animals are multicellular, eukaryotic organisms in the biological kingdom Animalia. With few exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce sexually, and go through an ontogenetic stage in which their body consists of a hollow sphere of cells, the blastula, during embryonic development.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/resource/Animal</IRI>
+        <Literal>Animal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/resource/Concept</IRI>
+        <Literal>Concepts are defined as abstract ideas. They are understood to be the fundamental building blocks of the concept behind principles, thoughts and beliefs.They play an important role in all aspects of cognition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/resource/Concept</IRI>
+        <Literal>Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/resource/Plant</IRI>
+        <Literal>Plants are predominantly photosynthetic eukaryotes of the kingdom Plantae. Historically, the plant kingdom encompassed all living things that were not animals, and included algae and fungi; however, all current definitions of Plantae exclude the fungi and some algae, as well as the prokaryotes (the archaea and bacteria).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/resource/Plant</IRI>
+        <Literal>Plant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/move.owl#PhysicalObject</IRI>
+        <Literal>This class comprises items of a material nature that are units for documentation and have physical boundaries that separate them completely in an objective way from other objects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/move.owl#PhysicalObject</IRI>
+        <Literal>Physical object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Child</IRI>
+        <Literal>The children experiencing anthropomorphism bias.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Child_percepion_experience</IRI>
+        <Literal>The perception experience of the child when he relates to the puppet.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HumanFeature</IRI>
+        <Literal>Defines a feature of a human being</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HumanFeature</IRI>
+        <Literal>Human feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Joy</IRI>
+        <Literal>The emotion the child assumes Mr. Whiskers is feeling during playtime.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Non-humanEntity</IRI>
+        <Literal>Any entity that isn&apos;t human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Non-humanEntity</IRI>
+        <Literal>Non-human entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Puppet</IRI>
+        <Literal>Mr Whiskers, the children&apos;s puppet.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sadness</IRI>
+        <Literal>The emotion the child assumes Mr. Whiskers is feeling when left alone.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#involves</IRI>
+        <Literal>Connects an activity to the entities involved in it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#isEngagedIn</IRI>
+        <Literal>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#isReflectionOn</IRI>
+        <Literal>Used to connect the subjective elements of an experience with the corresponding observation, which is extrapolated from the content being interacted with and in itself may not be including a critique.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#producesObservation</IRI>
+        <Literal>This property can be used to denote that something is (even indirectly, not necessary through direct reflection) responsible for the existence of an observation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/People</IRI>
+        <Literal>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/framester/data/framestercore/People</IRI>
+        <Literal>People</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/PerceptionExperience</IRI>
+        <Literal>This frame contains perception words whose Perceivers have perceptual experiences that they do not necessarily intend to. For this reason we call the Perceiver role Perceiver_passive. Comparing the Perception_experience frame to the Perception_active frame, we note that for some modalities there are different lexical items in each frame. For instance, whereas Perception_experience has see, Perception_active has look at. For other sense modalities, we find the same lexical items in both frames. To illustrate, consider the verb smell where I smell something rotten exemplifies its Perception_experience use and Smell this to see if it&apos;s fresh exemplifies its Perception_active sense. This frame also includes words which are not specific to any sense modality, including detect, perceive, perception, sense.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/framester/data/framestercore/PerceptionExperience</IRI>
+        <Literal>Perception experience</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

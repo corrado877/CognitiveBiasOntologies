@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_Bias/Recency_Bias.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_Bias/Recency_Bias.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/2/untitled-ontology-23/"/>
+    <Prefix name="dbr" IRI="https://dbpedia.org/resource/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="term" IRI="http://modellingdh.github.io/ont/odp/term/"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="activitypattern" IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal>01/03/24</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal>Marco Lamorte</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal>The Recency bias module of the cognitive bias ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal>Recency bias ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>The Recency Bias is a cognitive bias where people give greater importance to recent events and information while discounting older data. This bias can affect decision-making and judgment, as recent experiences may carry more weight in evaluations and assessments.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:AOS_AGROVOC_Concept_Server_fundation_ontology_model</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:An_Ontology_Design_Pattern_for_Activity_Reasoning</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Classification</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:NewsReportingEvent</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Parameter</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Sequence</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#scenarios"/>
+        <Literal>At the end of a good job interview, the human resources manager is swayed by Recency Bias when the applicant struggles with the final two questions, allowing these recent missteps to overshadow the applicant’s otherwise strong performance and the final judgement about his job application.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#MemoryEncoding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#RecentMemory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PastMemory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#affects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#classifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasOutcome"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#involves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#isEngagedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#owns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasParameterDataValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#High"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interview_perception_experience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Low"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#scenarios"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#RecentMemory"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PastMemory"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Decision"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#High"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interview_perception_experience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Low"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#MemoryEncoding"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PastMemory"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#RecentMemory"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+        <NamedIndividual IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#affects"/>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#RecentMemory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#classifies"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasOutcome"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#involves"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#isEngagedIn"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#owns"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
+        <Class IRI="#PastMemory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
+        <ObjectUnionOf>
+            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#MemoryEncoding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#affects"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#classifies"/>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#RecentMemory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#classifies"/>
+        <Class IRI="#PastMemory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasOutcome"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#involves"/>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#MemoryEncoding"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#isEngagedIn"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#isEngagedIn"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#owns"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#RecentMemory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
+        <ObjectUnionOf>
+            <Class IRI="#Decision"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasParameterDataValue"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#hasParameterDataValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision</IRI>
+        <Literal>The final decision (possibly affected by the Recency bias) reached by the interviewer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#High</IRI>
+        <Literal>The high importance given to recent memories in a recency biased memory encoding process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interview_perception_experience</IRI>
+        <Literal>The perception experience the individual is engaged in during the job interview.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer</IRI>
+        <Literal>The individual conducting the job interview.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Low</IRI>
+        <Literal>The low importance given to past memories in a recency biased memory encoding process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#MemoryEncoding</IRI>
+        <Literal>The process of encoding memory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#MemoryEncoding</IRI>
+        <Literal>Memory encoding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding</IRI>
+        <Literal>The process of encoding memory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory</IRI>
+        <Literal>The memory about the applicant doing really well in the job interview until a certain point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#RecentMemory</IRI>
+        <Literal>A memory that has been produced more recently in the memory encoding process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#RecentMemory</IRI>
+        <Literal>Recent memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory</IRI>
+        <Literal>The memory about the applicant not performing really well in the really last part of the job interview.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Decision</IRI>
+        <Literal>The final decision the individual reaches as ending result of the decision-making process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Decision</IRI>
+        <Literal>Decision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PastMemory</IRI>
+        <Literal>A memory that has been produced previously in the memory encoding process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PastMemory</IRI>
+        <Literal>Past memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/Deciding</IRI>
+        <Literal>The decision-making process carried out by the individual about the final outcome of the job interview.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/Importance</IRI>
+        <Literal>A Factor affects the outcome of an Undertaking, which can be a goal-oriented activity or the maintenance of a desirable state, the work in a Field, or something portrayed as affecting an Interested_party. A Reason may be given for the importance of the Factor. The Degree of importance may also be specified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/framester/data/framestercore/Importance</IRI>
+        <Literal>Importance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/Memory</IRI>
+        <Literal>This frame is concerned with Cognizers remembering and forgetting mental Content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/framester/data/framestercore/Memory</IRI>
+        <Literal>Memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/People</IRI>
+        <Literal>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://w3id.org/framester/data/framestercore/People</IRI>
+        <Literal>People</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/PerceptionExperience</IRI>
+        <Literal>Perception experience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/framester/data/framestercore/PerceptionExperience</IRI>
+        <Literal>This frame contains perception words whose Perceivers have perceptual experiences that they do not necessarily intend to. For this reason we call the Perceiver role Perceiver_passive. Comparing the Perception_experience frame to the Perception_active frame, we note that for some modalities there are different lexical items in each frame. For instance, whereas Perception_experience has see, Perception_active has look at. For other sense modalities, we find the same lexical items in both frames. To illustrate, consider the verb smell where I smell something rotten exemplifies its Perception_experience use and Smell this to see if it&apos;s fresh exemplifies its Perception_active sense. This frame also includes words which are not specific to any sense modality, including detect, perceive, perception, sense.</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
