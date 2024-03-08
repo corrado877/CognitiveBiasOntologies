@@ -1,11 +1,12 @@
 PREFIX aff: <https://w3id.org/affectedBy#>
-PREFIX activitypattern:<http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#>
-PREFIX activ: <http://ontology.eil.utoronto.ca/icity/ActivitySpecification/>
+PREFIX:activitypattern <http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl > (An Ontology Design Pattern for Activity Reasoning)
+PREFIX activ: <http://ontology.eil.utoronto.ca/icity/ActivitySpecification/> (ActivitySpecification)
 PREFIX dbo:<https://dbpedia.org/ontology/> si può usare per le proprietà tipo dbo:produces mentre dbr: <https://dbpedia.org/resource/> si può usare per le classi tipo Illusion/Success, Person etc...
 PREFIX cbo:<https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#>
 PREFIX cco: <http://purl.org/ontology/cco/core#>
 PREFIX exob sul grafico di drawio mentre è term su protegè term:http://modellingdh.github.io/ont/odp/term/
 PREFIX fs:<https://w3id.org/framester/data/framestercore/> 
+PREFIX fsyn:<https://w3id.org/framester/data/framestersyn/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX parameter:<http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#>
 PREFIX participation: <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#>
