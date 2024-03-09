@@ -9,7 +9,6 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:fsyn="https://w3id.org/framester/data/framestersyn/"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -187,7 +186,7 @@
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasBiasedOpinion">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
-        <rdfs:comment>a property connecting a Person who has a biased opinion about the possible outcome of an Event such as a Random or Chance-based Occurrence</rdfs:comment>
+        <rdfs:comment>A property connecting a Person who has a biased opinion about the possible outcome of a Future Event, such as a Random/Chance-based Occurrence, because he/she thinks that there is a correlation between this future event and a series of past events.</rdfs:comment>
     </owl:ObjectProperty>
     
 
