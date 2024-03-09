@@ -17,7 +17,6 @@
      xmlns:partof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
      xmlns:parameter="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"
      xmlns:participation="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
-     xmlns:activitypattern="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
      xmlns:GamblersFallacyOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl">
@@ -26,7 +25,6 @@
         <terms:description>The Gamblers&apos;Fallacy module of the Cognitive Bias Ontology</terms:description>
         <terms:title>The Gamblers&apos;Fallacy Ontology Bias</terms:title>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:AffectedBy"/>
-        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:An_Ontology_Design_Pattern_for_Activity_Reasoning"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Parameter"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
         <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Participation"/>
@@ -322,6 +320,7 @@
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <terms:description>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame. In this case the frame represents an activity with random or chance-based outcomes in which a person is involved in.</terms:description>
         <rdfs:label>Activity</rdfs:label>
@@ -355,6 +354,7 @@
     <!-- https://w3id.org/framester/data/framestercore/Probability -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Probability">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <terms:description>This frame characterizes the likelihood that a Hypothetical_event will happen as a position on a scale of impossible to inevitable. The likelihood can expressed as numerical Odds or a metaphorical representation of the Position on a scale. There&apos;s a 20 % chance that you&apos;ll succeed. The odds that he&apos;ll actually do it are one in a million.</terms:description>
         <rdfs:label>Probability</rdfs:label>
     </owl:Class>
