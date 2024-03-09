@@ -193,6 +193,8 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasInfluence">
         <owl:inverseOf rdf:resource="https://w3id.org/affectedBy#influencedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
     </owl:ObjectProperty>
     
 
@@ -292,6 +294,7 @@
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
@@ -314,6 +317,7 @@
     <!-- https://w3id.org/framester/data/framestercore/Activity -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
@@ -326,6 +330,9 @@
     <!-- https://w3id.org/framester/data/framestercore/Event -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <terms:description>An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries. INI The party will take place on Sunday in the all-you-can-eat buffet.</terms:description>
         <rdfs:label>Event</rdfs:label>
     </owl:Class>
