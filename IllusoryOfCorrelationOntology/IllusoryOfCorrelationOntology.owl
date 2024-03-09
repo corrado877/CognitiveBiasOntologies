@@ -144,46 +144,13 @@
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart">
         <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
     
 
 
@@ -228,6 +195,12 @@
     <!-- https://dbpedia.org/page/Illusion -->
 
     <owl:Class rdf:about="https://dbpedia.org/page/Illusion">
+        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <terms:description>An illusion is a distortion of the senses, which can reveal how the mind normally organizes and interprets sensory stimulation. Although illusions distort the human perception of reality, they are generally shared by most people. Illusions may occur with any of the human senses, but visual illusions (optical illusions) are the best-known and understood. The emphasis on visual illusions occurs because vision often dominates the other senses. For example, individuals watching a ventriloquist will perceive the voice is coming from the dummy since they are able to see the dummy mouth the words.</terms:description>
         <rdfs:label>Illusion</rdfs:label>
     </owl:Class>
@@ -238,12 +211,6 @@
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariableEntity1">
         <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariableEntity2"/>
         <terms:description>A class for one one of the two variables that are perceived as correlated.</terms:description>
         <rdfs:label>Variable Entity 1</rdfs:label>
@@ -255,12 +222,6 @@
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariableEntity2">
         <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <terms:description>A class for one one of the two variables that are perceived as correlated.</terms:description>
         <rdfs:label>Variable Entity 2</rdfs:label>
     </owl:Class>
@@ -270,6 +231,11 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <terms:description>A class representing all the possible variables or attributes that individuals mistakenly perceive to be correlated.</terms:description>
         <rdfs:label>Variables</rdfs:label>
     </owl:Class>
@@ -279,6 +245,10 @@
     <!-- https://w3id.org/framester/data/framestercore/Activity -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <terms:description>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame.  In this case is a class representing an activity affected by a certain cognitive process (Becoming Aware of something).</terms:description>
         <rdfs:label>Activity</rdfs:label>
     </owl:Class>
@@ -288,6 +258,9 @@
     <!-- https://w3id.org/framester/data/framestercore/BecomingAware -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <terms:description>Words in this frame have to do with a Cognizer adding some Phenomenon to their model of the world. They are similar to Coming-to-believe words, except the latter generally involve reasoning from Evidence. The words in this frame take direct objects that denote entities in the world, and indicate awareness of those entities, without necessarily giving any information about the content of the Cognizer&apos;s belief or knowledge. These words also resemble perception words, since creatures often become aware of things by perceiving them. Later that night, they found the barely-alive victim inside the Red Hall estate flat. Almost immediately, the police discovered the wrought-iron crypt gate swinging open. In the bag on the tableI could vaguely discern two bottles of wine and several cartons of cakes and other goodies. People passing through recognize it from afar, by the clouds of coal dust darkening the air. General Grammatical Observations: Passive forms of the verbs in this frame can occur with extraposed clauses expressing Phenomenon: That year it was discovered that consumers preferred the older model. It is not always recognized how much work goes into a dinner party.</terms:description>
         <rdfs:label>Becoming Aware</rdfs:label>
     </owl:Class>
@@ -297,21 +270,18 @@
     <!-- https://w3id.org/framester/data/framestercore/CognitiveConnection -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <terms:description>A concept, Concept_1, is related causally or collocationally to another concept, Concept_2, by means of some Evidence. They may be related only under certain Circumstances or from a certain Point_of_view. The two concepts may be expressed collectively as associated Concepts. Any cognizer is deprofiled.</terms:description>
         <rdfs:label>Cognitive Connection</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/framester/data/framestercore/Event -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
-    
-
-
     <!-- https://w3id.org/framester/data/framestercore/Pattern -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <terms:description>This frame describes the interrelation of a collection of Entities; they may be physical entities or shapes in a recognizable configuration, a pattern of events, or a relation among abstract entities. The pattern is not the individual Entities nor the set of Entities, but an abstraction of their interrelations, as a gestalt. The Cougers are playing in a Wing-T formation tonight. The auditors noticed a suspicious pattern of withdrawals from the maintenance account . The digits of irrational numbers do not repeat in any kind of pattern.</terms:description>
         <rdfs:label>Pattern</rdfs:label>
     </owl:Class>
@@ -435,29 +405,6 @@
         <rdfs:comment>One of the variables that occur together as part of a pattern.</rdfs:comment>
         <rdfs:label>Pair of socks</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://dbpedia.org/page/Illusion"/>
-            <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
-            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
-            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
-            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
-            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
-            <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/People"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 
