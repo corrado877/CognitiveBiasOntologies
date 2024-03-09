@@ -341,13 +341,7 @@
         <terms:description>A class representing a type of Outcome such as Colored Numbers</terms:description>
         <rdfs:label>ColorNumber</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
-    
+     
 
 
     <!-- https://w3id.org/framester/data/framestercore/Activity -->
@@ -374,10 +368,6 @@
     </owl:Class>
     
 
-
-    <!-- https://w3id.org/framester/data/framestercore/Pattern -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
     
 
 
