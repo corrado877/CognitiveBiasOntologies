@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-09T08:39:32.120Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="kKPkXcTuvnbVyeWnsJlI" version="24.0.2" type="device">
+<mxfile host="app.diagrams.net" modified="2024-03-09T10:13:22.971Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="tU-20lqe0QCpVijTdDtC" version="24.0.2" type="device">
   <diagram id="oU7lBioK2oj68UVmJGeL" name="Page-1">
     <mxGraphModel dx="1877" dy="1738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -32,7 +32,7 @@
         </mxCell>
         <UserObject label="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;aff&lt;/b&gt;:&amp;nbsp;https://w3id.org/affectedBy#&lt;br&gt;&lt;div&gt;&lt;b&gt;dbr&lt;/b&gt;:https://dbpedia.org/ontology/&lt;br&gt;&lt;b&gt;cbo&lt;/b&gt;:https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#&lt;br&gt;&lt;b&gt;cco:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;text-align: justify; background-color: initial;&quot;&gt;http://purl.org/ontology/cco/core#&lt;/span&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;b&gt;fs&lt;/b&gt;:https://w3id.org/framester/data/framestercore/&lt;/div&gt;&lt;div&gt;&lt;b&gt;fsyn&lt;/b&gt;:https://w3id.org/framester/data/framestersyn/&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;foaf:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://xmlns.com/foaf/0.1/&lt;br&gt;&lt;b&gt;parameter&lt;/b&gt;:http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#&lt;br&gt;&lt;b&gt;participation&lt;/b&gt;:&amp;nbsp;http://www.ontologydesignpatterns.org/cp/owl/participation.owl#&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;partof&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://www.ontologydesignpatterns.org/cp/owl/partof.owl#&lt;br&gt;&lt;/span&gt;&lt;b&gt;prov:&lt;/b&gt;http://www.w3.org/ns/prov#&lt;br&gt;&lt;b&gt;rdfs&lt;/b&gt;:http://www.w3.org/2000/01/rdf-schema#&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;xsd:&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://www.w3.org/2001/XMLSchema#&lt;/span&gt;&lt;/div&gt;" link="http://www.w3.org/2000/01/rdf-schema#" id="j3H0xUcFlWFZ-JWSaFpQ-1">
           <mxCell style="text;whiteSpace=wrap;html=1;" parent="DcR2EK71TW1_98MgDz5n-1" vertex="1">
-            <mxGeometry x="9" y="22" width="761" height="180" as="geometry" />
+            <mxGeometry x="11.97" y="30" width="761" height="180" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="I9f-uaQK-Aq1dQhWgUXI-5" value="ODPs and Ontologies Used" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1" parent="1" vertex="1">
@@ -165,7 +165,7 @@
             <mxPoint x="8" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rwo6sAAVRPEedmvHrdig-1" value="cbo:NextRandomOccurence&#xa;(Number Draw)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="rwo6sAAVRPEedmvHrdig-1" value="cbo:NextRandomOccurence&#xa;(Next Number Draw)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="200" y="450" width="180" height="40" as="geometry" />
         </mxCell>
         <mxCell id="rwo6sAAVRPEedmvHrdig-4" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="rwo6sAAVRPEedmvHrdig-1" target="X6dG0_ZqyGWDh663tGR5-5" edge="1">
