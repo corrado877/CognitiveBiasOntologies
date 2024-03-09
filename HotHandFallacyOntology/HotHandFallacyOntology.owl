@@ -324,12 +324,6 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
-    
-
-
     <!-- https://w3id.org/framester/data/framestercore/Activity -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
@@ -352,12 +346,6 @@
         <terms:description>An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries. INI The party will take place on Sunday in the all-you-can-eat buffet.</terms:description>
         <rdfs:label>Event</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestercore/Pattern -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
     
 
 
