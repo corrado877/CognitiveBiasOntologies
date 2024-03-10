@@ -124,7 +124,6 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#hasEffect -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#hasEffect">
-        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#isEffectOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <rdfs:range rdf:resource="https://dbpedia.org/page/Illusion"/>
         <rdfs:comment>hasEffect: a property linking an Entity (a perceived correlation between two variables in a pattern or a perceived pattern due to any kind of external stimulus) and the illusory effect that this Entity produce.</rdfs:comment>
@@ -160,12 +159,6 @@
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <rdfs:comment>a property that connect a Person that is biased by the idea of seeing a Pattern such as meaningful shapes made by a visual stimulus</rdfs:comment>
     </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#isEffectOf -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#isEffectOf"/>
     
 
 
@@ -297,6 +290,16 @@
     
 
 
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion">
+        <rdf:type rdf:resource="https://dbpedia.org/page/Illusion"/>
+        <rdfs:comment>The actual illusion effect of seeing a facial shape in a weather-beaten tree trunk.</rdfs:comment>
+        <rdfs:label>FacialShapeIllusion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus">
@@ -326,16 +329,6 @@
         <PareidoliaBiasOntology:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus"/>
         <rdfs:comment>the activity  (such a walk in a park) ih which a perception experience is involved.</rdfs:comment>
         <rdfs:label>Walk</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#lllusionEffect -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#lllusionEffect">
-        <rdf:type rdf:resource="https://dbpedia.org/page/Illusion"/>
-        <rdfs:comment>The actual illusion effect made by seeing a facial shape in a weather-beaten tree trunk.</rdfs:comment>
-        <rdfs:label>Illusion Effect</rdfs:label>
     </owl:NamedIndividual>
     
 
