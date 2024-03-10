@@ -100,7 +100,6 @@
 
     <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/includes">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
     </owl:ObjectProperty>
     
 
@@ -133,10 +132,7 @@
 
     <!-- http://modellingdh.github.io/ont/odp/term/producedObservation -->
 
-    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/producedObservation">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/producedObservation"/>
     
 
 
