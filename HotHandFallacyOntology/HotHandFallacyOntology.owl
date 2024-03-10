@@ -285,6 +285,12 @@
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence">
         <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#FutureEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <terms:description>This class represent an event that will happen in the next future and it is characterized by chance-based probability.</terms:description>
         <rdfs:label>Next Chance-Based Occurence</rdfs:label>
     </owl:Class>
