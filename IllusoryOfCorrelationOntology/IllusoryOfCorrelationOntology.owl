@@ -211,6 +211,12 @@
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariableEntity1">
         <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariableEntity2"/>
         <terms:description>A class for one one of the two variables that are perceived as correlated.</terms:description>
         <rdfs:label>Variable Entity 1</rdfs:label>
@@ -222,6 +228,12 @@
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariableEntity2">
         <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <terms:description>A class for one one of the two variables that are perceived as correlated.</terms:description>
         <rdfs:label>Variable Entity 2</rdfs:label>
     </owl:Class>
