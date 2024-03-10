@@ -300,6 +300,17 @@
     <!-- https://w3id.org/framester/data/framestercore/Activity -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#FutureEvent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
