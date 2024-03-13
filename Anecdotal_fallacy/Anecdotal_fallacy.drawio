@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-19T14:53:44.318Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="XhoHqt1dK9wQIufY9r-j" version="23.1.5" type="device">
+<mxfile host="app.diagrams.net" modified="2024-03-13T12:32:51.026Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="qacYws-6jom5hTS5v-MS" version="24.0.5" type="device">
   <diagram name="Page-1" id="cbpPXX-dyT5s-ZYUZ89M">
-    <mxGraphModel dx="1877" dy="-639" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1877" dy="-600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -85,9 +85,9 @@
             <mxRectangle x="-550" y="110" width="100" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <UserObject label="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;actspec:&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;http://ontology.eil.utoronto.ca/icity/ActivitySpecification&lt;br&gt;&lt;/span&gt;&lt;b&gt;dbo:&lt;/b&gt;https://dbpedia.org/page/Illusion&lt;br&gt;&lt;b&gt;cbo&lt;/b&gt;:https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology&lt;br&gt;&lt;b&gt;exob:&lt;/b&gt;https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;foaf:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://xmlns.com/foaf/0.1/&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;fs&lt;/b&gt;:https://w3id.org/framester/data/framestercore/&lt;br&gt;&lt;b&gt;cco: &lt;/b&gt;http://purl.org/ontology/cco/core#&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" link="http://www.w3.org/2000/01/rdf-schema#" id="shT0HkmOFGitXh8zyB-2-86">
+        <UserObject label="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;actspec:&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;http://ontology.eil.utoronto.ca/icity/ActivitySpecification&lt;br&gt;&lt;/span&gt;&lt;b&gt;dbo:&lt;/b&gt;https://dbpedia.org/resource/&lt;br&gt;&lt;b&gt;cbo&lt;/b&gt;:https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology&lt;br&gt;&lt;b&gt;exob:&lt;/b&gt;http://modellingdh.github.io/ont/odp/term/&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;foaf:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://xmlns.com/foaf/0.1/&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;fs&lt;/b&gt;:https://w3id.org/framester/data/framestercore/&lt;br&gt;&lt;b&gt;cco: &lt;/b&gt;http://purl.org/ontology/cco/core#&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" link="http://www.w3.org/2000/01/rdf-schema#" id="shT0HkmOFGitXh8zyB-2-86">
           <mxCell style="text;whiteSpace=wrap;html=1;" parent="shT0HkmOFGitXh8zyB-2-85" vertex="1">
-            <mxGeometry y="30" width="640" height="170" as="geometry" />
+            <mxGeometry x="10" y="20" width="640" height="170" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="shT0HkmOFGitXh8zyB-2-88" value="ODPs and Ontologies Used" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1" parent="1" vertex="1">
@@ -95,20 +95,6 @@
         </mxCell>
         <mxCell id="shT0HkmOFGitXh8zyB-2-89" value="&lt;ul&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;ActivitySpecification&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Experience and Observation&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="shT0HkmOFGitXh8zyB-2-88" vertex="1">
           <mxGeometry x="-20" y="-20" width="270" height="142" as="geometry" />
-        </mxCell>
-        <mxCell id="O6WcD7H04X34iGRl6mHl-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="shT0HkmOFGitXh8zyB-2-36" target="shT0HkmOFGitXh8zyB-2-76" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="360" y="1770" as="sourcePoint" />
-            <mxPoint x="410" y="1720" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="727" y="1532" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="O6WcD7H04X34iGRl6mHl-2" value="cco:hasBelief" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="O6WcD7H04X34iGRl6mHl-1" vertex="1" connectable="0">
-          <mxGeometry x="-0.132" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="O6WcD7H04X34iGRl6mHl-3" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="shT0HkmOFGitXh8zyB-2-41" target="shT0HkmOFGitXh8zyB-2-38" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -119,6 +105,17 @@
         <mxCell id="O6WcD7H04X34iGRl6mHl-4" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;b&gt;exob&lt;/b&gt;:inActivity&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;rotation=0;" parent="O6WcD7H04X34iGRl6mHl-3" vertex="1" connectable="0">
           <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
             <mxPoint x="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_5zH6PEUP99vlSeDQSu-1" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.402;exitY=-0.025;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="shT0HkmOFGitXh8zyB-2-36" target="shT0HkmOFGitXh8zyB-2-76">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="1540.0818375889874" as="sourcePoint" />
+            <mxPoint x="711" y="1540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_5zH6PEUP99vlSeDQSu-2" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;b&gt;cco&lt;/b&gt;:belief&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="x_5zH6PEUP99vlSeDQSu-1">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
