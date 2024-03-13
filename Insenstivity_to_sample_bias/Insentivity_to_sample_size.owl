@@ -69,13 +69,13 @@ Our intuition struggles with the complex relationship between sample size and st
         <Literal>https://w3id.org/framester/data/framestercore/</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#Assessing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Decision"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Assessing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Decision"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
@@ -85,9 +85,6 @@ Our intuition struggles with the complex relationship between sample size and st
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#cbo:have_knowledge"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#cbo:misjudged"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#exob:inActivity"/>
@@ -126,35 +123,15 @@ Our intuition struggles with the complex relationship between sample size and st
         <AnnotationProperty IRI="#user_story"/>
     </Declaration>
     <DisjointClasses>
-        <Class IRI="#Assessing"/>
-        <Class IRI="#Decision"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Assessing"/>
-        <Class IRI="#Thing"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Assessing"/>
-        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Decision"/>
-        <Class IRI="#Thing"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Decision"/>
-        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#Thing"/>
         <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#Decision"/>
+        <Class abbreviatedIRI="fs:Decision"/>
         <NamedIndividual IRI="#Game_bought"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Assessing"/>
+        <Class abbreviatedIRI="fs:Assessing"/>
         <NamedIndividual IRI="#Game_choice"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -176,9 +153,9 @@ Our intuition struggles with the complex relationship between sample size and st
         <NamedIndividual IRI="#Game_bought"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#cbo:misjudged"/>
+        <ObjectProperty IRI="#aff:influencedBy"/>
         <NamedIndividual IRI="#Game_review"/>
-        <NamedIndividual IRI="#Game_choice"/>
+        <NamedIndividual IRI="#Game_bought"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#cbo:have_knowledge"/>
@@ -190,21 +167,21 @@ Our intuition struggles with the complex relationship between sample size and st
         <NamedIndividual IRI="#Me"/>
         <NamedIndividual IRI="#Game_choice"/>
     </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#exob:inActivity"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#aff:influencedBy"/>
-        <Class IRI="#Decision"/>
+        <Class IRI="#Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#cbo:have_knowledge"/>
         <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#cbo:misjudged"/>
-        <Class IRI="#Thing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#exob:inActivity"/>
-        <Class IRI="#Assessing"/>
+        <Class abbreviatedIRI="fs:Assessing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#exob:isEngaged"/>
@@ -212,23 +189,19 @@ Our intuition struggles with the complex relationship between sample size and st
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#aff:influencedBy"/>
-        <Class IRI="#Thing"/>
+        <Class abbreviatedIRI="fs:Decision"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#cbo:have_knowledge"/>
         <Class IRI="#Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#cbo:misjudged"/>
-        <Class IRI="#Assessing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#exob:inActivity"/>
-        <Class IRI="#Decision"/>
+        <Class abbreviatedIRI="fs:Decision"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#exob:isEngaged"/>
-        <Class IRI="#Assessing"/>
+        <Class abbreviatedIRI="fs:Assessing"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -239,11 +212,6 @@ Our intuition struggles with the complex relationship between sample size and st
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#cbo:have_knowledge</IRI>
         <Literal>a property that links the cognitive process of storing some information regarding a topic.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#cbo:misjudged</IRI>
-        <Literal>a property that links the cognitive process of misinterpreting information.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
