@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-14T10:07:51.388Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="SHTw_0mhh11Lrwsc-G0G" version="24.0.6" type="device">
+<mxfile host="app.diagrams.net" modified="2024-03-14T10:12:25.987Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="WoDY0YEJXg6vaMarAwbN" version="24.0.6" type="device">
   <diagram id="xqs5KKzRLcflo9ZkjbXo" name="Pagina-1">
     <mxGraphModel dx="1050" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
       <root>
@@ -10,7 +10,7 @@
         <mxCell id="y_OlSuZiI7DkMi86MfuV-2" value="db:Entity" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" parent="1" vertex="1">
           <mxGeometry x="630" y="350" width="90" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="y_OlSuZiI7DkMi86MfuV-4" value="Feature" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" parent="1" vertex="1">
+        <mxCell id="y_OlSuZiI7DkMi86MfuV-4" value="cbo:Feature" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" parent="1" vertex="1">
           <mxGeometry x="630" y="510" width="90" height="54" as="geometry" />
         </mxCell>
         <mxCell id="y_OlSuZiI7DkMi86MfuV-15" value="cbo:Known&#xa;feature" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0" parent="1" vertex="1">
