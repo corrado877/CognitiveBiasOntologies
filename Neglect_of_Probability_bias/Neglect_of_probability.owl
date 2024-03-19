@@ -8,11 +8,13 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:aff2="https://w3id.org/affectedBy#aff:"
      xmlns:aff4="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#aff:"
      xmlns:cbo1="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#cbo:"
      xmlns:exob="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:exob1="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:"
      xmlns:exob3="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#exob:"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
@@ -95,17 +97,6 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#aff:influencedBy -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#aff:influencedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Activity"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Ignore"/>
-        <rdfs:comment>A relation between qualities. A quality is influenced by another quality if the value of the latter affects the value of the former.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#cbo:decide -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#cbo:decide">
@@ -128,23 +119,34 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#exob:inActivity -->
+    <!-- https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#exob:inActivity">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Assessing"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Activity"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/_#Assessing"/>
+        <rdfs:range rdf:resource="fs:https://w3id.org/framester/data/framestercore/_#Decision"/>
         <rdfs:comment>What activity/ies are affecting or affected by a certain engagement</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#exob:isEngaged -->
+    <!-- https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:isEngaged -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#exob:isEngaged">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:isEngaged">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Assessing"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/_#Assessing"/>
         <rdfs:comment>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#aff:influencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#aff:influencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="fs:https://w3id.org/framester/data/framestercore/_#Decision"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Ignore"/>
+        <rdfs:comment>A relation between qualities. A quality is influenced by another quality if the value of the latter affects the value of the former.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -160,22 +162,12 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Activity -->
+    <!-- fs:https://w3id.org/framester/data/framestercore/_#Decision -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Activity">
-        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Assessing"/>
+    <owl:Class rdf:about="fs:https://w3id.org/framester/data/framestercore/_#Decision">
         <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Ignore"/>
         <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Thing"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Assessing -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Assessing">
-        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Ignore"/>
-        <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Thing"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/_#Assessing"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
     </owl:Class>
     
@@ -185,6 +177,7 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Ignore">
         <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Thing"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/_#Assessing"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
     </owl:Class>
     
@@ -193,6 +186,15 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Thing -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Thing">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/_#Assessing"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/_#Assessing -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/_#Assessing">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
     </owl:Class>
     
@@ -220,7 +222,7 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Amelia">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
         <cbo1:have_knowledge rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Deadline"/>
-        <exob3:isEngaged rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Task_management"/>
+        <exob1:isEngaged rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Task_management"/>
     </owl:NamedIndividual>
     
 
@@ -237,8 +239,8 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Job_presentation -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Job_presentation">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Activity"/>
-        <aff4:influencedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Procrastinate"/>
+        <rdf:type rdf:resource="fs:https://w3id.org/framester/data/framestercore/_#Decision"/>
+        <aff2:influencedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Procrastinate"/>
     </owl:NamedIndividual>
     
 
@@ -254,8 +256,8 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Task_management -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Task_management">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Assessing"/>
-        <exob3:inActivity rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Job_presentation"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/_#Assessing"/>
+        <exob1:inActivity rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#Job_presentation"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
