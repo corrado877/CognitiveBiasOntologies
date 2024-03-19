@@ -81,16 +81,16 @@ Our intuition struggles with the complex relationship between sample size and st
         <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#aff:influencedBy"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#cbo:have_knowledge"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#exob:inActivity"/>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#exob:isEngaged"/>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:isEngaged"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#aff:influencedBy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Game_bought"/>
@@ -143,17 +143,17 @@ Our intuition struggles with the complex relationship between sample size and st
         <NamedIndividual IRI="#Me"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#aff:influencedBy"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#aff:influencedBy"/>
         <NamedIndividual IRI="#Game_bought"/>
         <NamedIndividual IRI="#Game_review"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#exob:inActivity"/>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity"/>
         <NamedIndividual IRI="#Game_choice"/>
         <NamedIndividual IRI="#Game_bought"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#aff:influencedBy"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#aff:influencedBy"/>
         <NamedIndividual IRI="#Game_review"/>
         <NamedIndividual IRI="#Game_bought"/>
     </ObjectPropertyAssertion>
@@ -163,51 +163,46 @@ Our intuition struggles with the complex relationship between sample size and st
         <NamedIndividual IRI="#Game_review"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#exob:isEngaged"/>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:isEngaged"/>
         <NamedIndividual IRI="#Me"/>
         <NamedIndividual IRI="#Game_choice"/>
     </ObjectPropertyAssertion>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#exob:inActivity"/>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#aff:influencedBy"/>
-        <Class IRI="#Thing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#cbo:have_knowledge"/>
         <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#exob:inActivity"/>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity"/>
         <Class abbreviatedIRI="fs:Assessing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#exob:isEngaged"/>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:isEngaged"/>
         <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#aff:influencedBy"/>
-        <Class abbreviatedIRI="fs:Decision"/>
-    </ObjectPropertyRange>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#aff:influencedBy"/>
+        <Class IRI="#Thing"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#cbo:have_knowledge"/>
         <Class IRI="#Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#exob:inActivity"/>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity"/>
         <Class abbreviatedIRI="fs:Decision"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#exob:isEngaged"/>
+        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:isEngaged"/>
         <Class abbreviatedIRI="fs:Assessing"/>
     </ObjectPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#aff:influencedBy</IRI>
-        <Literal>A relation between qualities. A quality is influenced by another quality if the value of the latter affects the value of the former.</Literal>
-    </AnnotationAssertion>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#aff:influencedBy"/>
+        <Class abbreviatedIRI="fs:Decision"/>
+    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#cbo:have_knowledge</IRI>
@@ -215,13 +210,18 @@ Our intuition struggles with the complex relationship between sample size and st
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#exob:inActivity</IRI>
+        <IRI>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity</IRI>
         <Literal>what activity/ies are affecting or affected by a certain engagement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#exob:isEngaged</IRI>
+        <IRI>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:isEngaged</IRI>
         <Literal>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/affectedBy#aff:influencedBy</IRI>
+        <Literal>A relation between qualities. A quality is influenced by another quality if the value of the latter affects the value of the former.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
