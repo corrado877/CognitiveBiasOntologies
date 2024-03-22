@@ -115,6 +115,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameter">
         <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#isParameterFor"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
     </owl:ObjectProperty>
     
@@ -156,7 +157,10 @@
 
     <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+    </owl:ObjectProperty>
     
 
 
