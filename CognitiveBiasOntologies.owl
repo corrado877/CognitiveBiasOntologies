@@ -23,7 +23,6 @@
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#">
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl"/>
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl"/>
-        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl"/>
         <terms:contributor>Dott. Stefano De Giorgis</terms:contributor>
         <terms:contributor>Prof. Aldo Gangemi</terms:contributor>
         <terms:created>February 2024</terms:created>
@@ -83,29 +82,6 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </rdf:Description>
-    
-
-
     <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf -->
 
     <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf">
@@ -126,6 +102,29 @@
             </owl:Class>
         </rdfs:range>
     </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Pattern -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
 </rdf:RDF>
 
 
