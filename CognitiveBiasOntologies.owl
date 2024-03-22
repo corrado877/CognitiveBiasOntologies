@@ -22,6 +22,7 @@
      xmlns:Insensitivity_to_sample_size="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#">
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl"/>
         <terms:contributor>Dott. Stefano De Giorgis</terms:contributor>
         <terms:contributor>Prof. Aldo Gangemi</terms:contributor>
         <terms:created>February 2024</terms:created>
