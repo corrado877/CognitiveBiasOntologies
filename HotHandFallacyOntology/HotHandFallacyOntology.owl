@@ -117,6 +117,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#isParameterFor">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
     </owl:ObjectProperty>
     
 
@@ -133,7 +134,10 @@
 
     <!-- http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+    </owl:ObjectProperty>
     
 
 
@@ -141,6 +145,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart">
         <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
     </owl:ObjectProperty>
     
 
@@ -197,6 +203,8 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isOutcomeEffectOf -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isOutcomeEffectOf">
+        <rdfs:domain rdf:resource="https://dbpedia.org/page/Success"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:comment>inverse property of HasOutcomeEffect</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -206,6 +214,8 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isProducedEffectBy">
         <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#producesOutcomeEffect"/>
+        <rdfs:domain rdf:resource="https://dbpedia.org/page/Success"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <rdfs:comment>inverse property of producesOutcomeEffect</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -225,6 +235,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#influencedBy">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
     </owl:ObjectProperty>
     
 
