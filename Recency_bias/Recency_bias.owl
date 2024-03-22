@@ -17,6 +17,7 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="term" IRI="http://modellingdh.github.io/ont/odp/term/"/>
     <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="recency" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl#"/>
     <Prefix name="sequence" IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#"/>
     <Prefix name="parameter" IRI="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"/>
     <Prefix name="classification" IRI="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#"/>
@@ -77,6 +78,12 @@
         <Class IRI="#Decision"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#HighImportance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowImportance"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MemoryEncoding"/>
     </Declaration>
     <Declaration>
@@ -113,6 +120,9 @@
         <ObjectProperty abbreviatedIRI="classification:classifies"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty abbreviatedIRI="classification:isClassifiedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
     </Declaration>
     <Declaration>
@@ -123,6 +133,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasOutcome"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParameter"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#involves"/>
@@ -149,10 +162,19 @@
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#High_importance"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Importance"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Low_importance"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Memory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prominence"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
@@ -175,6 +197,54 @@
     <Declaration>
         <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#scenarios"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#HighImportance"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+            <DataHasValue>
+                <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+                <Literal>High</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LowImportance"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+            <DataHasValue>
+                <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+                <Literal>Low</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PastMemory"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasParameter"/>
+                <Class IRI="#LowImportance"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RecentMemory"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasParameter"/>
+                <Class IRI="#HighImportance"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#HighImportance"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowImportance"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#PastMemory"/>
         <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
@@ -208,8 +278,16 @@
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#HighImportance"/>
+        <NamedIndividual IRI="#High_importance"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
         <NamedIndividual IRI="#Importance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LowImportance"/>
+        <NamedIndividual IRI="#Low_importance"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
@@ -256,6 +334,11 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="classification:classifies"/>
+        <NamedIndividual IRI="#High_importance"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="classification:classifies"/>
         <NamedIndividual IRI="#Importance"/>
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
     </ObjectPropertyAssertion>
@@ -265,9 +348,24 @@
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="classification:classifies"/>
+        <NamedIndividual IRI="#Low_importance"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOutcome"/>
         <NamedIndividual IRI="#Memory"/>
         <NamedIndividual IRI="#Importance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="classification:classifies"/>
+        <NamedIndividual IRI="#Prominence"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="classification:classifies"/>
+        <NamedIndividual IRI="#Prominence"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
@@ -276,14 +374,18 @@
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
-        <NamedIndividual IRI="#Importance"/>
-        <Literal>&quot;High&quot; ^^xsd:string</Literal>
+        <NamedIndividual IRI="#High_importance"/>
+        <Literal>High</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
-        <NamedIndividual IRI="#Importance"/>
-        <Literal>&quot;Low&quot; ^^xsd:string</Literal>
+        <NamedIndividual IRI="#Low_importance"/>
+        <Literal>Low</Literal>
     </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="classification:classifies"/>
+        <ObjectProperty abbreviatedIRI="classification:isClassifiedBy"/>
+    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
         <ObjectProperty IRI="#follows"/>
@@ -302,7 +404,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="classification:classifies"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+        <ObjectUnionOf>
+            <Class IRI="#HighImportance"/>
+            <Class IRI="#LowImportance"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
@@ -316,8 +421,19 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#follows"/>
+        <Class IRI="#RecentMemory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasOutcome"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+        <Class IRI="#MemoryEncoding"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParameter"/>
+        <ObjectUnionOf>
+            <Class IRI="#PastMemory"/>
+            <Class IRI="#RecentMemory"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#involves"/>
@@ -341,11 +457,10 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="classification:classifies"/>
-        <Class IRI="#PastMemory"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="classification:classifies"/>
-        <Class IRI="#RecentMemory"/>
+        <ObjectUnionOf>
+            <Class IRI="#PastMemory"/>
+            <Class IRI="#RecentMemory"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
@@ -359,7 +474,15 @@
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#follows"/>
+        <Class IRI="#PastMemory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasOutcome"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParameter"/>
         <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -451,6 +574,11 @@ It can then be used between tasks, processes, time intervals, spatially locate o
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Decision</IRI>
         <Literal>Decision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Importance</IRI>
+        <Literal>The  value the interviewer gives to some memoryes at the expense of others</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

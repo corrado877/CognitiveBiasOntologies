@@ -17,6 +17,7 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="term" IRI="http://modellingdh.github.io/ont/odp/term/"/>
     <Prefix name="activitypattern" IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#"/>
+    <Prefix name="maskedmanfallacy" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#"/>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
         <Literal>01/03/24</Literal>
@@ -54,10 +55,10 @@
         <Literal>A man enters a local jazz club and is told that the great saxophonist John Smith will play that night. It happens to be also the name of a local talented surgeon. Immediately he refuses to believe that they are the same person, in his biased reasoning someone can&apos;t excel in two such diverse professions.</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="http://dbpedia.org/resource/Entity"/>
+        <Class abbreviatedIRI="dbr:Entity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://dbpedia.org/resource/Knowledge"/>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Feature"/>
@@ -139,7 +140,7 @@
     </Declaration>
     <SubClassOf>
         <Class IRI="#KnownFeature"/>
-        <Class IRI="http://dbpedia.org/resource/Knowledge"/>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#KnownFeature"/>
@@ -170,11 +171,11 @@
         <NamedIndividual IRI="#Jazz_saxophonist"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://dbpedia.org/resource/Entity"/>
+        <Class abbreviatedIRI="dbr:Entity"/>
         <NamedIndividual IRI="#John_Smith"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://dbpedia.org/resource/Knowledge"/>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
         <NamedIndividual IRI="#Knowledge"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
@@ -236,11 +237,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
-        <Class IRI="http://dbpedia.org/resource/Knowledge"/>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasFeature"/>
-        <Class IRI="http://dbpedia.org/resource/Entity"/>
+        <Class abbreviatedIRI="dbr:Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#involves"/>
@@ -264,7 +265,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owll#owns"/>
-        <Class IRI="http://dbpedia.org/resource/Knowledge"/>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
@@ -276,7 +277,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#involves"/>
-        <Class IRI="http://dbpedia.org/resource/Entity"/>
+        <Class abbreviatedIRI="dbr:Entity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#rejects"/>
@@ -286,26 +287,6 @@
         <ObjectProperty IRI="#supports"/>
         <Class IRI="#KnownFeature"/>
     </ObjectPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://dbpedia.org/resource/Entity</IRI>
-        <Literal>An entity is something that exists as itself, as a subject or as an object, actually or potentially, concretely or abstractly, physically or not. It need not be of material existence. In particular, abstractions and legal fictions are usually regarded as entities. In general, there is also no presumption that an entity is animate, or present. The adjectival form is entitative.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dbpedia.org/resource/Entity</IRI>
-        <Literal>Entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://dbpedia.org/resource/Knowledge</IRI>
-        <Literal>Knowledge can be defined as awareness of facts or as practical skills, and may also refer to familiarity with objects or situations. Knowledge of facts, also called propositional knowledge, is often defined as true belief that is distinct from opinion or guesswork by virtue of justification.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dbpedia.org/resource/Knowledge</IRI>
-        <Literal>Knowledge</Literal>
-    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl_#produces</IRI>
@@ -326,6 +307,26 @@ This is an universal property, it can be also used in different context (e.g. Ru
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>fao:affects</AbbreviatedIRI>
         <Literal>X &lt;affects&gt; Y. Agent X acts on object Y in such a way that Y changes state or location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Entity</AbbreviatedIRI>
+        <Literal>An entity is something that exists as itself, as a subject or as an object, actually or potentially, concretely or abstractly, physically or not. It need not be of material existence. In particular, abstractions and legal fictions are usually regarded as entities. In general, there is also no presumption that an entity is animate, or present. The adjectival form is entitative.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Entity</AbbreviatedIRI>
+        <Literal>Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Knowledge</AbbreviatedIRI>
+        <Literal>Knowledge can be defined as awareness of facts or as practical skills, and may also refer to familiarity with objects or situations. Knowledge of facts, also called propositional knowledge, is often defined as true belief that is distinct from opinion or guesswork by virtue of justification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Knowledge</AbbreviatedIRI>
+        <Literal>Knowledge</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

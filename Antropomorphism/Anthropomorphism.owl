@@ -7,6 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/2/untitled-ontology-23/"/>
+    <Prefix name="fs" IRI="https://w3id.org/framester/data/framestercore/"/>
     <Prefix name="dbr" IRI="https://dbpedia.org/resource/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -16,6 +17,7 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="term" IRI="http://modellingdh.github.io/ont/odp/term/"/>
     <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="anthro" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:created"/>
         <Literal>01/03/24</Literal>
@@ -49,16 +51,16 @@
         <Literal>A young child attributes human emotions and intentions to his beloved puppet, Mr. Whiskers, engaging in conversations and interpreting its expressions.</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="http://dbpedia.org/resource/Animal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://dbpedia.org/resource/Concept"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://dbpedia.org/resource/Plant"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="move:PhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Plant"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HumanFeature"/>
@@ -67,10 +69,10 @@
         <Class IRI="#Non-humanEntity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <Class abbreviatedIRI="fs:People"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
@@ -82,7 +84,7 @@
         <ObjectProperty abbreviatedIRI="term:producesObservation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/involves"/>
+        <ObjectProperty IRI="#involves"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Child"/>
@@ -118,27 +120,27 @@
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="http://dbpedia.org/resource/Animal"/>
-        <Class IRI="#Non-humanEntity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://dbpedia.org/resource/Concept"/>
-        <Class IRI="#Non-humanEntity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://dbpedia.org/resource/Plant"/>
-        <Class IRI="#Non-humanEntity"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="move:PhysicalObject"/>
         <Class IRI="#Non-humanEntity"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dbr:Animal"/>
+        <Class IRI="#Non-humanEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dbr:Concept"/>
+        <Class IRI="#Non-humanEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="dbr:Plant"/>
+        <Class IRI="#Non-humanEntity"/>
+    </SubClassOf>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <Class abbreviatedIRI="fs:People"/>
         <NamedIndividual IRI="#Child"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
         <NamedIndividual IRI="#Child_perception_experience"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -159,7 +161,7 @@
         <NamedIndividual IRI="#Child_perception_experience"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/involves"/>
+        <ObjectProperty IRI="#involves"/>
         <NamedIndividual IRI="#Child_perception_experience"/>
         <NamedIndividual IRI="#Puppet"/>
     </ObjectPropertyAssertion>
@@ -185,7 +187,7 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <Class abbreviatedIRI="fs:People"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="term:isReflectionOn"/>
@@ -196,55 +198,25 @@
         <Class IRI="#Non-humanEntity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="/involves"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <ObjectProperty IRI="#involves"/>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isReflectionOn"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:producesObservation"/>
         <Class IRI="#HumanFeature"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/involves"/>
+        <ObjectProperty IRI="#involves"/>
         <Class IRI="#Non-humanEntity"/>
     </ObjectPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://dbpedia.org/resource/Animal</IRI>
-        <Literal>Animals are multicellular, eukaryotic organisms in the biological kingdom Animalia. With few exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce sexually, and go through an ontogenetic stage in which their body consists of a hollow sphere of cells, the blastula, during embryonic development.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dbpedia.org/resource/Animal</IRI>
-        <Literal>Animal</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://dbpedia.org/resource/Concept</IRI>
-        <Literal>Concepts are defined as abstract ideas. They are understood to be the fundamental building blocks of the concept behind principles, thoughts and beliefs.They play an important role in all aspects of cognition.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dbpedia.org/resource/Concept</IRI>
-        <Literal>Concept</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://dbpedia.org/resource/Plant</IRI>
-        <Literal>Plants are predominantly photosynthetic eukaryotes of the kingdom Plantae. Historically, the plant kingdom encompassed all living things that were not animals, and included algae and fungi; however, all current definitions of Plantae exclude the fungi and some algae, as well as the prokaryotes (the archaea and bacteria).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dbpedia.org/resource/Plant</IRI>
-        <Literal>Plant</Literal>
-    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>term:isEngagedIn</AbbreviatedIRI>
@@ -269,6 +241,36 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>move:PhysicalObject</AbbreviatedIRI>
         <Literal>Physical object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Animal</AbbreviatedIRI>
+        <Literal>Animals are multicellular, eukaryotic organisms in the biological kingdom Animalia. With few exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce sexually, and go through an ontogenetic stage in which their body consists of a hollow sphere of cells, the blastula, during embryonic development.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Animal</AbbreviatedIRI>
+        <Literal>Animal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Concept</AbbreviatedIRI>
+        <Literal>Concepts are defined as abstract ideas. They are understood to be the fundamental building blocks of the concept behind principles, thoughts and beliefs.They play an important role in all aspects of cognition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Concept</AbbreviatedIRI>
+        <Literal>Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Plant</AbbreviatedIRI>
+        <Literal>Plants are predominantly photosynthetic eukaryotes of the kingdom Plantae. Historically, the plant kingdom encompassed all living things that were not animals, and included algae and fungi; however, all current definitions of Plantae exclude the fungi and some algae, as well as the prokaryotes (the archaea and bacteria).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Plant</AbbreviatedIRI>
+        <Literal>Plant</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -312,27 +314,27 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/involves</IRI>
+        <IRI>#involves</IRI>
         <Literal>Connects an activity to the entities involved in it</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/framester/data/framestercore/People</IRI>
+        <AbbreviatedIRI>fs:People</AbbreviatedIRI>
         <Literal>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://w3id.org/framester/data/framestercore/People</IRI>
+        <AbbreviatedIRI>fs:People</AbbreviatedIRI>
         <Literal>People</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/framester/data/framestercore/PerceptionExperience</IRI>
+        <AbbreviatedIRI>fs:PerceptionExperience</AbbreviatedIRI>
         <Literal>This frame contains perception words whose Perceivers have perceptual experiences that they do not necessarily intend to. For this reason we call the Perceiver role Perceiver_passive. Comparing the Perception_experience frame to the Perception_active frame, we note that for some modalities there are different lexical items in each frame. For instance, whereas Perception_experience has see, Perception_active has look at. For other sense modalities, we find the same lexical items in both frames. To illustrate, consider the verb smell where I smell something rotten exemplifies its Perception_experience use and Smell this to see if it&apos;s fresh exemplifies its Perception_active sense. This frame also includes words which are not specific to any sense modality, including detect, perceive, perception, sense.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://w3id.org/framester/data/framestercore/PerceptionExperience</IRI>
+        <AbbreviatedIRI>fs:PerceptionExperience</AbbreviatedIRI>
         <Literal>Perception experience</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>

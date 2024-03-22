@@ -7,6 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/2/untitled-ontology-23/"/>
+    <Prefix name="fs" IRI="https://w3id.org/framester/data/framestercore/"/>
     <Prefix name="dbr" IRI="https://dbpedia.org/resource/"/>
     <Prefix name="fao" IRI="http://www.fao.org/aims/aos/aos.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -21,7 +22,7 @@
     <Prefix name="parameter" IRI="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"/>
     <Prefix name="participation" IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"/>
     <Prefix name="activitypattern" IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#"/>
-    <Prefix name="Illusion_of_validity" IRI="https://github.com/corrado877/CognitiveBiasOntologies/Illusion_of_validity#"/>
+    <Prefix name="illusionofvalidity" IRI="https://github.com/corrado877/CognitiveBiasOntologies/Illusion_of_validity#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:created"/>
         <Literal>01/03/24</Literal>
@@ -71,28 +72,28 @@
         <Literal>&quot;John, a seasoned investor, relies on his perceived competence and past successes to make investment decisions, often ignoring the influence of unpredictable factors.&quot;</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="http://dbpedia.org/resource/Knowledge"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="activitypattern:Outcome"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="action:Action"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PerceivedValidity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+        <Class abbreviatedIRI="fs:Expectation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Identicality"/>
+        <Class abbreviatedIRI="fs:Identicality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <Class abbreviatedIRI="fs:People"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+        <Class abbreviatedIRI="fs:Predicting"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="activitypattern:produces"/>
@@ -116,7 +117,7 @@
         <ObjectProperty IRI="#hasAttribute"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasParameterDataValue"/>
+        <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Biased_investement"/>
@@ -165,11 +166,11 @@
         <NamedIndividual IRI="#Biased_investement"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <Class abbreviatedIRI="fs:People"/>
         <NamedIndividual IRI="#Expert_investor"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Identicality"/>
+        <Class abbreviatedIRI="fs:Identicality"/>
         <NamedIndividual IRI="#Identicality_aspect"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -177,11 +178,11 @@
         <NamedIndividual IRI="#Investor_PerceivedValidity"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+        <Class abbreviatedIRI="fs:Predicting"/>
         <NamedIndividual IRI="#Investor_predicting"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://dbpedia.org/resource/Knowledge"/>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
         <NamedIndividual IRI="#Investorship_knowledge"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -189,7 +190,7 @@
         <NamedIndividual IRI="#Negative_outcome"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+        <Class abbreviatedIRI="fs:Expectation"/>
         <NamedIndividual IRI="#Positive_outcome"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
@@ -233,17 +234,17 @@
         <NamedIndividual IRI="#Identicality_aspect"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasParameterDataValue"/>
+        <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
         <NamedIndividual IRI="#Identicality_aspect"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
     </DataPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="activitypattern:produces"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+        <Class abbreviatedIRI="fs:Predicting"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <Class abbreviatedIRI="fs:People"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
@@ -251,11 +252,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <Class abbreviatedIRI="fs:People"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
-        <Class IRI="http://dbpedia.org/resource/Knowledge"/>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="action:hasConsequence"/>
@@ -263,15 +264,14 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasAttribute"/>
-        <Class abbreviatedIRI="activitypattern:Outcome"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAttribute"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="activitypattern:Outcome"/>
+            <Class abbreviatedIRI="fs:Expectation"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="activitypattern:produces"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+        <Class abbreviatedIRI="fs:Expectation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
@@ -279,15 +279,15 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+        <Class abbreviatedIRI="fs:Predicting"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+        <Class abbreviatedIRI="fs:Predicting"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns"/>
-        <Class IRI="http://dbpedia.org/resource/Knowledge"/>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
@@ -299,26 +299,16 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAttribute"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Identicality"/>
+        <Class abbreviatedIRI="fs:Identicality"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasParameterDataValue"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Identicality"/>
+        <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+        <Class abbreviatedIRI="fs:Identicality"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="#hasParameterDataValue"/>
+        <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://dbpedia.org/resource/Knowledge</IRI>
-        <Literal>Knowledge can be defined as awareness of facts or as practical skills, and may also refer to familiarity with objects or situations. Knowledge of facts, also called propositional knowledge, is often defined as true belief that is distinct from opinion or guesswork by virtue of justification.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dbpedia.org/resource/Knowledge</IRI>
-        <Literal>Knowledge</Literal>
-    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>activitypattern:Outcome</AbbreviatedIRI>
@@ -372,6 +362,16 @@ This is an universal property, it can be also used in different context (e.g. Ru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Knowledge</AbbreviatedIRI>
+        <Literal>Knowledge can be defined as awareness of facts or as practical skills, and may also refer to familiarity with objects or situations. Knowledge of facts, also called propositional knowledge, is often defined as true belief that is distinct from opinion or guesswork by virtue of justification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Knowledge</AbbreviatedIRI>
+        <Literal>Knowledge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Biased_investement</IRI>
         <Literal>John continues  to invest based on his overconfident strategy, relying on the Illusion of Validity bias. Despite occasional market fluctuations, he attributes any success to his perceived expertise rather than considering the role of unpredictable factors or external influences.</Literal>
     </AnnotationAssertion>
@@ -422,42 +422,42 @@ This is an universal property, it can be also used in different context (e.g. Ru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/framester/data/framestercore/Expectation</IRI>
+        <AbbreviatedIRI>fs:Expectation</AbbreviatedIRI>
         <Literal>Words in this frame have to do with a Cognizer believing that some Phenomenon will take place in the future. Some words in the frame (e.g. foresee.v) indicate that the Phenomenon is asserted also to be true, while others do not.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://w3id.org/framester/data/framestercore/Expectation</IRI>
+        <AbbreviatedIRI>fs:Expectation</AbbreviatedIRI>
         <Literal>Expectation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/framester/data/framestercore/Identicality</IRI>
+        <AbbreviatedIRI>fs:Identicality</AbbreviatedIRI>
         <Literal>A Current_instance of a certain Type is under discussion. This instance is evaluated as being the same instance or a different instance from a Previous_instance encountered in a Previous_context.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://w3id.org/framester/data/framestercore/Identicality</IRI>
+        <AbbreviatedIRI>fs:Identicality</AbbreviatedIRI>
         <Literal>Identicality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/framester/data/framestercore/People</IRI>
+        <AbbreviatedIRI>fs:People</AbbreviatedIRI>
         <Literal>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://w3id.org/framester/data/framestercore/People</IRI>
+        <AbbreviatedIRI>fs:People</AbbreviatedIRI>
         <Literal>People</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/framester/data/framestercore/Predicting</IRI>
+        <AbbreviatedIRI>fs:Predicting</AbbreviatedIRI>
         <Literal>A Speaker states or makes known a future Eventuality on the basis of some Evidence.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://w3id.org/framester/data/framestercore/Predicting</IRI>
+        <AbbreviatedIRI>fs:Predicting</AbbreviatedIRI>
         <Literal>Predicting</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
