@@ -17,6 +17,7 @@
      xmlns:parameter="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"
      xmlns:participation="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:CognitiveBiasOntologies="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
      xmlns:GamblersFallacyOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-20T00:00:00</terms:created>
@@ -215,9 +216,9 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasBiasedOpinion -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#hasBiasedOpinion">
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <rdfs:comment>A property connecting a Person who has a biased opinion about the possible outcome of a Future Event, such as a Random/Chance-based Occurrence, because he/she thinks that there is a correlation between this future event and a series of past events.</rdfs:comment>
@@ -305,9 +306,9 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#FutureEvent -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#FutureEvent -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#FutureEvent">
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#FutureEvent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <terms:description>This class represent an event that will happen in the next future.</terms:description>
         <rdfs:label>FutureEvent</rdfs:label>
@@ -318,7 +319,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#NextRandomOccurrence">
-        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#FutureEvent"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#FutureEvent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
@@ -475,7 +476,7 @@
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Player.n.1"/>
         <cco:belief rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series"/>
         <participation:isParticipantIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
-        <hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Next_Number_Draw"/>
+        <CognitiveBiasOntologies:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Next_Number_Draw"/>
         <rdfs:comment>An human being that participates as a player to a lottery draw.</rdfs:comment>
         <rdfs:label>Lottery Player</rdfs:label>
     </owl:NamedIndividual>
