@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/Anecdotal_fallacy/"
-     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/Anecdotal_fallacy/"
+<rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy/"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy/"
      xmlns:fs="https://w3id.org/framester/data/framestercore/"
      xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology"
      xmlns:cco="http://purl.org/ontology/cco/core#"
@@ -8,16 +8,21 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cbo2="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology#cbo:"
      xmlns:cbo3="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#cbo:"
      xmlns:cco1="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#cco:"
+     xmlns:cco3="http://purl.org/ontology/cco/core#cco:"
      xmlns:exob="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:exob1="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#exob:"
      xmlns:exob2="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#exob:"
+     xmlns:exob4="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxm#exob:"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
      xmlns:Anecdotal_fallacy="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#">
-    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/Anecdotal_fallacy">
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy">
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#"/>
         <terms:created>27/02/2024</terms:created>
         <terms:creator>Salvatore Di Marzo</terms:creator>
         <terms:description>Anecdotal fallacy part of the Cognitive Bias Ontology</terms:description>
@@ -95,78 +100,78 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     
 
 
-    <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#cbo:creates -->
+    <!-- http://purl.org/ontology/cco/core#cco:hasBelief -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#cbo:creates">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Sequence"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#PerceptionExperience"/>
-        <rdfs:comment>a property connecting the illusory effect created by the Perception of Pattern</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#cbo:involves -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#cbo:involves">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#PerceptionExperience"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#ExperiencerObj"/>
-        <rdfs:comment>a property that links the cognitive process of creating the perception of an experience and the experience to which it is linked to.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#cco:hasBelief -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#cco:hasBelief">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Sequence"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/cco/core#cco:hasBelief">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Person"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:comment>An uncertain relation for competence representation. That means beliefs, persuasions or opinions, which can also be misconceptions. A Person who believes that a sequence of past events with the same outcome can change the probability of the outcome of the same event in the future</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#exob:inActivity -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology#cbo:creates -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#exob:inActivity">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Pattern"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#PerceptionExperience"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Activity"/>
-        <rdfs:comment>What activity/ies are affecting or affected by a certain engagement</rdfs:comment>
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology#cbo:creates">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <rdfs:comment>a property connecting the illusory effect created by the Perception of Pattern</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#exob:includes -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology#cbo:involves -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#exob:includes">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Activity"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Pattern"/>
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology#cbo:involves">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+        <rdfs:comment>a property that links the cognitive process of creating the perception of an experience and the experience to which it is linked to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxm#exob:includes -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxm#exob:includes">
+        <rdfs:domain rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <rdfs:comment>A relation of mereological nature that connects a given observation with the activity that originates them: it strengthens the argument that observations are always active processes from a cognitive standpoint, regardless of how conscious they may be. A standard mereological property from another content pattern may be used in lieu of this one and therefore aligned with it.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#exob:isEngagedIn -->
+    <!-- https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#exob:inActivity -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#exob:isEngagedIn">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Activity"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#exob:inActivity">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
+        <rdfs:comment>What activity/ies are affecting or affected by a certain engagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#exob:isEngagedIn -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#exob:isEngagedIn">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Person"/>
+        <rdfs:range rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
         <rdfs:comment>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#exob:producesObservation -->
+    <!-- https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#exob:producesObservation -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#exob:producesObservation">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#ExperiencerObj"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Pattern"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#exob:producesObservation">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <rdfs:comment>This property can be used to denote that something is (even indirectly, not necessary through direct reflection) responsible for the existence of an observation.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -183,59 +188,59 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     
 
 
-    <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Activity -->
+    <!-- http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Activity">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#ExperiencerObj"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Pattern"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#PerceptionExperience"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Sequence"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Person"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#ExperiencerObj -->
+    <!-- https://w3id.org/framester/data/framestercore/ExperiencerObj -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#ExperiencerObj">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Pattern"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#PerceptionExperience"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Sequence"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Person"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Pattern -->
+    <!-- https://w3id.org/framester/data/framestercore/Pattern -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Pattern">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#PerceptionExperience"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Sequence"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Person"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#PerceptionExperience -->
+    <!-- https://w3id.org/framester/data/framestercore/PerceptionExperience -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#PerceptionExperience">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Sequence"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Person"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Sequence -->
+    <!-- https://w3id.org/framester/data/framestercore/Person -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Sequence">
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Person">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/framester/data/framestersyn/Person -->
+    <!-- https://w3id.org/framester/data/framestercore/Sequence -->
 
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Person"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
     
 
 
@@ -253,7 +258,7 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Diet_works -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Diet_works">
-        <rdf:type rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Pattern"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
     </owl:NamedIndividual>
     
 
@@ -261,8 +266,8 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Friend_lost_weight -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Friend_lost_weight">
-        <rdf:type rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Sequence"/>
-        <cbo3:creates rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Working_diet"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <cbo2:creates rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Working_diet"/>
     </owl:NamedIndividual>
     
 
@@ -270,8 +275,8 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Losing_weight -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Losing_weight">
-        <rdf:type rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Activity"/>
-        <exob2:includes rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Diet_works"/>
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"/>
+        <exob4:includes rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Diet_works"/>
     </owl:NamedIndividual>
     
 
@@ -279,9 +284,9 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Subject -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Subject">
-        <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
-        <cco1:hasBelief rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Friend_lost_weight"/>
-        <exob2:isEngagedIn rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Losing_weight"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Person"/>
+        <cco3:hasBelief rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Friend_lost_weight"/>
+        <exob1:isEngagedIn rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Losing_weight"/>
     </owl:NamedIndividual>
     
 
@@ -289,8 +294,8 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Working_diet -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Working_diet">
-        <rdf:type rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#PerceptionExperience"/>
-        <cbo3:involves rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#friend_losing_weight"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <cbo2:involves rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#friend_losing_weight"/>
     </owl:NamedIndividual>
     
 
@@ -298,8 +303,8 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#friend_losing_weight -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#friend_losing_weight">
-        <rdf:type rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#ExperiencerObj"/>
-        <exob2:producesObservation rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Diet_works"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+        <exob1:producesObservation rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Diet_works"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
