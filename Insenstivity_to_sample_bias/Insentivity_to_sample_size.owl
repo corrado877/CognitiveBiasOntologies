@@ -17,6 +17,7 @@
     <Prefix name="exob" IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml"/>
     <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
         <Literal>27/02/2024</Literal>
