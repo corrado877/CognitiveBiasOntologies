@@ -160,12 +160,26 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#hasInfluence -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#hasInfluence">
-        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#isInfluencedBy"/>
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasInfluence">
+        <owl:inverseOf rdf:resource="https://w3id.org/affectedBy#influencedBy"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <terms:description>A property connecting an Entity (Pattern) that affects in different ways another entity (PerceptionExperience).</terms:description>
     </owl:ObjectProperty>
     
@@ -191,9 +205,26 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#isInfluencedBy -->
+    <!-- https://w3id.org/affectedBy#influencedBy -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#isInfluencedBy"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#influencedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
     
 
 
@@ -292,6 +323,18 @@
     
 
 
+    <!-- https://w3id.org/framester/data/framestercore/Probability -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Sequence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+    
+
+
     <!-- https://w3id.org/framester/data/framestersyn/Hiker.n.1 -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Hiker.n.1">
@@ -318,7 +361,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RecognizablePattern"/>
         <CognitiveBiasOntologies:hasEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShapeIllusion"/>
-        <PareidoliaBiasOntology:hasInfluence rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception"/>
+        <CognitiveBiasOntologies:hasInfluence rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#SensorialPerception"/>
         <terms:description>this individual represent the pattern, such as familiar shapes of faces or objects, recognized by the mind and caused by the visual stimulus.</terms:description>
         <rdfs:label>Facial Shape</rdfs:label>
     </owl:NamedIndividual>
