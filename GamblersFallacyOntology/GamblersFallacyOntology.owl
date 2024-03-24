@@ -257,7 +257,7 @@
         <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isOutcomeOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome"/>
-        <rdfs:comment>A property linking series of events to the same Outcome</rdfs:comment>
+        <rdfs:comment>A property linking series of events to the same Outcome produced</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -277,6 +277,7 @@
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#isProducedBy">
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <rdfs:comment>a property connecting an Outcome produced by an Event such as Next Random Occurrence</rdfs:comment>
     </owl:ObjectProperty>
     
 
