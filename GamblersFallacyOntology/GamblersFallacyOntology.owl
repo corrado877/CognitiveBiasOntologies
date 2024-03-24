@@ -232,6 +232,7 @@
         <owl:inverseOf rdf:resource="https://w3id.org/affectedBy#influencedBy"/>
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <terms:description>A property connecting an Entity (Sequence) that affects in different ways another entity (Probability).</terms:description>
     </owl:ObjectProperty>
     
 
