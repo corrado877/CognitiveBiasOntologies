@@ -69,6 +69,18 @@
         <Class abbreviatedIRI="cbo:Non-humanEntity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:BecomingAware"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:CognitiveConnection"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="fs:People"/>
     </Declaration>
     <Declaration>
@@ -81,7 +93,7 @@
         <ObjectProperty abbreviatedIRI="term:isReflectionOn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="term:producesObservation"/>
+        <ObjectProperty abbreviatedIRI="term:producedObservation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="cbo:involves"/>
@@ -120,16 +132,13 @@
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="fs:Activity"/>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RecognizablePattern"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#VisualStimulus"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="fs:CognitiveConnection"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:BecomingAware"/>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="move:PhysicalObject"/>
@@ -183,12 +192,12 @@
         <NamedIndividual IRI="#Child_perception_experience"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="term:producesObservation"/>
+        <ObjectProperty abbreviatedIRI="term:producedObservation"/>
         <NamedIndividual IRI="#Puppet"/>
         <NamedIndividual IRI="#Joy"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="term:producesObservation"/>
+        <ObjectProperty abbreviatedIRI="term:producedObservation"/>
         <NamedIndividual IRI="#Puppet"/>
         <NamedIndividual IRI="#Sadness"/>
     </ObjectPropertyAssertion>
@@ -209,8 +218,12 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="term:producesObservation"/>
-        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+        <ObjectProperty abbreviatedIRI="term:producedObservation"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
+            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#VisualStimulus"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="cbo:involves"/>
@@ -234,8 +247,12 @@
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="term:producesObservation"/>
-        <Class abbreviatedIRI="cbo:HumanFeature"/>
+        <ObjectProperty abbreviatedIRI="term:producedObservation"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:HumanFeature"/>
+            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RecognizablePattern"/>
+            <Class abbreviatedIRI="fs:CognitiveConnection"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="cbo:involves"/>
@@ -256,7 +273,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>term:producesObservation</AbbreviatedIRI>
+        <AbbreviatedIRI>term:producedObservation</AbbreviatedIRI>
         <Literal>This property can be used to denote that something is (even indirectly, not necessary through direct reflection) responsible for the existence of an observation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
