@@ -89,14 +89,7 @@
     <!-- http://modellingdh.github.io/ont/odp/term/inActivity -->
 
     <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/inActivity">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
     </owl:ObjectProperty>
     
@@ -122,14 +115,7 @@
 
     <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/isEngagedIn">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
     </owl:ObjectProperty>
     
 
@@ -199,36 +185,22 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity"/>
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <terms:description>a property connecting an entity such as Activity to any kind of thing that is involved during the execution of that Activity.</terms:description>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isBiasedBy -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isBiasedBy">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <rdfs:comment>a property that connect a Person that is biased by the idea of seeing a Pattern such as meaningful shapes made by a visual stimulus</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#involves -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#involves">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
+        <terms:description>a property connecting an entity such as Activity to any kind of thing that is involved during the execution of that Activity.</terms:description>
     </owl:ObjectProperty>
     
 
@@ -276,12 +248,6 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity"/>
-    
-
-
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
@@ -321,12 +287,6 @@
         <terms:description>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame.</terms:description>
         <rdfs:label>Activity</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestercore/BecomingAware -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
     
 
 
@@ -444,7 +404,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#Walk">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
         <term:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#FacialShape"/>
-        <CognitiveBiasOntologies:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus"/>
+        <PareidoliaBiasOntology:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RandomStimulus"/>
         <rdfs:comment>the activity  (such a walk in a park) ih which a perception experience is involved.</rdfs:comment>
         <rdfs:label>Walk</rdfs:label>
     </owl:NamedIndividual>
