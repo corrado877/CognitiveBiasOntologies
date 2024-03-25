@@ -233,10 +233,10 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasOutcomeEffect -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcomeEffect -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#hasOutcomeEffect">
-        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isOutcomeEffectOf"/>
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcomeEffect">
+        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isOutcomeEffectOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:range rdf:resource="https://dbpedia.org/page/Success"/>
         <rdfs:comment>A property linking a series of events which Outcome brings to the same effect</rdfs:comment>
@@ -244,9 +244,9 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isOutcomeEffectOf -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isOutcomeEffectOf -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isOutcomeEffectOf">
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isOutcomeEffectOf">
         <rdfs:domain rdf:resource="https://dbpedia.org/page/Success"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:comment>inverse property of HasOutcomeEffect</rdfs:comment>
@@ -254,10 +254,10 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isProducedEffectBy -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isProducedEffectBy -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#isProducedEffectBy">
-        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#producesOutcomeEffect"/>
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isProducedEffectBy">
+        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#producesOutcomeEffect"/>
         <rdfs:domain rdf:resource="https://dbpedia.org/page/Success"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <rdfs:comment>inverse property of producesOutcomeEffect</rdfs:comment>
@@ -265,9 +265,9 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#producesOutcomeEffect -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#producesOutcomeEffect -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#producesOutcomeEffect">
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#producesOutcomeEffect">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <rdfs:range rdf:resource="https://dbpedia.org/page/Success"/>
         <rdfs:comment>a property linking an event which Outcome will produce an effect</rdfs:comment>
@@ -474,7 +474,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence"/>
         <parameter:hasParameter rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel"/>
-        <HotHandFallacyOntology:producesOutcomeEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet"/>
+        <CognitiveBiasOntologies:producesOutcomeEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet"/>
         <rdfs:comment>An individual for the next chance-based occurence class such as a Footbal Team Match Bet where the probability level is not completely random and can be influenced by different external and/or internal elements of the game itself.</rdfs:comment>
         <rdfs:label>Football Team Match Bet</rdfs:label>
     </owl:NamedIndividual>
@@ -486,7 +486,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <prov:wasGeneratedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets"/>
-        <HotHandFallacyOntology:hasOutcomeEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet"/>
+        <CognitiveBiasOntologies:hasOutcomeEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet"/>
         <rdfs:comment>a sequence of past bets that have the same outcome effect, namely in this case a Winning Bet.</rdfs:comment>
         <rdfs:label>Football Team Match Bet Series</rdfs:label>
     </owl:NamedIndividual>
