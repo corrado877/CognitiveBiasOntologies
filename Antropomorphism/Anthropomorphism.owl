@@ -132,6 +132,9 @@
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="dbr:Entity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RecognizablePattern"/>
     </Declaration>
     <Declaration>
@@ -257,6 +260,7 @@
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="cbo:involves"/>
         <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Entity"/>
             <Class abbreviatedIRI="cbo:Non-humanEntity"/>
             <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
         </ObjectUnionOf>
@@ -359,7 +363,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>cbo:involves</AbbreviatedIRI>
-        <Literal>Connects an activity to the entities involved in it</Literal>
+        <Literal>Connects entites such as an activity to other entities involved in it</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

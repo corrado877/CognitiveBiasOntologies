@@ -257,11 +257,11 @@
     <!-- https://dbpedia.org/ontology/produces -->
 
     <owl:ObjectProperty rdf:about="https://dbpedia.org/ontology/produces">
-        <owl:inverseOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isProducedBy"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
                 </owl:unionOf>
             </owl:Class>
@@ -269,6 +269,7 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Expectation"/>
                 </owl:unionOf>
@@ -331,30 +332,6 @@
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Outcome"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <rdfs:comment>Inverse property of HasOutcome property</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isProducedBy -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isProducedBy">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#Outcome"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Expectation"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:comment>inverse of produces</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -424,12 +401,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#Outcome -->
-
-    <owl:Class rdf:about="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#Outcome"/>
     
 
 

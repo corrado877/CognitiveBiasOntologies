@@ -79,16 +79,16 @@
         <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl_#produces"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owll#owns"/>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="cbo:hasFeature"/>
@@ -138,6 +138,27 @@
     <Declaration>
         <AnnotationProperty IRI="#Scenarios"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="activitypattern:Outcome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+    </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="cbo:KnownFeature"/>
         <Class abbreviatedIRI="dbr:Knowledge"/>
@@ -184,7 +205,7 @@
         <NamedIndividual IRI="#Individual_perception_experience"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owll#owns"/>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
         <NamedIndividual IRI="#Individual"/>
         <NamedIndividual IRI="#Knowledge"/>
     </ObjectPropertyAssertion>
@@ -199,7 +220,7 @@
         <NamedIndividual IRI="#Heart_surgeon"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl_#produces"/>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <NamedIndividual IRI="#Individual_perception_experience"/>
         <NamedIndividual IRI="#Individual_perceived_validity"/>
     </ObjectPropertyAssertion>
@@ -224,15 +245,11 @@
         <NamedIndividual IRI="#Individual_perception_experience"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl_#produces"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owll#owns"/>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
         <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -240,12 +257,23 @@
         <Class abbreviatedIRI="dbr:Knowledge"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <ObjectUnionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="cbo:hasFeature"/>
         <Class abbreviatedIRI="dbr:Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="cbo:involves"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <ObjectUnionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="cbo:rejects"/>
@@ -256,15 +284,11 @@
         <Class abbreviatedIRI="cbo:PerceivedValidity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl_#produces"/>
-        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owll#owns"/>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
         <Class abbreviatedIRI="dbr:Knowledge"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -272,12 +296,24 @@
         <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="activitypattern:Outcome"/>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="cbo:hasFeature"/>
         <Class abbreviatedIRI="cbo:Feature"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="cbo:involves"/>
-        <Class abbreviatedIRI="dbr:Entity"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Entity"/>
+            <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="cbo:rejects"/>
@@ -287,11 +323,6 @@
         <ObjectProperty abbreviatedIRI="cbo:supports"/>
         <Class abbreviatedIRI="cbo:KnownFeature"/>
     </ObjectPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl_#produces</IRI>
-        <Literal>Define the relation between an activity and its produced outcome.</Literal>
-    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>term:isEngagedIn</AbbreviatedIRI>
@@ -299,7 +330,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owll#owns</IRI>
+        <AbbreviatedIRI>news:owns</AbbreviatedIRI>
         <Literal>This property can be used to link a certain NewsProvider with a Media that the NewsProvider ows, e.g. Fox News Channel is owned by Fox Entertainment Group, which also owns other Media (FXX Channel, etc.).
 This is an universal property, it can be also used in different context (e.g. Ruslana owns a Persian cat).</Literal>
     </AnnotationAssertion>
@@ -307,6 +338,11 @@ This is an universal property, it can be also used in different context (e.g. Ru
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>fao:affects</AbbreviatedIRI>
         <Literal>X &lt;affects&gt; Y. Agent X acts on object Y in such a way that Y changes state or location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://dbpedia.org/ontology/produces</IRI>
+        <Literal>Define the relation between an entity (activity or event) and its produced outcome.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -376,7 +412,7 @@ This is an universal property, it can be also used in different context (e.g. Ru
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>cbo:involves</AbbreviatedIRI>
-        <Literal>Connects an activity to the entities involved in it.</Literal>
+        <Literal>Connects entites such as an activity to other entities involved in it</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -451,5 +487,5 @@ This is an universal property, it can be also used in different context (e.g. Ru
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 

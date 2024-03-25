@@ -99,7 +99,7 @@
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns"/>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
@@ -163,6 +163,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:Probability"/>
@@ -252,7 +255,7 @@
         <Class abbreviatedIRI="fs:People"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns"/>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
         <Class abbreviatedIRI="fs:People"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -274,6 +277,7 @@
         <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="fs:Event"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
             <Class abbreviatedIRI="fs:Predicting"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
@@ -292,7 +296,7 @@
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns"/>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
         <Class abbreviatedIRI="dbr:Knowledge"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -314,6 +318,7 @@
         <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="activitypattern:Outcome"/>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
             <Class abbreviatedIRI="fs:Expectation"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
@@ -352,7 +357,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns</IRI>
+        <AbbreviatedIRI>news:owns</AbbreviatedIRI>
         <Literal>This property can be used to link a certain NewsProvider with a Media that the NewsProvider ows, e.g. Fox News Channel is owned by Fox Entertainment Group, which also owns other Media (FXX Channel, etc.).
 This is an universal property, it can be also used in different context (e.g. Ruslana owns a Persian cat).</Literal>
     </AnnotationAssertion>
