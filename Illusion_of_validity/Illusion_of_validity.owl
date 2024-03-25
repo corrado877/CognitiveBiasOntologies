@@ -96,13 +96,7 @@
         <Class abbreviatedIRI="fs:Predicting"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="activitypattern:produces"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns"/>
@@ -112,6 +106,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="action:hasConsequence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="participation:isParticipantIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
@@ -161,6 +161,15 @@
     <Declaration>
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Probability"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Event"/>
+    </Declaration>
     <ClassAssertion>
         <Class abbreviatedIRI="action:Action"/>
         <NamedIndividual IRI="#Biased_investement"/>
@@ -209,12 +218,12 @@
         <NamedIndividual IRI="#Investor_predicting"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
+        <ObjectProperty abbreviatedIRI="participation:isParticipantIn"/>
         <NamedIndividual IRI="#Investor_PerceivedValidity"/>
         <NamedIndividual IRI="#Investor_predicting"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="activitypattern:produces"/>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <NamedIndividual IRI="#Investor_predicting"/>
         <NamedIndividual IRI="#Positive_outcome"/>
     </ObjectPropertyAssertion>
@@ -239,16 +248,8 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
     </DataPropertyAssertion>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="activitypattern:produces"/>
-        <Class abbreviatedIRI="fs:Predicting"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <Class abbreviatedIRI="fs:People"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
-        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns"/>
@@ -263,6 +264,20 @@
         <Class abbreviatedIRI="action:Action"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="participation:isParticipantIn"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class abbreviatedIRI="fs:People"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="fs:Event"/>
+            <Class abbreviatedIRI="fs:Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="activitypattern:Outcome"/>
@@ -270,19 +285,11 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="activitypattern:produces"/>
-        <Class abbreviatedIRI="fs:Expectation"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="action:Action"/>
             <Class abbreviatedIRI="fs:Predicting"/>
         </ObjectUnionOf>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
-        <Class abbreviatedIRI="fs:Predicting"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns"/>
@@ -297,12 +304,29 @@
         <Class abbreviatedIRI="activitypattern:Outcome"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="participation:isParticipantIn"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="fs:Activity"/>
+            <Class abbreviatedIRI="fs:Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="activitypattern:Outcome"/>
+            <Class abbreviatedIRI="fs:Expectation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
         <Class abbreviatedIRI="fs:Identicality"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
-        <Class abbreviatedIRI="fs:Identicality"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="fs:Identicality"/>
+            <Class abbreviatedIRI="fs:Probability"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
@@ -323,18 +347,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>activitypattern:produces</AbbreviatedIRI>
-        <Literal>Define the relation between an activity and its produced outcome.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>term:isEngagedIn</AbbreviatedIRI>
         <Literal>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn</IRI>
-        <Literal>Define the participation of an entity in a process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -361,6 +375,16 @@ This is an universal property, it can be also used in different context (e.g. Ru
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>action:hasConsequence</AbbreviatedIRI>
         <Literal>A causal relation between actions, i.e. one action is the cause of another action. For example, the action of &quot;swimming&quot; is a consequence of &quot;jumping into deep water&quot;. The property is transitive.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>participation:isParticipantIn</AbbreviatedIRI>
+        <Literal>Define the participation of an entity in a process or an Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://dbpedia.org/ontology/produces</IRI>
+        <Literal>Define the relation between an entity (activity or event) and its produced outcome.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -470,5 +494,5 @@ This is an universal property, it can be also used in different context (e.g. Ru
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
