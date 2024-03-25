@@ -8,6 +8,7 @@
      ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/2/untitled-ontology-23/"/>
     <Prefix name="fs" IRI="https://w3id.org/framester/data/framestercore/"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"/>
     <Prefix name="dbr" IRI="https://dbpedia.org/resource/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -17,7 +18,6 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="term" IRI="http://modellingdh.github.io/ont/odp/term/"/>
     <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
-    <Prefix name="anthro" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:created"/>
         <Literal>01/03/24</Literal>
@@ -63,10 +63,10 @@
         <Class abbreviatedIRI="dbr:Plant"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HumanFeature"/>
+        <Class abbreviatedIRI="cbo:HumanFeature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Non-humanEntity"/>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:People"/>
@@ -84,7 +84,7 @@
         <ObjectProperty abbreviatedIRI="term:producesObservation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#involves"/>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Child"/>
@@ -121,19 +121,19 @@
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="move:PhysicalObject"/>
-        <Class IRI="#Non-humanEntity"/>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dbr:Animal"/>
-        <Class IRI="#Non-humanEntity"/>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dbr:Concept"/>
-        <Class IRI="#Non-humanEntity"/>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="dbr:Plant"/>
-        <Class IRI="#Non-humanEntity"/>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
     </SubClassOf>
     <ClassAssertion>
         <Class abbreviatedIRI="fs:People"/>
@@ -144,7 +144,7 @@
         <NamedIndividual IRI="#Child_perception_experience"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#HumanFeature"/>
+        <Class abbreviatedIRI="cbo:HumanFeature"/>
         <NamedIndividual IRI="#Joy"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -152,7 +152,7 @@
         <NamedIndividual IRI="#Puppet"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#HumanFeature"/>
+        <Class abbreviatedIRI="cbo:HumanFeature"/>
         <NamedIndividual IRI="#Sadness"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
@@ -161,7 +161,7 @@
         <NamedIndividual IRI="#Child_perception_experience"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#involves"/>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
         <NamedIndividual IRI="#Child_perception_experience"/>
         <NamedIndividual IRI="#Puppet"/>
     </ObjectPropertyAssertion>
@@ -191,14 +191,14 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="term:isReflectionOn"/>
-        <Class IRI="#HumanFeature"/>
+        <Class abbreviatedIRI="cbo:HumanFeature"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="term:producesObservation"/>
-        <Class IRI="#Non-humanEntity"/>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#involves"/>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
         <Class abbreviatedIRI="fs:PerceptionExperience"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
@@ -211,11 +211,11 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:producesObservation"/>
-        <Class IRI="#HumanFeature"/>
+        <Class abbreviatedIRI="cbo:HumanFeature"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#involves"/>
-        <Class IRI="#Non-humanEntity"/>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -279,28 +279,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HumanFeature</IRI>
-        <Literal>Defines a feature of a human being</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#HumanFeature</IRI>
-        <Literal>Human feature</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Joy</IRI>
         <Literal>The emotion the child assumes Mr. Whiskers is feeling during playtime.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Non-humanEntity</IRI>
-        <Literal>Any entity that isn&apos;t human</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Non-humanEntity</IRI>
-        <Literal>Non-human entity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -314,7 +294,27 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#involves</IRI>
+        <AbbreviatedIRI>cbo:HumanFeature</AbbreviatedIRI>
+        <Literal>Defines a feature of a human being</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:HumanFeature</AbbreviatedIRI>
+        <Literal>Human feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Non-humanEntity</AbbreviatedIRI>
+        <Literal>Any entity that isn&apos;t human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:Non-humanEntity</AbbreviatedIRI>
+        <Literal>Non-human entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:involves</AbbreviatedIRI>
         <Literal>Connects an activity to the entities involved in it</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>

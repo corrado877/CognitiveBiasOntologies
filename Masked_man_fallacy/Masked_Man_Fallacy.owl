@@ -7,6 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/2/untitled-ontology-23/"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"/>
     <Prefix name="dbr" IRI="https://dbpedia.org/resource/"/>
     <Prefix name="fao" IRI="http://www.fao.org/aims/aos/aos.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -17,7 +18,6 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="term" IRI="http://modellingdh.github.io/ont/odp/term/"/>
     <Prefix name="activitypattern" IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#"/>
-    <Prefix name="maskedmanfallacy" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#"/>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
         <Literal>01/03/24</Literal>
@@ -61,16 +61,16 @@
         <Class abbreviatedIRI="dbr:Knowledge"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Feature"/>
+        <Class abbreviatedIRI="cbo:Feature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#KnownFeature"/>
+        <Class abbreviatedIRI="cbo:KnownFeature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PerceivedValidity"/>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Un-knownFeature"/>
+        <Class abbreviatedIRI="cbo:Un-knownFeature"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
@@ -91,16 +91,16 @@
         <ObjectProperty abbreviatedIRI="fao:affects"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasFeature"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasFeature"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#involves"/>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#rejects"/>
+        <ObjectProperty abbreviatedIRI="cbo:rejects"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#supports"/>
+        <ObjectProperty abbreviatedIRI="cbo:supports"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Heart_surgeon"/>
@@ -139,19 +139,19 @@
         <AnnotationProperty IRI="#Scenarios"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#KnownFeature"/>
+        <Class abbreviatedIRI="cbo:KnownFeature"/>
         <Class abbreviatedIRI="dbr:Knowledge"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#KnownFeature"/>
-        <Class IRI="#Feature"/>
+        <Class abbreviatedIRI="cbo:KnownFeature"/>
+        <Class abbreviatedIRI="cbo:Feature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Un-knownFeature"/>
-        <Class IRI="#Feature"/>
+        <Class abbreviatedIRI="cbo:Un-knownFeature"/>
+        <Class abbreviatedIRI="cbo:Feature"/>
     </SubClassOf>
     <ClassAssertion>
-        <Class IRI="#KnownFeature"/>
+        <Class abbreviatedIRI="cbo:KnownFeature"/>
         <NamedIndividual IRI="#Heart_surgeon"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -159,7 +159,7 @@
         <NamedIndividual IRI="#Individual"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#PerceivedValidity"/>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
         <NamedIndividual IRI="#Individual_perceived_validity"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -167,7 +167,7 @@
         <NamedIndividual IRI="#Individual_perception_experience"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Un-knownFeature"/>
+        <Class abbreviatedIRI="cbo:Un-knownFeature"/>
         <NamedIndividual IRI="#Jazz_saxophonist"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -189,12 +189,12 @@
         <NamedIndividual IRI="#Knowledge"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#rejects"/>
+        <ObjectProperty abbreviatedIRI="cbo:rejects"/>
         <NamedIndividual IRI="#Individual_perceived_validity"/>
         <NamedIndividual IRI="#Jazz_saxophonist"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#supports"/>
+        <ObjectProperty abbreviatedIRI="cbo:supports"/>
         <NamedIndividual IRI="#Individual_perceived_validity"/>
         <NamedIndividual IRI="#Heart_surgeon"/>
     </ObjectPropertyAssertion>
@@ -204,24 +204,24 @@
         <NamedIndividual IRI="#Individual_perceived_validity"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#involves"/>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
         <NamedIndividual IRI="#Individual_perception_experience"/>
         <NamedIndividual IRI="#John_Smith"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFeature"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasFeature"/>
         <NamedIndividual IRI="#John_Smith"/>
         <NamedIndividual IRI="#Heart_surgeon"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFeature"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasFeature"/>
         <NamedIndividual IRI="#John_Smith"/>
         <NamedIndividual IRI="#Jazz_saxophonist"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
         <NamedIndividual IRI="#Knowledge"/>
-        <NamedIndividual IRI="#Individual_perceived_validity"/>
+        <NamedIndividual IRI="#Individual_perception_experience"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl_#produces"/>
@@ -240,24 +240,24 @@
         <Class abbreviatedIRI="dbr:Knowledge"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFeature"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasFeature"/>
         <Class abbreviatedIRI="dbr:Entity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#involves"/>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
         <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#rejects"/>
-        <Class IRI="#PerceivedValidity"/>
+        <ObjectProperty abbreviatedIRI="cbo:rejects"/>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#supports"/>
-        <Class IRI="#PerceivedValidity"/>
+        <ObjectProperty abbreviatedIRI="cbo:supports"/>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl_#produces"/>
-        <Class IRI="#PerceivedValidity"/>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
@@ -269,23 +269,23 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
-        <Class IRI="#PerceivedValidity"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasFeature"/>
-        <Class IRI="#Feature"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasFeature"/>
+        <Class abbreviatedIRI="cbo:Feature"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#involves"/>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
         <Class abbreviatedIRI="dbr:Entity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#rejects"/>
-        <Class IRI="#Un-knownFeature"/>
+        <ObjectProperty abbreviatedIRI="cbo:rejects"/>
+        <Class abbreviatedIRI="cbo:Un-knownFeature"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#supports"/>
-        <Class IRI="#KnownFeature"/>
+        <ObjectProperty abbreviatedIRI="cbo:supports"/>
+        <Class abbreviatedIRI="cbo:KnownFeature"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -330,13 +330,63 @@ This is an universal property, it can be also used in different context (e.g. Ru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Feature</IRI>
+        <AbbreviatedIRI>cbo:Feature</AbbreviatedIRI>
         <Literal>The feature, description or title used to refer to an entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Feature</IRI>
+        <AbbreviatedIRI>cbo:Feature</AbbreviatedIRI>
         <Literal>Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:KnownFeature</AbbreviatedIRI>
+        <Literal>The feature, description or title used to refer to an entity and aknowledged by the individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:KnownFeature</AbbreviatedIRI>
+        <Literal>Known feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:PerceivedValidity</AbbreviatedIRI>
+        <Literal>It assess the perceived validity of an object due to a perception activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:PerceivedValidity</AbbreviatedIRI>
+        <Literal>Perceived validity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Un-knownFeature</AbbreviatedIRI>
+        <Literal>The feature, description or title used to refer to an entity but not aknowledged by the individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:Un-knownFeature</AbbreviatedIRI>
+        <Literal>Un-known feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:hasFeature</AbbreviatedIRI>
+        <Literal>Connects an entity to its relative feature or intention.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:involves</AbbreviatedIRI>
+        <Literal>Connects an activity to the entities involved in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:rejects</AbbreviatedIRI>
+        <Literal>The act of denying a particular intention in favour of one or more others.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:supports</AbbreviatedIRI>
+        <Literal>The act of confirming a particular intention at the expense of one or more others.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -372,56 +422,6 @@ This is an universal property, it can be also used in different context (e.g. Ru
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Knowledge</IRI>
         <Literal>The biased individual knowledge about an entity that leads him to associate to it only a particular intention.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#KnownFeature</IRI>
-        <Literal>The feature, description or title used to refer to an entity and aknowledged by the individual.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#KnownFeature</IRI>
-        <Literal>Known feature</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#PerceivedValidity</IRI>
-        <Literal>It assess the perceived validity of an object due to a perception activity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#PerceivedValidity</IRI>
-        <Literal>Perceived validity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Un-knownFeature</IRI>
-        <Literal>The feature, description or title used to refer to an entity but not aknowledged by the individual.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Un-knownFeature</IRI>
-        <Literal>Un-known feature</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasFeature</IRI>
-        <Literal>Connects an entity to its relative feature or intention.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#involves</IRI>
-        <Literal>Connects an activity to the entities involved in it.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#rejects</IRI>
-        <Literal>The act of denying a particular intention in favour of one or more others.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#supports</IRI>
-        <Literal>The act of confirming a particular intention at the expense of one or more others.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

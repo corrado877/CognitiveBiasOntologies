@@ -7,6 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/2/untitled-ontology-23/"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"/>
     <Prefix name="dbr" IRI="https://dbpedia.org/resource/"/>
     <Prefix name="fao" IRI="http://www.fao.org/aims/aos/aos.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -17,7 +18,6 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="term" IRI="http://modellingdh.github.io/ont/odp/term/"/>
     <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
-    <Prefix name="recency" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl#"/>
     <Prefix name="sequence" IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#"/>
     <Prefix name="parameter" IRI="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"/>
     <Prefix name="classification" IRI="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#"/>
@@ -75,22 +75,22 @@
         <Literal>In a job interview, a candidate performs exceptionally well in the final part of the interview. The interviewer, influenced by the Recency Bias, places disproportionate weight on this recent performance and is more likely to remember it and give it more significance in the evaluation, potentially overlooking earlier parts of the interview.</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#Decision"/>
+        <Class abbreviatedIRI="cbo:Decision"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HighImportance"/>
+        <Class abbreviatedIRI="cbo:HighImportance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LowImportance"/>
+        <Class abbreviatedIRI="cbo:LowImportance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MemoryEncoding"/>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PastMemory"/>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RecentMemory"/>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
@@ -129,16 +129,16 @@
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#follows"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasOutcome"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasParameter"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#involves"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
@@ -174,9 +174,6 @@
         <NamedIndividual IRI="#Memory"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Prominence"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
     </Declaration>
     <Declaration>
@@ -198,7 +195,7 @@
         <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#scenarios"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="#HighImportance"/>
+        <Class abbreviatedIRI="cbo:HighImportance"/>
         <ObjectIntersectionOf>
             <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
             <DataHasValue>
@@ -208,7 +205,7 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#LowImportance"/>
+        <Class abbreviatedIRI="cbo:LowImportance"/>
         <ObjectIntersectionOf>
             <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
             <DataHasValue>
@@ -218,43 +215,43 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#PastMemory"/>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
         <ObjectIntersectionOf>
             <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#hasParameter"/>
-                <Class IRI="#LowImportance"/>
+                <Class abbreviatedIRI="cbo:LowImportance"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#RecentMemory"/>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
         <ObjectIntersectionOf>
             <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#hasParameter"/>
-                <Class IRI="#HighImportance"/>
+                <Class abbreviatedIRI="cbo:HighImportance"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="#HighImportance"/>
+        <Class abbreviatedIRI="cbo:HighImportance"/>
         <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LowImportance"/>
+        <Class abbreviatedIRI="cbo:LowImportance"/>
         <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PastMemory"/>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
         <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RecentMemory"/>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
         <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
     </SubClassOf>
     <ClassAssertion>
-        <Class IRI="#Decision"/>
+        <Class abbreviatedIRI="cbo:Decision"/>
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -266,19 +263,19 @@
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interviewer"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#MemoryEncoding"/>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#PastMemory"/>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#RecentMemory"/>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#HighImportance"/>
+        <Class abbreviatedIRI="cbo:HighImportance"/>
         <NamedIndividual IRI="#High_importance"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -286,7 +283,7 @@
         <NamedIndividual IRI="#Importance"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#LowImportance"/>
+        <Class abbreviatedIRI="cbo:LowImportance"/>
         <NamedIndividual IRI="#Low_importance"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -298,7 +295,7 @@
         <NamedIndividual IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#involves"/>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Interview_perception_experience"/>
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding"/>
     </ObjectPropertyAssertion>
@@ -321,6 +318,11 @@
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding"/>
         <NamedIndividual IRI="#Memory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
+        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding"/>
+        <NamedIndividual IRI="#Importance"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
@@ -351,21 +353,6 @@
         <ObjectProperty abbreviatedIRI="classification:classifies"/>
         <NamedIndividual IRI="#Low_importance"/>
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasOutcome"/>
-        <NamedIndividual IRI="#Memory"/>
-        <NamedIndividual IRI="#Importance"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="classification:classifies"/>
-        <NamedIndividual IRI="#Prominence"/>
-        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="classification:classifies"/>
-        <NamedIndividual IRI="#Prominence"/>
-        <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
@@ -400,52 +387,58 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.fao.org/aims/aos/aos.owl#affects"/>
-        <Class IRI="#RecentMemory"/>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="classification:classifies"/>
         <ObjectUnionOf>
-            <Class IRI="#HighImportance"/>
-            <Class IRI="#LowImportance"/>
+            <Class abbreviatedIRI="cbo:HighImportance"/>
+            <Class abbreviatedIRI="cbo:LowImportance"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="classification:isClassifiedBy"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:PastMemory"/>
+            <Class abbreviatedIRI="cbo:RecentMemory"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
-        <Class IRI="#PastMemory"/>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
         <ObjectUnionOf>
-            <Class IRI="#MemoryEncoding"/>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#follows"/>
-        <Class IRI="#RecentMemory"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasOutcome"/>
-        <Class IRI="#MemoryEncoding"/>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#follows"/>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasParameter"/>
         <ObjectUnionOf>
-            <Class IRI="#PastMemory"/>
-            <Class IRI="#RecentMemory"/>
+            <Class abbreviatedIRI="cbo:PastMemory"/>
+            <Class abbreviatedIRI="cbo:RecentMemory"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#involves"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <ObjectUnionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="news:owns"/>
@@ -458,36 +451,43 @@
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="classification:classifies"/>
         <ObjectUnionOf>
-            <Class IRI="#PastMemory"/>
-            <Class IRI="#RecentMemory"/>
+            <Class abbreviatedIRI="cbo:PastMemory"/>
+            <Class abbreviatedIRI="cbo:RecentMemory"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="classification:isClassifiedBy"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:HighImportance"/>
+            <Class abbreviatedIRI="cbo:LowImportance"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
-        <Class IRI="#RecentMemory"/>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
         <ObjectUnionOf>
-            <Class IRI="#Decision"/>
+            <Class abbreviatedIRI="cbo:Decision"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#follows"/>
-        <Class IRI="#PastMemory"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasOutcome"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+        <ObjectProperty abbreviatedIRI="cbo:involves"/>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#follows"/>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasParameter"/>
         <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#involves"/>
-        <Class IRI="#MemoryEncoding"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
@@ -495,7 +495,10 @@
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -567,13 +570,53 @@ It can then be used between tasks, processes, time intervals, spatially locate o
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Decision</IRI>
+        <AbbreviatedIRI>cbo:Decision</AbbreviatedIRI>
         <Literal>The final decision the individual reaches as ending result of the decision-making process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Decision</IRI>
+        <AbbreviatedIRI>cbo:Decision</AbbreviatedIRI>
         <Literal>Decision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:MemoryEncoding</AbbreviatedIRI>
+        <Literal>The process of encoding memory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:MemoryEncoding</AbbreviatedIRI>
+        <Literal>Memory encoding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:PastMemory</AbbreviatedIRI>
+        <Literal>A memory that has been produced previously in the memory encoding process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:PastMemory</AbbreviatedIRI>
+        <Literal>Past memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:RecentMemory</AbbreviatedIRI>
+        <Literal>A memory that has been produced more recently in the memory encoding process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:RecentMemory</AbbreviatedIRI>
+        <Literal>Recent memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:hasOutcome</AbbreviatedIRI>
+        <Literal>The final decision the individual reaches as ending result of the decision-making process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:involves</AbbreviatedIRI>
+        <Literal>connects an activity to the entities involved in it.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -582,48 +625,8 @@ It can then be used between tasks, processes, time intervals, spatially locate o
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#MemoryEncoding</IRI>
-        <Literal>The process of encoding memory.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#MemoryEncoding</IRI>
-        <Literal>Memory encoding</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#PastMemory</IRI>
-        <Literal>A memory that has been produced previously in the memory encoding process.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#PastMemory</IRI>
-        <Literal>Past memory</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#RecentMemory</IRI>
-        <Literal>A memory that has been produced more recently in the memory encoding process.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#RecentMemory</IRI>
-        <Literal>Recent memory</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#follows</IRI>
         <Literal>A relation between entities, expressing a &apos;sequence&apos; schema.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasOutcome</IRI>
-        <Literal>The final decision the individual reaches as ending result of the decision-making process.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#involves</IRI>
-        <Literal>connects an activity to the entities involved in it.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

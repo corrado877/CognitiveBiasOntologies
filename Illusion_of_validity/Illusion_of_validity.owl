@@ -8,6 +8,7 @@
      ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/2/untitled-ontology-23/"/>
     <Prefix name="fs" IRI="https://w3id.org/framester/data/framestercore/"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"/>
     <Prefix name="dbr" IRI="https://dbpedia.org/resource/"/>
     <Prefix name="fao" IRI="http://www.fao.org/aims/aos/aos.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -22,7 +23,6 @@
     <Prefix name="parameter" IRI="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"/>
     <Prefix name="participation" IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"/>
     <Prefix name="activitypattern" IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#"/>
-    <Prefix name="illusionofvalidity" IRI="https://github.com/corrado877/CognitiveBiasOntologies/Illusion_of_validity#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:created"/>
         <Literal>01/03/24</Literal>
@@ -81,7 +81,7 @@
         <Class abbreviatedIRI="dbr:Knowledge"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PerceivedValidity"/>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:Expectation"/>
@@ -114,7 +114,7 @@
         <ObjectProperty abbreviatedIRI="action:hasConsequence"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasAttribute"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
@@ -174,7 +174,7 @@
         <NamedIndividual IRI="#Identicality_aspect"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#PerceivedValidity"/>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
         <NamedIndividual IRI="#Investor_PerceivedValidity"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -224,12 +224,12 @@
         <NamedIndividual IRI="#Investor_PerceivedValidity"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttribute"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
         <NamedIndividual IRI="#Negative_outcome"/>
         <NamedIndividual IRI="#Identicality_aspect"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAttribute"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
         <NamedIndividual IRI="#Positive_outcome"/>
         <NamedIndividual IRI="#Identicality_aspect"/>
     </ObjectPropertyAssertion>
@@ -248,7 +248,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
-        <Class IRI="#PerceivedValidity"/>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns"/>
@@ -263,7 +263,7 @@
         <Class abbreviatedIRI="action:Action"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAttribute"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="activitypattern:Outcome"/>
             <Class abbreviatedIRI="fs:Expectation"/>
@@ -275,11 +275,10 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
-        <Class abbreviatedIRI="action:Action"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
-        <Class abbreviatedIRI="fs:Predicting"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="action:Action"/>
+            <Class abbreviatedIRI="fs:Predicting"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
@@ -291,14 +290,14 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
-        <Class IRI="#PerceivedValidity"/>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="action:hasConsequence"/>
         <Class abbreviatedIRI="activitypattern:Outcome"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasAttribute"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
         <Class abbreviatedIRI="fs:Identicality"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
@@ -307,7 +306,10 @@
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
-        <Datatype abbreviatedIRI="xsd:boolean"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -372,6 +374,21 @@ This is an universal property, it can be also used in different context (e.g. Ru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:PerceivedValidity</AbbreviatedIRI>
+        <Literal>It assess the perceived validity of an object due to a perception activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:PerceivedValidity</AbbreviatedIRI>
+        <Literal>Perceived validity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:hasAttribute</AbbreviatedIRI>
+        <Literal>Connects an object to one of its attributes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Biased_investement</IRI>
         <Literal>John continues  to invest based on his overconfident strategy, relying on the Illusion of Validity bias. Despite occasional market fluctuations, he attributes any success to his perceived expertise rather than considering the role of unpredictable factors or external influences.</Literal>
     </AnnotationAssertion>
@@ -402,23 +419,8 @@ This is an universal property, it can be also used in different context (e.g. Ru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#PerceivedValidity</IRI>
-        <Literal>It assess the perceived validity of an object due to a perception activity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#PerceivedValidity</IRI>
-        <Literal>Perceived validity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Positive_outcome</IRI>
         <Literal>The positive outcome John expects to get as result of his predicting process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasAttribute</IRI>
-        <Literal>Connects an object to one of its attributes.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
