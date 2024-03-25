@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/Illusion_of_validity/Illusion_of_validity.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/Antropomorphism/Anthropomorphism.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/GamblersFallacyOntology/GamblersFallacyOntology.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/HotHandFallacyOntology/HotHandFallacyOntology.owl"/>
