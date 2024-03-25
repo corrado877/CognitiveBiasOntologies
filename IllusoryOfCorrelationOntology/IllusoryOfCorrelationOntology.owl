@@ -91,7 +91,14 @@
     <!-- http://modellingdh.github.io/ont/odp/term/inActivity -->
 
     <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/inActivity">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
     </owl:ObjectProperty>
     
@@ -117,17 +124,14 @@
 
     <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/isEngagedIn">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://modellingdh.github.io/ont/odp/term/isReflectedUponIn -->
-
-    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/isReflectedUponIn">
-        <owl:inverseOf rdf:resource="http://modellingdh.github.io/ont/odp/term/isReflectionOn"/>
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -135,8 +139,22 @@
     <!-- http://modellingdh.github.io/ont/odp/term/isReflectionOn -->
 
     <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/isReflectionOn">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -261,6 +279,12 @@
         <terms:description>An illusion is a distortion of the senses, which can reveal how the mind normally organizes and interprets sensory stimulation. Although illusions distort the human perception of reality, they are generally shared by most people. Illusions may occur with any of the human senses, but visual illusions (optical illusions) are the best-known and understood. The emphasis on visual illusions occurs because vision often dominates the other senses. For example, individuals watching a ventriloquist will perceive the voice is coming from the dummy since they are able to see the dummy mouth the words.</terms:description>
         <rdfs:label>Illusion</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature"/>
     
 
 
@@ -404,6 +428,12 @@
         <terms:description>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming baby yesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</terms:description>
         <rdfs:label>People</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/PerceptionExperience -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
     
 
 
