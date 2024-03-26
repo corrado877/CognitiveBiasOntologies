@@ -31,7 +31,6 @@
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl"/>
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl"/>
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl"/>
-        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl"/>
         <terms:contributor>Dott. Stefano De Giorgis</terms:contributor>
         <terms:contributor>Prof. Aldo Gangemi</terms:contributor>
         <terms:created>February 2024</terms:created>
