@@ -196,7 +196,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <terms:description>A property connecting an Entity (Pattern) that affects in different ways another entity (PerceptionExperience).</terms:description>
+        <rdfs:comment>A property connecting an Entity (Pattern) that affects in different ways another entity (PerceptionExperience).</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -221,7 +221,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <terms:description>a property connecting an entity such as Activity to any kind of thing that is involved during the execution of that Activity.</terms:description>
+        <rdfs:comment>a property connecting an entity such as Activity to any kind of thing that is involved during the execution of that Activity.</rdfs:comment>
     </owl:ObjectProperty>
     
 

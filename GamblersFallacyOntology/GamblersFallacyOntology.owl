@@ -135,8 +135,23 @@
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameter">
         <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#isParameterFor"/>
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PastMemory"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecentMemory"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Importance"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -193,7 +208,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <terms:description>Define the participation of an entity in a process or an Activity</terms:description>
+        <rdfs:comment>Define the participation of an entity in a process or an Activity</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -275,7 +290,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <terms:description>Define the relation between an entity (activity or event) and its produced outcome.</terms:description>
+        <rdfs:comment>Define the relation between an entity (activity or event) and its produced outcome.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -310,7 +325,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <terms:description>A property connecting an Entity (Sequence) that affects in different ways another entity (Probability).</terms:description>
+        <rdfs:comment>A property connecting an Entity (Sequence) that affects in different ways another entity (Probability).</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -414,9 +429,21 @@
     
 
 
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PastMemory -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PastMemory"/>
+    
+
+
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecentMemory -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecentMemory"/>
     
 
 
@@ -500,6 +527,12 @@
     <!-- https://w3id.org/framester/data/framestercore/Identicality -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Identicality"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Importance -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Importance"/>
     
 
 
