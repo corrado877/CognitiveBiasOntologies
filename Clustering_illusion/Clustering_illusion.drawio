@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2024-03-23T19:45:06.405Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="UWJ_WBMxAcwc4ilJY_fE" version="24.1.0" type="device">
+<mxfile host="app.diagrams.net" modified="2024-03-26T16:25:24.848Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="JQRntDWRz4LUPsipzIdn" version="24.1.0" type="device">
   <diagram name="Page-1" id="cbpPXX-dyT5s-ZYUZ89M">
     <mxGraphModel dx="1877" dy="-600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="shT0HkmOFGitXh8zyB-2-36" value="foaf: Person" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="shT0HkmOFGitXh8zyB-2-36" value="fs: Person" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="680" y="1657" width="94.97" height="40" as="geometry" />
         </mxCell>
         <mxCell id="shT0HkmOFGitXh8zyB-2-37" value="actspec:Activity&#xa;(Lottery)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
