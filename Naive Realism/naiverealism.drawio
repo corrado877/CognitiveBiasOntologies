@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" modified="2024-03-26T14:34:14.428Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="0qLdoQb92UVwskMNFwjd" version="24.1.0" type="device">
+  <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
+    <mxGraphModel dx="2284" dy="1788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gu367nZEC-i6oTVyguKL-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gu367nZEC-i6oTVyguKL-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="172" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-37" value="fs:Assistance" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="390" y="145" width="131" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-38" value="cbo:Bias" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="210" y="410" width="91.97" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-41" value="&quot;Malicious&quot;&#xa;^^xsd:string" style="graphMlID=n6;shape=parallelogram;fillColor=#ccffcc;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="790.0025158946413" y="156" width="126.0949682107173" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-42" value="Prefixes" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="70" y="-179" width="730" height="110" as="geometry">
+            <mxRectangle x="-550" y="110" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;b&gt;cbo&lt;/b&gt;:https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism&lt;br&gt;&lt;b&gt;fs&lt;/b&gt;:https://w3id.org/framester/data/framestercore/&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;xsd:&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;http://www.w3.org/2001/XMLSchema#&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&lt;b&gt;exob&lt;/b&gt;:&amp;nbsp;http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation&lt;/span&gt;&lt;/div&gt;" link="http://www.w3.org/2000/01/rdf-schema#" id="gu367nZEC-i6oTVyguKL-43">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="gu367nZEC-i6oTVyguKL-42">
+            <mxGeometry x="10" y="20" width="690" height="180" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="gu367nZEC-i6oTVyguKL-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="gu367nZEC-i6oTVyguKL-42" source="gu367nZEC-i6oTVyguKL-43" target="gu367nZEC-i6oTVyguKL-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-44" value="ODPs and Ontologies Used" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-310" y="-190" width="340" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-45" value="&lt;ul&gt;&lt;li&gt;Experience and Obeservation&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="gu367nZEC-i6oTVyguKL-44">
+          <mxGeometry x="-10" y="12" width="270" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-46" value="fs:People" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="51.97" y="150" width="110" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-49" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.119;entryY=0.43;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="gu367nZEC-i6oTVyguKL-37" target="gu367nZEC-i6oTVyguKL-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="340" as="sourcePoint" />
+            <mxPoint x="780" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-50" value="&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot;&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(248, 249, 250);&quot;&gt;&lt;b&gt;cbo:isPerceivedAs&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="gu367nZEC-i6oTVyguKL-49">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-59" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.646;exitY=0.989;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gu367nZEC-i6oTVyguKL-46" target="gu367nZEC-i6oTVyguKL-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="230.08183758898736" as="sourcePoint" />
+            <mxPoint x="40" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-60" value="&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot;&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(248, 249, 250);&quot;&gt;&lt;b&gt;cbo:hasBiasedOpinion&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="gu367nZEC-i6oTVyguKL-59">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-61" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gu367nZEC-i6oTVyguKL-46" target="gu367nZEC-i6oTVyguKL-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="170" as="sourcePoint" />
+            <mxPoint x="200" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-62" value="&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot;&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(248, 249, 250);&quot;&gt;&lt;b&gt;cbo:receives&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="gu367nZEC-i6oTVyguKL-61">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint x="-12" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-63" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gu367nZEC-i6oTVyguKL-38" target="gu367nZEC-i6oTVyguKL-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="230.08183758898736" as="sourcePoint" />
+            <mxPoint x="431" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-64" value="&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot;&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(248, 249, 250);&quot;&gt;&lt;b&gt;cbo:misjudges&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="gu367nZEC-i6oTVyguKL-63">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-75" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.6;exitY=-0.034;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="gu367nZEC-i6oTVyguKL-46" target="gu367nZEC-i6oTVyguKL-77">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="40" as="sourcePoint" />
+            <mxPoint x="348" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-76" value="&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot;&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(248, 249, 250);&quot;&gt;&lt;b&gt;exob:isEngagedIn&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="gu367nZEC-i6oTVyguKL-75">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint x="-12" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-77" value="exob:Event" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="369.5" y="20" width="131" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-79" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gu367nZEC-i6oTVyguKL-77" target="gu367nZEC-i6oTVyguKL-82">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="506" y="43" as="sourcePoint" />
+            <mxPoint x="790" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-80" value="&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot;&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(248, 249, 250);&quot;&gt;&lt;b&gt;cbo:hasOutcome&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="gu367nZEC-i6oTVyguKL-79">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-82" value="cbo:Outcome" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="810" y="20" width="131" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-83" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.344;entryY=0.028;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="gu367nZEC-i6oTVyguKL-77" target="gu367nZEC-i6oTVyguKL-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="128" y="159" as="sourcePoint" />
+            <mxPoint x="380" y="57" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gu367nZEC-i6oTVyguKL-84" value="&lt;font face=&quot;dialog&quot; color=&quot;#000080&quot;&gt;&lt;span style=&quot;font-size: 16px; background-color: rgb(248, 249, 250);&quot;&gt;&lt;b&gt;cbo:involves&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="gu367nZEC-i6oTVyguKL-83">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint x="-12" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
