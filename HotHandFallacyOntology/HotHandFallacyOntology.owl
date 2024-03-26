@@ -127,23 +127,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameter">
         <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#isParameterFor"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PastMemory"/>
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecentMemory"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Importance"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Probability"/>
     </owl:ObjectProperty>
     
 
