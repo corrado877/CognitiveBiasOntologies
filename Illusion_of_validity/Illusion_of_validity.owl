@@ -72,16 +72,22 @@
         <Literal>&quot;John, a seasoned investor, relies on his perceived competence and past successes to make investment decisions, often ignoring the influence of unpredictable factors.&quot;</Literal>
     </Annotation>
     <Declaration>
-        <Class abbreviatedIRI="activitypattern:Outcome"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="action:Action"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dbr:Knowledge"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="cbo:Outcome"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Event"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:Expectation"/>
@@ -93,7 +99,13 @@
         <Class abbreviatedIRI="fs:People"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="fs:Predicting"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Probability"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
@@ -162,16 +174,7 @@
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="fs:Activity"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:PerceptionExperience"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Probability"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Event"/>
+        <Class abbreviatedIRI="fs:BecomingAware"/>
     </Declaration>
     <ClassAssertion>
         <Class abbreviatedIRI="action:Action"/>
@@ -198,7 +201,7 @@
         <NamedIndividual IRI="#Investorship_knowledge"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="activitypattern:Outcome"/>
+        <Class abbreviatedIRI="cbo:Outcome"/>
         <NamedIndividual IRI="#Negative_outcome"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -284,7 +287,7 @@
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
         <ObjectUnionOf>
-            <Class abbreviatedIRI="activitypattern:Outcome"/>
+            <Class abbreviatedIRI="cbo:Outcome"/>
             <Class abbreviatedIRI="fs:Expectation"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
@@ -292,6 +295,8 @@
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="action:Action"/>
+            <Class abbreviatedIRI="fs:BecomingAware"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
             <Class abbreviatedIRI="fs:Predicting"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
@@ -301,11 +306,14 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
-        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="action:hasConsequence"/>
-        <Class abbreviatedIRI="activitypattern:Outcome"/>
+        <Class abbreviatedIRI="cbo:Outcome"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="participation:isParticipantIn"/>
@@ -317,7 +325,7 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <ObjectUnionOf>
-            <Class abbreviatedIRI="activitypattern:Outcome"/>
+            <Class abbreviatedIRI="cbo:Outcome"/>
             <Class abbreviatedIRI="cbo:PerceivedValidity"/>
             <Class abbreviatedIRI="fs:Expectation"/>
         </ObjectUnionOf>
@@ -340,16 +348,6 @@
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataUnionOf>
     </DataPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>activitypattern:Outcome</AbbreviatedIRI>
-        <Literal>Outcome</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>activitypattern:Outcome</AbbreviatedIRI>
-        <Literal>The final result of an activity.</Literal>
-    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>term:isEngagedIn</AbbreviatedIRI>
@@ -400,6 +398,16 @@ This is an universal property, it can be also used in different context (e.g. Ru
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>dbr:Knowledge</AbbreviatedIRI>
         <Literal>Knowledge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <AbbreviatedIRI>cbo:Outcome</AbbreviatedIRI>
+        <Literal>The final result of an activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:Outcome</AbbreviatedIRI>
+        <Literal>Outcome</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

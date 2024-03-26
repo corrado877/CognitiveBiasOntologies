@@ -143,6 +143,12 @@
     <Declaration>
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Predicting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="move:PhysicalObject"/>
         <Class abbreviatedIRI="cbo:Non-humanEntity"/>
@@ -238,8 +244,10 @@
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <ObjectUnionOf>
+            <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
             <Class abbreviatedIRI="fs:BecomingAware"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>
+            <Class abbreviatedIRI="fs:Predicting"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>

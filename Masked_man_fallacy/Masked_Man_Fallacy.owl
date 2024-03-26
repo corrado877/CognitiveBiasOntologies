@@ -55,9 +55,6 @@
         <Literal>A man enters a local jazz club and is told that the great saxophonist John Smith will play that night. It happens to be also the name of a local talented surgeon. Immediately he refuses to believe that they are the same person, in his biased reasoning someone can&apos;t excel in two such diverse professions.</Literal>
     </Annotation>
     <Declaration>
-        <Class abbreviatedIRI="activitypattern:Outcome"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="dbr:Entity"/>
     </Declaration>
     <Declaration>
@@ -74,6 +71,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Outcome"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="cbo:PerceivedValidity"/>
@@ -158,6 +158,12 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#Scenarios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="cbo:KnownFeature"/>
@@ -285,7 +291,12 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="news:owns"/>
@@ -293,12 +304,15 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <ObjectUnionOf>
-            <Class abbreviatedIRI="activitypattern:Outcome"/>
+            <Class abbreviatedIRI="cbo:Outcome"/>
             <Class abbreviatedIRI="cbo:PerceivedValidity"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
         </ObjectUnionOf>
