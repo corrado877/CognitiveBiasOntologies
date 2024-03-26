@@ -55,10 +55,16 @@
         <Literal>A man enters a local jazz club and is told that the great saxophonist John Smith will play that night. It happens to be also the name of a local talented surgeon. Immediately he refuses to believe that they are the same person, in his biased reasoning someone can&apos;t excel in two such diverse professions.</Literal>
     </Annotation>
     <Declaration>
+        <Class abbreviatedIRI="activitypattern:Outcome"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="dbr:Entity"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dbr:Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="cbo:Feature"/>
@@ -67,16 +73,31 @@
         <Class abbreviatedIRI="cbo:KnownFeature"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="cbo:PerceivedValidity"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="cbo:Un-knownFeature"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
@@ -137,27 +158,6 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#Scenarios"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="activitypattern:Outcome"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="cbo:KnownFeature"/>
@@ -311,8 +311,8 @@
         <ObjectProperty abbreviatedIRI="cbo:involves"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="dbr:Entity"/>
+            <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
             <Class abbreviatedIRI="cbo:Non-humanEntity"/>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>

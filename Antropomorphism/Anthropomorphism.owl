@@ -60,7 +60,13 @@
         <Class abbreviatedIRI="dbr:Concept"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="dbr:Entity"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="dbr:Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="cbo:HumanFeature"/>
@@ -69,7 +75,13 @@
         <Class abbreviatedIRI="cbo:Non-humanEntity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
+        <Class abbreviatedIRI="cbo:RecognizablePattern"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Variables"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:VisualStimulus"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:Activity"/>
@@ -130,18 +142,6 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#scenarios"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dbr:Entity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RecognizablePattern"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#VisualStimulus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="move:PhysicalObject"/>
@@ -224,8 +224,8 @@
         <ObjectProperty abbreviatedIRI="term:producedObservation"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="cbo:Non-humanEntity"/>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#VisualStimulus"/>
+            <Class abbreviatedIRI="cbo:Variables"/>
+            <Class abbreviatedIRI="cbo:VisualStimulus"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -253,7 +253,7 @@
         <ObjectProperty abbreviatedIRI="term:producedObservation"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="cbo:HumanFeature"/>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#RecognizablePattern"/>
+            <Class abbreviatedIRI="cbo:RecognizablePattern"/>
             <Class abbreviatedIRI="fs:CognitiveConnection"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
@@ -261,8 +261,8 @@
         <ObjectProperty abbreviatedIRI="cbo:involves"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="dbr:Entity"/>
+            <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
             <Class abbreviatedIRI="cbo:Non-humanEntity"/>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl#AmbiguousStimulus"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <AnnotationAssertion>

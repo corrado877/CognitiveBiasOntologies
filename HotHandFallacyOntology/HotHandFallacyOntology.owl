@@ -204,7 +204,7 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
                 </owl:unionOf>
             </owl:Class>
@@ -219,7 +219,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
                 </owl:unionOf>
             </owl:Class>
@@ -414,6 +414,22 @@
     
 
 
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#NextChance-BasedOccurence -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#NextChance-BasedOccurence">
+        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#FutureEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>This class represent an event that will happen in the next future and it is characterized by chance-based probability.</terms:description>
+        <rdfs:label>Next Chance-Based Occurence</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PastMemory -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PastMemory"/>
@@ -432,25 +448,9 @@
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence">
-        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#FutureEvent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <terms:description>This class represent an event that will happen in the next future and it is characterized by chance-based probability.</terms:description>
-        <rdfs:label>Next Chance-Based Occurence</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Variables"/>
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
     
 
 
@@ -569,7 +569,7 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#NextChance-BasedOccurence"/>
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#NextChance-BasedOccurence"/>
         <parameter:hasParameter rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel"/>
         <CognitiveBiasOntologies:producesOutcomeEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet"/>
         <rdfs:comment>An individual for the next chance-based occurence class such as a Footbal Team Match Bet where the probability level is not completely random and can be influenced by different external and/or internal elements of the game itself.</rdfs:comment>
