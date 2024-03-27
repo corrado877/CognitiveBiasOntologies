@@ -96,6 +96,7 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/People"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                 </owl:unionOf>
             </owl:Class>
@@ -149,12 +150,14 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                 </owl:unionOf>

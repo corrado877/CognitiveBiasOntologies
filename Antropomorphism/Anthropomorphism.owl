@@ -105,6 +105,12 @@
         <Class abbreviatedIRI="fs:Deciding"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="fs:ExperiencerObj"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Pattern"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="fs:People"/>
     </Declaration>
     <Declaration>
@@ -159,10 +165,7 @@
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="fs:ExperiencerObj"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Pattern"/>
+        <Class IRI="https://dbpedia.org/page/Illusion"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="move:PhysicalObject"/>
@@ -247,6 +250,7 @@
         <ObjectUnionOf>
             <Class abbreviatedIRI="cbo:HumanFeature"/>
             <Class abbreviatedIRI="fs:CognitiveConnection"/>
+            <Class abbreviatedIRI="fs:Pattern"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -261,6 +265,7 @@
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="cbo:involves"/>
         <ObjectUnionOf>
+            <Class IRI="https://dbpedia.org/page/Illusion"/>
             <Class abbreviatedIRI="fs:Activity"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>
         </ObjectUnionOf>
@@ -279,6 +284,7 @@
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isReflectionOn"/>
         <ObjectUnionOf>
+            <Class abbreviatedIRI="fs:Activity"/>
             <Class abbreviatedIRI="fs:BecomingAware"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>
         </ObjectUnionOf>

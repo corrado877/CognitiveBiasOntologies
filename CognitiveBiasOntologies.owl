@@ -18,6 +18,7 @@
      xmlns:Masked_man_fallacy="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_man_fallacy.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
      xmlns:Clustering_illusion="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#"
+     xmlns:Clustering_illusion1="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#"
      xmlns:Illusion_of_validity="https://github.com/corrado877/CognitiveBiasOntologies/Illusion_of_validity#"
      xmlns:Illusion_of_validity1="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#"
      xmlns:GamblersFallacyOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#"
@@ -25,6 +26,7 @@
      xmlns:Insensitivity_to_sample_size="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#">
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion"/>
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl"/>
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl"/>
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl"/>

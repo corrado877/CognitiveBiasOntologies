@@ -109,6 +109,7 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/People"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                 </owl:unionOf>
             </owl:Class>
@@ -197,8 +198,22 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#creates -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#creates">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://dbpedia.org/page/Illusion"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment>a property connecting the illusory effect created by the Perception of Pattern</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -210,6 +225,7 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://dbpedia.org/page/Illusion"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                 </owl:unionOf>
@@ -244,6 +260,12 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     <!-- http://www.ontology.se/odp/content/owl/Action.owl#Action -->
 
     <owl:Class rdf:about="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    
+
+
+    <!-- https://dbpedia.org/page/Illusion -->
+
+    <owl:Class rdf:about="https://dbpedia.org/page/Illusion"/>
     
 
 
@@ -289,8 +311,8 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Person"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
     </owl:Class>
     
 
@@ -318,8 +340,8 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Person"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
     </owl:Class>
     
 
@@ -328,8 +350,8 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Person"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
     </owl:Class>
     
 
@@ -343,17 +365,8 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     <!-- https://w3id.org/framester/data/framestercore/PerceptionExperience -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience">
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Person"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestercore/Person -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Person">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
     </owl:Class>
     
 
@@ -366,7 +379,17 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
 
     <!-- https://w3id.org/framester/data/framestercore/Sequence -->
 
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence">
+        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestersyn/Person -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Person">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+    </owl:Class>
     
 
 
@@ -410,7 +433,7 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     <!-- http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Subject -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Subject">
-        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Person"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
         <term:isEngagedIn rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Losing_weight"/>
         <cco:belief rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Friend_lost_weight"/>
     </owl:NamedIndividual>

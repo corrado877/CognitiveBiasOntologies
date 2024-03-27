@@ -94,6 +94,7 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/People"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                 </owl:unionOf>
             </owl:Class>
@@ -213,6 +214,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://dbpedia.org/page/Illusion"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                 </owl:unionOf>

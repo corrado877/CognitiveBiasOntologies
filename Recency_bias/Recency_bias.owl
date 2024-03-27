@@ -129,6 +129,9 @@
         <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/Identicality"/>
     </Declaration>
     <Declaration>
@@ -240,7 +243,7 @@
         <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#scenarios"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+        <Class IRI="https://dbpedia.org/page/Illusion"/>
     </Declaration>
     <EquivalentClasses>
         <Class abbreviatedIRI="cbo:HighImportance"/>
@@ -486,6 +489,7 @@
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="cbo:involves"/>
         <ObjectUnionOf>
+            <Class IRI="https://dbpedia.org/page/Illusion"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
         </ObjectUnionOf>
