@@ -96,6 +96,9 @@
         <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
     </Declaration>
     <Declaration>
@@ -106,6 +109,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Probability"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
@@ -126,10 +132,10 @@
         <ObjectProperty abbreviatedIRI="parameter:hasParameter"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
@@ -195,10 +201,37 @@
         <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#scenarios"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Probability"/>
+        <Class abbreviatedIRI="cbo:Outcome"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Identicality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
     </Declaration>
     <EquivalentClasses>
         <Class abbreviatedIRI="cbo:HighImportance"/>
@@ -321,7 +354,7 @@
         <NamedIndividual IRI="#Memory"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Memory_encoding"/>
         <NamedIndividual IRI="#Memory"/>
     </ObjectPropertyAssertion>
@@ -361,7 +394,7 @@
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <NamedIndividual IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Final_decision"/>
     </ObjectPropertyAssertion>
@@ -393,7 +426,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.fao.org/aims/aos/aos.owl#affects"/>
-        <Class abbreviatedIRI="cbo:RecentMemory"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Knowledge"/>
+            <Class abbreviatedIRI="cbo:RecentMemory"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="classification:classifies"/>
@@ -418,23 +454,32 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
         <Class abbreviatedIRI="cbo:PastMemory"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="cbo:MemoryEncoding"/>
-            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
-        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="cbo:involves"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <ObjectUnionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#follows"/>
@@ -449,11 +494,18 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="news:owns"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Knowledge"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.fao.org/aims/aos/aos.owl#affects"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="classification:classifies"/>
@@ -477,23 +529,34 @@
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
-        <Class abbreviatedIRI="cbo:RecentMemory"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces"/>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="cbo:Decision"/>
+            <Class abbreviatedIRI="cbo:Outcome"/>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Outcome"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="cbo:involves"/>
-        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Entity"/>
+            <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#follows"/>
@@ -501,7 +564,11 @@
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+        <ObjectUnionOf>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Identicality"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Probability"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
@@ -534,6 +601,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>parameter:hasParameterDataValue</AbbreviatedIRI>
         <Literal>A Concept can have a Parameter that constrains the attributes that a classified Entity can have in a certain Situation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://dbpedia.org/ontology/produces</IRI>
+        <Literal>Define the relation between an activity and its produced outcome.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -572,11 +644,6 @@
 E.g. &apos;year 1999 precedes 2000&apos;, &apos;deciding what coffee to use&apos; precedes &apos;preparing coffee&apos;, &apos;World War II follows World War I&apos;, &apos;in the Milan to Rome autoroute, Bologna precedes Florence&apos;, etc.
 
 It can then be used between tasks, processes, time intervals, spatially locate objects, situations, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#produces</IRI>
-        <Literal>Define the relation between an activity and its produced outcome.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

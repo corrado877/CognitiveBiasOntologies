@@ -55,6 +55,9 @@
         <Literal>A man enters a local jazz club and is told that the great saxophonist John Smith will play that night. It happens to be also the name of a local talented surgeon. Immediately he refuses to believe that they are the same person, in his biased reasoning someone can&apos;t excel in two such diverse professions.</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="dbr:Entity"/>
     </Declaration>
     <Declaration>
@@ -83,6 +86,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
@@ -160,10 +166,19 @@
         <AnnotationProperty IRI="#Scenarios"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+        <Class abbreviatedIRI="cbo:Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="cbo:KnownFeature"/>
@@ -260,11 +275,16 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
-        <Class abbreviatedIRI="dbr:Knowledge"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Knowledge"/>
+            <Class abbreviatedIRI="cbo:RecentMemory"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
@@ -300,21 +320,27 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="news:owns"/>
-        <Class abbreviatedIRI="dbr:Knowledge"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Knowledge"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Decision"/>
             <Class abbreviatedIRI="cbo:Outcome"/>
             <Class abbreviatedIRI="cbo:PerceivedValidity"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -326,6 +352,7 @@
         <ObjectUnionOf>
             <Class abbreviatedIRI="dbr:Entity"/>
             <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
             <Class abbreviatedIRI="cbo:Non-humanEntity"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>

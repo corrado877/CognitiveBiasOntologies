@@ -51,6 +51,9 @@
         <Literal>A young child attributes human emotions and intentions to his beloved puppet, Mr. Whiskers, engaging in conversations and interpreting its expressions.</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="move:PhysicalObject"/>
     </Declaration>
     <Declaration>
@@ -99,6 +102,9 @@
         <Class abbreviatedIRI="fs:PerceptionExperience"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="fs:Predicting"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
     </Declaration>
     <Declaration>
@@ -144,10 +150,7 @@
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="fs:Predicting"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="move:PhysicalObject"/>
@@ -270,6 +273,7 @@
         <ObjectUnionOf>
             <Class abbreviatedIRI="dbr:Entity"/>
             <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
             <Class abbreviatedIRI="cbo:Non-humanEntity"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>

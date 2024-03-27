@@ -87,6 +87,9 @@
         <Class abbreviatedIRI="fs:Activity"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="fs:BecomingAware"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="fs:Event"/>
     </Declaration>
     <Declaration>
@@ -174,7 +177,22 @@
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="fs:BecomingAware"/>
+        <Class abbreviatedIRI="fs:Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Importance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Memory"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
     </Declaration>
     <ClassAssertion>
         <Class abbreviatedIRI="action:Action"/>
@@ -263,7 +281,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
-        <Class abbreviatedIRI="dbr:Knowledge"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Knowledge"/>
+            <Class abbreviatedIRI="cbo:RecentMemory"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="action:hasConsequence"/>
@@ -279,6 +300,8 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class abbreviatedIRI="fs:Deciding"/>
             <Class abbreviatedIRI="fs:Event"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>
             <Class abbreviatedIRI="fs:Predicting"/>
@@ -302,12 +325,16 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="news:owns"/>
-        <Class abbreviatedIRI="dbr:Knowledge"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Knowledge"/>
+            <Class abbreviatedIRI="fs:Memory"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="fao:affects"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class abbreviatedIRI="fs:Deciding"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
@@ -325,9 +352,11 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Decision"/>
             <Class abbreviatedIRI="cbo:Outcome"/>
             <Class abbreviatedIRI="cbo:PerceivedValidity"/>
             <Class abbreviatedIRI="fs:Expectation"/>
+            <Class abbreviatedIRI="fs:Memory"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -338,6 +367,7 @@
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="fs:Identicality"/>
+            <Class abbreviatedIRI="fs:Importance"/>
             <Class abbreviatedIRI="fs:Probability"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
