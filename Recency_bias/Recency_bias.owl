@@ -75,6 +75,15 @@
         <Literal>In a job interview, a candidate performs exceptionally well in the final part of the interview. The interviewer, influenced by the Recency Bias, places disproportionate weight on this recent performance and is more likely to remember it and give it more significance in the evaluation, potentially overlooking earlier parts of the interview.</Literal>
     </Annotation>
     <Declaration>
+        <Class abbreviatedIRI="dbr:Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="cbo:Decision"/>
     </Declaration>
     <Declaration>
@@ -87,16 +96,34 @@
         <Class abbreviatedIRI="cbo:MemoryEncoding"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Outcome"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="cbo:PastMemory"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="cbo:RecentMemory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Identicality"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
@@ -111,7 +138,13 @@
         <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/Probability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
@@ -201,37 +234,10 @@
         <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#scenarios"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="cbo:Outcome"/>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dbr:Knowledge"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dbr:Entity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Identicality"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
     </Declaration>
     <EquivalentClasses>
         <Class abbreviatedIRI="cbo:HighImportance"/>
@@ -488,8 +494,11 @@
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <ObjectUnionOf>
+            <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>

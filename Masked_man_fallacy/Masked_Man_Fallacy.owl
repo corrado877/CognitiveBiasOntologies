@@ -67,10 +67,16 @@
         <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="cbo:Decision"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="cbo:Feature"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="cbo:KnownFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="cbo:Non-humanEntity"/>
@@ -82,6 +88,9 @@
         <Class abbreviatedIRI="cbo:PerceivedValidity"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="cbo:Un-knownFeature"/>
     </Declaration>
     <Declaration>
@@ -91,10 +100,16 @@
         <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
@@ -164,21 +179,6 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#Scenarios"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cbo:Decision"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cbo:RecentMemory"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="cbo:KnownFeature"/>
@@ -314,6 +314,7 @@
         <ObjectUnionOf>
             <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
         </ObjectUnionOf>

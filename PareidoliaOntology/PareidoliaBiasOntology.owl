@@ -93,6 +93,7 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                 </owl:unionOf>
             </owl:Class>
@@ -109,8 +110,8 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecognizablePattern"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -127,6 +128,7 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
                 </owl:unionOf>
@@ -363,6 +365,12 @@
     <!-- https://w3id.org/framester/data/framestercore/CognitiveConnection -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Deciding -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
     
 
 

@@ -95,6 +95,7 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                 </owl:unionOf>
             </owl:Class>
@@ -129,6 +130,7 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
                 </owl:unionOf>
@@ -421,6 +423,12 @@
         <terms:description>A concept, Concept_1, is related causally or collocationally to another concept, Concept_2, by means of some Evidence. They may be related only under certain Circumstances or from a certain Point_of_view. The two concepts may be expressed collectively as associated Concepts. Any cognizer is deprofiled.</terms:description>
         <rdfs:label>Cognitive Connection</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Deciding -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
     
 
 

@@ -75,6 +75,9 @@
         <Class abbreviatedIRI="cbo:HumanFeature"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="cbo:Non-humanEntity"/>
     </Declaration>
     <Declaration>
@@ -150,7 +153,7 @@
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+        <Class abbreviatedIRI="fs:Deciding"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="move:PhysicalObject"/>
@@ -249,6 +252,7 @@
         <ObjectUnionOf>
             <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
             <Class abbreviatedIRI="fs:BecomingAware"/>
+            <Class abbreviatedIRI="fs:Deciding"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>
             <Class abbreviatedIRI="fs:Predicting"/>
         </ObjectUnionOf>

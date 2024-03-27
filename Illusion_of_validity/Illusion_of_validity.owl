@@ -78,16 +78,28 @@
         <Class abbreviatedIRI="dbr:Knowledge"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="cbo:Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="cbo:Outcome"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="cbo:PerceivedValidity"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="fs:Activity"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:BecomingAware"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Deciding"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:Event"/>
@@ -97,6 +109,12 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:Identicality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Importance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Memory"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:People"/>
@@ -175,24 +193,6 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#scenarios"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Deciding"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Importance"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cbo:Decision"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cbo:RecentMemory"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Memory"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
     </Declaration>
     <ClassAssertion>
         <Class abbreviatedIRI="action:Action"/>
@@ -319,6 +319,7 @@
         <ObjectUnionOf>
             <Class abbreviatedIRI="action:Action"/>
             <Class abbreviatedIRI="fs:BecomingAware"/>
+            <Class abbreviatedIRI="fs:Deciding"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>
             <Class abbreviatedIRI="fs:Predicting"/>
         </ObjectUnionOf>
