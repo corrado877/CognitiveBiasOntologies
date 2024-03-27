@@ -57,6 +57,9 @@
         <Class abbreviatedIRI="move:PhysicalObject"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://dbpedia.org/page/Illusion"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="dbr:Animal"/>
     </Declaration>
     <Declaration>
@@ -165,7 +168,7 @@
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://dbpedia.org/page/Illusion"/>
+        <Class abbreviatedIRI="fs:Assessing"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="move:PhysicalObject"/>
@@ -275,6 +278,7 @@
         <ObjectUnionOf>
             <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
             <Class abbreviatedIRI="fs:Activity"/>
+            <Class abbreviatedIRI="fs:Assessing"/>
             <Class abbreviatedIRI="fs:BecomingAware"/>
             <Class abbreviatedIRI="fs:Deciding"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>

@@ -58,6 +58,9 @@
         <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://dbpedia.org/page/Illusion"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="dbr:Entity"/>
     </Declaration>
     <Declaration>
@@ -184,7 +187,7 @@
         <AnnotationProperty IRI="#Scenarios"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://dbpedia.org/page/Illusion"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="cbo:KnownFeature"/>
@@ -321,6 +324,7 @@
         <ObjectUnionOf>
             <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>

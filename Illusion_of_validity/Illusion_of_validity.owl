@@ -194,6 +194,9 @@
     <Declaration>
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Assessing"/>
+    </Declaration>
     <ClassAssertion>
         <Class abbreviatedIRI="action:Action"/>
         <NamedIndividual IRI="#Biased_investement"/>
@@ -319,6 +322,7 @@
         <ObjectUnionOf>
             <Class abbreviatedIRI="action:Action"/>
             <Class abbreviatedIRI="fs:Activity"/>
+            <Class abbreviatedIRI="fs:Assessing"/>
             <Class abbreviatedIRI="fs:BecomingAware"/>
             <Class abbreviatedIRI="fs:Deciding"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>

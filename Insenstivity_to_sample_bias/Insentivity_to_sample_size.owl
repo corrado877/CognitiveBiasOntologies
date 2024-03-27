@@ -69,28 +69,28 @@ Our intuition struggles with the complex relationship between sample size and st
         <Literal>https://w3id.org/framester/data/framestercore/</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#Thing"/>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:Assessing"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="fs:Decision"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#cbo:have_knowledge"/>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/inActivity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity"/>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:isEngaged"/>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#have_knowledge"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/affectedBy#aff:influencedBy"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Game_bought"/>
@@ -122,12 +122,42 @@ Our intuition struggles with the complex relationship between sample size and st
     <Declaration>
         <AnnotationProperty IRI="#user_story"/>
     </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Predicting"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Sequence"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Probability"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:BecomingAware"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Pattern"/>
+    </Declaration>
     <DisjointClasses>
-        <Class IRI="#Thing"/>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
         <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class abbreviatedIRI="fs:Decision"/>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
         <NamedIndividual IRI="#Game_bought"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -135,7 +165,7 @@ Our intuition struggles with the complex relationship between sample size and st
         <NamedIndividual IRI="#Game_choice"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Thing"/>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
         <NamedIndividual IRI="#Game_review"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -143,84 +173,109 @@ Our intuition struggles with the complex relationship between sample size and st
         <NamedIndividual IRI="#Me"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/affectedBy#aff:influencedBy"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
         <NamedIndividual IRI="#Game_bought"/>
         <NamedIndividual IRI="#Game_review"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity"/>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/inActivity"/>
         <NamedIndividual IRI="#Game_choice"/>
         <NamedIndividual IRI="#Game_bought"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/affectedBy#aff:influencedBy"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
         <NamedIndividual IRI="#Game_review"/>
         <NamedIndividual IRI="#Game_bought"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#cbo:have_knowledge"/>
-        <NamedIndividual IRI="#Me"/>
-        <NamedIndividual IRI="#Game_review"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:isEngaged"/>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
         <NamedIndividual IRI="#Me"/>
         <NamedIndividual IRI="#Game_choice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#have_knowledge"/>
+        <NamedIndividual IRI="#Me"/>
+        <NamedIndividual IRI="#Game_review"/>
     </ObjectPropertyAssertion>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity"/>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/inActivity"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#cbo:have_knowledge"/>
-        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/inActivity"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="fs:Assessing"/>
+            <Class abbreviatedIRI="fs:BecomingAware"/>
+            <Class abbreviatedIRI="fs:Pattern"/>
+            <Class abbreviatedIRI="fs:People"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity"/>
-        <Class abbreviatedIRI="fs:Assessing"/>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
+        <Class abbreviatedIRI="fs:People"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:isEngaged"/>
-        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#have_knowledge"/>
+        <Class abbreviatedIRI="fs:People"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/affectedBy#aff:influencedBy"/>
-        <Class IRI="#Thing"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+        <ObjectUnionOf>
+            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+            <Class abbreviatedIRI="fs:Probability"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#cbo:have_knowledge"/>
-        <Class IRI="#Thing"/>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/inActivity"/>
+        <ObjectUnionOf>
+            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+            <Class abbreviatedIRI="fs:Activity"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity"/>
-        <Class abbreviatedIRI="fs:Decision"/>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+            <Class abbreviatedIRI="fs:Activity"/>
+            <Class abbreviatedIRI="fs:Assessing"/>
+            <Class abbreviatedIRI="fs:BecomingAware"/>
+            <Class abbreviatedIRI="fs:Deciding"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+            <Class abbreviatedIRI="fs:Predicting"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:isEngaged"/>
-        <Class abbreviatedIRI="fs:Assessing"/>
+        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#have_knowledge"/>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/affectedBy#aff:influencedBy"/>
-        <Class abbreviatedIRI="fs:Decision"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
+        <ObjectUnionOf>
+            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+            <Class abbreviatedIRI="fs:Pattern"/>
+            <Class abbreviatedIRI="fs:Sequence"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#cbo:have_knowledge</IRI>
-        <Literal>a property that links the cognitive process of storing some information regarding a topic.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:inActivity</IRI>
+        <IRI>http://modellingdh.github.io/ont/odp/term/inActivity</IRI>
         <Literal>what activity/ies are affecting or affected by a certain engagement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:isEngaged</IRI>
+        <IRI>http://modellingdh.github.io/ont/odp/term/isEngagedIn</IRI>
         <Literal>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/affectedBy#aff:influencedBy</IRI>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#have_knowledge</IRI>
+        <Literal>a property that links the cognitive process of storing some information regarding a topic.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/affectedBy#influencedBy</IRI>
         <Literal>A relation between qualities. A quality is influenced by another quality if the value of the latter affects the value of the former.</Literal>
     </AnnotationAssertion>
 </Ontology>
