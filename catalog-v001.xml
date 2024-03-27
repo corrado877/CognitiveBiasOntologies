@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/Neglect_of_Probability_bias/Neglect_of_probability.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/Clustering_illusion/Clustering_illusion.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/Anecdotal_fallacy/Anecdotal_fallacy.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/Recency_bias/Recency_bias.owl"/>

@@ -3,6 +3,7 @@
      xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl"
      xmlns:fs="https://w3id.org/framester/data/framestercore/"
      xmlns:aff="https://w3id.org/affectedBy#"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
      xmlns:cco="http://purl.org/ontology/cco/core#"
      xmlns:dbo="https://dbpedia.org/ontology/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -17,7 +18,6 @@
      xmlns:parameter="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"
      xmlns:participation="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
-     xmlns:CognitiveBiasOntologies="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
      xmlns:GamblersFallacyOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-20T00:00:00</terms:created>
@@ -332,6 +332,7 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
                 </owl:unionOf>
@@ -340,6 +341,7 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
@@ -406,6 +408,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
@@ -416,6 +419,7 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
                 </owl:unionOf>
@@ -560,6 +564,12 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
     
 
 
@@ -719,7 +729,7 @@
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Player.n.1"/>
         <cco:belief rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series"/>
         <participation:isParticipantIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
-        <CognitiveBiasOntologies:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Next_Number_Draw"/>
+        <cbo:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Next_Number_Draw"/>
         <rdfs:comment>An human being that participates as a player to a lottery draw.</rdfs:comment>
         <rdfs:label>Lottery Player</rdfs:label>
     </owl:NamedIndividual>
@@ -745,7 +755,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Past_Number_Draw_Series">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <prov:wasGeneratedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Lottery_Draw"/>
-        <CognitiveBiasOntologies:hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number"/>
+        <cbo:hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#Black_Number"/>
         <rdfs:comment>An ordered sequence of past number draws that has the same outcome (black) will influence the judgment of the participant about the probability of the outcome in the next number draw.</rdfs:comment>
         <rdfs:label>Past Number Draw Series</rdfs:label>
     </owl:NamedIndividual>

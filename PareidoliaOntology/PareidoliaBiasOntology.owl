@@ -200,6 +200,7 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
                 </owl:unionOf>
@@ -208,6 +209,7 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
@@ -262,6 +264,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Probability"/>
@@ -272,6 +275,7 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
                 </owl:unionOf>
@@ -373,6 +377,12 @@
         <terms:description>A class for visual stimuli, namely anything that involves the use of sight.</terms:description>
         <rdfs:label>Visual Stimulus</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
     
 
 

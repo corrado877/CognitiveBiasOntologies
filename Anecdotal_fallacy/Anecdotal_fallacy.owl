@@ -2,27 +2,18 @@
 <rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy/"
      xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy/"
      xmlns:fs="https://w3id.org/framester/data/framestercore/"
-     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
      xmlns:cco="http://purl.org/ontology/cco/core#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:cbo2="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology#cbo:"
-     xmlns:cbo3="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#cbo:"
-     xmlns:cco1="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#cco:"
-     xmlns:cco3="http://purl.org/ontology/cco/core#cco:"
-     xmlns:exob="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:term="http://modellingdh.github.io/ont/odp/term/"
-     xmlns:exob1="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#exob:"
-     xmlns:exob2="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#exob:"
-     xmlns:exob4="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxm#exob:"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
-     xmlns:Anecdotal_fallacy="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#"
-     xmlns:CognitiveBiasOntologies="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#">
+     xmlns:Anecdotal_fallacy="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy">
         <terms:created>27/02/2024</terms:created>
         <terms:creator>Salvatore Di Marzo</terms:creator>
@@ -437,7 +428,7 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Friend_lost_weight">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
-        <CognitiveBiasOntologies:creates rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Working_diet"/>
+        <cbo:creates rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Working_diet"/>
     </owl:NamedIndividual>
     
 
@@ -465,7 +456,7 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Working_diet">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-        <CognitiveBiasOntologies:involves rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#friend_losing_weight"/>
+        <cbo:involves rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#friend_losing_weight"/>
     </owl:NamedIndividual>
     
 

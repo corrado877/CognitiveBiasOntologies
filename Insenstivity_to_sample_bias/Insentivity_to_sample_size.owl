@@ -132,6 +132,9 @@ Our intuition struggles with the complex relationship between sample size and st
         <Class abbreviatedIRI="fs:Predicting"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="fs:Deciding"/>
     </Declaration>
     <Declaration>
@@ -222,6 +225,7 @@ Our intuition struggles with the complex relationship between sample size and st
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
         <ObjectUnionOf>
+            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
             <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>
             <Class abbreviatedIRI="fs:Probability"/>
@@ -254,6 +258,7 @@ Our intuition struggles with the complex relationship between sample size and st
         <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
         <ObjectUnionOf>
             <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
             <Class abbreviatedIRI="fs:Pattern"/>
             <Class abbreviatedIRI="fs:Sequence"/>
         </ObjectUnionOf>
