@@ -1,425 +1,545 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion/"
-     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion/"
-     xmlns:fs="https://w3id.org/framester/data/framestercore/"
-     xmlns:cbo="cbo:https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology"
-     xmlns:dbo="https://dbpedia.org/page/Illusion"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:cbo1="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/cbo:"
-     xmlns:cbo2="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#cbo:"
-     xmlns:exob="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:term="http://modellingdh.github.io/ont/odp/term/"
-     xmlns:exob1="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#exob:"
-     xmlns:exob2="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml/exob:"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
-     xmlns:Clustering_illusion="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#"
-     xmlns:clustering_illusion="http://www.semanticweb.org/salva/ontologies/2024/1/clustering_illusion#"
-     xmlns:Clustering_illusion1="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#"
-     xmlns:CognitiveBiasOntologies="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#">
-    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion">
-        <terms:created>27-02-2024</terms:created>
-        <terms:creator>Salvatore Di Marzo</terms:creator>
-        <terms:description>Clustering illusion part of the Cognitive Bias ontology</terms:description>
-        <terms:title>Clustering Illusion Ontology</terms:title>
-        <rdfs:comment>The clustering illusion is a cognitive bias that involves perceiving patterns or clusters in random or unrelated data. People tend to see patterns where none actually exist, and this can lead to incorrect interpretations of information. This bias arises from the human brain&apos;s natural inclination to seek order and make sense of the world, individuals may perceive random events or data points as part of a meaningful pattern or trend. This can occur when there is no actual correlation or connection between the observed elements. The clustering illusion can impact decision-making and judgments, as individuals may base their conclusions on perceived patterns that are not statistically significant or meaningful.</rdfs:comment>
-        <Clustering_illusion1:hasComponent>http://ontology.eil.utoronto.ca/icity/ActivitySpecification</Clustering_illusion1:hasComponent>
-        <Clustering_illusion1:hasComponent>http://xmlns.com/foaf/0.1/</Clustering_illusion1:hasComponent>
-        <Clustering_illusion1:hasComponent>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml</Clustering_illusion1:hasComponent>
-        <Clustering_illusion1:hasComponent>https://w3id.org/framester/data/framestercore/</Clustering_illusion1:hasComponent>
-        <Clustering_illusion1:user_story>Sarah, a regular lottery who enjoys testing her luck with weekly ticket purchases. Over the past month, Sarah notices a curious pattern emerging in the winning numbers of the local lottery. She observes that the winning numbers often consist of consecutive digits, such as 12, 13, 14, or alternating pairs like 5 and 7.
-Excited by this apparent pattern, Sarah starts to develop a theory that the lottery draws are not entirely random. She begins meticulously analysing past winning numbers, searching for more evidence to support her hypothesis. With each new draw, Sarah eagerly checks the results, hoping to uncover additional patterns or trends.
-As the weeks pass, Sarah becomes increasingly convinced that she has cracked the code to winning the lottery. She starts sharing her findings with friends and family, boasting about her newfound strategy for picking winning numbers. Some of her acquaintances start to believe in Sarah&apos;s theory, intrigued by the apparent predictability of the lottery draws.
-Sarah decides to invest more money into buying lottery tickets, confident that her strategy will lead to big wins. However, despite her efforts, Sarah&apos;s luck doesn&apos;t seem to improve. She continues to match only a few numbers here and there, never coming close to hitting the jackpot.</Clustering_illusion1:user_story>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/dc/terms/created -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#hasComponent -->
-
-    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#hasComponent"/>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#user_story -->
-
-    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#user_story"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://modellingdh.github.io/ont/odp/term/inActivity -->
-
-    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/inActivity">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/People"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:comment>what activity/ies are affecting or affected by a certain engagement</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://modellingdh.github.io/ont/odp/term/isReflectionOn -->
-
-    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/isReflectionOn">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:comment>Used to connect the subjective elements of an experience with the corresponding observation, which is extrapolated from the content being interacted with and in itself may not be including a critique.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://modellingdh.github.io/ont/odp/term/producedObservation -->
-
-    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/producedObservation">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity"/>
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:comment>This property can be used to denote that something is (even indirectly, not necessary through direct reflection) responsible for the existence of an observation.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#creates -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#creates">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://dbpedia.org/page/Illusion"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:comment>a property connecting the illusory effect created by the Perception of Pattern</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://dbpedia.org/page/Illusion"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://dbpedia.org/resource/Entity"/>
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:comment>a property that links the cognitive process of creating the perception of an experience and the experience to which it is linked to.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://dbpedia.org/page/Illusion -->
-
-    <owl:Class rdf:about="https://dbpedia.org/page/Illusion">
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
-    </owl:Class>
-    
-
-
-    <!-- https://dbpedia.org/resource/Entity -->
-
-    <owl:Class rdf:about="https://dbpedia.org/resource/Entity"/>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature"/>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity"/>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestercore/Activity -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestercore/Assessing -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestercore/BecomingAware -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestercore/CognitiveConnection -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestercore/ExperiencerObj -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj">
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestercore/Pattern -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern">
-        <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestercore/People -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People"/>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestercore/PerceptionExperience -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestercore/Sequence -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
-    
-
-
-    <!-- https://w3id.org/framester/data/framestersyn/Person -->
-
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Person">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Consecutive_digits -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Consecutive_digits">
-        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
-        <term:producedObservation rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Pattern_lottery_numbers"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern">
-        <rdf:type rdf:resource="https://dbpedia.org/page/Illusion"/>
-        <CognitiveBiasOntologies:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Consecutive_digits"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Lottery -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Lottery">
-        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
-        <CognitiveBiasOntologies:creates rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Pattern_lottery_numbers -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Pattern_lottery_numbers">
-        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
-        <term:isReflectionOn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Lottery"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Sarah -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Sarah">
-        <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
-    </owl:NamedIndividual>
-</rdf:RDF>
+     ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl">
+    <Prefix name="" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity#"/>
+    <Prefix name="fs" IRI="https://w3id.org/framester/data/framestercore/"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"/>
+    <Prefix name="dbr" IRI="https://dbpedia.org/resource/"/>
+    <Prefix name="fao" IRI="http://www.fao.org/aims/aos/aos.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="news" IRI="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="term" IRI="http://modellingdh.github.io/ont/odp/term/"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="action" IRI="http://www.ontology.se/odp/content/owl/Action.owl#"/>
+    <Prefix name="parameter" IRI="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"/>
+    <Prefix name="participation" IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"/>
+    <Prefix name="activitypattern" IRI="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal>01/03/24</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal>Marco Lamorte</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal>The Illusion of validity module of the cognitive bias ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal>Illusion of validity ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>The “Illusion of Validity” is a cognitive bias where individuals overestimate their ability to accurately interpret and predict outcomes when analyzing a set of data, especially when the data show a consistent pattern</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:AOS_AGROVOC_Concept_Server_fundation_ontology_model</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Action</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:An_Ontology_Design_Pattern_for_Activity_Reasoning</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:NewsReportingEvent</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#hasComponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Participation</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#scenarios"/>
+        <Literal>&quot;John, a seasoned investor, relies on his perceived competence and past successes to make investment decisions, often ignoring the influence of unpredictable factors.&quot;</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="action:Action"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Outcome"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Assessing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:BecomingAware"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Event"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Expectation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Identicality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Importance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Memory"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:People"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Predicting"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Probability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="fao:affects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="action:hasConsequence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="participation:isParticipantIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Biased_investement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Expert_investor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Identicality_aspect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Investor_PerceivedValidity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Investor_predicting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Investorship_knowledge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Negative_outcome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Positive_outcome"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#scenarios"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class abbreviatedIRI="action:Action"/>
+        <NamedIndividual IRI="#Biased_investement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="fs:People"/>
+        <NamedIndividual IRI="#Expert_investor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="fs:Identicality"/>
+        <NamedIndividual IRI="#Identicality_aspect"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+        <NamedIndividual IRI="#Investor_PerceivedValidity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="fs:Predicting"/>
+        <NamedIndividual IRI="#Investor_predicting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbr:Knowledge"/>
+        <NamedIndividual IRI="#Investorship_knowledge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cbo:Outcome"/>
+        <NamedIndividual IRI="#Negative_outcome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="fs:Expectation"/>
+        <NamedIndividual IRI="#Positive_outcome"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="action:hasConsequence"/>
+        <NamedIndividual IRI="#Biased_investement"/>
+        <NamedIndividual IRI="#Negative_outcome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <NamedIndividual IRI="#Expert_investor"/>
+        <NamedIndividual IRI="#Biased_investement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <NamedIndividual IRI="#Expert_investor"/>
+        <NamedIndividual IRI="#Investor_predicting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="participation:isParticipantIn"/>
+        <NamedIndividual IRI="#Investor_PerceivedValidity"/>
+        <NamedIndividual IRI="#Investor_predicting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <NamedIndividual IRI="#Investor_predicting"/>
+        <NamedIndividual IRI="#Positive_outcome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="fao:affects"/>
+        <NamedIndividual IRI="#Investorship_knowledge"/>
+        <NamedIndividual IRI="#Investor_PerceivedValidity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
+        <NamedIndividual IRI="#Negative_outcome"/>
+        <NamedIndividual IRI="#Identicality_aspect"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
+        <NamedIndividual IRI="#Positive_outcome"/>
+        <NamedIndividual IRI="#Identicality_aspect"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+        <NamedIndividual IRI="#Identicality_aspect"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <Class abbreviatedIRI="fs:People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
+        <Class abbreviatedIRI="fs:People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="fao:affects"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Knowledge"/>
+            <Class abbreviatedIRI="cbo:RecentMemory"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="action:hasConsequence"/>
+        <Class abbreviatedIRI="action:Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="participation:isParticipantIn"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class abbreviatedIRI="fs:People"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class abbreviatedIRI="fs:Deciding"/>
+            <Class abbreviatedIRI="fs:Event"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+            <Class abbreviatedIRI="fs:Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Outcome"/>
+            <Class abbreviatedIRI="fs:Expectation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="action:Action"/>
+            <Class abbreviatedIRI="fs:Activity"/>
+            <Class abbreviatedIRI="fs:Assessing"/>
+            <Class abbreviatedIRI="fs:BecomingAware"/>
+            <Class abbreviatedIRI="fs:Deciding"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+            <Class abbreviatedIRI="fs:Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="news:owns"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="dbr:Knowledge"/>
+            <Class abbreviatedIRI="fs:Memory"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="fao:affects"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class abbreviatedIRI="fs:Deciding"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="action:hasConsequence"/>
+        <Class abbreviatedIRI="cbo:Outcome"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="participation:isParticipantIn"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="fs:Activity"/>
+            <Class abbreviatedIRI="fs:Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:Decision"/>
+            <Class abbreviatedIRI="cbo:Outcome"/>
+            <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class abbreviatedIRI="fs:Expectation"/>
+            <Class abbreviatedIRI="fs:Memory"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="cbo:hasAttribute"/>
+        <Class abbreviatedIRI="fs:Identicality"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="fs:Identicality"/>
+            <Class abbreviatedIRI="fs:Importance"/>
+            <Class abbreviatedIRI="fs:Probability"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>term:isEngagedIn</AbbreviatedIRI>
+        <Literal>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>news:owns</AbbreviatedIRI>
+        <Literal>This property can be used to link a certain NewsProvider with a Media that the NewsProvider ows, e.g. Fox News Channel is owned by Fox Entertainment Group, which also owns other Media (FXX Channel, etc.).
+This is an universal property, it can be also used in different context (e.g. Ruslana owns a Persian cat).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fao:affects</AbbreviatedIRI>
+        <Literal>X &lt;affects&gt; Y. Agent X acts on object Y in such a way that Y changes state or location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>action:Action</AbbreviatedIRI>
+        <Literal>The process of doing something. An action is performed by an agent. An action can be proposed (proposed actions make up a plan), implemented or abandoned, and it has a status and possibly one or more suspension periods.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>action:Action</AbbreviatedIRI>
+        <Literal>Action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>action:hasConsequence</AbbreviatedIRI>
+        <Literal>A causal relation between actions, i.e. one action is the cause of another action. For example, the action of &quot;swimming&quot; is a consequence of &quot;jumping into deep water&quot;. The property is transitive.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>participation:isParticipantIn</AbbreviatedIRI>
+        <Literal>Define the participation of an entity in a process or an Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://dbpedia.org/ontology/produces</IRI>
+        <Literal>Define the relation between an entity (activity or event) and its produced outcome.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Knowledge</AbbreviatedIRI>
+        <Literal>Knowledge can be defined as awareness of facts or as practical skills, and may also refer to familiarity with objects or situations. Knowledge of facts, also called propositional knowledge, is often defined as true belief that is distinct from opinion or guesswork by virtue of justification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Knowledge</AbbreviatedIRI>
+        <Literal>Knowledge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <AbbreviatedIRI>cbo:Outcome</AbbreviatedIRI>
+        <Literal>The final result of an activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:Outcome</AbbreviatedIRI>
+        <Literal>Outcome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:PerceivedValidity</AbbreviatedIRI>
+        <Literal>It assess the perceived validity of an object due to a perception activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>cbo:PerceivedValidity</AbbreviatedIRI>
+        <Literal>Perceived validity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:hasAttribute</AbbreviatedIRI>
+        <Literal>Connects an object to one of its attributes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Biased_investement</IRI>
+        <Literal>John continues  to invest based on his overconfident strategy, relying on the Illusion of Validity bias. Despite occasional market fluctuations, he attributes any success to his perceived expertise rather than considering the role of unpredictable factors or external influences.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Expert_investor</IRI>
+        <Literal>John, an hypotetical biased investor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Investor_PerceivedValidity</IRI>
+        <Literal>The investor&apos;s perception of validity in his previous knowledge and consequentially his predictions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Investor_predicting</IRI>
+        <Literal>The predicting process taken on by the investor to calculate the future possible outcome of his investement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Investorship_knowledge</IRI>
+        <Literal>The previous knowledge on the field which the investor owns and relies on.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Negative_outcome</IRI>
+        <Literal>The final result given by the investement choices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Positive_outcome</IRI>
+        <Literal>The positive outcome John expects to get as result of his predicting process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fs:Expectation</AbbreviatedIRI>
+        <Literal>Words in this frame have to do with a Cognizer believing that some Phenomenon will take place in the future. Some words in the frame (e.g. foresee.v) indicate that the Phenomenon is asserted also to be true, while others do not.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>fs:Expectation</AbbreviatedIRI>
+        <Literal>Expectation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fs:Identicality</AbbreviatedIRI>
+        <Literal>A Current_instance of a certain Type is under discussion. This instance is evaluated as being the same instance or a different instance from a Previous_instance encountered in a Previous_context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>fs:Identicality</AbbreviatedIRI>
+        <Literal>Identicality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fs:People</AbbreviatedIRI>
+        <Literal>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>fs:People</AbbreviatedIRI>
+        <Literal>People</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fs:Predicting</AbbreviatedIRI>
+        <Literal>A Speaker states or makes known a future Eventuality on the basis of some Evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>fs:Predicting</AbbreviatedIRI>
+        <Literal>Predicting</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
 
 
 

@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl"
      xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl"
      xmlns:fs="https://w3id.org/framester/data/framestercore"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
      xmlns:dbo="https://dbpedia.org/ontology/"
      xmlns:dbr="https://dbpedia.org/resource/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -13,9 +14,7 @@
      xmlns:term="http://modellingdh.github.io/ont/odp/term/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:partof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
-     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
-     xmlns:CognitiveBiasOntologies="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
-     xmlns:IllusoryOfCorrelationOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#">
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl">
         <terms:created>February 2024</terms:created>
         <terms:creator>Corrado Consiglio</terms:creator>
@@ -565,7 +564,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
         <term:inActivity rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#Baseball_Match"/>
-        <CognitiveBiasOntologies:isPerceivedAs rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern"/>
+        <cbo:isPerceivedAs rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesPattern"/>
         <rdfs:comment>An individual representing the person&apos;s cognitive process of becoming aware of something.</rdfs:comment>
         <rdfs:label>Trend Awareness</rdfs:label>
     </owl:NamedIndividual>
@@ -577,7 +576,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#VariablesCorrelation">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
         <term:isReflectionOn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#TrendAwareness"/>
-        <CognitiveBiasOntologies:hasEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect"/>
+        <cbo:hasEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl#IllusionEffect"/>
         <rdfs:comment>An individual representing the possible correlation between the variables of the pattern detected as part of a trend.</rdfs:comment>
         <rdfs:label>Variables Correlation</rdfs:label>
     </owl:NamedIndividual>

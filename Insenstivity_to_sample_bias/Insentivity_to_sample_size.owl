@@ -6,10 +6,10 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size">
-    <Prefix name="" IRI="http://www.semanticweb.org/salva/ontologies/2024/2/untitled-ontology-22/"/>
+    <Prefix name="" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size"/>
     <Prefix name="fs" IRI="https://w3id.org/framester/data/framestercore/"/>
     <Prefix name="aff" IRI="https://w3id.org/affectedBy"/>
-    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -69,13 +69,46 @@ Our intuition struggles with the complex relationship between sample size and st
         <Literal>https://w3id.org/framester/data/framestercore/</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Activity"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="fs:Assessing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:BecomingAware"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Pattern"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:People"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Predicting"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Probability"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Sequence"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
@@ -121,39 +154,6 @@ Our intuition struggles with the complex relationship between sample size and st
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#user_story"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Activity"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:PerceptionExperience"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Predicting"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Deciding"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Sequence"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:People"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Probability"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:BecomingAware"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Pattern"/>
     </Declaration>
     <DisjointClasses>
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>

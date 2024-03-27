@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl">
-    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/2/untitled-ontology-23/"/>
+    <Prefix name="" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism/"/>
     <Prefix name="fs" IRI="https://w3id.org/framester/data/framestercore/"/>
     <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"/>
     <Prefix name="dbr" IRI="https://dbpedia.org/resource/"/>
@@ -99,6 +99,9 @@
         <Class abbreviatedIRI="fs:Activity"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="fs:Assessing"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="fs:BecomingAware"/>
     </Declaration>
     <Declaration>
@@ -166,9 +169,6 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#scenarios"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Assessing"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="move:PhysicalObject"/>
