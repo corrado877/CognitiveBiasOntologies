@@ -154,8 +154,8 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature"/>
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecognizablePattern"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -222,7 +222,6 @@
                     <rdf:Description rdf:about="https://dbpedia.org/resource/Entity"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
-                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>

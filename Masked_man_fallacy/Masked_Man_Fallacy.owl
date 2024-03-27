@@ -354,7 +354,6 @@
             <Class abbreviatedIRI="dbr:Entity"/>
             <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
             <Class abbreviatedIRI="cbo:MemoryEncoding"/>
-            <Class abbreviatedIRI="cbo:Non-humanEntity"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>

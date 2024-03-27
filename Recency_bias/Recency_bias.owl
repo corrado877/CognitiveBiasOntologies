@@ -75,6 +75,9 @@
         <Literal>In a job interview, a candidate performs exceptionally well in the final part of the interview. The interviewer, influenced by the Recency Bias, places disproportionate weight on this recent performance and is more likely to remember it and give it more significance in the evaluation, potentially overlooking earlier parts of the interview.</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="dbr:Entity"/>
     </Declaration>
     <Declaration>
@@ -112,6 +115,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
@@ -232,12 +238,6 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#scenarios"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
     </Declaration>
     <EquivalentClasses>
         <Class abbreviatedIRI="cbo:HighImportance"/>
@@ -564,7 +564,6 @@
             <Class abbreviatedIRI="dbr:Entity"/>
             <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
             <Class abbreviatedIRI="cbo:MemoryEncoding"/>
-            <Class abbreviatedIRI="cbo:Non-humanEntity"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>

@@ -99,6 +99,9 @@
         <Class abbreviatedIRI="fs:CognitiveConnection"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="fs:Deciding"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="fs:People"/>
     </Declaration>
     <Declaration>
@@ -153,7 +156,7 @@
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="fs:Deciding"/>
+        <Class abbreviatedIRI="fs:Pattern"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="move:PhysicalObject"/>
@@ -170,6 +173,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="dbr:Plant"/>
         <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+        <Class abbreviatedIRI="dbr:Entity"/>
     </SubClassOf>
     <ClassAssertion>
         <Class abbreviatedIRI="fs:People"/>
@@ -235,9 +242,9 @@
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="term:producedObservation"/>
         <ObjectUnionOf>
+            <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
             <Class abbreviatedIRI="cbo:Non-humanEntity"/>
             <Class abbreviatedIRI="cbo:Variables"/>
-            <Class abbreviatedIRI="cbo:VisualStimulus"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -268,8 +275,8 @@
         <ObjectProperty abbreviatedIRI="term:producedObservation"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="cbo:HumanFeature"/>
-            <Class abbreviatedIRI="cbo:RecognizablePattern"/>
             <Class abbreviatedIRI="fs:CognitiveConnection"/>
+            <Class abbreviatedIRI="fs:Pattern"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -278,7 +285,6 @@
             <Class abbreviatedIRI="dbr:Entity"/>
             <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
             <Class abbreviatedIRI="cbo:MemoryEncoding"/>
-            <Class abbreviatedIRI="cbo:Non-humanEntity"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <AnnotationAssertion>
