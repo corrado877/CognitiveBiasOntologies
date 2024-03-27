@@ -72,6 +72,9 @@
         <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="cbo:Feature"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="cbo:HumanFeature"/>
     </Declaration>
     <Declaration>
@@ -156,6 +159,9 @@
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="fs:ExperiencerObj"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="fs:Pattern"/>
     </Declaration>
     <SubClassOf>
@@ -173,6 +179,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="dbr:Plant"/>
         <Class abbreviatedIRI="cbo:Non-humanEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="cbo:HumanFeature"/>
+        <Class abbreviatedIRI="cbo:Feature"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="cbo:Non-humanEntity"/>
@@ -245,6 +255,7 @@
             <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
             <Class abbreviatedIRI="cbo:Non-humanEntity"/>
             <Class abbreviatedIRI="cbo:Variables"/>
+            <Class abbreviatedIRI="fs:ExperiencerObj"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -258,6 +269,7 @@
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <ObjectUnionOf>
             <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+            <Class abbreviatedIRI="fs:Activity"/>
             <Class abbreviatedIRI="fs:BecomingAware"/>
             <Class abbreviatedIRI="fs:Deciding"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>
@@ -285,6 +297,7 @@
             <Class abbreviatedIRI="dbr:Entity"/>
             <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
             <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class abbreviatedIRI="fs:ExperiencerObj"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <AnnotationAssertion>

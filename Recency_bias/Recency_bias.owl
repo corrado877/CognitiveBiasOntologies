@@ -239,6 +239,9 @@
     <Declaration>
         <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#scenarios"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+    </Declaration>
     <EquivalentClasses>
         <Class abbreviatedIRI="cbo:HighImportance"/>
         <ObjectIntersectionOf>
@@ -495,6 +498,7 @@
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <ObjectUnionOf>
             <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
@@ -564,6 +568,7 @@
             <Class abbreviatedIRI="dbr:Entity"/>
             <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
             <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>

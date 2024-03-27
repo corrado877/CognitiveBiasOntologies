@@ -136,6 +136,54 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     
 
 
+    <!-- http://modellingdh.github.io/ont/odp/term/isEngagedIn -->
+
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/isEngagedIn">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://modellingdh.github.io/ont/odp/term/producedObservation -->
+
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/producedObservation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>This property can be used to denote that something is (even indirectly, not necessary through direct reflection) responsible for the existence of an observation.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/ontology/cco/core#belief -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/cco/core#belief">
@@ -156,32 +204,28 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology#cbo:involves -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology#cbo:involves">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#involves">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://dbpedia.org/resource/Entity"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment>a property that links the cognitive process of creating the perception of an experience and the experience to which it is linked to.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#exob:isEngagedIn -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#exob:isEngagedIn">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
-        <rdfs:comment>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#exob:producesObservation -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml#exob:producesObservation">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
-        <rdfs:comment>This property can be used to denote that something is (even indirectly, not necessary through direct reflection) responsible for the existence of an observation.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -194,6 +238,48 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.ontology.se/odp/content/owl/Action.owl#Action -->
+
+    <owl:Class rdf:about="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    
+
+
+    <!-- https://dbpedia.org/resource/Entity -->
+
+    <owl:Class rdf:about="https://dbpedia.org/resource/Entity"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
     
 
 
@@ -218,6 +304,12 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
     <!-- https://w3id.org/framester/data/framestercore/CognitiveConnection -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Deciding -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
     
 
 
@@ -263,6 +355,12 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
         <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Predicting -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
     
 
 
@@ -313,8 +411,8 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Subject">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Person"/>
+        <term:isEngagedIn rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Losing_weight"/>
         <cco:belief rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Friend_lost_weight"/>
-        <exob1:isEngagedIn rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Losing_weight"/>
     </owl:NamedIndividual>
     
 
@@ -323,7 +421,7 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Working_diet">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-        <cbo2:involves rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#friend_losing_weight"/>
+        <CognitiveBiasOntologies:involves rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#friend_losing_weight"/>
     </owl:NamedIndividual>
     
 
@@ -332,7 +430,7 @@ While anecdotes can be powerful and emotionally compelling, they are not necessa
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#friend_losing_weight">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
-        <exob1:producesObservation rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Diet_works"/>
+        <term:producedObservation rdf:resource="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#Diet_works"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
