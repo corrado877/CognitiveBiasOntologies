@@ -14,9 +14,10 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="exob" IRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml"/>
     <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="term" IRI="http://modellingdh.github.io/ont/odp/term/"/>
+    <Prefix name="actspec" IRI="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"/>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
         <Literal>27/02/2024</Literal>
@@ -114,10 +115,10 @@ Our intuition struggles with the complex relationship between sample size and st
         <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/inActivity"/>
+        <ObjectProperty abbreviatedIRI="term:inActivity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#have_knowledge"/>
@@ -181,7 +182,7 @@ Our intuition struggles with the complex relationship between sample size and st
         <NamedIndividual IRI="#Game_review"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/inActivity"/>
+        <ObjectProperty abbreviatedIRI="term:inActivity"/>
         <NamedIndividual IRI="#Game_choice"/>
         <NamedIndividual IRI="#Game_bought"/>
     </ObjectPropertyAssertion>
@@ -191,7 +192,7 @@ Our intuition struggles with the complex relationship between sample size and st
         <NamedIndividual IRI="#Game_bought"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <NamedIndividual IRI="#Me"/>
         <NamedIndividual IRI="#Game_choice"/>
     </ObjectPropertyAssertion>
@@ -201,11 +202,11 @@ Our intuition struggles with the complex relationship between sample size and st
         <NamedIndividual IRI="#Game_review"/>
     </ObjectPropertyAssertion>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/inActivity"/>
+        <ObjectProperty abbreviatedIRI="term:inActivity"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/inActivity"/>
+        <ObjectProperty abbreviatedIRI="term:inActivity"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="fs:Assessing"/>
             <Class abbreviatedIRI="fs:BecomingAware"/>
@@ -215,7 +216,7 @@ Our intuition struggles with the complex relationship between sample size and st
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <Class abbreviatedIRI="fs:People"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -232,14 +233,14 @@ Our intuition struggles with the complex relationship between sample size and st
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/inActivity"/>
+        <ObjectProperty abbreviatedIRI="term:inActivity"/>
         <ObjectUnionOf>
             <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
             <Class abbreviatedIRI="fs:Activity"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
+        <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <ObjectUnionOf>
             <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
             <Class abbreviatedIRI="fs:Activity"/>
@@ -265,12 +266,12 @@ Our intuition struggles with the complex relationship between sample size and st
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://modellingdh.github.io/ont/odp/term/inActivity</IRI>
+        <AbbreviatedIRI>term:inActivity</AbbreviatedIRI>
         <Literal>what activity/ies are affecting or affected by a certain engagement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://modellingdh.github.io/ont/odp/term/isEngagedIn</IRI>
+        <AbbreviatedIRI>term:isEngagedIn</AbbreviatedIRI>
         <Literal>Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
