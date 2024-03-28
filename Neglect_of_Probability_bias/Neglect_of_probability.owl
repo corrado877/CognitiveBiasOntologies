@@ -2,44 +2,33 @@
 <rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias/"
      xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias/"
      xmlns:fs="https://w3id.org/framester/data/framestercore/"
-     xmlns:aff="https://w3id.org/affectedBy"
-     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology"
+     xmlns:aff="https://w3id.org/affectedBy#"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:aff2="https://w3id.org/affectedBy#aff:"
-     xmlns:aff4="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#aff:"
-     xmlns:cbo1="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#cbo:"
-     xmlns:cbo2="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#cbo:"
-     xmlns:exob="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:term="http://modellingdh.github.io/ont/odp/term/"
-     xmlns:exob1="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml_#exob:"
-     xmlns:exob3="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#exob:"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
-     xmlns:affectedBy="https://w3id.org/affectedBy#"
-     xmlns:CognitiveBiasOntologies="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
-     xmlns:Neglect_of_probability_bias="http://www.semanticweb.org/salva/ontologies/2024/1/Neglect_of_probability_bias#"
-     xmlns:Neglect_of_probability_bias1="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#"
-     xmlns:Neglect_of_probability_bias2="https://github.com/corrado877/CognitiveBiasOntologies/blob/Neglect_of_probability_bias#">
+     xmlns:Neglect_of_probability_bias="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias">
         <terms:created>27/02/2024</terms:created>
         <terms:creator>Salvatore Di Marzo</terms:creator>
         <terms:description>Neglect of probability part of the Cognitive Bias Ontology</terms:description>
         <terms:title>Neglect of Probability Ontology</terms:title>
         <rdfs:comment>The neglect of probability bias is a type of cognitive bias that affects how we make decisions, particularly in situations with uncertainty. It boils down to this: a tendency to ignore the probabilities of different outcomes when making decisions, it happens because our brains are complex and sometimes take shortcuts. Considering probabilities takes effort, and sometimes we prioritize other factors like potential rewards or emotional impact. This bias can lead to poor decision-making, especially when dealing with risks and uncertainties. We might overlook likely negative outcomes or get overly fixated on unlikely but dramatic possibilities.</rdfs:comment>
-        <Neglect_of_probability_bias1:hascomponent>http://ontology.eil.utoronto.ca/icity/ActivitySpecification</Neglect_of_probability_bias1:hascomponent>
-        <Neglect_of_probability_bias1:hascomponent>http://xmlns.com/foaf/0.1/</Neglect_of_probability_bias1:hascomponent>
-        <Neglect_of_probability_bias1:hascomponent>https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology</Neglect_of_probability_bias1:hascomponent>
-        <Neglect_of_probability_bias1:hascomponent>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml</Neglect_of_probability_bias1:hascomponent>
-        <Neglect_of_probability_bias1:hascomponent>https://w3id.org/affectedBy</Neglect_of_probability_bias1:hascomponent>
-        <Neglect_of_probability_bias1:hascomponent>https://w3id.org/framester/data/framestercore/</Neglect_of_probability_bias1:hascomponent>
-        <Neglect_of_probability_bias1:user_story>The world whizzed by Amelia in a blur of emails, meetings, and looming deadlines. Each day felt like a sprint, with tasks piling up like dominoes ready to topple into chaos. But Amelia had a secret weapon - procrastination. While others fretted, she&apos;d glide through her mornings, savoring a leisurely coffee, lost in the latest meme video. &quot;There&apos;s plenty of time,&quot; she&apos;d reassure herself, &quot;the deadline is ages away.&quot;
+        <Neglect_of_probability_bias:hascomponent>http://ontology.eil.utoronto.ca/icity/ActivitySpecification</Neglect_of_probability_bias:hascomponent>
+        <Neglect_of_probability_bias:hascomponent>http://xmlns.com/foaf/0.1/</Neglect_of_probability_bias:hascomponent>
+        <Neglect_of_probability_bias:hascomponent>https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology</Neglect_of_probability_bias:hascomponent>
+        <Neglect_of_probability_bias:hascomponent>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml</Neglect_of_probability_bias:hascomponent>
+        <Neglect_of_probability_bias:hascomponent>https://w3id.org/affectedBy</Neglect_of_probability_bias:hascomponent>
+        <Neglect_of_probability_bias:hascomponent>https://w3id.org/framester/data/framestercore/</Neglect_of_probability_bias:hascomponent>
+        <Neglect_of_probability_bias:user_story>The world whizzed by Amelia in a blur of emails, meetings, and looming deadlines. Each day felt like a sprint, with tasks piling up like dominoes ready to topple into chaos. But Amelia had a secret weapon - procrastination. While others fretted, she&apos;d glide through her mornings, savoring a leisurely coffee, lost in the latest meme video. &quot;There&apos;s plenty of time,&quot; she&apos;d reassure herself, &quot;the deadline is ages away.&quot;
 But deadlines, like mythical dragons, had a way of sneaking up unexpectedly. One morning, the notification popped up - her major presentation, the one she&apos;d been casually pushing off like a dusty book, was due tomorrow. Panic clawed at her throat. The Improbable Dragon, as she&apos;d named her tendency to underestimate the urgency of tasks, had finally caught her.
-Frantic typing filled the night, fuelled by cold pizza and desperation. The once manageable presentation morphed into a monster, swallowing her confidence and sleep. By morning, she was a hollow shell, her eyes bloodshot, her voice hoarse. The presentation stumbled, riddled with errors and apologies. The consequences, once improbable, materialized - a lost opportunity, a damaged reputation, and a mountain of work to fix the mess.</Neglect_of_probability_bias1:user_story>
+Frantic typing filled the night, fuelled by cold pizza and desperation. The once manageable presentation morphed into a monster, swallowing her confidence and sleep. By morning, she was a hollow shell, her eyes bloodshot, her voice hoarse. The presentation stumbled, riddled with errors and apologies. The consequences, once improbable, materialized - a lost opportunity, a damaged reputation, and a mountain of work to fix the mess.</Neglect_of_probability_bias:user_story>
     </owl:Ontology>
     
 
@@ -334,7 +323,7 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Amelia">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
         <term:isEngagedIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Task_management"/>
-        <CognitiveBiasOntologies:have_knowledge rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Deadline"/>
+        <cbo:have_knowledge rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Deadline"/>
     </owl:NamedIndividual>
     
 
@@ -343,7 +332,7 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Deadline">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
-        <CognitiveBiasOntologies:decide rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Procrastinate"/>
+        <cbo:decide rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Procrastinate"/>
     </owl:NamedIndividual>
     
 
@@ -352,7 +341,7 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Job_presentation">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
-        <affectedBy:influencedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Procrastinate"/>
+        <aff:influencedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Procrastinate"/>
     </owl:NamedIndividual>
     
 
