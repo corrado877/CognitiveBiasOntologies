@@ -2,21 +2,19 @@
 <rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion/"
      xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion/"
      xmlns:fs="https://w3id.org/framester/data/framestercore/"
-     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
      xmlns:dbo="https://dbpedia.org/page/Illusion"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:exob="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:term="http://modellingdh.github.io/ont/odp/term/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
-     xmlns:Clustering_illusion="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#"
-     xmlns:CognitiveBiasOntologies="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#">
+     xmlns:Clustering_illusion="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion">
         <terms:created>27-02-2024</terms:created>
         <terms:creator>Salvatore Di Marzo</terms:creator>
@@ -384,7 +382,7 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern">
         <rdf:type rdf:resource="https://dbpedia.org/page/Illusion"/>
-        <CognitiveBiasOntologies:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Consecutive_digits"/>
+        <cbo:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Consecutive_digits"/>
     </owl:NamedIndividual>
     
 
@@ -393,7 +391,7 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Lottery">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Activity"/>
-        <CognitiveBiasOntologies:creates rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern"/>
+        <cbo:creates rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#Illusion_pattern"/>
     </owl:NamedIndividual>
     
 
