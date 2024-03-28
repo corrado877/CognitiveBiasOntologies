@@ -32,7 +32,6 @@
      xmlns:Neglect_of_probability_bias="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#"
      xmlns:Insensitivity_to_sample_size="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion">
-        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#"/>
         <terms:created>27-02-2024</terms:created>
         <terms:creator>Salvatore Di Marzo</terms:creator>
         <terms:description>Clustering illusion part of the Cognitive Bias ontology</terms:description>
@@ -264,6 +263,48 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
     
 
 
+    <!-- https://dbpedia.org/resource/Entity -->
+
+    <owl:Class rdf:about="https://dbpedia.org/resource/Entity"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#HumanFeature"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
+    
+
+
     <!-- https://w3id.org/framester/data/framestercore/Activity -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity">
@@ -271,6 +312,24 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Assessing -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/BecomingAware -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/CognitiveConnection -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
     
 
 
@@ -288,6 +347,24 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/People -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/PerceptionExperience -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Sequence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
     
 
 
