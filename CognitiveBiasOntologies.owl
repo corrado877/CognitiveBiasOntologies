@@ -11,7 +11,7 @@
      xmlns:RecencyBias="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#"
      xmlns:Anthropomorphism="https://github.com/corrado877/CognitiveBiasOntologies/Anthropomorphism#"
      xmlns:Anecdotal_fallacy="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#"
-     xmlns:Anthropomorphism3="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#"
+     xmlns:Anthropomorphism1="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#"
      xmlns:Masked_Man_Fallacy="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#"
      xmlns:Masked_man_fallacy="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_man_fallacy.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
