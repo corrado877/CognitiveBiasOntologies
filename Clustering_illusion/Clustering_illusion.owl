@@ -15,8 +15,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
-     xmlns:Clustering_illusion="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#"
-     xmlns:Clustering_illusion1="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#"
+     xmlns:Clustering_illusion="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#"
      xmlns:CognitiveBiasOntologies="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion">
         <terms:created>27-02-2024</terms:created>
@@ -24,14 +23,14 @@
         <terms:description>Clustering illusion part of the Cognitive Bias ontology</terms:description>
         <terms:title>Clustering Illusion Ontology</terms:title>
         <rdfs:comment>The clustering illusion is a cognitive bias that involves perceiving patterns or clusters in random or unrelated data. People tend to see patterns where none actually exist, and this can lead to incorrect interpretations of information. This bias arises from the human brain&apos;s natural inclination to seek order and make sense of the world, individuals may perceive random events or data points as part of a meaningful pattern or trend. This can occur when there is no actual correlation or connection between the observed elements. The clustering illusion can impact decision-making and judgments, as individuals may base their conclusions on perceived patterns that are not statistically significant or meaningful.</rdfs:comment>
-        <Clustering_illusion1:hasComponent>http://ontology.eil.utoronto.ca/icity/ActivitySpecification</Clustering_illusion1:hasComponent>
-        <Clustering_illusion1:hasComponent>http://xmlns.com/foaf/0.1/</Clustering_illusion1:hasComponent>
-        <Clustering_illusion1:hasComponent>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml</Clustering_illusion1:hasComponent>
-        <Clustering_illusion1:hasComponent>https://w3id.org/framester/data/framestercore/</Clustering_illusion1:hasComponent>
-        <Clustering_illusion1:user_story>Sarah, a regular lottery who enjoys testing her luck with weekly ticket purchases. Over the past month, Sarah notices a curious pattern emerging in the winning numbers of the local lottery. She observes that the winning numbers often consist of consecutive digits, such as 12, 13, 14, or alternating pairs like 5 and 7.
+        <Clustering_illusion:hasComponent>http://ontology.eil.utoronto.ca/icity/ActivitySpecification</Clustering_illusion:hasComponent>
+        <Clustering_illusion:hasComponent>http://xmlns.com/foaf/0.1/</Clustering_illusion:hasComponent>
+        <Clustering_illusion:hasComponent>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml</Clustering_illusion:hasComponent>
+        <Clustering_illusion:hasComponent>https://w3id.org/framester/data/framestercore/</Clustering_illusion:hasComponent>
+        <Clustering_illusion:user_story>Sarah, a regular lottery who enjoys testing her luck with weekly ticket purchases. Over the past month, Sarah notices a curious pattern emerging in the winning numbers of the local lottery. She observes that the winning numbers often consist of consecutive digits, such as 12, 13, 14, or alternating pairs like 5 and 7.
 Excited by this apparent pattern, Sarah starts to develop a theory that the lottery draws are not entirely random. She begins meticulously analysing past winning numbers, searching for more evidence to support her hypothesis. With each new draw, Sarah eagerly checks the results, hoping to uncover additional patterns or trends.
 As the weeks pass, Sarah becomes increasingly convinced that she has cracked the code to winning the lottery. She starts sharing her findings with friends and family, boasting about her newfound strategy for picking winning numbers. Some of her acquaintances start to believe in Sarah&apos;s theory, intrigued by the apparent predictability of the lottery draws.
-Sarah decides to invest more money into buying lottery tickets, confident that her strategy will lead to big wins. However, despite her efforts, Sarah&apos;s luck doesn&apos;t seem to improve. She continues to match only a few numbers here and there, never coming close to hitting the jackpot.</Clustering_illusion1:user_story>
+Sarah decides to invest more money into buying lottery tickets, confident that her strategy will lead to big wins. However, despite her efforts, Sarah&apos;s luck doesn&apos;t seem to improve. She continues to match only a few numbers here and there, never coming close to hitting the jackpot.</Clustering_illusion:user_story>
     </owl:Ontology>
     
 
