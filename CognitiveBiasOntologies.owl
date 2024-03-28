@@ -13,7 +13,6 @@
      xmlns:Anecdotal_fallacy="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#"
      xmlns:Anecdotal_fallacy1="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy/"
      xmlns:Masked_Man_Fallacy="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#"
-     xmlns:Masked_man_fallacy="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_man_fallacy.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
      xmlns:Clustering_illusion="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#"
      xmlns:Illusion_of_validity="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#"
