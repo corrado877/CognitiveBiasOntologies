@@ -8,29 +8,16 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:cbo1="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/cbo:"
-     xmlns:cbo2="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#cbo:"
      xmlns:exob="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:term="http://modellingdh.github.io/ont/odp/term/"
-     xmlns:exob1="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#exob:"
-     xmlns:exob2="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml/exob:"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
-     xmlns:RecencyBias="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#"
-     xmlns:Anthropomorphism="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#"
-     xmlns:Anecdotal_fallacy="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#"
-     xmlns:Masked_Man_Fallacy="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
      xmlns:Clustering_illusion="https://github.com/corrado877/CognitiveBiasOntologies/blob/Clustering_illusion#"
-     xmlns:clustering_illusion="http://www.semanticweb.org/salva/ontologies/2024/1/clustering_illusion#"
      xmlns:Clustering_illusion1="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#"
-     xmlns:Illusion_of_validity="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#"
-     xmlns:CognitiveBiasOntologies="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
-     xmlns:GamblersFallacyOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#"
-     xmlns:Neglect_of_probability_bias="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#"
-     xmlns:Insensitivity_to_sample_size="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#">
+     xmlns:CognitiveBiasOntologies="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion">
         <terms:created>27-02-2024</terms:created>
         <terms:creator>Salvatore Di Marzo</terms:creator>
