@@ -3,7 +3,7 @@
      xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl/"
      xmlns:fs="https://w3id.org/framester/data/framestercore/"
      xmlns:aff="https://w3id.org/affectedBy#"
-     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
      xmlns:cco="http://purl.org/ontology/cco/core#"
      xmlns:dbr="https://dbpedia.org/resource/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -17,8 +17,7 @@
      xmlns:partof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
      xmlns:parameter="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"
      xmlns:participation="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
-     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
-     xmlns:CognitiveBiasOntologies="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#">
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl">
         <terms:created>February 2024</terms:created>
         <terms:creator>Corrado Consiglio</terms:creator>
@@ -628,7 +627,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#NextChance-BasedOccurence"/>
         <parameter:hasParameter rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#ProbabilityLevel"/>
-        <CognitiveBiasOntologies:producesOutcomeEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet"/>
+        <cbo:producesOutcomeEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet"/>
         <rdfs:comment>An individual for the next chance-based occurence class such as a Footbal Team Match Bet where the probability level is not completely random and can be influenced by different external and/or internal elements of the game itself.</rdfs:comment>
         <rdfs:label>Football Team Match Bet</rdfs:label>
     </owl:NamedIndividual>
@@ -640,7 +639,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <prov:wasGeneratedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bets"/>
-        <CognitiveBiasOntologies:hasOutcomeEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet"/>
+        <cbo:hasOutcomeEffect rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Winning_Bet"/>
         <rdfs:comment>a sequence of past bets that have the same outcome effect, namely in this case a Winning Bet.</rdfs:comment>
         <rdfs:label>Football Team Match Bet Series</rdfs:label>
     </owl:NamedIndividual>
@@ -677,7 +676,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Sport_Bettor">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Bettor.n.1"/>
         <cco:belief rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet_Series"/>
-        <CognitiveBiasOntologies:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet"/>
+        <cbo:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl#Football_Team_Match_Bet"/>
         <rdfs:comment>A sport Bettor individual who is participating in an Activity such as Sport Bets</rdfs:comment>
         <rdfs:label>Sport Bettor</rdfs:label>
     </owl:NamedIndividual>
