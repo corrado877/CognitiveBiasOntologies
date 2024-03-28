@@ -13,19 +13,20 @@
      xmlns:term="http://modellingdh.github.io/ont/odp/term/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:actspec="http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
-     xmlns:Anecdotal_fallacy="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#">
+     xmlns:Anecdotal_fallacy="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy#"
+     xmlns:Anecdotal_fallacy1="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy">
         <terms:created>27/02/2024</terms:created>
         <terms:creator>Salvatore Di Marzo</terms:creator>
         <terms:description>Anecdotal fallacy part of the Cognitive Bias Ontology</terms:description>
         <terms:title>Anecdotal Fallacy ontology</terms:title>
-        <Anecdotal_fallacy:hascomponent>http://ontology.eil.utoronto.ca/icity/ActivitySpecification</Anecdotal_fallacy:hascomponent>
-        <Anecdotal_fallacy:hascomponent>http://purl.org/ontology/cco/core#</Anecdotal_fallacy:hascomponent>
-        <Anecdotal_fallacy:hascomponent>http://xmlns.com/foaf/0.1/</Anecdotal_fallacy:hascomponent>
-        <Anecdotal_fallacy:hascomponent>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml</Anecdotal_fallacy:hascomponent>
-        <Anecdotal_fallacy:hascomponent>https://w3id.org/framester/data/framestercore/</Anecdotal_fallacy:hascomponent>
-        <Anecdotal_fallacy:user_story>As a health-conscious individual, I want to adopt a new diet plan, so that I can achieve my weight loss goals. I will start researching different diet plans available in the market. I come across a testimonial from a friend who claims to have lost a significant amount of weight using the &quot;SuperShred&quot; diet plan. Intrigued by the success story, I decide to follow the &quot;SuperShred&quot; diet plan based on my friend&apos;s positive experience. I diligently adhere to the diet plan for a month, documenting my meals and progress.
-At the end of the month, I notice a minimal change in my weight, and I share my experience with others, advocating for the effectiveness of the &quot;SuperShred&quot; diet. However, I fail to consider that individual responses to diet plans can vary, and factors such as metabolism, lifestyle, and overall health play a significant role. Without consulting broader nutritional guidelines or seeking professional advice, I continue promoting the &quot;SuperShred&quot; diet solely based on my personal experience. Over time, I encounter challenges or negative effects that were not apparent in the short term, but I attribute these solely to individual variations rather than considering a more comprehensive understanding of nutrition.</Anecdotal_fallacy:user_story>
+        <Anecdotal_fallacy1:hascomponent>http://ontology.eil.utoronto.ca/icity/ActivitySpecification</Anecdotal_fallacy1:hascomponent>
+        <Anecdotal_fallacy1:hascomponent>http://purl.org/ontology/cco/core#</Anecdotal_fallacy1:hascomponent>
+        <Anecdotal_fallacy1:hascomponent>http://xmlns.com/foaf/0.1/</Anecdotal_fallacy1:hascomponent>
+        <Anecdotal_fallacy1:hascomponent>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml</Anecdotal_fallacy1:hascomponent>
+        <Anecdotal_fallacy1:hascomponent>https://w3id.org/framester/data/framestercore/</Anecdotal_fallacy1:hascomponent>
+        <Anecdotal_fallacy1:user_story>As a health-conscious individual, I want to adopt a new diet plan, so that I can achieve my weight loss goals. I will start researching different diet plans available in the market. I come across a testimonial from a friend who claims to have lost a significant amount of weight using the &quot;SuperShred&quot; diet plan. Intrigued by the success story, I decide to follow the &quot;SuperShred&quot; diet plan based on my friend&apos;s positive experience. I diligently adhere to the diet plan for a month, documenting my meals and progress.
+At the end of the month, I notice a minimal change in my weight, and I share my experience with others, advocating for the effectiveness of the &quot;SuperShred&quot; diet. However, I fail to consider that individual responses to diet plans can vary, and factors such as metabolism, lifestyle, and overall health play a significant role. Without consulting broader nutritional guidelines or seeking professional advice, I continue promoting the &quot;SuperShred&quot; diet solely based on my personal experience. Over time, I encounter challenges or negative effects that were not apparent in the short term, but I attribute these solely to individual variations rather than considering a more comprehensive understanding of nutrition.</Anecdotal_fallacy1:user_story>
         <rdfs:comment>The anecdotal fallacy, also known as the anecdotal evidence or personal anecdote fallacy, occurs when someone relies on personal experiences or isolated examples instead of considering a broader range of evidence or statistical data. This bias involves drawing conclusions based on a single or a few examples rather than looking at the larger picture.
 While anecdotes can be powerful and emotionally compelling, they are not necessarily representative of the general reality or the overall trend. It&apos;s important to recognize that individual experiences can vary widely, and relying solely on anecdotes may lead to inaccurate or biased conclusions.</rdfs:comment>
     </owl:Ontology>
