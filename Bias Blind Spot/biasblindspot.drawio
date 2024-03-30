@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-30T09:37:55.510Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="02KHfxvffn6P9VVQ5dvI" version="24.2.0" type="device">
+<mxfile host="app.diagrams.net" modified="2024-03-30T09:55:40.850Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="uM_GjFrh6IJfZVRUJ2xr" version="24.2.0" type="device">
   <diagram name="Pagina-1" id="HFBq8TWeeh5PpPk9U9fV">
     <mxGraphModel dx="5731" dy="3869" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -12,7 +12,7 @@
             <mxRectangle x="-550" y="110" width="100" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <UserObject label="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;aff&lt;/b&gt;:&amp;nbsp;https://w3id.org/affectedBy&lt;br&gt;&lt;b&gt;cbo&lt;/b&gt;:https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;cco:&amp;nbsp;&lt;/b&gt;http://purl.org/ontology/cco/core#&lt;br&gt;&lt;b&gt;fs&lt;/b&gt;:https://w3id.org/framester/data/framestercore/&lt;div&gt;&lt;b&gt;exob&lt;/b&gt;:&amp;nbsp;http://modellingdh.github.io/ont/odp/term/&lt;br&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" link="http://www.w3.org/2000/01/rdf-schema#" id="1ymDKVJyyys7Fd_h18oq-9">
+        <UserObject label="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;aff&lt;/b&gt;:&amp;nbsp;https://w3id.org/affectedBy&lt;br&gt;&lt;b&gt;cbo&lt;/b&gt;:https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;cco:&amp;nbsp;&lt;/b&gt;http://purl.org/ontology/cco/core#&lt;br&gt;&lt;b&gt;fs&lt;/b&gt;:https://w3id.org/framester/data/framestercore/&lt;div&gt;&lt;b&gt;fsyn&lt;/b&gt;:&lt;br&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;exob&lt;/b&gt;:&amp;nbsp;http://modellingdh.github.io/ont/odp/term/&lt;br&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" link="http://www.w3.org/2000/01/rdf-schema#" id="1ymDKVJyyys7Fd_h18oq-9">
           <mxCell style="text;whiteSpace=wrap;html=1;" parent="1ymDKVJyyys7Fd_h18oq-8" vertex="1">
             <mxGeometry x="10" y="20" width="690" height="180" as="geometry" />
           </mxCell>
@@ -76,7 +76,7 @@
         <mxCell id="1ymDKVJyyys7Fd_h18oq-39" value="fs:MentalProperty&#xa;(decision)" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="521" y="234" width="110" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="1ymDKVJyyys7Fd_h18oq-40" value="cbo:Belief" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="1ymDKVJyyys7Fd_h18oq-40" value="fsyn:Belief" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="510.5" y="360" width="131" height="54" as="geometry" />
         </mxCell>
         <mxCell id="1ymDKVJyyys7Fd_h18oq-41" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.336;exitY=0.989;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="1ymDKVJyyys7Fd_h18oq-12" edge="1">
