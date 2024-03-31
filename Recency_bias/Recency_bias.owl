@@ -120,6 +120,9 @@
         <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
     </Declaration>
     <Declaration>
@@ -177,19 +180,19 @@
         <ObjectProperty abbreviatedIRI="parameter:hasParameter"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
+        <ObjectProperty abbreviatedIRI="sequence:follows"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
+        <ObjectProperty abbreviatedIRI="sequence:precedes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="cbo:involves"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#follows"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
@@ -244,9 +247,6 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#scenarios"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
     </Declaration>
     <EquivalentClasses>
         <Class abbreviatedIRI="cbo:HighImportance"/>
@@ -379,7 +379,7 @@
         <NamedIndividual IRI="#Importance"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
+        <ObjectProperty abbreviatedIRI="sequence:precedes"/>
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Past_memory"/>
         <NamedIndividual IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory"/>
     </ObjectPropertyAssertion>
@@ -428,8 +428,8 @@
         <ObjectProperty abbreviatedIRI="classification:isClassifiedBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
-        <ObjectProperty IRI="#follows"/>
+        <ObjectProperty abbreviatedIRI="sequence:follows"/>
+        <ObjectProperty abbreviatedIRI="sequence:precedes"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
@@ -469,6 +469,14 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sequence:follows"/>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sequence:precedes"/>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="cbo:MemoryEncoding"/>
@@ -477,10 +485,6 @@
             <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
         </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
-        <Class abbreviatedIRI="cbo:PastMemory"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
@@ -496,10 +500,6 @@
             <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
         </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#follows"/>
-        <Class abbreviatedIRI="cbo:RecentMemory"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
@@ -550,6 +550,14 @@
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sequence:follows"/>
+        <Class abbreviatedIRI="cbo:PastMemory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sequence:precedes"/>
+        <Class abbreviatedIRI="cbo:RecentMemory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="https://dbpedia.org/ontology/produces"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="cbo:Decision"/>
@@ -558,10 +566,6 @@
             <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
         </ObjectUnionOf>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes"/>
-        <Class abbreviatedIRI="cbo:RecentMemory"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
@@ -578,10 +582,6 @@
             <Class abbreviatedIRI="cbo:MemoryEncoding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
         </ObjectUnionOf>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#follows"/>
-        <Class abbreviatedIRI="cbo:PastMemory"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="parameter:hasParameterDataValue"/>
@@ -625,6 +625,19 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>sequence:follows</AbbreviatedIRI>
+        <Literal>A relation between entities, expressing a &apos;sequence&apos; schema.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>sequence:precedes</AbbreviatedIRI>
+        <Literal>A relation between entities, expressing a &apos;sequence&apos; schema.
+E.g. &apos;year 1999 precedes 2000&apos;, &apos;deciding what coffee to use&apos; precedes &apos;preparing coffee&apos;, &apos;World War II follows World War I&apos;, &apos;in the Milan to Rome autoroute, Bologna precedes Florence&apos;, etc.
+
+It can then be used between tasks, processes, time intervals, spatially locate objects, situations, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://dbpedia.org/ontology/produces</IRI>
         <Literal>Define the relation between an activity and its produced outcome.</Literal>
     </AnnotationAssertion>
@@ -657,14 +670,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#Recent_memory</IRI>
         <Literal>The memory about the applicant performing really well in the really last part of the job interview.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#precedes</IRI>
-        <Literal>A relation between entities, expressing a &apos;sequence&apos; schema.
-E.g. &apos;year 1999 precedes 2000&apos;, &apos;deciding what coffee to use&apos; precedes &apos;preparing coffee&apos;, &apos;World War II follows World War I&apos;, &apos;in the Milan to Rome autoroute, Bologna precedes Florence&apos;, etc.
-
-It can then be used between tasks, processes, time intervals, spatially locate objects, situations, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -720,11 +725,6 @@ It can then be used between tasks, processes, time intervals, spatially locate o
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Importance</IRI>
         <Literal>The  value the interviewer gives to some memoryes at the expense of others</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#follows</IRI>
-        <Literal>A relation between entities, expressing a &apos;sequence&apos; schema.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
