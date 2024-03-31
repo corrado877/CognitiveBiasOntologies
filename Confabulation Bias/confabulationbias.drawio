@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-30T11:49:58.794Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="W92Q4BE8BPeROn5DDaBU" version="24.2.0" type="device">
+<mxfile host="app.diagrams.net" modified="2024-03-31T11:33:44.318Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="ERcyo_mD4_LqhAhKrTsr" version="24.2.1" type="device">
   <diagram name="Pagina-1" id="0G4quoUfFxjJnNe_SFQl">
     <mxGraphModel dx="1050" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -44,12 +44,6 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="378.03" y="415.08183758898736" as="sourcePoint" />
             <mxPoint x="388.03" y="445" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="XtfrEUfdjqP_kEPiJ7kP-27" value="exob:isEngaged" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Times New Roman;fontSize=15;fontColor=#000080;fontStyle=0" parent="1" source="XtfrEUfdjqP_kEPiJ7kP-3" target="XtfrEUfdjqP_kEPiJ7kP-12" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="468.03" y="355" as="sourcePoint" />
-            <mxPoint x="529.03" y="415" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="XtfrEUfdjqP_kEPiJ7kP-33" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.107;exitY=1.083;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Okxn1Kt1UNBhTsFmlB15-3" target="XtfrEUfdjqP_kEPiJ7kP-5" edge="1">
@@ -132,6 +126,17 @@
         </mxCell>
         <mxCell id="Okxn1Kt1UNBhTsFmlB15-18" value="&quot;Fictional&quot;^^xsd:string&#xa;" style="graphMlID=n6;shape=parallelogram;fillColor=#ccffcc;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="498.03" y="795" width="183.49" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="mXpBniSFkrfGIzCwPSQa-1" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="XtfrEUfdjqP_kEPiJ7kP-3" target="XtfrEUfdjqP_kEPiJ7kP-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="300.08183758898736" as="sourcePoint" />
+            <mxPoint x="611" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mXpBniSFkrfGIzCwPSQa-2" value="&lt;span style=&quot;color: rgb(0 , 0 , 128) ; font-family: &amp;quot;dialog&amp;quot; ; font-size: 16px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;b&gt;exob&lt;/b&gt;:isEngagedIn&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="mXpBniSFkrfGIzCwPSQa-1">
+          <mxGeometry x="-0.0174" y="2" relative="1" as="geometry">
+            <mxPoint x="4" y="-2" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
