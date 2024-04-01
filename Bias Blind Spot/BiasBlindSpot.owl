@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal>20/03/2024</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal>Alice Picco</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal>Bias Blind Spot specification in the Cognitive Bias Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal>Bias Blind Spot Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#hascomponent"/>
+        <Literal>http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#hascomponent"/>
+        <Literal>http://purl.org/ontology/cco/core#</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#hascomponent"/>
+        <Literal>https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#hascomponent"/>
+        <Literal>https://w3id.org/affectedBy</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#hascomponent"/>
+        <Literal>https://w3id.org/framester/data/framestercore</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#userstory"/>
+        <Literal>As a product manager, Emily was tasked with prioritizing features for the upcoming software update. Wanting to ensure an objective and user-centric approach, she initiated a team discussion to gather input.
+Emily noticed that her colleague, Chris, passionately advocated for a feature related to data visualization, emphasizing its impact on user engagement. As the discussion progressed, Emily felt increasingly convinced that Chris&apos;s viewpoint was swayed by his personal interest in data visualization.
+However, during a later discussion, when Emily found herself advocating for a feature that streamlined workflow processes—a functionality she personally valued—she realized the potential bias in her own decision-making. It struck her that, just like Chris, her preferences and experiences were influencing her choices.
+Reflecting on this realization, Emily became more mindful of her own bias blind spot. She acknowledged the need to consider a broader range of user perspectives and experiences, recognizing that her personal preferences might not align with the diverse needs of the entire user base. This awareness prompted her to implement a more inclusive decision-making process for feature prioritization, ensuring a balanced consideration of different user needs and preferences.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Bias Blind Spot refers to the cognitive bias where individuals recognize and easily identify biases in others but fail to acknowledge or perceive their own cognitive biases. It involves the tendency to believe that one is less susceptible to biases than other people, leading individuals to overlook their own subjective judgments and assumptions. The bias blind spot can hinder self-awareness and critical reflection, potentially influencing decision-making, problem-solving, and interpersonal relationships. Recognizing and addressing the bias blind spot is essential for fostering a more accurate and unbiased understanding of one&apos;s own thought processes and behaviors.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Bias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Outcome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#People"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#aff:affectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:focusesOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:hasBiasedOpinion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:hasOutcome"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:isUnawareOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cco:hasBelief"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#exob:isEngagedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Belief"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bias"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Decision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emily"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Outcome"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#hascomponent"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#userstory"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Agent"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#People"/>
+    </SubClassOf>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:hasBiasedOpinion"/>
+        <NamedIndividual IRI="#Chris"/>
+        <NamedIndividual IRI="#Bias"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#aff:affectedBy"/>
+        <NamedIndividual IRI="#Decision"/>
+        <NamedIndividual IRI="#Belief"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:hasOutcome"/>
+        <NamedIndividual IRI="#Decision"/>
+        <NamedIndividual IRI="#Outcome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:focusesOn"/>
+        <NamedIndividual IRI="#Emily"/>
+        <NamedIndividual IRI="#Bias"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:isUnawareOf"/>
+        <NamedIndividual IRI="#Emily"/>
+        <NamedIndividual IRI="#Belief"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cco:hasBelief"/>
+        <NamedIndividual IRI="#Emily"/>
+        <NamedIndividual IRI="#Belief"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#exob:isEngagedIn"/>
+        <NamedIndividual IRI="#Emily"/>
+        <NamedIndividual IRI="#Decision"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#aff:affectedBy"/>
+        <NamedIndividual IRI="#Outcome"/>
+        <NamedIndividual IRI="#Belief"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#aff:affectedBy"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#aff:affectedBy"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Outcome"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:focusesOn"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:hasBiasedOpinion"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#People"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:hasOutcome"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:isUnawareOf"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cco:hasBelief"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#exob:isEngagedIn"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#aff:affectedBy"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:focusesOn"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Bias"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:hasBiasedOpinion"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Bias"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:hasOutcome"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Outcome"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cbo:isUnawareOf"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#cco:hasBelief"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#exob:isEngagedIn"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
