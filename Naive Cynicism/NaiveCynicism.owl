@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-25/"
+     xml:base="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-25/"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:exob="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#exob:"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:Cynicism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#">
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism">
+        <terms:created>20/03/2024</terms:created>
+        <terms:creator>Alice Picco</terms:creator>
+        <terms:description>Naive Cynicism specification of the Cognitive Bias Ontology</terms:description>
+        <terms:title>Naive Cynicism Ontology</terms:title>
+        <rdfs:comment>Naive cynicism is a cognitive bias characterized by the tendency to doubt others&apos; intentions and perceive actions as driven by selfish motives or ulterior motives, even in the absence of concrete evidence supporting such skepticism. Individuals exhibiting naive cynicism often display a general distrust of others, assuming that individuals or groups have hidden agendas, leading to a distorted and overly negative interpretation of people&apos;s behaviors or actions. This bias can hinder effective communication, collaboration, and relationship-building, as it contributes to an unwarranted suspicion of others&apos; motives.</rdfs:comment>
+        <Cynicism:hascomponent>http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation</Cynicism:hascomponent>
+        <Cynicism:hascomponent>https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism</Cynicism:hascomponent>
+        <Cynicism:hascomponent>https://w3id.org/framester/data/framestercore/</Cynicism:hascomponent>
+        <Cynicism:userstory>Sarah, having experienced similar challenges in the past, approaches Alex and offers her assistance. She suggests collaborating on specific tasks, sharing resources, and even providing guidance to ease the workload. Her intention is rooted in empathy and a desire to foster teamwork within the department.
+However, due to his naive cynicism, Alex, already stressed by the demanding project, interprets Sarah&apos;s generous offer with suspicion. He questions her motives, wondering if she&apos;s attempting to showcase her skills to gain favor with their manager or if there&apos;s an underlying agenda that might compromise his position on the project.
+Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to decline her offer, assuming that there must be hidden motives behind her willingness to help. This scenario illustrates how naive cynicism can hinder collaboration and prevent the positive outcomes that could arise from genuine acts of assistance and teamwork.</Cynicism:userstory>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#hascomponent -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#hascomponent"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#userstory -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#userstory"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:hasBiasedOpinion -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:hasBiasedOpinion">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#People"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Bias"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:hasOutcome -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:hasOutcome">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Event"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Outcome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:involves -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:involves">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Event"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:isPerceivedAs -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:isPerceivedAs">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:misjudges -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:misjudges">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Bias"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:receives -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:receives">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#People"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#exob:isEngagedIn -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#exob:isEngagedIn">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#People"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Malicious -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Malicious">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:isPerceivedAs"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Outcome"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Bias -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Bias"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Event -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Event"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Outcome -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Outcome"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#People -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#People"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#People"/>
+        <cbo:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism"/>
+        <cbo:receives rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"/>
+        <exob:isEngagedIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Event"/>
+        <cbo:hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer"/>
+        <cbo:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Bias"/>
+        <cbo:misjudges rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
