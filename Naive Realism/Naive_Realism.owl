@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26/"
+     xml:base="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:Realism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#"
+     xmlns:untitled-ontology-26="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26#">
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism">
+        <terms:created>20/03/2024</terms:created>
+        <terms:creator>Alice Picco</terms:creator>
+        <terms:description>Naive Realism specification of the Cognitive Bias Ontology</terms:description>
+        <terms:title>Naive Realism Ontology</terms:title>
+        <untitled-ontology-26:hascomponent>http://modellingdh.github.io/ont/odp/term</untitled-ontology-26:hascomponent>
+        <untitled-ontology-26:hascomponent>https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism</untitled-ontology-26:hascomponent>
+        <untitled-ontology-26:hascomponent>https://purl.org/ontology/cco/core#</untitled-ontology-26:hascomponent>
+        <untitled-ontology-26:hascomponent>https://w3id.org/affectedBy</untitled-ontology-26:hascomponent>
+        <untitled-ontology-26:hascomponent>https://w3id.org/framester/data/framestercore</untitled-ontology-26:hascomponent>
+        <untitled-ontology-26:hascomponent>https://w3id.org/framester/data/framestersyn</untitled-ontology-26:hascomponent>
+        <rdfs:comment>Naive realism is a cognitive bias characterized by the belief that one&apos;s perception of reality is objective, accurate, and unbiased. Individuals exhibiting naive realism assume that they see the world as it truly is, and they often expect others to share the same perception. This bias can lead to the misconception that one&apos;s perspective is the only valid viewpoint, overlooking the subjective nature of perception and the fact that others may interpret and experience reality differently. Naive realism can contribute to misunderstandings, conflicts, and a lack of empathy as individuals may struggle to appreciate alternative perspectives.</rdfs:comment>
+        <Realism:userstory>Maria, rooted in her cultural traditions, suggests a lively and dynamic event featuring music and dance styles typical of her background. She believes her proposal perfectly represents the essence of cultural celebration. However, her perspective is influenced by naive realism, as she assumes that her cultural traditions are universally appealing and should be the focal point of the event.
+Akio, on the other hand, proposes a more serene and contemplative event that aligns with traditional Japanese cultural practices. He believes this approach would better capture the spirit of diversity and inclusivity. Akio, too, is influenced by naive realism, as he assumes that his cultural traditions represent an objective and superior choice for the event.
+As the two colleagues engage in discussions about the cultural event, their naive realism becomes apparent. Maria and Akio struggle to appreciate the validity of each other&apos;s cultural traditions, assuming that their own perspectives represent an objective and universal truth.</Realism:userstory>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26#hascomponent -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26#hascomponent"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#userstory -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#userstory"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#aff:affectedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#aff:affectedBy">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Belief"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#PerceptionExperience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:hasBias -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:hasBias">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Agent"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Bias"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:hasPerspective -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:hasPerspective">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#People"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Statement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:ignores -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:ignores">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Agent"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Statement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:isPerceivedAs -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:isPerceivedAs"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cco:hasBelief -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cco:hasBelief">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Agent"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Belief"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#exob:includes -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#exob:includes">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Bias"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#PerceptionExperience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Universal -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Universal">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:isPerceivedAs"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Belief"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Agent -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Agent">
+        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#People"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Belief -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Belief"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Bias -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Bias"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#People -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#People"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#PerceptionExperience -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#PerceptionExperience"/>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Statement -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Statement"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Akio -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Akio">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Maria -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Maria">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Agent"/>
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#People"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Bias"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Statement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own&apos;s_belief -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own&apos;s_belief">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#PerceptionExperience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality) -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality)">
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Belief"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
