@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-04T09:12:09.236Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="lnGeXZnUxSLQHTDgY5BM" version="24.2.2" type="device">
+<mxfile host="app.diagrams.net" modified="2024-04-04T09:12:53.181Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="U0ZM-sSXe6GsTx4vfxY7" version="24.2.2" type="device">
   <diagram name="Pagina-1" id="0G4quoUfFxjJnNe_SFQl">
     <mxGraphModel dx="1050" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -24,7 +24,7 @@
           <mxGeometry x="60" y="80" width="340" height="110" as="geometry" />
         </mxCell>
         <mxCell id="XtfrEUfdjqP_kEPiJ7kP-11" value="&lt;ul&gt;&lt;li&gt;Affected By&lt;/li&gt;&lt;li&gt;Experience and Observatiom&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Cognitive Characteristic Ontology&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="XtfrEUfdjqP_kEPiJ7kP-10" vertex="1">
-          <mxGeometry x="-10" y="12" width="270" height="142" as="geometry" />
+          <mxGeometry x="-10" y="-2" width="270" height="142" as="geometry" />
         </mxCell>
         <mxCell id="XtfrEUfdjqP_kEPiJ7kP-12" value="fs:People" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#ffff00;strokeColor=#000000;strokeWidth=1.0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="150" y="335" width="110" height="44" as="geometry" />
