@@ -87,8 +87,8 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:hasBiasedOpinion -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:hasBiasedOpinion">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#People"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Bias"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
     </owl:ObjectProperty>
     
 
@@ -96,8 +96,8 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:hasOutcome -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:hasOutcome">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Event"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Outcome"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
     </owl:ObjectProperty>
     
 
@@ -105,8 +105,8 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:involves -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:involves">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Event"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Assistance"/>
     </owl:ObjectProperty>
     
 
@@ -114,7 +114,7 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:isPerceivedAs -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:isPerceivedAs">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Assistance"/>
     </owl:ObjectProperty>
     
 
@@ -122,8 +122,8 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:misjudges -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:misjudges">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Bias"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Assistance"/>
     </owl:ObjectProperty>
     
 
@@ -131,8 +131,8 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:receives -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:receives">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#People"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Assistance"/>
     </owl:ObjectProperty>
     
 
@@ -140,8 +140,8 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#exob:isEngagedIn -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#exob:isEngagedIn">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#People"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Event"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
     </owl:ObjectProperty>
     
 
@@ -163,7 +163,7 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:isPerceivedAs"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Outcome"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
             </owl:Restriction>
         </rdfs:domain>
     </owl:DatatypeProperty>
@@ -181,33 +181,33 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance"/>
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Bias -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Bias"/>
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Event -->
+    <!-- https://w3id.org/framester/data/framestercore/Assistance -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Event"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Outcome -->
+    <!-- https://w3id.org/framester/data/framestercore/Event -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Outcome"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#People -->
+    <!-- https://w3id.org/framester/data/framestercore/People -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#People"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People"/>
     
 
 
@@ -225,7 +225,7 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#People"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <cbo:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism"/>
         <cbo:receives rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"/>
         <exob:isEngagedIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge"/>
@@ -236,7 +236,7 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Event"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <cbo:hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer"/>
         <cbo:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"/>
     </owl:NamedIndividual>
@@ -246,7 +246,7 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Outcome"/>
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
     </owl:NamedIndividual>
     
 
@@ -254,7 +254,7 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Bias"/>
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
         <cbo:misjudges rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"/>
     </owl:NamedIndividual>
     
@@ -263,7 +263,7 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Assistance"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Assistance"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
