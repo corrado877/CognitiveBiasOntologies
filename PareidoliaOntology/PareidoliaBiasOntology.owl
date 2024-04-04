@@ -139,6 +139,7 @@
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
                 </owl:unionOf>
@@ -228,6 +229,7 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://dbpedia.org/page/Illusion"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                 </owl:unionOf>
             </owl:Class>
@@ -238,6 +240,7 @@
                     <rdf:Description rdf:about="https://dbpedia.org/resource/Entity"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
                 </owl:unionOf>
             </owl:Class>
@@ -400,6 +403,12 @@
     
 
 
+    <!-- https://w3id.org/framester/data/framestercore/Assistance -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
+    
+
+
     <!-- https://w3id.org/framester/data/framestercore/BecomingAware -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
@@ -415,6 +424,12 @@
     <!-- https://w3id.org/framester/data/framestercore/Deciding -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
     
 
 

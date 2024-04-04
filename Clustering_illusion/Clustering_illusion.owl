@@ -206,6 +206,7 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://dbpedia.org/page/Illusion"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                 </owl:unionOf>
             </owl:Class>
@@ -216,6 +217,7 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
                     <rdf:Description rdf:about="https://dbpedia.org/resource/Entity"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#AmbiguousStimulus"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
                 </owl:unionOf>
             </owl:Class>
@@ -305,6 +307,12 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
     
 
 
+    <!-- https://w3id.org/framester/data/framestercore/Assistance -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
+    
+
+
     <!-- https://w3id.org/framester/data/framestercore/BecomingAware -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
@@ -314,6 +322,12 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
     <!-- https://w3id.org/framester/data/framestercore/CognitiveConnection -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
     
 
 

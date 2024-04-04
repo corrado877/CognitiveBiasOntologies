@@ -131,6 +131,7 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
                 </owl:unionOf>
@@ -262,6 +263,12 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
     <!-- https://w3id.org/framester/data/framestercore/Deciding -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
     
 
 

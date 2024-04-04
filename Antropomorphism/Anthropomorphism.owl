@@ -170,6 +170,12 @@
     <Declaration>
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Assistance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Event"/>
+    </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="move:PhysicalObject"/>
         <Class abbreviatedIRI="cbo:Non-humanEntity"/>
@@ -270,6 +276,7 @@
         <ObjectUnionOf>
             <Class IRI="https://dbpedia.org/page/Illusion"/>
             <Class abbreviatedIRI="fs:Activity"/>
+            <Class abbreviatedIRI="fs:Event"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
@@ -281,6 +288,7 @@
             <Class abbreviatedIRI="fs:Assessing"/>
             <Class abbreviatedIRI="fs:BecomingAware"/>
             <Class abbreviatedIRI="fs:Deciding"/>
+            <Class abbreviatedIRI="fs:Event"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>
             <Class abbreviatedIRI="fs:Predicting"/>
         </ObjectUnionOf>
@@ -307,6 +315,7 @@
             <Class abbreviatedIRI="dbr:Entity"/>
             <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
             <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class abbreviatedIRI="fs:Assistance"/>
             <Class abbreviatedIRI="fs:ExperiencerObj"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>

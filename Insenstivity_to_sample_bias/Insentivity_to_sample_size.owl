@@ -156,6 +156,9 @@ Our intuition struggles with the complex relationship between sample size and st
     <Declaration>
         <AnnotationProperty IRI="#user_story"/>
     </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Event"/>
+    </Declaration>
     <DisjointClasses>
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
         <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
@@ -247,6 +250,7 @@ Our intuition struggles with the complex relationship between sample size and st
             <Class abbreviatedIRI="fs:Assessing"/>
             <Class abbreviatedIRI="fs:BecomingAware"/>
             <Class abbreviatedIRI="fs:Deciding"/>
+            <Class abbreviatedIRI="fs:Event"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>
             <Class abbreviatedIRI="fs:Predicting"/>
         </ObjectUnionOf>

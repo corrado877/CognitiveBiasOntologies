@@ -141,6 +141,7 @@
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
                 </owl:unionOf>
@@ -268,7 +269,14 @@
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <rdfs:comment>a property that links a person &apos;s cognitive process of being aware of something like a trend while he/she is doing an activity and what is perceived as part of the trend.</rdfs:comment>
     </owl:ObjectProperty>
@@ -431,6 +439,12 @@
     <!-- https://w3id.org/framester/data/framestercore/Assessing -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Assistance -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
     
 
 

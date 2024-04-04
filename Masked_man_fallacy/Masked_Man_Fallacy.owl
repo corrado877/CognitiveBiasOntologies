@@ -100,6 +100,9 @@
         <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
     </Declaration>
     <Declaration>
@@ -187,7 +190,7 @@
         <AnnotationProperty IRI="#Scenarios"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Assistance"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="cbo:KnownFeature"/>
@@ -308,6 +311,7 @@
         <ObjectUnionOf>
             <Class IRI="https://dbpedia.org/page/Illusion"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
@@ -327,6 +331,7 @@
             <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
         </ObjectUnionOf>
@@ -366,6 +371,7 @@
             <Class abbreviatedIRI="dbr:Entity"/>
             <Class abbreviatedIRI="cbo:AmbiguousStimulus"/>
             <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Assistance"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
