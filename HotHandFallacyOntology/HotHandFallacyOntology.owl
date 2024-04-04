@@ -117,7 +117,14 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/cco/core#belief">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -432,6 +439,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
     
 
 

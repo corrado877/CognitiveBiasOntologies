@@ -275,7 +275,9 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
 
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias">
+        <rdfs:comment>a class for defining any kind of bias</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -287,7 +289,9 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
 
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome">
+        <rdfs:comment>Refers to the result, effect, or consequence of a particular action, event, process, or situation</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -305,7 +309,9 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
 
     <!-- https://w3id.org/framester/data/framestercore/Assistance -->
 
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assistance">
+        <rdfs:comment>A Helper benefits a Benefited_party by enabling the culmination of a Goal that the Benefited_party has. A Focal_entity that is involved in reaching the Goal may stand in for it. Will you help the Government find your brother? Maybe Stephen should assist him with the last manuscript. They helped me psychologically to overcome the physical loss I had suffered. You have helped him tremendously by showing him how to stand up for himself and by being his friend. By bringing assistance to his troops wherever they were in trouble he aided them greatly.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -323,7 +329,9 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
 
     <!-- https://w3id.org/framester/data/framestercore/Event -->
 
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event">
+        <rdfs:comment>An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries. INI The party will take place on Sunday in the all-you-can-eat buffet.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -341,7 +349,9 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
 
     <!-- https://w3id.org/framester/data/framestercore/People -->
 
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
+        <rdfs:comment>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming babyyesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</rdfs:comment>
+    </owl:Class>
     
 
 
