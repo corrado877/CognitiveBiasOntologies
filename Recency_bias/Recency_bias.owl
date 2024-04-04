@@ -495,6 +495,7 @@
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
         <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
             <Class abbreviatedIRI="cbo:MemoryEncoding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
@@ -513,7 +514,6 @@
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <ObjectUnionOf>
             <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
-            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>

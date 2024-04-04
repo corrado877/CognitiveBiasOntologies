@@ -410,7 +410,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#RecognizablePattern"/>
         <terms:description>An class and its individual representing the type of pattern recognized by an human agent as part of a trend, in this case a pattern where two elements often appear together.</terms:description>
         <rdfs:label>Variables Pattern</rdfs:label>
     </owl:Class>

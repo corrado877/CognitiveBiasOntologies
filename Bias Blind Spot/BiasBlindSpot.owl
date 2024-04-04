@@ -75,7 +75,16 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.org/ontology/cco/core#belief"/>
@@ -135,13 +144,7 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#userstory"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
@@ -238,6 +241,7 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome"/>
         <ObjectUnionOf>
             <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
         </ObjectUnionOf>
