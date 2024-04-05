@@ -9,7 +9,6 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:cbo1="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#cbo:"
      xmlns:exob="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#exob:"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:term="http://modellingdh.github.io/ont/odp/term/"
@@ -117,29 +116,48 @@ This user story highlights how confabulation bias can emerge in situations where
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#cbo:fillsMemoryGap -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#fillsMemoryGap -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#cbo:fillsMemoryGap">
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#fillsMemoryGap">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Evidence"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap"/>
+        <rdfs:comment>represents the action or process of replenishing or restoring missing or incomplete memory or information within an entity or system.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#cbo:hasMemoryGap -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasMemoryGap -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#cbo:hasMemoryGap">
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasMemoryGap">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap"/>
+        <rdfs:comment>signifies a period or instance where an entity lacks recall or memory of specific information or events.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#cbo:hasOutcome -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#cbo:hasOutcome">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Importance"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>A property linking an entity that produces an Outcome.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -248,6 +266,12 @@ This user story highlights how confabulation bias can emerge in situations where
     
 
 
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+    
+
+
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap">
@@ -280,11 +304,23 @@ This user story highlights how confabulation bias can emerge in situations where
     
 
 
+    <!-- https://w3id.org/framester/data/framestercore/Importance -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Importance"/>
+    
+
+
     <!-- https://w3id.org/framester/data/framestercore/People -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
         <rdfs:comment>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming babyyesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Sequence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
     
 
 
@@ -303,7 +339,7 @@ This user story highlights how confabulation bias can emerge in situations where
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Fabricated_story">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Evidence"/>
-        <cbo1:fillsMemoryGap rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Memory_gap"/>
+        <cbo:fillsMemoryGap rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Memory_gap"/>
     </owl:NamedIndividual>
     
 
@@ -320,7 +356,7 @@ This user story highlights how confabulation bias can emerge in situations where
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Night_Out">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
-        <cbo1:hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Telling_parents_fabricated_evidence"/>
+        <cbo:hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Telling_parents_fabricated_evidence"/>
         <exob:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Memory_gap"/>
     </owl:NamedIndividual>
     
@@ -331,7 +367,7 @@ This user story highlights how confabulation bias can emerge in situations where
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Sarah">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <dbo:produces rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Fabricated_story"/>
-        <cbo1:hasMemoryGap rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Memory_gap"/>
+        <cbo:hasMemoryGap rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Memory_gap"/>
         <exob:isEngagedIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Night_Out"/>
     </owl:NamedIndividual>
     
