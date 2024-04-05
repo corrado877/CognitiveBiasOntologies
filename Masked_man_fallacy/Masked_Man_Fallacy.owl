@@ -58,6 +58,9 @@
         <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://dbpedia.org/page/Illusion"/>
     </Declaration>
     <Declaration>
@@ -193,7 +196,7 @@
         <AnnotationProperty IRI="#Scenarios"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Evidence"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="cbo:KnownFeature"/>
@@ -301,6 +304,7 @@
             <Class abbreviatedIRI="cbo:MemoryEncoding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
         </ObjectUnionOf>
@@ -361,6 +365,7 @@
             <Class abbreviatedIRI="cbo:Decision"/>
             <Class abbreviatedIRI="cbo:Outcome"/>
             <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Evidence"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
         </ObjectUnionOf>

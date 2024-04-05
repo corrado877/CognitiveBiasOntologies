@@ -300,6 +300,7 @@
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Deciding"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/People"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Predicting"/>
                 </owl:unionOf>
@@ -311,6 +312,7 @@
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Evidence"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Expectation"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Memory"/>
                 </owl:unionOf>
@@ -636,6 +638,12 @@
         <terms:description>An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries. INI The party will take place on Sunday in the all-you-can-eat buffet.</terms:description>
         <rdfs:label>Event</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Evidence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Evidence"/>
     
 
 

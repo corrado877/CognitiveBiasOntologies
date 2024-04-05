@@ -254,6 +254,9 @@
     <Declaration>
         <AnnotationProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#scenarios"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Evidence"/>
+    </Declaration>
     <EquivalentClasses>
         <Class abbreviatedIRI="cbo:HighImportance"/>
         <ObjectIntersectionOf>
@@ -488,6 +491,7 @@
             <Class abbreviatedIRI="cbo:MemoryEncoding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
         </ObjectUnionOf>
@@ -574,6 +578,7 @@
             <Class abbreviatedIRI="cbo:Decision"/>
             <Class abbreviatedIRI="cbo:Outcome"/>
             <Class abbreviatedIRI="cbo:PerceivedValidity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Evidence"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Expectation"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Memory"/>
         </ObjectUnionOf>
