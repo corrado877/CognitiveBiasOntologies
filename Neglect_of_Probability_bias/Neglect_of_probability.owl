@@ -220,6 +220,7 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
         <owl:disjointWith rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Assessing"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:comment>Represents a decision subject to the bias.</rdfs:comment>
     </owl:Class>
     
 
@@ -253,6 +254,7 @@ Frantic typing filled the night, fuelled by cold pizza and desperation. The once
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assessing">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:comment>An Assessor examines a Phenomenon to figure out its Value according to some Feature of the Phenomenon. This Value is a factor in determining the acceptability of the Phenomenon. In some cases, a Method (implicitly involving an Assessor) is used to determine the Phenomenon&apos;s Value. Each company is then evaluated for their earning potential. CNI From the evidence of the pilot studies the risk of damage to the test subjects was rated too high to continue. CNI He weighed his options carefully.</rdfs:comment>
     </owl:Class>
     
 

@@ -1,18 +1,17 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-25/"
      xml:base="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-25/"
-     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#cbo:"
+     xmlns:fs="https://w3id.org/framester/data/framestercore/"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:exob="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#exob:"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:term="http://modellingdh.github.io/ont/odp/term/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:Cynicism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#"
-     xmlns:Naive_Cynicism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#"
-     xmlns:CognitiveBiasOntologies="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#">
+     xmlns:Naive_Cynicism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive_Cynicism#">
     <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism">
         <terms:created>20/03/2024</terms:created>
         <terms:creator>Alice Picco</terms:creator>
@@ -285,7 +284,9 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
 
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias">
+        <rdfs:comment>a class for defining any kind of bias</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -297,7 +298,9 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
 
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome">
+        <rdfs:comment>Refers to the result, effect, or consequence of a particular action, event, process, or situation</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -315,7 +318,9 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
 
     <!-- https://w3id.org/framester/data/framestercore/Assistance -->
 
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assistance">
+        <rdfs:comment>A Helper benefits a Benefited_party by enabling the culmination of a Goal that the Benefited_party has. A Focal_entity that is involved in reaching the Goal may stand in for it. Will you help the Government find your brother? Maybe Stephen should assist him with the last manuscript. They helped me psychologically to overcome the physical loss I had suffered. You have helped him tremendously by showing him how to stand up for himself and by being his friend. By bringing assistance to his troops wherever they were in trouble he aided them greatly.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -333,7 +338,9 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
 
     <!-- https://w3id.org/framester/data/framestercore/Event -->
 
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event">
+        <rdfs:comment>An Event takes place at a Place and Time. Big earthquakes only happen along plate boundaries.INI The party will take place on Sunday in the all-you-can-eat buffet.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -351,7 +358,9 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
 
     <!-- https://w3id.org/framester/data/framestercore/People -->
 
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
+        <rdfs:comment>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming babyyesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -389,7 +398,7 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Chris">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <term:isEngagedIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge"/>
-        <CognitiveBiasOntologies:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism"/>
+        <cbo:hasBiasedOpinion rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Naive_Cynicism"/>
         <Naive_Cynicism:receives rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"/>
     </owl:NamedIndividual>
     
@@ -399,8 +408,8 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Current_challenge">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
-        <CognitiveBiasOntologies:hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer"/>
-        <CognitiveBiasOntologies:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"/>
+        <cbo:hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Decline_of_offer"/>
+        <cbo:involves rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#Offered_help"/>
     </owl:NamedIndividual>
     
 

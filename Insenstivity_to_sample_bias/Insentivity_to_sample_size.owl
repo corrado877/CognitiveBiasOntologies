@@ -9,7 +9,7 @@
     <Prefix name="" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size"/>
     <Prefix name="fs" IRI="https://w3id.org/framester/data/framestercore/"/>
     <Prefix name="aff" IRI="https://w3id.org/affectedBy"/>
-    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -73,10 +73,13 @@ Our intuition struggles with the complex relationship between sample size and st
         <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
+        <Class abbreviatedIRI="cbo:Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cbo:Thing"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
@@ -124,7 +127,7 @@ Our intuition struggles with the complex relationship between sample size and st
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#have_knowledge"/>
+        <ObjectProperty abbreviatedIRI="cbo:have_knowledge"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
@@ -159,15 +162,16 @@ Our intuition struggles with the complex relationship between sample size and st
     <Declaration>
         <AnnotationProperty IRI="#user_story"/>
     </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
-    </Declaration>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
+        <Class abbreviatedIRI="fs:People"/>
+    </SubClassOf>
     <DisjointClasses>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
+        <Class abbreviatedIRI="cbo:Thing"/>
         <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+        <Class abbreviatedIRI="cbo:Decision"/>
         <NamedIndividual IRI="#Game_bought"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -175,7 +179,7 @@ Our intuition struggles with the complex relationship between sample size and st
         <NamedIndividual IRI="#Game_choice"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
+        <Class abbreviatedIRI="cbo:Thing"/>
         <NamedIndividual IRI="#Game_review"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -203,7 +207,7 @@ Our intuition struggles with the complex relationship between sample size and st
         <NamedIndividual IRI="#Game_choice"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#have_knowledge"/>
+        <ObjectProperty abbreviatedIRI="cbo:have_knowledge"/>
         <NamedIndividual IRI="#Me"/>
         <NamedIndividual IRI="#Game_review"/>
     </ObjectPropertyAssertion>
@@ -222,14 +226,14 @@ Our intuition struggles with the complex relationship between sample size and st
         <Class abbreviatedIRI="fs:People"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#have_knowledge"/>
+        <ObjectProperty abbreviatedIRI="cbo:have_knowledge"/>
         <Class abbreviatedIRI="fs:People"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
         <ObjectUnionOf>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
+            <Class abbreviatedIRI="cbo:Decision"/>
+            <Class abbreviatedIRI="cbo:Thing"/>
             <Class abbreviatedIRI="fs:PerceptionExperience"/>
             <Class abbreviatedIRI="fs:Probability"/>
         </ObjectUnionOf>
@@ -237,7 +241,7 @@ Our intuition struggles with the complex relationship between sample size and st
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="term:inActivity"/>
         <ObjectUnionOf>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+            <Class abbreviatedIRI="cbo:Decision"/>
             <Class abbreviatedIRI="fs:Activity"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
@@ -256,13 +260,13 @@ Our intuition struggles with the complex relationship between sample size and st
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#have_knowledge"/>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
+        <ObjectProperty abbreviatedIRI="cbo:have_knowledge"/>
+        <Class abbreviatedIRI="cbo:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
         <ObjectUnionOf>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Decision"/>
+            <Class abbreviatedIRI="cbo:Decision"/>
             <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#Ignore"/>
             <Class abbreviatedIRI="fs:Pattern"/>
             <Class abbreviatedIRI="fs:Sequence"/>
@@ -280,13 +284,33 @@ Our intuition struggles with the complex relationship between sample size and st
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#have_knowledge</IRI>
+        <AbbreviatedIRI>cbo:Decision</AbbreviatedIRI>
+        <Literal>a class representing a decision made in a certain situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Thing</AbbreviatedIRI>
+        <Literal>a class for defining any kind of information about which a person has some knowledge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:have_knowledge</AbbreviatedIRI>
         <Literal>a property that links the cognitive process of storing some information regarding a topic.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://w3id.org/affectedBy#influencedBy</IRI>
         <Literal>A relation between qualities. A quality is influenced by another quality if the value of the latter affects the value of the former.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fs:Assessing</AbbreviatedIRI>
+        <Literal>An Assessor examines a Phenomenon to figure out its Value according to some Feature of the Phenomenon. This Value is a factor in determining the acceptability of the Phenomenon. In some cases, a Method (implicitly involving an Assessor) is used to determine the Phenomenon&apos;s Value. Each company is then evaluated for their earning potential. CNI From the evidence of the pilot studies the risk of damage to the test subjects was rated too high to continue. CNI He weighed his options carefully.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fs:People</AbbreviatedIRI>
+        <Literal>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming babyyesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
