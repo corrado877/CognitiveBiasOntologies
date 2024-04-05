@@ -172,6 +172,9 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
     <Declaration>
         <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#userstory"/>
     </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Evidence"/>
+    </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="cbo:Agent"/>
         <Class abbreviatedIRI="fs:People"/>
@@ -321,7 +324,10 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="aff:affectedBy"/>
-        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
+            <Class abbreviatedIRI="fs:Evidence"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

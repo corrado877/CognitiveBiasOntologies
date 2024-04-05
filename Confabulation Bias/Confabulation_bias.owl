@@ -9,7 +9,6 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:aff2="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#aff:"
      xmlns:cbo1="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#cbo:"
      xmlns:exob="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#exob:"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -118,15 +117,6 @@ This user story highlights how confabulation bias can emerge in situations where
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#aff:affectedBy -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#aff:affectedBy">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Evidence"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#cbo:fillsMemoryGap -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#cbo:fillsMemoryGap">
@@ -187,6 +177,29 @@ This user story highlights how confabulation bias can emerge in situations where
     
 
 
+    <!-- https://w3id.org/affectedBy#affectedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#affectedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Evidence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -220,6 +233,18 @@ This user story highlights how confabulation bias can emerge in situations where
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
     
 
 
@@ -316,8 +341,8 @@ This user story highlights how confabulation bias can emerge in situations where
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Telling_parents_fabricated_evidence">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
-        <aff2:affectedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Telling_parents_fabricated_evidence"/>
         <exob:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Fabricated_story"/>
+        <aff:affectedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Telling_parents_fabricated_evidence"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
