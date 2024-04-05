@@ -189,6 +189,7 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -379,6 +380,12 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
     <!-- https://w3id.org/framester/data/framestercore/Sequence -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestersyn/Belief.n.1 -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
     
 
 

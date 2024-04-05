@@ -9,10 +9,10 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:exob="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#exob:"
      xmlns:fsyn="https://w3id.org/framester/data/framestersyn/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:term="term:http://modellingdh.github.io/ont/odp/term/"
+     xmlns:term1="http://modellingdh.github.io/ont/odp/term/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:Realism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#"
      xmlns:untitled-ontology-26="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26#">
@@ -93,11 +93,46 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     
 
 
+    <!-- http://modellingdh.github.io/ont/odp/term/includes -->
+
+    <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/includes">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Evidence"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/ontology/cco/core#belief -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/cco/core#belief">
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -132,19 +167,19 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:isPerceivedAs -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:isPerceivedAs">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#exob:includes -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#exob:includes">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment>a property that links the cognitive process of perceiving something in a specific way.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -184,12 +219,12 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies# -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Universal -->
 
-    <owl:DatatypeProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#">
+    <owl:DatatypeProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Universal">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:isPerceivedAs"/>
+                <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isPerceivedAs"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
             </owl:Restriction>
         </rdfs:domain>
@@ -232,15 +267,57 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     
 
 
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap"/>
+    
+
+
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
     
 
 
+    <!-- https://w3id.org/framester/data/framestercore/Activity -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Assistance -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Assistance"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/BecomingAware -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/CognitiveConnection -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/CognitiveConnection"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
+    
+
+
     <!-- https://w3id.org/framester/data/framestercore/Evidence -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Evidence"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Pattern -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
     
 
 
@@ -257,6 +334,12 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience">
         <rdfs:comment>This frame contains perception words whose Perceivers have perceptual experiences that they do not necessarily intend to. For this reason we call the Perceiver role Perceiver_passive. Comparing the Perception_experience frame to the Perception_active frame, we note that for some modalities there are different lexical items in each frame. For instance, whereas Perception_experience has see, Perception_active has look at. For other sense modalities, we find the same lexical items in both frames. To illustrate, consider the verb smell where I smell something rotten exemplifies its Perception_experience use and Smell this to see if it&apos;s fresh exemplifies its Perception_active sense. This frame also includes words which are not specific to any sense modality, including detect, perceive, perception, sense.</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Sequence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
     
 
 
@@ -312,7 +395,7 @@ As the two colleagues engage in discussions about the cultural event, their naiv
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
-        <exob:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own&apos;s_belief"/>
+        <term1:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own&apos;s_belief"/>
     </owl:NamedIndividual>
     
 
