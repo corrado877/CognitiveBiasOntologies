@@ -72,6 +72,9 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
     </Declaration>
     <Declaration>
@@ -87,13 +90,10 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://purl.org/ontology/cco/core#belief"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#aff:affectedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#exob:isEngagedIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#focusesOn"/>
@@ -106,6 +106,9 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isUnawareOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Biased_Opinion"/>
@@ -144,7 +147,25 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#userstory"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
@@ -180,24 +201,24 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <NamedIndividual IRI="#Biased_Opinion"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#aff:affectedBy"/>
-        <NamedIndividual IRI="#Decision"/>
-        <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome"/>
         <NamedIndividual IRI="#Decision"/>
         <NamedIndividual IRI="#Realization_of_bias"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.org/ontology/cco/core#belief"/>
-        <NamedIndividual IRI="#Emily"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+        <NamedIndividual IRI="#Decision"/>
         <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#exob:isEngagedIn"/>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
         <NamedIndividual IRI="#Emily"/>
         <NamedIndividual IRI="#Decision"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/ontology/cco/core#belief"/>
+        <NamedIndividual IRI="#Emily"/>
+        <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#focusesOn"/>
@@ -210,23 +231,16 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#aff:affectedBy"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
         <NamedIndividual IRI="#Realization_of_bias"/>
         <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/ontology/cco/core#belief"/>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#aff:affectedBy"/>
-        <ObjectUnionOf>
-            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
-        </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#exob:isEngagedIn"/>
+        <ObjectProperty IRI="http://purl.org/ontology/cco/core#belief"/>
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -250,20 +264,33 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isUnawareOf"/>
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+            <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://purl.org/ontology/cco/core#belief"/>
         <ObjectUnionOf>
             <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
             <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
         </ObjectUnionOf>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#aff:affectedBy"/>
-        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#exob:isEngagedIn"/>
-        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#focusesOn"/>
@@ -287,6 +314,10 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isUnawareOf"/>
         <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
+    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief</IRI>
@@ -296,6 +327,11 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty</IRI>
         <Literal>MentalProperty, when used for decision-making, refers to the collection of intangible assets, including intellectual property, knowledge assets, creative outputs, innovative ideas, cognitive constructs, and personal and cultural heritage, that are considered and evaluated to inform and guide decision processes. In this context, MentalProperty serves as the foundation upon which decisions are made, providing valuable insights, perspectives, and resources that influence the course of action chosen. Decision-makers may assess and leverage MentalProperty assets to address challenges, capitalize on opportunities, mitigate risks, and achieve desired outcomes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent</IRI>
+        <Literal>Individual who performs the Bias Blind Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -311,6 +347,21 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#focusesOn</IRI>
         <Literal>describes the primary subject or area of attention associated with an entity or concept.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion</IRI>
+        <Literal>a property connecting a Person who has a biased opinion about something eg the possible outcome of an Event such as a Random or Chance-based Occurrence  or a person who has a biased Opinion about a Bias.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome</IRI>
+        <Literal>A property linking an entity that produces an Outcome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isUnawareOf</IRI>
+        <Literal>indicates the lack of knowledge or awareness of a particular entity or concept by another entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

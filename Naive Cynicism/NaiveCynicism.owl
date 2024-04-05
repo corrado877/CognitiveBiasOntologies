@@ -95,6 +95,7 @@ Despite Sarah&apos;s genuine intentions, Alex&apos;s naive cynicism leads him to
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>

@@ -102,6 +102,9 @@
         <Class abbreviatedIRI="fs:Assessing"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="fs:Assistance"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="fs:BecomingAware"/>
     </Declaration>
     <Declaration>
@@ -109,6 +112,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Event"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:ExperiencerObj"/>
@@ -171,10 +177,7 @@
         <AnnotationProperty IRI="#scenarios"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="fs:Assistance"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="fs:Event"/>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
     </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="move:PhysicalObject"/>
@@ -284,6 +287,7 @@
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <ObjectUnionOf>
             <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
             <Class abbreviatedIRI="fs:Activity"/>
             <Class abbreviatedIRI="fs:Assessing"/>
             <Class abbreviatedIRI="fs:BecomingAware"/>
@@ -366,6 +370,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbr:Entity</AbbreviatedIRI>
+        <Literal>An entity is something that exists as itself, as a subject or as an object, actually or potentially, concretely or abstractly, physically or not. It need not be of material existence. In particular, abstractions and legal fictions are usually regarded as entities. In general, there is also no presumption that an entity is animate, or present. The term is broad in scope and may refer to animals; natural features such as mountains; inanimate objects such as tables; numbers or sets as symbols written on a paper; human contrivances such as laws, corporations and academic disciplines; or supernatural beings such as gods and spirits. The adjectival form is entitative. (en)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dbr:Plant</AbbreviatedIRI>
         <Literal>Plants are predominantly photosynthetic eukaryotes of the kingdom Plantae. Historically, the plant kingdom encompassed all living things that were not animals, and included algae and fungi; however, all current definitions of Plantae exclude the fungi and some algae, as well as the prokaryotes (the archaea and bacteria).</Literal>
     </AnnotationAssertion>
@@ -393,6 +402,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Sadness</IRI>
         <Literal>The emotion the child assumes Mr. Whiskers is feeling when left alone.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cbo:Feature</AbbreviatedIRI>
+        <Literal>The feature, description or title used to refer to an entity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

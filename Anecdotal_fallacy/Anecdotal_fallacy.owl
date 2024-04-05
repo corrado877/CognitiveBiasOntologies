@@ -157,6 +157,7 @@ At the end of the month, I notice a minimal change in my weight, and I share my 
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
@@ -292,6 +293,12 @@ At the end of the month, I notice a minimal change in my weight, and I share my 
     
 
 
+    <!-- http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    
+
+
     <!-- https://dbpedia.org/page/Illusion -->
 
     <owl:Class rdf:about="https://dbpedia.org/page/Illusion"/>
@@ -348,6 +355,7 @@ At the end of the month, I notice a minimal change in my weight, and I share my 
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:comment>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame.</rdfs:comment>
     </owl:Class>
     
 
@@ -395,6 +403,7 @@ At the end of the month, I notice a minimal change in my weight, and I share my 
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:comment>Some phenomenon (the Stimulus) provokes a particular emotion in an Experiencer. Nightmare on Elm Street scared me silly.</rdfs:comment>
     </owl:Class>
     
 
@@ -405,13 +414,16 @@ At the end of the month, I notice a minimal change in my weight, and I share my 
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:comment>This frame describes the interrelation of a collection of Entities; they may be physical entities or shapes in a recognizable configuration, a pattern of events, or a relation among abstract entities. The pattern is not the individual Entities nor the set of Entities, but an abstraction of their interrelations, as a gestalt. The Cougers are playing in a Wing-T formation tonight. The auditors noticed a suspicious pattern of withdrawals from the maintenance account . The digits of irrational numbers do not repeat in any kind of pattern.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- https://w3id.org/framester/data/framestercore/People -->
 
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
+        <rdfs:comment>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming babyyesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -420,6 +432,7 @@ At the end of the month, I notice a minimal change in my weight, and I share my 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Sequence"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:comment>This frame contains perception words whose Perceivers have perceptual experiences that they do not necessarily intend to. For this reason we call the Perceiver role Perceiver_passive. Comparing the Perception_experience frame to the Perception_active frame, we note that for some modalities there are different lexical items in each frame. For instance, whereas Perception_experience has see, Perception_active has look at. For other sense modalities, we find the same lexical items in both frames. To illustrate, consider the verb smell where I smell something rotten exemplifies its Perception_experience use and Smell this to see if it&apos;s fresh exemplifies its Perception_active sense. This frame also includes words which are not specific to any sense modality, including detect, perceive, perception, sense.</rdfs:comment>
     </owl:Class>
     
 
@@ -434,6 +447,7 @@ At the end of the month, I notice a minimal change in my weight, and I share my 
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:comment>The words in this frame describe entities that occur in some temporally-ordered sequence. The entities thus have some sort of relation between them that might be described by the Relative_time frame. However, at this time, this frame has no Frame Relation with that frame (though this is still under discussion). Additionally, it should be noted that the words in this frame have a metaphorical link to the words in Shape. Describe in detail the sequence of steps taken during an emergency.</rdfs:comment>
     </owl:Class>
     
 

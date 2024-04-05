@@ -159,6 +159,9 @@ Our intuition struggles with the complex relationship between sample size and st
     <Declaration>
         <AnnotationProperty IRI="#user_story"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+    </Declaration>
     <DisjointClasses>
         <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Thing"/>
         <Class IRI="https://w3id.org/framester/data/framestersyn/Person"/>
@@ -242,6 +245,7 @@ Our intuition struggles with the complex relationship between sample size and st
         <ObjectProperty abbreviatedIRI="term:isEngagedIn"/>
         <ObjectUnionOf>
             <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
             <Class abbreviatedIRI="fs:Activity"/>
             <Class abbreviatedIRI="fs:Assessing"/>
             <Class abbreviatedIRI="fs:BecomingAware"/>
