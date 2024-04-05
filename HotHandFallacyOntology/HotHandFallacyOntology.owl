@@ -120,8 +120,8 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -443,12 +443,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
-    
-
-
     <!-- https://dbpedia.org/page/Success -->
 
     <owl:Class rdf:about="https://dbpedia.org/page/Success">
@@ -625,6 +619,12 @@
         <terms:description>The words in this frame describe entities that occur in some temporally-ordered sequence. The entities thus have some sort of relation between them that might be described by the Relative_time frame. However, at this time, this frame has no Frame Relation with that frame (though this is still under discussion). Additionally, it should be noted that the words in this frame have a metaphorical link to the words in Shape. Describe in detail the sequence of steps taken during an emergency.</terms:description>
         <rdfs:label>Sequence</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestersyn/Belief.n.1 -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
     
 
 

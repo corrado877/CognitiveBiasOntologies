@@ -9,6 +9,7 @@
      xmlns:Bias="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:Realism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#"
      xmlns:Cynicism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#"
      xmlns:RecencyBias="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#"
      xmlns:Anthropomorphism="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#"
@@ -19,6 +20,7 @@
      xmlns:Clustering_illusion="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#"
      xmlns:Illusion_of_validity="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#"
      xmlns:untitled-ontology-17="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#"
+     xmlns:untitled-ontology-26="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26#"
      xmlns:GamblersFallacyOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#"
      xmlns:Neglect_of_probability_bias="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#"
      xmlns:Insensitivity_to_sample_size="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#">
@@ -38,6 +40,7 @@
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot"/>
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias"/>
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism"/>
         <terms:contributor>Dott. Stefano De Giorgis</terms:contributor>
         <terms:contributor>Prof. Aldo Gangemi</terms:contributor>
         <terms:created>February 2024</terms:created>

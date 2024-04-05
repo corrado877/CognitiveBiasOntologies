@@ -68,9 +68,6 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
     </Declaration>
     <Declaration>
@@ -114,6 +111,9 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="fs:Sequence"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fsyn:Belief.n.1"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
@@ -200,7 +200,7 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <NamedIndividual IRI="#Realization_of_bias"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
+        <Class abbreviatedIRI="fsyn:Belief.n.1"/>
         <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
@@ -296,8 +296,8 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="cco:belief"/>
         <ObjectUnionOf>
-            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
             <Class abbreviatedIRI="fs:Sequence"/>
+            <Class abbreviatedIRI="fsyn:Belief.n.1"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -320,20 +320,15 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="cbo:isUnawareOf"/>
-        <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
+        <Class abbreviatedIRI="fsyn:Belief.n.1"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="aff:affectedBy"/>
         <ObjectUnionOf>
-            <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
             <Class abbreviatedIRI="fs:Evidence"/>
+            <Class abbreviatedIRI="fsyn:Belief.n.1"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief</IRI>
-        <Literal>A belief is a mental state or attitude where an individual holds something to be true or probable. Beliefs can range from factual assertions about the world to subjective evaluations, opinions, or attitudes about various matters. They form a fundamental part of human cognition and influence perception, decision-making, and behavior. Beliefs can be based on evidence, personal experience, cultural upbringing, social influences, or even intuition. They often shape an individual&apos;s worldview and can be deeply ingrained or subject to change over time based on new information or experiences.</Literal>
-    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty</IRI>
@@ -378,6 +373,11 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>fs:People</AbbreviatedIRI>
         <Literal>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming babyyesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fsyn:Belief.n.1</AbbreviatedIRI>
+        <Literal>A belief is a mental state or attitude where an individual holds something to be true or probable. Beliefs can range from factual assertions about the world to subjective evaluations, opinions, or attitudes about various matters. They form a fundamental part of human cognition and influence perception, decision-making, and behavior. Beliefs can be based on evidence, personal experience, cultural upbringing, social influences, or even intuition. They often shape an individual&apos;s worldview and can be deeply ingrained or subject to change over time based on new information or experiences.</Literal>
     </AnnotationAssertion>
 </Ontology>
 

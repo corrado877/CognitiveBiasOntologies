@@ -248,8 +248,8 @@ This user story highlights how confabulation bias can emerge in situations where
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Evidence"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -296,12 +296,6 @@ This user story highlights how confabulation bias can emerge in situations where
     <!-- http://www.ontology.se/odp/content/owl/Action.owl#Action -->
 
     <owl:Class rdf:about="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
-    
-
-
-    <!-- http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
     
 
 
@@ -438,6 +432,12 @@ This user story highlights how confabulation bias can emerge in situations where
     <!-- https://w3id.org/framester/data/framestercore/Sequence -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestersyn/Belief.n.1 -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
     
 
 

@@ -1,15 +1,21 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26/"
      xml:base="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26/"
-     xmlns:aff="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#aff:"
-     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:"
-     xmlns:cco="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cco:"
+     xmlns:fs="https://w3id.org/framester/data/framestercore/"
+     xmlns:aff="https://w3id.org/affectedBy#"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
+     xmlns:cco="http://purl.org/ontology/cco/core#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:aff3="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#aff:"
+     xmlns:cbo1="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:"
+     xmlns:cco2="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cco:"
      xmlns:exob="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#exob:"
+     xmlns:fsyn="https://w3id.org/framester/data/framestersyn/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:term="term:http://modellingdh.github.io/ont/odp/term/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:Realism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#"
      xmlns:untitled-ontology-26="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26#">
@@ -93,8 +99,8 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#aff:affectedBy -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#aff:affectedBy">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Belief"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#PerceptionExperience"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
     </owl:ObjectProperty>
     
 
@@ -102,8 +108,8 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:hasBias -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:hasBias">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Agent"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Bias"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
     </owl:ObjectProperty>
     
 
@@ -111,8 +117,8 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:hasPerspective -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:hasPerspective">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#People"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Statement"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Statement"/>
     </owl:ObjectProperty>
     
 
@@ -120,8 +126,8 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:ignores -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:ignores">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Agent"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Statement"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Statement"/>
     </owl:ObjectProperty>
     
 
@@ -135,8 +141,8 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cco:hasBelief -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cco:hasBelief">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Agent"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Belief"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
     </owl:ObjectProperty>
     
 
@@ -144,8 +150,8 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#exob:includes -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#exob:includes">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Bias"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#PerceptionExperience"/>
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
     </owl:ObjectProperty>
     
 
@@ -167,7 +173,7 @@ As the two colleagues engage in discussions about the cultural event, their naiv
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#cbo:isPerceivedAs"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Belief"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -186,41 +192,41 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Agent -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Agent">
-        <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#People"/>
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
     </owl:Class>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Belief -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Belief"/>
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Bias -->
+    <!-- https://w3id.org/framester/data/framestercore/People -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Bias"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People"/>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#People -->
+    <!-- https://w3id.org/framester/data/framestercore/PerceptionExperience -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#People"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#PerceptionExperience -->
+    <!-- https://w3id.org/framester/data/framestercore/Statement -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#PerceptionExperience"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Statement"/>
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Statement -->
+    <!-- https://w3id.org/framester/data/framestersyn/Belief.n.1 -->
 
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Statement"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
     
 
 
@@ -238,8 +244,8 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Akio -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Akio">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#People"/>
-        <cbo:hasPerspective rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <cbo1:hasPerspective rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective"/>
     </owl:NamedIndividual>
     
 
@@ -247,11 +253,11 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Maria -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Maria">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Agent"/>
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#People"/>
-        <cbo:hasBias rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism"/>
-        <cbo:ignores rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective"/>
-        <cco:hasBelief rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality)"/>
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <cbo1:hasBias rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism"/>
+        <cbo1:ignores rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective"/>
+        <cco2:hasBelief rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality)"/>
     </owl:NamedIndividual>
     
 
@@ -259,7 +265,7 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Naive_Realism">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Bias"/>
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
         <exob:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own&apos;s_belief"/>
     </owl:NamedIndividual>
     
@@ -268,7 +274,7 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Target_Perspective">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Statement"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Statement"/>
     </owl:NamedIndividual>
     
 
@@ -276,7 +282,7 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own&apos;s_belief -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own&apos;s_belief">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#PerceptionExperience"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
     </owl:NamedIndividual>
     
 
@@ -284,8 +290,8 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality) -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Underlying_belief_(cultural_universality)">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Belief"/>
-        <aff:affectedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own&apos;s_belief"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestersyn/Belief.n.1"/>
+        <aff3:affectedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#Perception_of_own&apos;s_belief"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
