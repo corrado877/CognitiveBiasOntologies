@@ -7,10 +7,15 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot">
     <Prefix name="" IRI="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#"/>
+    <Prefix name="fs" IRI="https://w3id.org/framester/data/framestercore/"/>
+    <Prefix name="aff" IRI="https://w3id.org/affectedBy#"/>
+    <Prefix name="cbo" IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"/>
+    <Prefix name="cco" IRI="http://purl.org/ontology/cco/core#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="fsyn" IRI="https://w3id.org/framester/data/framestersyn/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
@@ -60,55 +65,76 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <Literal>Bias Blind Spot refers to the cognitive bias where individuals recognize and easily identify biases in others but fail to acknowledge or perceive their own cognitive biases. It involves the tendency to believe that one is less susceptible to biases than other people, leading individuals to overlook their own subjective judgments and assumptions. The bias blind spot can hinder self-awareness and critical reflection, potentially influencing decision-making, problem-solving, and interpersonal relationships. Recognizing and addressing the bias blind spot is essential for fostering a more accurate and unbiased understanding of one&apos;s own thought processes and behaviors.</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <Class abbreviatedIRI="cbo:Agent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+        <Class abbreviatedIRI="cbo:Bias"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+        <Class abbreviatedIRI="cbo:MemoryEncoding"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+        <Class abbreviatedIRI="cbo:Outcome"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+        <Class abbreviatedIRI="fs:Activity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+        <Class abbreviatedIRI="fs:Assessing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <Class abbreviatedIRI="fs:BecomingAware"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
+        <Class abbreviatedIRI="fs:Deciding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Event"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Importance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:People"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:PerceptionExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Predicting"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fs:Sequence"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.org/ontology/cco/core#belief"/>
+        <ObjectProperty abbreviatedIRI="cco:belief"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#focusesOn"/>
+        <ObjectProperty abbreviatedIRI="cbo:focusesOn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasBiasedOpinion"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isUnawareOf"/>
+        <ObjectProperty abbreviatedIRI="cbo:isUnawareOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+        <ObjectProperty abbreviatedIRI="aff:affectedBy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Biased_Opinion"/>
@@ -146,37 +172,16 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
     <Declaration>
         <AnnotationProperty IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#userstory"/>
     </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
-    </Declaration>
     <SubClassOf>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <Class abbreviatedIRI="cbo:Agent"/>
+        <Class abbreviatedIRI="fs:People"/>
     </SubClassOf>
     <ClassAssertion>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+        <Class abbreviatedIRI="cbo:Bias"/>
         <NamedIndividual IRI="#Biased_Opinion"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <Class abbreviatedIRI="fs:People"/>
         <NamedIndividual IRI="#Chris"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -184,11 +189,11 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <NamedIndividual IRI="#Decision"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <Class abbreviatedIRI="cbo:Agent"/>
         <NamedIndividual IRI="#Emily"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+        <Class abbreviatedIRI="cbo:Outcome"/>
         <NamedIndividual IRI="#Realization_of_bias"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -196,17 +201,17 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasBiasedOpinion"/>
         <NamedIndividual IRI="#Chris"/>
         <NamedIndividual IRI="#Biased_Opinion"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
         <NamedIndividual IRI="#Decision"/>
         <NamedIndividual IRI="#Realization_of_bias"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+        <ObjectProperty abbreviatedIRI="aff:affectedBy"/>
         <NamedIndividual IRI="#Decision"/>
         <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
     </ObjectPropertyAssertion>
@@ -216,59 +221,59 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <NamedIndividual IRI="#Decision"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://purl.org/ontology/cco/core#belief"/>
+        <ObjectProperty abbreviatedIRI="cco:belief"/>
         <NamedIndividual IRI="#Emily"/>
         <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#focusesOn"/>
+        <ObjectProperty abbreviatedIRI="cbo:focusesOn"/>
         <NamedIndividual IRI="#Emily"/>
         <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isUnawareOf"/>
+        <ObjectProperty abbreviatedIRI="cbo:isUnawareOf"/>
         <NamedIndividual IRI="#Emily"/>
         <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+        <ObjectProperty abbreviatedIRI="aff:affectedBy"/>
         <NamedIndividual IRI="#Realization_of_bias"/>
         <NamedIndividual IRI="#Superiority_of_one&apos;s_idea"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://modellingdh.github.io/ont/odp/term/isEngagedIn"/>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <Class abbreviatedIRI="cbo:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/ontology/cco/core#belief"/>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <ObjectProperty abbreviatedIRI="cco:belief"/>
+        <Class abbreviatedIRI="cbo:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#focusesOn"/>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <ObjectProperty abbreviatedIRI="cbo:focusesOn"/>
+        <Class abbreviatedIRI="cbo:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion"/>
-        <Class IRI="https://w3id.org/framester/data/framestercore/People"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasBiasedOpinion"/>
+        <Class abbreviatedIRI="fs:People"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
         <ObjectUnionOf>
             <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
-            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
-            <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
+            <Class abbreviatedIRI="cbo:MemoryEncoding"/>
+            <Class abbreviatedIRI="fs:Event"/>
+            <Class abbreviatedIRI="fs:Sequence"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isUnawareOf"/>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent"/>
+        <ObjectProperty abbreviatedIRI="cbo:isUnawareOf"/>
+        <Class abbreviatedIRI="cbo:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+        <ObjectProperty abbreviatedIRI="aff:affectedBy"/>
         <ObjectUnionOf>
             <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
+            <Class abbreviatedIRI="cbo:Outcome"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
@@ -276,46 +281,46 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
         <ObjectUnionOf>
             <Class IRI="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
             <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
-            <Class IRI="https://w3id.org/framester/data/framestercore/Activity"/>
-            <Class IRI="https://w3id.org/framester/data/framestercore/Assessing"/>
-            <Class IRI="https://w3id.org/framester/data/framestercore/BecomingAware"/>
-            <Class IRI="https://w3id.org/framester/data/framestercore/Deciding"/>
-            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
-            <Class IRI="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-            <Class IRI="https://w3id.org/framester/data/framestercore/Predicting"/>
+            <Class abbreviatedIRI="fs:Activity"/>
+            <Class abbreviatedIRI="fs:Assessing"/>
+            <Class abbreviatedIRI="fs:BecomingAware"/>
+            <Class abbreviatedIRI="fs:Deciding"/>
+            <Class abbreviatedIRI="fs:Event"/>
+            <Class abbreviatedIRI="fs:PerceptionExperience"/>
+            <Class abbreviatedIRI="fs:Predicting"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/ontology/cco/core#belief"/>
+        <ObjectProperty abbreviatedIRI="cco:belief"/>
         <ObjectUnionOf>
             <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
-            <Class IRI="https://w3id.org/framester/data/framestercore/Sequence"/>
+            <Class abbreviatedIRI="fs:Sequence"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#focusesOn"/>
-        <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
+        <ObjectProperty abbreviatedIRI="cbo:focusesOn"/>
+        <Class abbreviatedIRI="cbo:Bias"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasBiasedOpinion"/>
         <ObjectUnionOf>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias"/>
-            <Class IRI="https://w3id.org/framester/data/framestercore/Event"/>
+            <Class abbreviatedIRI="cbo:Bias"/>
+            <Class abbreviatedIRI="fs:Event"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome"/>
+        <ObjectProperty abbreviatedIRI="cbo:hasOutcome"/>
         <ObjectUnionOf>
-            <Class IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
-            <Class IRI="https://w3id.org/framester/data/framestercore/Importance"/>
+            <Class abbreviatedIRI="cbo:Outcome"/>
+            <Class abbreviatedIRI="fs:Importance"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isUnawareOf"/>
+        <ObjectProperty abbreviatedIRI="cbo:isUnawareOf"/>
         <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+        <ObjectProperty abbreviatedIRI="aff:affectedBy"/>
         <Class IRI="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#Belief"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
@@ -330,42 +335,42 @@ Reflecting on this realization, Emily became more mindful of her own bias blind 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Agent</IRI>
+        <AbbreviatedIRI>cbo:Agent</AbbreviatedIRI>
         <Literal>Individual who performs the Bias Blind Spot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Bias</IRI>
+        <AbbreviatedIRI>cbo:Bias</AbbreviatedIRI>
         <Literal>a class for defining any kind of bias</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome</IRI>
+        <AbbreviatedIRI>cbo:Outcome</AbbreviatedIRI>
         <Literal>Refers to the result, effect, or consequence of a particular action, event, process, or situation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#focusesOn</IRI>
+        <AbbreviatedIRI>cbo:focusesOn</AbbreviatedIRI>
         <Literal>describes the primary subject or area of attention associated with an entity or concept.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasBiasedOpinion</IRI>
+        <AbbreviatedIRI>cbo:hasBiasedOpinion</AbbreviatedIRI>
         <Literal>a property connecting a Person who has a biased opinion about something eg the possible outcome of an Event such as a Random or Chance-based Occurrence  or a person who has a biased Opinion about a Bias.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#hasOutcome</IRI>
+        <AbbreviatedIRI>cbo:hasOutcome</AbbreviatedIRI>
         <Literal>A property linking an entity that produces an Outcome</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#isUnawareOf</IRI>
+        <AbbreviatedIRI>cbo:isUnawareOf</AbbreviatedIRI>
         <Literal>indicates the lack of knowledge or awareness of a particular entity or concept by another entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/framester/data/framestercore/People</IRI>
+        <AbbreviatedIRI>fs:People</AbbreviatedIRI>
         <Literal>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming babyyesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</Literal>
     </AnnotationAssertion>
 </Ontology>

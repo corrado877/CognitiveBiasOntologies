@@ -244,6 +244,7 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:comment>An illusion is a distortion of the senses, which can reveal how the mind normally organizes and interprets sensory stimulation. Although illusions distort the human perception of reality, they are generally shared by most people. Illusions may occur with any of the human senses, but visual illusions (optical illusions) are the best-known and understood. The emphasis on visual illusions occurs because vision often dominates the other senses. For example, individuals watching a ventriloquist will perceive the voice is coming from the dummy since they are able to see the dummy mouth the words.</rdfs:comment>
     </owl:Class>
     
 
@@ -296,6 +297,7 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/ExperiencerObj"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:comment>This is an abstract frame for durative activities, in which the Agent enters an ongoing state of the Activity, remains in this state for some Duration of Time, and leaves this state either by finishing or by stopping. The Agent&apos;s Activity should be intentional. This frame is intended mostly for the inheritance of common FEs, and to provide the frame structure for the beginning, ongoing, finish, or stop stage of an Activity, each of which constitutes a subframe of this frame. This frame should be compared to the Process frame.</rdfs:comment>
     </owl:Class>
     
 
@@ -335,6 +337,7 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/ExperiencerObj">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestercore/Pattern"/>
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:comment>Some phenomenon (the Stimulus) provokes a particular emotion in an Experiencer. Nightmare on Elm Street scared me silly.</rdfs:comment>
     </owl:Class>
     
 
@@ -343,13 +346,16 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern">
         <owl:disjointWith rdf:resource="https://w3id.org/framester/data/framestersyn/Person"/>
+        <rdfs:comment>This frame describes the interrelation of a collection of Entities; they may be physical entities or shapes in a recognizable configuration, a pattern of events, or a relation among abstract entities. The pattern is not the individual Entities nor the set of Entities, but an abstraction of their interrelations, as a gestalt. The Cougers are playing in a Wing-T formation tonight. The auditors noticed a suspicious pattern of withdrawals from the maintenance account . The digits of irrational numbers do not repeat in any kind of pattern.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- https://w3id.org/framester/data/framestercore/People -->
 
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
+        <rdfs:comment>This frame contains general words for Individuals, i.e. humans. The Person is conceived of as independent of other specific individuals with whom they have relationships and independent of their participation in any particular activity. They may have an Age, Descriptor, Origin, Persistent_characteristic, or Ethnicity. A man from Phoenix was shot yesterday. She gave birth to a screaming babyyesterday. I study 16-year-old female adolescents. I am dating an African-American man. She comforted the terrified child. I always thought of him as a stupid man.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -367,7 +373,9 @@ Sarah decides to invest more money into buying lottery tickets, confident that h
 
     <!-- https://w3id.org/framester/data/framestersyn/Person -->
 
-    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Person"/>
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestersyn/Person">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+    </owl:Class>
     
 
 

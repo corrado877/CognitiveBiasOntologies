@@ -198,6 +198,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:comment>inverse property of isParticipantIn</rdfs:comment>
     </owl:ObjectProperty>
     
 
