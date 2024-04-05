@@ -6,6 +6,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Bias="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:Cynicism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#"
@@ -35,6 +36,7 @@
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl"/>
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl"/>
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias"/>
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism"/>
         <terms:contributor>Dott. Stefano De Giorgis</terms:contributor>
         <terms:contributor>Prof. Aldo Gangemi</terms:contributor>

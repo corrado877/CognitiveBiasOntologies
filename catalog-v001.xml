@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/Confabulation%20Bias/Confabulation_bias.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/Naive%20Cynicism/NaiveCynicism.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/Bias%20Blind%20Spot/BiasBlindSpot.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias" uri="https://raw.githubusercontent.com/corrado877/CognitiveBiasOntologies/main/Neglect_of_Probability_bias/Neglect_of_probability.owl"/>
