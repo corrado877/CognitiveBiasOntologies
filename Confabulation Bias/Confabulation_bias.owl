@@ -148,7 +148,7 @@ This user story highlights how confabulation bias can emerge in situations where
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#cbo:hasOutcome -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#cbo:hasOutcome">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Event"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Outcome"/>
     </owl:ObjectProperty>
     
@@ -157,8 +157,8 @@ This user story highlights how confabulation bias can emerge in situations where
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#exob:includes -->
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#exob:includes">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Event"/>
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Outcome"/>
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Evidence"/>
         <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#MemoryGap"/>
     </owl:ObjectProperty>
@@ -169,7 +169,7 @@ This user story highlights how confabulation bias can emerge in situations where
 
     <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#exob:isEngagedIn">
         <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#People"/>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Event"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
     </owl:ObjectProperty>
     
 
@@ -210,12 +210,6 @@ This user story highlights how confabulation bias can emerge in situations where
     
 
 
-    <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Event -->
-
-    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Event"/>
-    
-
-
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Evidence -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Evidence"/>
@@ -237,6 +231,12 @@ This user story highlights how confabulation bias can emerge in situations where
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#People -->
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#People"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
     
 
 
@@ -271,7 +271,7 @@ This user story highlights how confabulation bias can emerge in situations where
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Night_Out -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Night_Out">
-        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Event"/>
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Event"/>
         <cbo1:hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Telling_parents_fabricated_evidence"/>
         <exob:includes rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#Memory_gap"/>
     </owl:NamedIndividual>
