@@ -50,7 +50,7 @@ This cluster bias refers to the tendency to find patterns and stories in sparse 
 
 5. **Narrative Instinct**: Humans are natural storytellers, and our brains often construct narratives to make sense of events. This storytelling instinct can contribute to the creation of patterns or connections, even in the absence of substantial evidence.
 
-The full documentation about the development of the Cognitive Bias Ontology project can be found [here(https://the-bias-project.gitbook.io/cognitive-bias-ontologies-project-documentation/)].
+The full documentation about the development of the Cognitive Bias Ontology project can be found [here](https://the-bias-project.gitbook.io/cognitive-bias-ontologies-project-documentation/).
 
 The Cognitive Bias Ontology project is the final result of the 2023 Knowledge Representation and Extraction course held by professor Aldo Gangemi at the University of Bologna.
 
