@@ -55,10 +55,6 @@ Our intuition struggles with the complex relationship between sample size and st
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="#hascomponent"/>
-        <Literal>https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Pareidolia%20Ontology</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="#hascomponent"/>
         <Literal>https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.rdfxml</Literal>
     </Annotation>
     <Annotation>
