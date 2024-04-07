@@ -24,7 +24,7 @@
      xmlns:GamblersFallacyOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#"
      xmlns:Neglect_of_probability_bias="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#"
      xmlns:Insensitivity_to_sample_size="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#">
-    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#">
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies_V.2.0.owl#">
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy"/>
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion"/>
         <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size"/>
@@ -49,7 +49,7 @@
         <terms:creator>Marco La Morte</terms:creator>
         <terms:creator>Salvatore Di Marzo</terms:creator>
         <terms:description xml:lang="en">The Cognitive Bias Ontologies constitute a framework for categorizing and defining various cognitive biases that shape human thinking and decision-making. This project is the result of the 2023 Knowledge Representation and Extraction course held by professor Aldo Gangemi at the University of Bologna.</terms:description>
-        <owl:versionInfo>Ver. 1.0</owl:versionInfo>
+        <owl:versionInfo>Ver. 2.0</owl:versionInfo>
     </owl:Ontology>
     
 
