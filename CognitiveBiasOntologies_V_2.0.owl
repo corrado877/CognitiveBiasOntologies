@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#"
+     xml:base="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl"
+     xmlns:cbo="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Bias="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:Realism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism#"
+     xmlns:Cynicism="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism#"
+     xmlns:RecencyBias="https://github.com/corrado877/CognitiveBiasOntologies/RecencyBias#"
+     xmlns:Anthropomorphism="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl#"
+     xmlns:Anecdotal_fallacy="http://www.semanticweb.org/salva/ontologies/2024/1/Anecdotal_fallacy#"
+     xmlns:Anecdotal_fallacy1="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy/"
+     xmlns:Masked_Man_Fallacy="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:Clustering_illusion="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion#"
+     xmlns:Illusion_of_validity="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#"
+     xmlns:untitled-ontology-17="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#"
+     xmlns:untitled-ontology-26="http://www.semanticweb.org/mein/ontologies/2024/3/untitled-ontology-26#"
+     xmlns:GamblersFallacyOntology="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl#"
+     xmlns:Neglect_of_probability_bias="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias#"
+     xmlns:Insensitivity_to_sample_size="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size#">
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies.owl#">
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Anecdotal_fallacy"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Clustering_illusion"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Insensitivity_to_sample_size"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Neglect_of_probability_bias"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Antropomorphism/Anthropomorphism.owl"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/GamblersFallacyOntology/GamblersFallacyOntology.owl"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/HotHandFallacyOntology/HotHandFallacyOntology.owl"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/IllusoryOfCorrelationOntology/IllusoryOfCorrelationOntology.owl"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Masked_man_fallacy/Masked_Man_Fallacy.owl"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/PareidoliaOntology/PareidoliaBiasOntology.owl"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Recency_bias/Recency_bias.owl"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Confabulation%20Bias"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Cynicism"/>
+        <owl:imports rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Naive%20Realism"/>
+        <terms:contributor>Dott. Stefano De Giorgis</terms:contributor>
+        <terms:contributor>Prof. Aldo Gangemi</terms:contributor>
+        <terms:created>February 2024</terms:created>
+        <terms:creator>Alice Picco</terms:creator>
+        <terms:creator>Corrado Consiglio</terms:creator>
+        <terms:creator>Marco La Morte</terms:creator>
+        <terms:creator>Salvatore Di Marzo</terms:creator>
+        <terms:description xml:lang="en">The Cognitive Bias Ontologies constitute a framework for categorizing and defining various cognitive biases that shape human thinking and decision-making. This project is the result of the 2023 Knowledge Representation and Extraction course held by professor Aldo Gangemi at the University of Bologna.</terms:description>
+        <owl:versionInfo>Ver. 1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Variables"/>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Pattern -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Pattern"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
