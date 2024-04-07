@@ -526,7 +526,7 @@ As the two colleagues engage in discussions about the cultural event, their naiv
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontology.se/odp/content/owl/Action.owl#Action"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MentalProperty"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Activity"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Assessing"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/BecomingAware"/>
@@ -1116,8 +1116,8 @@ It can then be used between tasks, processes, time intervals, spatially locate o
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryEncoding"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MentalProperty"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Event"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Sequence"/>
                 </owl:unionOf>
@@ -1355,7 +1355,7 @@ It can then be used between tasks, processes, time intervals, spatially locate o
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+                    <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MentalProperty"/>
                     <rdf:Description rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Outcome"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
                 </owl:unionOf>
@@ -1505,14 +1505,6 @@ It can then be used between tasks, processes, time intervals, spatially locate o
         <rdfs:subClassOf rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#Non-humanEntity"/>
         <rdfs:comment>This class comprises items of a material nature that are units for documentation and have physical boundaries that separate them completely in an objective way from other objects.</rdfs:comment>
         <rdfs:label>Physical object</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty">
-        <rdfs:comment>MentalProperty, when used for decision-making, refers to the collection of intangible assets, including intellectual property, knowledge assets, creative outputs, innovative ideas, cognitive constructs, and personal and cultural heritage, that are considered and evaluated to inform and guide decision processes. In this context, MentalProperty serves as the foundation upon which decisions are made, providing valuable insights, perspectives, and resources that influence the course of action chosen. Decision-makers may assess and leverage MentalProperty assets to address challenges, capitalize on opportunities, mitigate risks, and achieve desired outcomes.</rdfs:comment>
     </owl:Class>
     
 
@@ -1732,6 +1724,14 @@ It can then be used between tasks, processes, time intervals, spatially locate o
 
     <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MemoryGap">
         <rdfs:comment>a class for Missing or incomplete information in memory</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MentalProperty -->
+
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MentalProperty">
+        <rdfs:comment>MentalProperty, when used for decision-making, refers to the collection of intangible assets, including intellectual property, knowledge assets, creative outputs, innovative ideas, cognitive constructs, and personal and cultural heritage, that are considered and evaluated to inform and guide decision processes. In this context, MentalProperty serves as the foundation upon which decisions are made, providing valuable insights, perspectives, and resources that influence the course of action chosen. Decision-makers may assess and leverage MentalProperty assets to address challenges, capitalize on opportunities, mitigate risks, and achieve desired outcomes.</rdfs:comment>
     </owl:Class>
     
 
@@ -3081,7 +3081,7 @@ It can then be used between tasks, processes, time intervals, spatially locate o
     <!-- https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Decision -->
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Decision">
-        <rdf:type rdf:resource="http://www.semanticweb.org/mein/ontologies/2024/2/untitled-ontology-17#MentalProperty"/>
+        <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#MentalProperty"/>
         <cbo:hasOutcome rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Realization_of_bias"/>
         <affectedBy:affectedBy rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/tree/main/Bias%20Blind%20Spot#Superiority_of_one&apos;s_idea"/>
     </owl:NamedIndividual>
