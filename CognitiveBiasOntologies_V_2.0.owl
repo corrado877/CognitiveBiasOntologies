@@ -460,16 +460,6 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     
 
 
-    <!-- http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#produces -->
-
-    <owl:ObjectProperty rdf:about="http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl#produces">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Predicting"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Expectation"/>
-        <rdfs:comment>Define the relation between an activity and its produced outcome.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://modellingdh.github.io/ont/odp/term/inActivity -->
 
     <owl:ObjectProperty rdf:about="http://modellingdh.github.io/ont/odp/term/inActivity">
@@ -606,16 +596,6 @@ As the two colleagues engage in discussions about the cultural event, their naiv
     
 
 
-    <!-- http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn -->
-
-    <owl:ObjectProperty rdf:about="http://ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn">
-        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Predicting"/>
-        <rdfs:comment>Define the participation of an entity in a process.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/ontology/cco/core#belief -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/cco/core#belief">
@@ -653,21 +633,9 @@ This is an universal property, it can be also used in different context (e.g. Ru
     
 
 
-    <!-- http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns -->
-
-    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/newsreportingevent.owl_#owns">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
-        <rdfs:range rdf:resource="https://dbpedia.org/resource/Knowledge"/>
-        <rdfs:comment>This property can be used to link a certain NewsProvider with a Media that the NewsProvider ows, e.g. Fox News Channel is owned by Fox Entertainment Group, which also owns other Media (FXX Channel, etc.).
-This is an universal property, it can be also used in different context (e.g. Ruslana owns a Persian cat).</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.fao.org/aims/aos/aos.owl#affects -->
 
     <owl:ObjectProperty rdf:about="http://www.fao.org/aims/aos/aos.owl#affects">
-        <rdfs:domain rdf:resource="https://dbpedia.org/resource/Knowledge"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -676,7 +644,6 @@ This is an universal property, it can be also used in different context (e.g. Ru
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -843,6 +810,7 @@ This is an universal property, it can be also used in different context (e.g. Ru
             </owl:Class>
         </rdfs:range>
         <rdfs:comment>Define the participation of an entity in a process or an Activity</rdfs:comment>
+        <rdfs:comment>Define the participation of an entity in a process.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -1447,7 +1415,6 @@ It can then be used between tasks, processes, time intervals, spatially locate o
     <!-- http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue -->
 
     <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#hasParameterDataValue">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Identicality"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -2689,7 +2656,7 @@ It can then be used between tasks, processes, time intervals, spatially locate o
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_PerceivedValidity">
         <rdf:type rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/CognitiveBiasOntologies#PerceivedValidity"/>
-        <participation1:isParticipantIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_predicting"/>
+        <participation:isParticipantIn rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_predicting"/>
         <rdfs:comment>The investor&apos;s perception of validity in his previous knowledge and consequentially his predictions.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -2699,7 +2666,7 @@ It can then be used between tasks, processes, time intervals, spatially locate o
 
     <owl:NamedIndividual rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Investor_predicting">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Predicting"/>
-        <ActivityPattern:produces rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Positive_outcome"/>
+        <ontology:produces rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/Illusion_of_validity/Illusion_of_validity.owl#Positive_outcome"/>
         <rdfs:comment>The predicting process taken on by the investor to calculate the future possible outcome of his investement.</rdfs:comment>
     </owl:NamedIndividual>
     
