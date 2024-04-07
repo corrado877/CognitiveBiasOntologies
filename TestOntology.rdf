@@ -6,7 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/hwruser/ontologies/2024/3/untitled-ontology-515"/>
+    <owl:Ontology rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/TestOntology.rdf"/>
     
 
 
@@ -21,11 +21,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/hwruser/ontologies/2024/3/untitled-ontology-515#hasgot -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/TestOntology.rdf#hasgot -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hwruser/ontologies/2024/3/untitled-ontology-515#hasgot">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hwruser/ontologies/2024/3/untitled-ontology-515#aaaa"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/hwruser/ontologies/2024/3/untitled-ontology-515#bbbb"/>
+    <owl:ObjectProperty rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/TestOntology.rdf#hasgot">
+        <rdfs:domain rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/TestOntology.rdf#aaaa"/>
+        <rdfs:range rdf:resource="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/TestOntology.rdf#bbbb"/>
     </owl:ObjectProperty>
     
 
@@ -41,15 +41,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/hwruser/ontologies/2024/3/untitled-ontology-515#aaaa -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/TestOntology.rdf#aaaa -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/hwruser/ontologies/2024/3/untitled-ontology-515#aaaa"/>
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/TestOntology.rdf#aaaa"/>
     
 
 
-    <!-- http://www.semanticweb.org/hwruser/ontologies/2024/3/untitled-ontology-515#bbbb -->
+    <!-- https://github.com/corrado877/CognitiveBiasOntologies/blob/main/TestOntology.rdf#bbbb -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/hwruser/ontologies/2024/3/untitled-ontology-515#bbbb"/>
+    <owl:Class rdf:about="https://github.com/corrado877/CognitiveBiasOntologies/blob/main/TestOntology.rdf#bbbb"/>
 </rdf:RDF>
 
 
